@@ -1,16 +1,219 @@
 {
-  "generatedAt": "2026-09-12T20:48:26.882Z",
+  "generatedAt": "2026-09-12T20:58:08.051Z",
   "browser": "153.0.8010.36",
+  "modelId": "pooled-16-both-contrastive-seed17",
+  "modelSha256": "1d209009d746bddba1077aa6812baaf026e6dc7d05279a7175d97310bf825031",
+  "assets": [
+    "http://127.0.0.1:4180/assets/weights-C8c1_1dt.bin",
+    "http://127.0.0.1:4180/assets/manifest-Bcl3fRvh.json",
+    "http://127.0.0.1:4180/assets/manifest-Bcl3fRvh.json",
+    "http://127.0.0.1:4180/assets/weights-C8c1_1dt.bin"
+  ],
   "checks": [
-    "exact label",
-    "alias vs labels-only",
-    "no-match",
+    "model asset fetch",
+    "CPU scores equal exported-weight inference for six queries",
+    "arbitrary edited candidate inference",
+    "missing weights show no model results",
+    "zero weights eliminate model results",
+    "Auto/Light/Dark and persistence",
     "invalid JSON",
     "safe label text",
     "390px containment",
-    "dark mode",
-    "no page errors",
-    "zero requests after initial asset load"
+    "zero query/edit requests"
+  ],
+  "samples": [
+    {
+      "query": "profile",
+      "expected": [
+        {
+          "id": "profile",
+          "label": "Profile",
+          "score": 1
+        },
+        {
+          "id": "invoices",
+          "label": "Invoices",
+          "score": 0.5871626138687134
+        },
+        {
+          "id": "members",
+          "label": "Members",
+          "score": 0.2317759245634079
+        },
+        {
+          "id": "billing",
+          "label": "Billing",
+          "score": 0.19786059856414795
+        },
+        {
+          "id": "profiles",
+          "label": "Profiles",
+          "score": 0.10871635377407074
+        }
+      ]
+    },
+    {
+      "query": "profle",
+      "expected": [
+        {
+          "id": "profile",
+          "label": "Profile",
+          "score": 0.1929391622543335
+        },
+        {
+          "id": "create",
+          "label": "Create Account",
+          "score": 0.0880911648273468
+        },
+        {
+          "id": "profiles",
+          "label": "Profiles",
+          "score": 0.07861624658107758
+        },
+        {
+          "id": "invoices",
+          "label": "Invoices",
+          "score": 0.04958798736333847
+        },
+        {
+          "id": "members",
+          "label": "Members",
+          "score": 0.021972784772515297
+        }
+      ]
+    },
+    {
+      "query": "coworkers",
+      "expected": [
+        {
+          "id": "plan",
+          "label": "Plan",
+          "score": 0.3611028492450714
+        },
+        {
+          "id": "create",
+          "label": "Create Account",
+          "score": 0.33877721428871155
+        },
+        {
+          "id": "delete",
+          "label": "Delete Account",
+          "score": 0.2853343188762665
+        },
+        {
+          "id": "api-keys",
+          "label": "API Keys",
+          "score": 0.2331739366054535
+        },
+        {
+          "id": "invoices",
+          "label": "Invoices",
+          "score": 0.183198019862175
+        }
+      ]
+    },
+    {
+      "query": "my information",
+      "expected": [
+        {
+          "id": "profiles",
+          "label": "Profiles",
+          "score": 0.5585914850234985
+        },
+        {
+          "id": "delete",
+          "label": "Delete Account",
+          "score": 0.17577004432678223
+        },
+        {
+          "id": "plan",
+          "label": "Plan",
+          "score": 0.17115405201911926
+        },
+        {
+          "id": "create",
+          "label": "Create Account",
+          "score": 0.14596746861934662
+        },
+        {
+          "id": "billing",
+          "label": "Billing",
+          "score": 0.09579382091760635
+        }
+      ]
+    },
+    {
+      "query": "xqzv",
+      "expected": [
+        {
+          "id": "create",
+          "label": "Create Account",
+          "score": 0.3351333439350128
+        },
+        {
+          "id": "billing",
+          "label": "Billing",
+          "score": 0.05755702406167984
+        },
+        {
+          "id": "plan",
+          "label": "Plan",
+          "score": 0.03986354172229767
+        },
+        {
+          "id": "delete",
+          "label": "Delete Account",
+          "score": 0.01735527813434601
+        },
+        {
+          "id": "api-keys",
+          "label": "API Keys",
+          "score": 0.008966771885752678
+        }
+      ]
+    },
+    {
+      "query": "unseen destination 47",
+      "expected": [
+        {
+          "id": "billing",
+          "label": "Billing",
+          "score": 0.2566702663898468
+        },
+        {
+          "id": "notifications",
+          "label": "Notifications",
+          "score": 0.25650128722190857
+        },
+        {
+          "id": "profiles",
+          "label": "Profiles",
+          "score": 0.232555091381073
+        },
+        {
+          "id": "members",
+          "label": "Members",
+          "score": 0.16616564989089966
+        },
+        {
+          "id": "api-keys",
+          "label": "API Keys",
+          "score": -0.015064120292663574
+        }
+      ]
+    }
+  ],
+  "customExpected": [
+    {
+      "id": "new",
+      "label": "A completely new destination",
+      "score": 0.6311520934104919
+    },
+    {
+      "id": "safe",
+      "label": "<img src=x onerror=alert(1)>",
+      "score": -0.41433921456336975
+    }
   ],
   "requests": [],
   "errors": []

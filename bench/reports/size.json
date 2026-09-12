@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T20:49:38.659Z",
+  "generatedAt": "2026-09-12T20:58:19.421Z",
   "node": "v26.8.1",
   "esbuild": "0.27.2",
   "compression": "Node zlib; gzip level9; Brotli quality11 window22; each served resource separately",
@@ -19,16 +19,28 @@
   ],
   "demo": [
     {
-      "resource": "apps/demo/dist/assets/index-BTSLloiu.css",
-      "raw": 8381,
-      "gzip": 2570,
-      "brotli": 2178
+      "resource": "apps/demo/dist/assets/index-D2ZaEIKN.css",
+      "raw": 4976,
+      "gzip": 1649,
+      "brotli": 1350
     },
     {
-      "resource": "apps/demo/dist/assets/index-rUamBZJC.js",
-      "raw": 14306,
-      "gzip": 5498,
-      "brotli": 4703
+      "resource": "apps/demo/dist/assets/index-DEzd58yK.js",
+      "raw": 16831,
+      "gzip": 6830,
+      "brotli": 5989
+    },
+    {
+      "resource": "apps/demo/dist/assets/manifest-Bcl3fRvh.json",
+      "raw": 1127,
+      "gzip": 543,
+      "brotli": 439
+    },
+    {
+      "resource": "apps/demo/dist/assets/weights-C8c1_1dt.bin",
+      "raw": 32768,
+      "gzip": 29016,
+      "brotli": 28873
     },
     {
       "resource": "apps/demo/dist/favicon.svg",
@@ -39,16 +51,16 @@
     {
       "resource": "apps/demo/dist/index.html",
       "raw": 707,
-      "gzip": 418,
-      "brotli": 267
+      "gzip": 421,
+      "brotli": 270
     }
   ],
   "demoTotals": {
-    "raw": 23669,
-    "gzip": 8679,
-    "brotli": 7316
+    "raw": 56684,
+    "gzip": 38652,
+    "brotli": 37089
   },
-  "semantic": "Not shipped: no model passed release gates",
+  "semantic": "Demo ships experimental pooled16 CPU inference, manifest and int8 weights; core library remains lexical by default. No validated cutoff.",
   "webgpu": "Not shipped: semantic feasibility precedes GPU optimization",
   "sourceMaps": "Not built or served"
 }

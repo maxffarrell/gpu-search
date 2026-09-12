@@ -6,5 +6,4 @@ eval
 fixtures
 bench
 docs
-packages/model
 __pycache__

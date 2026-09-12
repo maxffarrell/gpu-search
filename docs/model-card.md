@@ -1,6 +1,6 @@
 # Model card: feasibility experiment, no released semantic model
 
-The deployed search engine is lexical with optional developer aliases. **No learned model passed the semantic release gate.** Experimental MLX weights are research artifacts and are not loaded by the demo or the default package.
+The library remains lexical with optional developer aliases. **No learned model passed the semantic release gate.** At the user's request the website now explicitly runs the experimental MLX-trained pooled16 int8 weights through a custom TypeScript CPU encoder, exposing raw cosine rankings alongside the lexical engine. The default package does not load those weights. The model panel has no validated cutoff and may rank unrelated candidates.
 
 ## Intended scope
 
@@ -30,4 +30,4 @@ No release checkpoint, validated cosine cutoff, or trained WebGPU runtime was se
 
 ## Missing evidence
 
-Human-reviewed data and final evaluation; a pinned general embedding reference; real product-source licensing/curation; teacher distillation; alias/context, action-opposite and ambiguity evaluation; MLX-to-JavaScript-to-WebGPU numeric parity for a selected model; semantic transfer bytes and browser latency. Empty and long feature inputs have shared fixtures, but that does not establish retrieval quality for them.
+Human-reviewed data and final evaluation; a pinned general embedding reference; real product-source licensing/curation; teacher distillation; alias/context, action-opposite and ambiguity evaluation; selected-model MLX-to-JavaScript-to-WebGPU numeric parity (the experimental CPU encoder is checked against exported NumPy fixtures); semantic transfer bytes and browser latency. Empty and long feature inputs have shared fixtures, but that does not establish retrieval quality for them.

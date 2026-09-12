@@ -4,7 +4,7 @@
 
 Small, private search for software interfaces. Normalized label matches rank first, followed by deterministic aliases, prefixes, acronyms, and typo matches. Queries stay in the browser.
 
-**Status: working lexical baseline and MLX feasibility experiment.** The learned encoders did not pass the semantic release gate on the small synthetic development suite. No learned model or WebGPU backend is shipped in the library or demo. The project name reflects the research direction; this release does not claim GPU acceleration. See [experiment results](eval/feasibility.json), [decisions](docs/decisions.md), and the [original specification](docs/specification.md).
+**Status: real experimental CPU model demo, plus a stable lexical library.** The demo downloads the trained pooled16 int8 weights, verifies their SHA-256, and computes query/candidate embeddings and cosine scores locally. It shows raw model rankings alongside lexical results. The learned encoders did not pass the semantic release gate on the small synthetic development suite, so no validated cutoff or production semantic-quality claim is made. There is no WebGPU backend. See [experiment results](eval/feasibility.json), [decisions](docs/decisions.md), and the [original specification](docs/specification.md).
 
 ## Try locally
 
@@ -16,7 +16,7 @@ pnpm dev
 pnpm release:verify
 ```
 
-The demo compares the same menu with and without explicit aliases. Edit the query or candidate JSON; results show their match reason and backend. For example, `coworkers` finds `Members` only when the host supplies that alias. It is not presented as evidence of semantic generalization.
+The minimalist demo compares actual model scores with lexical results for the same editable candidate menu. Initial candidates have no aliases or context. Queries, including `coworkers`, pass through the trained encoder; no synonym lookup supplies the model results. The model panel displays raw cosine rankings without an abstention threshold, including potentially irrelevant results. Missing or invalid weights show a model error, never substitute lexical results. Auto / Light / Dark at the top follows the system or saves an explicit preference.
 
 ## Library API
 
