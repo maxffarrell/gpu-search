@@ -1,0 +1,2368 @@
+{
+  "checkpoint": "runs/pooled-16-both-margin-seed43",
+  "split": "dev",
+  "cutoff": 0.5646197199821472,
+  "cutoffSelectedOn": "dev",
+  "warning": "Synthetic unreviewed development diagnostics, not final release evidence; calibration and scoring reuse development",
+  "semanticCount": 36,
+  "semanticDelta": 0.027777777777777776,
+  "pairedBootstrap95": [
+    0.0,
+    0.08333333333333333
+  ],
+  "systems": {
+    "lexical": {
+      "overall": {
+        "count": 80,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4,
+        "coverage": 0.4,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.4,
+        "recall3": 0.4,
+        "recall5": 0.4,
+        "mrr": 0.4
+      },
+      "semanticOnly": {
+        "count": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      }
+    },
+    "lexical+train-aliases": {
+      "overall": {
+        "count": 80,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4,
+        "coverage": 0.4,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.4,
+        "recall3": 0.4,
+        "recall5": 0.4,
+        "mrr": 0.4
+      },
+      "semanticOnly": {
+        "count": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      }
+    },
+    "learned-before-cutoff": {
+      "overall": {
+        "count": 80,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.7663109235075354,
+        "coverage": 1.0,
+        "noMatchAnyRate": 1.0,
+        "noMatchSemanticRate": 1.0,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.5666666666666667,
+        "recall3": 0.7833333333333333,
+        "recall5": 0.9666666666666667,
+        "mrr": 0.7063888888888888
+      },
+      "semanticOnly": {
+        "count": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.6105182058458922,
+        "coverage": 1.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.2777777777777778,
+        "recall3": 0.6388888888888888,
+        "recall5": 0.9444444444444444,
+        "mrr": 0.5106481481481482
+      }
+    },
+    "learned-after-cutoff": {
+      "overall": {
+        "count": 80,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4166666666666667,
+        "coverage": 0.43333333333333335,
+        "noMatchAnyRate": 0.05,
+        "noMatchSemanticRate": 0.05,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.4166666666666667,
+        "recall3": 0.4166666666666667,
+        "recall5": 0.4166666666666667,
+        "mrr": 0.4166666666666667
+      },
+      "semanticOnly": {
+        "count": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.027777777777777776,
+        "coverage": 0.05555555555555555,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+        "recall1": 0.027777777777777776,
+        "recall3": 0.027777777777777776,
+        "recall5": 0.027777777777777776,
+        "mrr": 0.027777777777777776
+      }
+    }
+  },
+  "perQuery": [
+    {
+      "id": "commerce-0-0",
+      "query": "Customers",
+      "kind": "exact",
+      "scores": [
+        1.0,
+        -0.2818596363067627,
+        -0.04550381004810333,
+        -0.05315224453806877,
+        0.01531834527850151,
+        -0.14821544289588928
+      ],
+      "rankings": {
+        "lexical": [
+          0
+        ],
+        "lexical+train-aliases": [
+          0
+        ],
+        "learned-before-cutoff": [
+          0,
+          4,
+          2,
+          3,
+          5,
+          1
+        ],
+        "learned-after-cutoff": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "commerce-0-1",
+      "query": "Customerss",
+      "kind": "typo",
+      "scores": [
+        0.06502605974674225,
+        0.3311214745044708,
+        0.036520227789878845,
+        -0.2183437943458557,
+        0.3783199191093445,
+        -0.09288357198238373
+      ],
+      "rankings": {
+        "lexical": [
+          0
+        ],
+        "lexical+train-aliases": [
+          0
+        ],
+        "learned-before-cutoff": [
+          0,
+          4,
+          1,
+          2,
+          5,
+          3
+        ],
+        "learned-after-cutoff": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "commerce-0-2",
+      "query": "buyers",
+      "kind": "semantic-only",
+      "scores": [
+        0.058845777064561844,
+        0.10755345225334167,
+        -0.6009891629219055,
+        -0.39684346318244934,
+        0.024024341255426407,
+        -0.41253378987312317
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          1,
+          0,
+          4,
+          3,
+          5,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-0-3",
+      "query": "people who bought",
+      "kind": "semantic-only",
+      "scores": [
+        -0.3346906006336212,
+        -0.08098078519105911,
+        0.31141233444213867,
+        0.2867070734500885,
+        0.38885241746902466,
+        0.37128278613090515
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          5,
+          2,
+          3,
+          1,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-0-4",
+      "query": "client directory",
+      "kind": "semantic-only",
+      "scores": [
+        0.11935655772686005,
+        0.44108542799949646,
+        0.14225025475025177,
+        -0.328493595123291,
+        -0.13750755786895752,
+        0.3213037848472595
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          1,
+          5,
+          2,
+          0,
+          4,
+          3
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-1-0",
+      "query": "Orders",
+      "kind": "exact",
+      "scores": [
+        -0.28185954689979553,
+        0.9999999403953552,
+        0.13733287155628204,
+        -0.05883103609085083,
+        -0.06020638346672058,
+        0.2522242069244385
+      ],
+      "rankings": {
+        "lexical": [
+          1
+        ],
+        "lexical+train-aliases": [
+          1
+        ],
+        "learned-before-cutoff": [
+          1,
+          5,
+          2,
+          3,
+          4,
+          0
+        ],
+        "learned-after-cutoff": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "commerce-1-1",
+      "query": "Orderss",
+      "kind": "typo",
+      "scores": [
+        0.093862384557724,
+        0.10478869825601578,
+        0.3169907331466675,
+        0.033780232071876526,
+        -0.11826857924461365,
+        0.6353614330291748
+      ],
+      "rankings": {
+        "lexical": [
+          1
+        ],
+        "lexical+train-aliases": [
+          1
+        ],
+        "learned-before-cutoff": [
+          1,
+          5,
+          2,
+          0,
+          3,
+          4
+        ],
+        "learned-after-cutoff": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "id": "commerce-1-2",
+      "query": "purchases",
+      "kind": "semantic-only",
+      "scores": [
+        -0.0701095461845398,
+        -0.010756999254226685,
+        0.08476848900318146,
+        -0.3764638304710388,
+        0.3291543424129486,
+        0.2007436454296112
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          5,
+          2,
+          1,
+          0,
+          3
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-1-3",
+      "query": "things sold",
+      "kind": "semantic-only",
+      "scores": [
+        -0.18982133269309998,
+        -0.24672524631023407,
+        -0.5226486921310425,
+        0.2094232738018036,
+        0.007432246580719948,
+        -0.08038702607154846
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-1-4",
+      "query": "purchase history",
+      "kind": "semantic-only",
+      "scores": [
+        0.29664307832717896,
+        -0.33216992020606995,
+        -0.12029632925987244,
+        0.3884965777397156,
+        -0.03502444922924042,
+        0.0812980905175209
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          5,
+          4,
+          2,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-2-0",
+      "query": "Refunds",
+      "kind": "exact",
+      "scores": [
+        -0.04550381004810333,
+        0.13733288645744324,
+        1.0,
+        0.027116503566503525,
+        -0.16541050374507904,
+        0.5615179538726807
+      ],
+      "rankings": {
+        "lexical": [
+          2
+        ],
+        "lexical+train-aliases": [
+          2
+        ],
+        "learned-before-cutoff": [
+          2,
+          5,
+          1,
+          3,
+          0,
+          4
+        ],
+        "learned-after-cutoff": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "commerce-2-1",
+      "query": "Refundss",
+      "kind": "typo",
+      "scores": [
+        0.1350073218345642,
+        -0.14795656502246857,
+        0.3079138696193695,
+        -0.1461922973394394,
+        -0.2682834267616272,
+        -0.0058599114418029785
+      ],
+      "rankings": {
+        "lexical": [
+          2
+        ],
+        "lexical+train-aliases": [
+          2
+        ],
+        "learned-before-cutoff": [
+          2,
+          0,
+          5,
+          3,
+          1,
+          4
+        ],
+        "learned-after-cutoff": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "commerce-2-2",
+      "query": "give money back",
+      "kind": "semantic-only",
+      "scores": [
+        -0.13339217007160187,
+        0.08082646131515503,
+        0.021300960332155228,
+        -0.6100815534591675,
+        -0.5112259387969971,
+        -0.0690465122461319
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          1,
+          2,
+          5,
+          0,
+          4,
+          3
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-2-3",
+      "query": "return payment",
+      "kind": "semantic-only",
+      "scores": [
+        0.09324315190315247,
+        0.4315488934516907,
+        -0.12247002124786377,
+        -0.2504863142967224,
+        0.19933411478996277,
+        -0.1500672847032547
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          1,
+          4,
+          0,
+          2,
+          5,
+          3
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-2-4",
+      "query": "reverse purchase",
+      "kind": "semantic-only",
+      "scores": [
+        0.22266322374343872,
+        -0.2585855722427368,
+        -0.0028037279844284058,
+        0.4049547016620636,
+        -0.058559611439704895,
+        -0.05175875499844551
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          2,
+          5,
+          4,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-3-0",
+      "query": "Inventory",
+      "kind": "exact",
+      "scores": [
+        -0.05315224081277847,
+        -0.05883102864027023,
+        0.027116503566503525,
+        0.9999999403953552,
+        0.1643592119216919,
+        0.37472864985466003
+      ],
+      "rankings": {
+        "lexical": [
+          3
+        ],
+        "lexical+train-aliases": [
+          3
+        ],
+        "learned-before-cutoff": [
+          3,
+          5,
+          4,
+          2,
+          0,
+          1
+        ],
+        "learned-after-cutoff": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "commerce-3-1",
+      "query": "Inventoryy",
+      "kind": "typo",
+      "scores": [
+        -0.06130772829055786,
+        0.07571018487215042,
+        0.02613692358136177,
+        -0.376469224691391,
+        -0.1910536140203476,
+        -0.03191087767481804
+      ],
+      "rankings": {
+        "lexical": [
+          3
+        ],
+        "lexical+train-aliases": [
+          3
+        ],
+        "learned-before-cutoff": [
+          3,
+          1,
+          2,
+          5,
+          0,
+          4
+        ],
+        "learned-after-cutoff": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "commerce-3-2",
+      "query": "stock levels",
+      "kind": "semantic-only",
+      "scores": [
+        0.04045473039150238,
+        0.5323615074157715,
+        0.036062657833099365,
+        0.2512175738811493,
+        0.31450405716896057,
+        0.19064964354038239
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          1,
+          4,
+          3,
+          5,
+          0,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-3-3",
+      "query": "available goods",
+      "kind": "semantic-only",
+      "scores": [
+        0.2053232491016388,
+        -0.38571566343307495,
+        -0.20738229155540466,
+        0.5152819156646729,
+        -0.1598437875509262,
+        0.2463037073612213
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          5,
+          0,
+          4,
+          2,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-3-4",
+      "query": "items on hand",
+      "kind": "semantic-only",
+      "scores": [
+        -0.14730259776115417,
+        0.16228970885276794,
+        0.12928354740142822,
+        0.3735353350639343,
+        0.10920552909374237,
+        0.30882835388183594
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          5,
+          1,
+          2,
+          4,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-4-0",
+      "query": "Discounts",
+      "kind": "exact",
+      "scores": [
+        0.01531834527850151,
+        -0.06020640209317207,
+        -0.16541050374507904,
+        0.1643592119216919,
+        1.0000001192092896,
+        -0.005706895142793655
+      ],
+      "rankings": {
+        "lexical": [
+          4
+        ],
+        "lexical+train-aliases": [
+          4
+        ],
+        "learned-before-cutoff": [
+          4,
+          3,
+          0,
+          5,
+          1,
+          2
+        ],
+        "learned-after-cutoff": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "commerce-4-1",
+      "query": "Discountss",
+      "kind": "typo",
+      "scores": [
+        -0.17951250076293945,
+        -0.041543349623680115,
+        -0.1119072437286377,
+        0.1010885015130043,
+        0.19942747056484222,
+        -0.06867708265781403
+      ],
+      "rankings": {
+        "lexical": [
+          4
+        ],
+        "lexical+train-aliases": [
+          4
+        ],
+        "learned-before-cutoff": [
+          4,
+          3,
+          1,
+          5,
+          2,
+          0
+        ],
+        "learned-after-cutoff": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "commerce-4-2",
+      "query": "price reductions",
+      "kind": "semantic-only",
+      "scores": [
+        0.3759813904762268,
+        -0.03044898808002472,
+        -0.20944662392139435,
+        -0.25226959586143494,
+        0.03620975464582443,
+        0.01865391433238983
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          4,
+          5,
+          1,
+          2,
+          3
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-4-3",
+      "query": "coupons",
+      "kind": "semantic-only",
+      "scores": [
+        -0.041500188410282135,
+        0.10032457113265991,
+        -0.30506861209869385,
+        0.4787726402282715,
+        0.4129185080528259,
+        0.1554332673549652
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          4,
+          5,
+          1,
+          0,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-4-4",
+      "query": "promotion codes",
+      "kind": "semantic-only",
+      "scores": [
+        -0.5135152339935303,
+        -0.22851668298244476,
+        0.21060065925121307,
+        0.17844974994659424,
+        -0.018815740942955017,
+        -0.007112175226211548
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          2,
+          3,
+          5,
+          4,
+          1,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-5-0",
+      "query": "Shipping",
+      "kind": "exact",
+      "scores": [
+        -0.14821544289588928,
+        0.2522242069244385,
+        0.5615179538726807,
+        0.3747286796569824,
+        -0.005706895142793655,
+        1.0
+      ],
+      "rankings": {
+        "lexical": [
+          5
+        ],
+        "lexical+train-aliases": [
+          5
+        ],
+        "learned-before-cutoff": [
+          5,
+          2,
+          3,
+          1,
+          4,
+          0
+        ],
+        "learned-after-cutoff": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "commerce-5-1",
+      "query": "Shippingg",
+      "kind": "typo",
+      "scores": [
+        -0.19462832808494568,
+        0.39472416043281555,
+        -0.009393822401762009,
+        -0.02313835918903351,
+        -0.16138434410095215,
+        0.14843596518039703
+      ],
+      "rankings": {
+        "lexical": [
+          5
+        ],
+        "lexical+train-aliases": [
+          5
+        ],
+        "learned-before-cutoff": [
+          5,
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "learned-after-cutoff": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "commerce-5-2",
+      "query": "deliveries",
+      "kind": "semantic-only",
+      "scores": [
+        0.14004459977149963,
+        -0.14495329558849335,
+        -0.35484856367111206,
+        0.4395117163658142,
+        -0.1790088713169098,
+        -0.22216379642486572
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          1,
+          4,
+          5,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-5-3",
+      "query": "send parcels",
+      "kind": "semantic-only",
+      "scores": [
+        -0.5792713165283203,
+        0.14636066555976868,
+        0.04266579449176788,
+        -0.2353791445493698,
+        -0.16361312568187714,
+        0.19632208347320557
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          1,
+          2,
+          4,
+          3,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-5-4",
+      "query": "delivery settings",
+      "kind": "semantic-only",
+      "scores": [
+        0.2545841634273529,
+        -0.08987060189247131,
+        0.037176117300987244,
+        0.3970579504966736,
+        -0.21163135766983032,
+        0.1573028713464737
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          5,
+          2,
+          1,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-0",
+      "query": "xqzv commerce",
+      "kind": "no-match",
+      "scores": [
+        0.02075888216495514,
+        -0.11060284823179245,
+        0.2503714859485626,
+        0.5142958760261536,
+        -0.11424270272254944,
+        0.178087517619133
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          2,
+          5,
+          0,
+          1,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-1",
+      "query": "purple dinosaur commerce",
+      "kind": "no-match",
+      "scores": [
+        0.42268961668014526,
+        0.035158731043338776,
+        -0.022959217429161072,
+        0.5113245248794556,
+        -0.08043034374713898,
+        0.06535910815000534
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          5,
+          1,
+          2,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-2",
+      "query": "ocean temperature commerce",
+      "kind": "no-match",
+      "scores": [
+        0.3000909686088562,
+        -0.013136118650436401,
+        0.10502152144908905,
+        0.5684017539024353,
+        0.04120216518640518,
+        0.3395722806453705
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          5,
+          0,
+          2,
+          4,
+          1
+        ],
+        "learned-after-cutoff": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "commerce-none-3",
+      "query": "banana bread recipe commerce",
+      "kind": "no-match",
+      "scores": [
+        0.13203176856040955,
+        0.41235285997390747,
+        0.06841044127941132,
+        0.4185420274734497,
+        0.1334727257490158,
+        0.2641661763191223
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          1,
+          5,
+          4,
+          0,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-4",
+      "query": "lunar spacecraft commerce",
+      "kind": "no-match",
+      "scores": [
+        0.08149654418230057,
+        -0.09290790557861328,
+        0.1917489469051361,
+        0.3881862461566925,
+        0.2639242708683014,
+        0.32826876640319824
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          5,
+          4,
+          2,
+          0,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-5",
+      "query": "zzzxq commerce",
+      "kind": "no-match",
+      "scores": [
+        0.4167294502258301,
+        -0.07963092625141144,
+        0.12854424118995667,
+        0.4019230604171753,
+        -0.20295695960521698,
+        0.21996557712554932
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          3,
+          5,
+          2,
+          1,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-6",
+      "query": "dancing penguin commerce",
+      "kind": "no-match",
+      "scores": [
+        -0.10955290496349335,
+        -0.3402894139289856,
+        0.1602926254272461,
+        0.0337318480014801,
+        0.25198066234588623,
+        0.2652548849582672
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          4,
+          2,
+          3,
+          0,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-7",
+      "query": "volcano depth commerce",
+      "kind": "no-match",
+      "scores": [
+        0.32505643367767334,
+        -0.2986198961734772,
+        0.12446528673171997,
+        0.3034237325191498,
+        -0.0013424977660179138,
+        -0.043925873935222626
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-8",
+      "query": "zebra habitat commerce",
+      "kind": "no-match",
+      "scores": [
+        0.4808654487133026,
+        -0.4418509304523468,
+        0.29428601264953613,
+        0.17772109806537628,
+        -0.009064815938472748,
+        -0.06046932935714722
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "commerce-none-9",
+      "query": "solar eclipse commerce",
+      "kind": "no-match",
+      "scores": [
+        -0.0016294494271278381,
+        -0.1476925015449524,
+        0.14028975367546082,
+        0.5111324191093445,
+        0.16958045959472656,
+        0.1470515877008438
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          4,
+          5,
+          2,
+          0,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-0-0",
+      "query": "Events",
+      "kind": "exact",
+      "scores": [
+        1.0,
+        -0.12763330340385437,
+        0.1343688666820526,
+        -0.2242506593465805,
+        0.0427560955286026,
+        0.017086490988731384
+      ],
+      "rankings": {
+        "lexical": [
+          0
+        ],
+        "lexical+train-aliases": [
+          0
+        ],
+        "learned-before-cutoff": [
+          0,
+          2,
+          4,
+          5,
+          1,
+          3
+        ],
+        "learned-after-cutoff": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "calendar-0-1",
+      "query": "Eventss",
+      "kind": "typo",
+      "scores": [
+        0.06806734204292297,
+        0.24160917103290558,
+        -0.5048327445983887,
+        0.25190189480781555,
+        -0.25783881545066833,
+        -0.06343261897563934
+      ],
+      "rankings": {
+        "lexical": [
+          0
+        ],
+        "lexical+train-aliases": [
+          0
+        ],
+        "learned-before-cutoff": [
+          0,
+          3,
+          1,
+          5,
+          4,
+          2
+        ],
+        "learned-after-cutoff": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "calendar-0-2",
+      "query": "scheduled occasions",
+      "kind": "semantic-only",
+      "scores": [
+        -0.05890745297074318,
+        -0.08995433151721954,
+        -0.02778400480747223,
+        0.42312055826187134,
+        -0.09424912929534912,
+        0.029853299260139465
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          5,
+          2,
+          0,
+          1,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-0-3",
+      "query": "appointments",
+      "kind": "semantic-only",
+      "scores": [
+        0.2719765603542328,
+        -0.38003847002983093,
+        0.19200760126113892,
+        -0.02316194772720337,
+        -0.12793762981891632,
+        0.24107471108436584
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          5,
+          2,
+          3,
+          4,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-0-4",
+      "query": "upcoming meetings",
+      "kind": "semantic-only",
+      "scores": [
+        0.21184706687927246,
+        -0.0995233803987503,
+        -0.4042387306690216,
+        -0.3257937431335449,
+        0.08789709210395813,
+        0.08381059765815735
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          4,
+          5,
+          1,
+          3,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-1-0",
+      "query": "Availability",
+      "kind": "exact",
+      "scores": [
+        -0.12763330340385437,
+        1.0,
+        -0.5096738338470459,
+        0.3578367829322815,
+        -0.1459939032793045,
+        -0.32414379715919495
+      ],
+      "rankings": {
+        "lexical": [
+          1
+        ],
+        "lexical+train-aliases": [
+          1
+        ],
+        "learned-before-cutoff": [
+          1,
+          3,
+          0,
+          4,
+          5,
+          2
+        ],
+        "learned-after-cutoff": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "calendar-1-1",
+      "query": "Availabilityy",
+      "kind": "typo",
+      "scores": [
+        0.1651298850774765,
+        -0.06023503839969635,
+        -0.3394205570220947,
+        0.05180266499519348,
+        0.05195596069097519,
+        0.29356080293655396
+      ],
+      "rankings": {
+        "lexical": [
+          1
+        ],
+        "lexical+train-aliases": [
+          1
+        ],
+        "learned-before-cutoff": [
+          1,
+          5,
+          0,
+          4,
+          3,
+          2
+        ],
+        "learned-after-cutoff": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "calendar-1-2",
+      "query": "free time",
+      "kind": "semantic-only",
+      "scores": [
+        -0.05231475830078125,
+        0.35038185119628906,
+        -0.1575537919998169,
+        0.7156115174293518,
+        0.10474272817373276,
+        -0.03433193638920784
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          1,
+          4,
+          5,
+          0,
+          2
+        ],
+        "learned-after-cutoff": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "calendar-1-3",
+      "query": "open slots",
+      "kind": "semantic-only",
+      "scores": [
+        0.006330676376819611,
+        -0.18306070566177368,
+        -0.3134309649467468,
+        -0.10219492018222809,
+        -0.08284424245357513,
+        -0.0005657225847244263
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          5,
+          4,
+          3,
+          1,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-1-4",
+      "query": "when I can meet",
+      "kind": "semantic-only",
+      "scores": [
+        -0.1829342544078827,
+        0.004926230758428574,
+        -0.3574007749557495,
+        0.0809740200638771,
+        -0.5780212879180908,
+        0.3705289363861084
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          3,
+          1,
+          0,
+          2,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-2-0",
+      "query": "Reminders",
+      "kind": "exact",
+      "scores": [
+        0.1343688666820526,
+        -0.5096738338470459,
+        1.0,
+        -0.0897420197725296,
+        0.183441162109375,
+        0.15417228639125824
+      ],
+      "rankings": {
+        "lexical": [
+          2
+        ],
+        "lexical+train-aliases": [
+          2
+        ],
+        "learned-before-cutoff": [
+          2,
+          4,
+          5,
+          0,
+          3,
+          1
+        ],
+        "learned-after-cutoff": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "calendar-2-1",
+      "query": "Reminderss",
+      "kind": "typo",
+      "scores": [
+        -0.24555939435958862,
+        0.014545589685440063,
+        0.1650359034538269,
+        -0.028053589165210724,
+        0.1967664510011673,
+        -0.004224620759487152
+      ],
+      "rankings": {
+        "lexical": [
+          2
+        ],
+        "lexical+train-aliases": [
+          2
+        ],
+        "learned-before-cutoff": [
+          2,
+          4,
+          1,
+          5,
+          3,
+          0
+        ],
+        "learned-after-cutoff": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "calendar-2-2",
+      "query": "notify before meeting",
+      "kind": "semantic-only",
+      "scores": [
+        -0.18891918659210205,
+        -0.3824036121368408,
+        0.3700427711009979,
+        -0.1231621503829956,
+        0.3096209466457367,
+        0.44870609045028687
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          2,
+          4,
+          3,
+          0,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-2-3",
+      "query": "appointment alerts",
+      "kind": "semantic-only",
+      "scores": [
+        0.026935726404190063,
+        -0.5394493341445923,
+        0.359030157327652,
+        -0.12281499803066254,
+        0.12570282816886902,
+        0.008206658065319061
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          2,
+          4,
+          0,
+          5,
+          3,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-2-4",
+      "query": "upcoming notices",
+      "kind": "semantic-only",
+      "scores": [
+        -0.4486329257488251,
+        -0.34028202295303345,
+        -0.2009226381778717,
+        0.171778604388237,
+        0.15219207108020782,
+        0.021262824535369873
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          4,
+          5,
+          2,
+          1,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-3-0",
+      "query": "Time Zone",
+      "kind": "exact",
+      "scores": [
+        -0.2242506742477417,
+        0.35783684253692627,
+        -0.0897420346736908,
+        1.0,
+        0.014554988592863083,
+        -0.22705593705177307
+      ],
+      "rankings": {
+        "lexical": [
+          3
+        ],
+        "lexical+train-aliases": [
+          3
+        ],
+        "learned-before-cutoff": [
+          3,
+          1,
+          4,
+          2,
+          0,
+          5
+        ],
+        "learned-after-cutoff": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "calendar-3-1",
+      "query": "Time Zonee",
+      "kind": "typo",
+      "scores": [
+        -0.2001899629831314,
+        0.22642521560192108,
+        -0.3536413908004761,
+        0.6439396739006042,
+        -0.19820071756839752,
+        0.20164424180984497
+      ],
+      "rankings": {
+        "lexical": [
+          3
+        ],
+        "lexical+train-aliases": [
+          3
+        ],
+        "learned-before-cutoff": [
+          3,
+          1,
+          5,
+          4,
+          0,
+          2
+        ],
+        "learned-after-cutoff": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "calendar-3-2",
+      "query": "local clock region",
+      "kind": "semantic-only",
+      "scores": [
+        -0.009166613221168518,
+        -0.6120084524154663,
+        0.23134252429008484,
+        -0.3709557354450226,
+        -0.008135750889778137,
+        0.20932406187057495
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          2,
+          5,
+          4,
+          0,
+          3,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-3-3",
+      "query": "regional time",
+      "kind": "semantic-only",
+      "scores": [
+        0.37044715881347656,
+        0.1741497814655304,
+        0.03801544010639191,
+        0.4755032956600189,
+        -0.20055365562438965,
+        -0.03299102187156677
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          1,
+          2,
+          5,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-3-4",
+      "query": "clock location",
+      "kind": "semantic-only",
+      "scores": [
+        -0.354231595993042,
+        -0.33716827630996704,
+        -0.04027602821588516,
+        -0.12445509433746338,
+        -0.29678094387054443,
+        0.3746936023235321
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          2,
+          3,
+          4,
+          1,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-4-0",
+      "query": "Invite Guests",
+      "kind": "exact",
+      "scores": [
+        0.042756080627441406,
+        -0.1459939330816269,
+        0.183441162109375,
+        0.014554988592863083,
+        1.0,
+        -0.031007511541247368
+      ],
+      "rankings": {
+        "lexical": [
+          4
+        ],
+        "lexical+train-aliases": [
+          4
+        ],
+        "learned-before-cutoff": [
+          4,
+          2,
+          0,
+          3,
+          5,
+          1
+        ],
+        "learned-after-cutoff": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "calendar-4-1",
+      "query": "Invite Guestss",
+      "kind": "typo",
+      "scores": [
+        -0.01248617097735405,
+        -0.08481915295124054,
+        0.035712335258722305,
+        0.10102440416812897,
+        0.5948938131332397,
+        -0.48703330755233765
+      ],
+      "rankings": {
+        "lexical": [
+          4
+        ],
+        "lexical+train-aliases": [
+          4
+        ],
+        "learned-before-cutoff": [
+          4,
+          3,
+          2,
+          0,
+          1,
+          5
+        ],
+        "learned-after-cutoff": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "calendar-4-2",
+      "query": "add attendees",
+      "kind": "semantic-only",
+      "scores": [
+        -0.025031857192516327,
+        -0.21082960069179535,
+        -0.2551552653312683,
+        0.24933652579784393,
+        -0.11383597552776337,
+        -0.15365567803382874
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          0,
+          4,
+          5,
+          1,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-4-3",
+      "query": "ask people to join",
+      "kind": "semantic-only",
+      "scores": [
+        -0.37877413630485535,
+        -0.2780591547489166,
+        0.5208990573883057,
+        0.23848877847194672,
+        0.36179319024086,
+        -0.32921507954597473
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          2,
+          4,
+          3,
+          1,
+          5,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-4-4",
+      "query": "bring participants",
+      "kind": "semantic-only",
+      "scores": [
+        -0.25437161326408386,
+        0.532547116279602,
+        -0.5073603391647339,
+        0.1903432458639145,
+        -0.2035163938999176,
+        -0.07430602610111237
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          1,
+          3,
+          5,
+          4,
+          0,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-5-0",
+      "query": "Cancel Meeting",
+      "kind": "exact",
+      "scores": [
+        0.017086505889892578,
+        -0.32414382696151733,
+        0.15417231619358063,
+        -0.22705593705177307,
+        -0.031007511541247368,
+        1.0
+      ],
+      "rankings": {
+        "lexical": [
+          5
+        ],
+        "lexical+train-aliases": [
+          5
+        ],
+        "learned-before-cutoff": [
+          5,
+          2,
+          0,
+          4,
+          3,
+          1
+        ],
+        "learned-after-cutoff": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "calendar-5-1",
+      "query": "Cancel Meetingg",
+      "kind": "typo",
+      "scores": [
+        -0.06117948889732361,
+        -0.04039183259010315,
+        -0.06398274004459381,
+        -0.3784366846084595,
+        -0.308365136384964,
+        0.29443687200546265
+      ],
+      "rankings": {
+        "lexical": [
+          5
+        ],
+        "lexical+train-aliases": [
+          5
+        ],
+        "learned-before-cutoff": [
+          5,
+          1,
+          0,
+          2,
+          4,
+          3
+        ],
+        "learned-after-cutoff": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "calendar-5-2",
+      "query": "call off appointment",
+      "kind": "semantic-only",
+      "scores": [
+        -0.24019168317317963,
+        -0.11154842376708984,
+        -0.09855075180530548,
+        -0.1520041525363922,
+        -0.18862636387348175,
+        0.5979932546615601
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "learned-after-cutoff": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "calendar-5-3",
+      "query": "remove scheduled gathering",
+      "kind": "semantic-only",
+      "scores": [
+        0.07596050202846527,
+        -0.1877344846725464,
+        0.07447899878025055,
+        -0.00971381738781929,
+        -0.11611045897006989,
+        0.4234902262687683
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          0,
+          2,
+          3,
+          4,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-5-4",
+      "query": "stop meeting",
+      "kind": "semantic-only",
+      "scores": [
+        -0.2724422812461853,
+        -0.34077537059783936,
+        0.269077867269516,
+        0.00424305722117424,
+        0.4851973354816437,
+        0.5239484310150146
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          5,
+          4,
+          2,
+          3,
+          0,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-0",
+      "query": "xqzv calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.16742275655269623,
+        -0.2277548909187317,
+        0.12874384224414825,
+        -0.18251101672649384,
+        0.28176212310791016,
+        -0.1338517963886261
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          2,
+          5,
+          0,
+          3,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-1",
+      "query": "purple dinosaur calendar",
+      "kind": "no-match",
+      "scores": [
+        0.058365508913993835,
+        -0.27901479601860046,
+        0.067481130361557,
+        -0.23824308812618256,
+        0.08166824281215668,
+        -0.3095761239528656
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          2,
+          0,
+          3,
+          1,
+          5
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-2",
+      "query": "ocean temperature calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.5377073287963867,
+        0.1667167991399765,
+        -0.4429897964000702,
+        0.18847203254699707,
+        0.03176932781934738,
+        -0.38957348465919495
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          3,
+          1,
+          4,
+          5,
+          2,
+          0
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-3",
+      "query": "banana bread recipe calendar",
+      "kind": "no-match",
+      "scores": [
+        0.5641095638275146,
+        -0.21975022554397583,
+        0.24296791851520538,
+        -0.15381628274917603,
+        -0.3396592438220978,
+        0.004773184657096863
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          0,
+          2,
+          5,
+          3,
+          1,
+          4
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-4",
+      "query": "lunar spacecraft calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.12001140415668488,
+        -0.33907586336135864,
+        0.39373546838760376,
+        -0.12217935919761658,
+        0.2896761894226074,
+        0.3273606598377228
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          2,
+          5,
+          4,
+          0,
+          3,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-5",
+      "query": "zzzxq calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.18130198121070862,
+        0.08186353743076324,
+        0.05779186636209488,
+        -0.1579175591468811,
+        0.46016499400138855,
+        -0.5671898722648621
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          1,
+          2,
+          3,
+          0,
+          5
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-6",
+      "query": "dancing penguin calendar",
+      "kind": "no-match",
+      "scores": [
+        0.1432616114616394,
+        0.010702095925807953,
+        -0.2526808977127075,
+        -0.27236074209213257,
+        0.2781578302383423,
+        0.03021036833524704
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          0,
+          5,
+          1,
+          2,
+          3
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-7",
+      "query": "volcano depth calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.25326240062713623,
+        -0.26066675782203674,
+        0.1664516031742096,
+        -0.025915205478668213,
+        0.5646196603775024,
+        0.22547996044158936
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          5,
+          2,
+          3,
+          0,
+          1
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-8",
+      "query": "zebra habitat calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.25278449058532715,
+        -0.0228627547621727,
+        -0.32429248094558716,
+        -0.10207067430019379,
+        0.47417187690734863,
+        0.07652076333761215
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          5,
+          1,
+          3,
+          0,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    },
+    {
+      "id": "calendar-none-9",
+      "query": "solar eclipse calendar",
+      "kind": "no-match",
+      "scores": [
+        -0.12450604140758514,
+        0.0901569128036499,
+        -0.21691757440567017,
+        -0.16291818022727966,
+        0.32363399863243103,
+        0.08535885065793991
+      ],
+      "rankings": {
+        "lexical": [],
+        "lexical+train-aliases": [],
+        "learned-before-cutoff": [
+          4,
+          1,
+          5,
+          0,
+          3,
+          2
+        ],
+        "learned-after-cutoff": []
+      }
+    }
+  ]
+}

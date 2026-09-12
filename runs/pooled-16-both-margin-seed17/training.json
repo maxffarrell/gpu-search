@@ -1,0 +1,102 @@
+{
+  "architecture": "pooled",
+  "dimension": 16,
+  "family": "both",
+  "loss": "margin",
+  "margin": 0.2,
+  "seed": 17,
+  "configuration": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architectures": [
+      "pooled",
+      "projected"
+    ],
+    "epochs": 100,
+    "patience": 10,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "temperature": 0.15,
+    "batch_size": 128,
+    "clip_norm": 1.0
+  },
+  "actualBatchSize": 90,
+  "bestDevSemanticNdcg5BeforeCutoff": 0.5342788045880584,
+  "epochs": 13,
+  "trainingSeconds": 0.25131954200332984,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.3352826237678528,
+      "devSemanticNdcg5BeforeCutoff": 0.5288811173097743
+    },
+    {
+      "epoch": 2,
+      "loss": 0.17319445312023163,
+      "devSemanticNdcg5BeforeCutoff": 0.5149922284208854
+    },
+    {
+      "epoch": 3,
+      "loss": 0.07794405519962311,
+      "devSemanticNdcg5BeforeCutoff": 0.5342788045880584
+    },
+    {
+      "epoch": 4,
+      "loss": 0.02202071063220501,
+      "devSemanticNdcg5BeforeCutoff": 0.5155356516877723
+    },
+    {
+      "epoch": 5,
+      "loss": 0.004355930257588625,
+      "devSemanticNdcg5BeforeCutoff": 0.5052837003980906
+    },
+    {
+      "epoch": 6,
+      "loss": 0.0014895180938765407,
+      "devSemanticNdcg5BeforeCutoff": 0.47679759786787496
+    },
+    {
+      "epoch": 7,
+      "loss": 0.00038119289092719555,
+      "devSemanticNdcg5BeforeCutoff": 0.4782292890101141
+    },
+    {
+      "epoch": 8,
+      "loss": 0.00022477077436633408,
+      "devSemanticNdcg5BeforeCutoff": 0.45359448880915465
+    },
+    {
+      "epoch": 9,
+      "loss": 0.0,
+      "devSemanticNdcg5BeforeCutoff": 0.45359448880915465
+    },
+    {
+      "epoch": 10,
+      "loss": 0.0003013248206116259,
+      "devSemanticNdcg5BeforeCutoff": 0.43309058622979124
+    },
+    {
+      "epoch": 11,
+      "loss": 0.0,
+      "devSemanticNdcg5BeforeCutoff": 0.4350162373944192
+    },
+    {
+      "epoch": 12,
+      "loss": 0.00031384098110720515,
+      "devSemanticNdcg5BeforeCutoff": 0.43623356380660955
+    },
+    {
+      "epoch": 13,
+      "loss": 8.497420640196651e-05,
+      "devSemanticNdcg5BeforeCutoff": 0.44505382395405213
+    }
+  ],
+  "framework": "mlx 0.31.1",
+  "device": "Device(gpu, 0)",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "dataset": "agent-authored synthetic; no reviewed judgments",
+  "status": "experimental checkpoint; not selected for deployment"
+}

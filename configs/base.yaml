@@ -1,0 +1,9 @@
+seeds: [17, 29, 43]
+architectures: [pooled, projected]
+epochs: 100
+patience: 10
+learning_rate: 0.003
+weight_decay: 0.0001
+temperature: 0.15
+batch_size: 128
+clip_norm: 1.0

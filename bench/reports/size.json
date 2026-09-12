@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-09-12T20:49:38.659Z",
+  "node": "v26.8.1",
+  "esbuild": "0.27.2",
+  "compression": "Node zlib; gzip level9; Brotli quality11 window22; each served resource separately",
+  "library": [
+    {
+      "resource": "core/index.js",
+      "raw": 4537,
+      "gzip": 2071,
+      "brotli": 1855
+    },
+    {
+      "resource": "core/lexical.js",
+      "raw": 4577,
+      "gzip": 2086,
+      "brotli": 1867
+    }
+  ],
+  "demo": [
+    {
+      "resource": "apps/demo/dist/assets/index-BTSLloiu.css",
+      "raw": 8381,
+      "gzip": 2570,
+      "brotli": 2178
+    },
+    {
+      "resource": "apps/demo/dist/assets/index-rUamBZJC.js",
+      "raw": 14306,
+      "gzip": 5498,
+      "brotli": 4703
+    },
+    {
+      "resource": "apps/demo/dist/favicon.svg",
+      "raw": 275,
+      "gzip": 193,
+      "brotli": 168
+    },
+    {
+      "resource": "apps/demo/dist/index.html",
+      "raw": 707,
+      "gzip": 418,
+      "brotli": 267
+    }
+  ],
+  "demoTotals": {
+    "raw": 23669,
+    "gzip": 8679,
+    "brotli": 7316
+  },
+  "semantic": "Not shipped: no model passed release gates",
+  "webgpu": "Not shipped: semantic feasibility precedes GPU optimization",
+  "sourceMaps": "Not built or served"
+}

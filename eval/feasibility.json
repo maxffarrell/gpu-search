@@ -1,0 +1,403 @@
+{
+  "status": "STOP: no release model selected; unreviewed synthetic data cannot establish release quality",
+  "device": "Apple M4 Max",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "mlx": "0.31.1",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "trainCount": 120,
+  "devCount": 80,
+  "devSemanticCount": 36,
+  "devNoMatchCount": 20,
+  "reservedSyntheticTestCount": 40,
+  "testOpenedForScoring": false,
+  "humanReviewedCount": 0,
+  "baseline": {
+    "overall": {
+      "count": 80,
+      "relevantCount": 60,
+      "noMatchCount": 20,
+      "ndcg5": 0.4,
+      "coverage": 0.4,
+      "noMatchAnyRate": 0.0,
+      "noMatchSemanticRate": 0.0,
+      "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+      "recall1": 0.4,
+      "recall3": 0.4,
+      "recall5": 0.4,
+      "mrr": 0.4
+    },
+    "semanticOnly": {
+      "count": 36,
+      "relevantCount": 36,
+      "noMatchCount": 0,
+      "ndcg5": 0.0,
+      "coverage": 0.0,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+      "recall1": 0.0,
+      "recall3": 0.0,
+      "recall5": 0.0,
+      "mrr": 0.0
+    }
+  },
+  "charTfidf": {
+    "fit": "train candidate labels only; unseen grams use smoothed zero document frequency; original implementation",
+    "cutoff": 0.09586715595281968,
+    "overall": {
+      "count": 80,
+      "relevantCount": 60,
+      "noMatchCount": 20,
+      "ndcg5": 0.48769765845238194,
+      "coverage": 0.7,
+      "noMatchAnyRate": 0.05,
+      "noMatchSemanticRate": 0.05,
+      "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+      "recall1": 0.4666666666666667,
+      "recall3": 0.5,
+      "recall5": 0.5,
+      "mrr": 0.48333333333333334
+    },
+    "semanticOnly": {
+      "count": 36,
+      "relevantCount": 36,
+      "noMatchCount": 0,
+      "ndcg5": 0.14616276408730322,
+      "coverage": 0.5,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "ndcgPolicy": "Queries with at least one grade>=2; current synthetic corpus uses grades 0 and 3 only",
+      "recall1": 0.1111111111111111,
+      "recall3": 0.16666666666666666,
+      "recall5": 0.16666666666666666,
+      "mrr": 0.1388888888888889
+    }
+  },
+  "experiments": [
+    {
+      "name": "pooled-16-both-contrastive-seed17",
+      "epochs": 11,
+      "seconds": 0.49391583300894126,
+      "semanticBefore": 0.5221012021337488,
+      "semanticAfter": 0.08333333333333333,
+      "semanticCoverage": 0.1111111111111111,
+      "overall": 0.45,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.49103158712387085,
+      "delta": 0.08333333333333333,
+      "bootstrap95": [
+        0.0,
+        0.19444444444444445
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-both-contrastive-seed29",
+      "epochs": 12,
+      "seconds": 0.19772612501401454,
+      "semanticBefore": 0.5577607832586895,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.0,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.6058974266052246,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-both-contrastive-seed43",
+      "epochs": 14,
+      "seconds": 0.2286690000037197,
+      "semanticBefore": 0.6056639418344949,
+      "semanticAfter": 0.027777777777777776,
+      "semanticCoverage": 0.08333333333333333,
+      "overall": 0.4166666666666667,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.558872401714325,
+      "delta": 0.027777777777777776,
+      "bootstrap95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "projected-16-both-contrastive-seed17",
+      "epochs": 11,
+      "seconds": 0.5081825419911183,
+      "semanticBefore": 0.5903928250478647,
+      "semanticAfter": 0.027777777777777776,
+      "semanticCoverage": 0.05555555555555555,
+      "overall": 0.4166666666666667,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.8100947141647339,
+      "delta": 0.027777777777777776,
+      "bootstrap95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "projected-16-both-contrastive-seed29",
+      "epochs": 13,
+      "seconds": 0.22459333299775608,
+      "semanticBefore": 0.5361549925081887,
+      "semanticAfter": 0.027777777777777776,
+      "semanticCoverage": 0.027777777777777776,
+      "overall": 0.4166666666666667,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.8779274225234985,
+      "delta": 0.027777777777777776,
+      "bootstrap95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "projected-16-both-contrastive-seed43",
+      "epochs": 16,
+      "seconds": 0.2733263339905534,
+      "semanticBefore": 0.576783531451316,
+      "semanticAfter": 0.027777777777777776,
+      "semanticCoverage": 0.1388888888888889,
+      "overall": 0.4166666666666667,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.7765603065490723,
+      "delta": 0.027777777777777776,
+      "bootstrap95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-both-margin-seed17",
+      "epochs": 13,
+      "seconds": 0.25131954200332984,
+      "semanticBefore": 0.5342788045880584,
+      "semanticAfter": 0.05555555555555555,
+      "semanticCoverage": 0.05555555555555555,
+      "overall": 0.43333333333333335,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.48956453800201416,
+      "delta": 0.05555555555555555,
+      "bootstrap95": [
+        0.0,
+        0.1388888888888889
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "projected-24-both-contrastive-seed17",
+      "epochs": 13,
+      "seconds": 0.22352891700575128,
+      "semanticBefore": 0.512672269403294,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.027777777777777776,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.8224481344223022,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-word-contrastive-seed17",
+      "epochs": 11,
+      "seconds": 0.18406291599967517,
+      "semanticBefore": 0.4993920530974173,
+      "semanticAfter": 0.08333333333333333,
+      "semanticCoverage": 0.1388888888888889,
+      "overall": 0.45,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.4938524067401886,
+      "delta": 0.08333333333333333,
+      "bootstrap95": [
+        0.0,
+        0.19444444444444445
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-char-contrastive-seed17",
+      "epochs": 11,
+      "seconds": 0.1889949590258766,
+      "semanticBefore": 0.5223306085011615,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.1111111111111111,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.5776910781860352,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-both-margin-seed29",
+      "epochs": 12,
+      "seconds": 0.19997037498978898,
+      "semanticBefore": 0.5483318505282345,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.0,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.612489640712738,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "projected-24-both-contrastive-seed29",
+      "epochs": 15,
+      "seconds": 0.2560992499929853,
+      "semanticBefore": 0.5532513638557575,
+      "semanticAfter": 0.08333333333333333,
+      "semanticCoverage": 0.3055555555555556,
+      "overall": 0.45,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.6754753589630127,
+      "delta": 0.08333333333333333,
+      "bootstrap95": [
+        0.0,
+        0.19444444444444445
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-word-contrastive-seed29",
+      "epochs": 11,
+      "seconds": 0.1760904999973718,
+      "semanticBefore": 0.5870354827409976,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.027777777777777776,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.6087263226509094,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-char-contrastive-seed29",
+      "epochs": 11,
+      "seconds": 0.17555904199252836,
+      "semanticBefore": 0.4946022939678816,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.16666666666666666,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.6338338255882263,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-both-margin-seed43",
+      "epochs": 14,
+      "seconds": 0.22888350000721402,
+      "semanticBefore": 0.6105182058458922,
+      "semanticAfter": 0.027777777777777776,
+      "semanticCoverage": 0.05555555555555555,
+      "overall": 0.4166666666666667,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.5646197199821472,
+      "delta": 0.027777777777777776,
+      "bootstrap95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "projected-24-both-contrastive-seed43",
+      "epochs": 14,
+      "seconds": 0.2440211249922868,
+      "semanticBefore": 0.5304275022588025,
+      "semanticAfter": 0.017525826488096044,
+      "semanticCoverage": 0.19444444444444445,
+      "overall": 0.41051549589285763,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.6737164258956909,
+      "delta": 0.017525826488096044,
+      "bootstrap95": [
+        0.0,
+        0.052577479464288125
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-word-contrastive-seed43",
+      "epochs": 13,
+      "seconds": 0.20842737500788644,
+      "semanticBefore": 0.5842725158140427,
+      "semanticAfter": 0.0,
+      "semanticCoverage": 0.027777777777777776,
+      "overall": 0.4,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.5937535166740417,
+      "delta": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "provisionalNumericGate": false
+    },
+    {
+      "name": "pooled-16-char-contrastive-seed43",
+      "epochs": 36,
+      "seconds": 0.6034347910026554,
+      "semanticBefore": 0.6243418641724898,
+      "semanticAfter": 0.05555555555555555,
+      "semanticCoverage": 0.08333333333333333,
+      "overall": 0.43333333333333335,
+      "noMatchAnyRate": 0.05,
+      "cutoff": 0.6652824282646179,
+      "delta": 0.05555555555555555,
+      "bootstrap95": [
+        0.0,
+        0.1388888888888889
+      ],
+      "provisionalNumericGate": false
+    }
+  ],
+  "unrun": [
+    "general embedding reference (no pinned local teacher)",
+    "human reviewed held-out evaluation",
+    "distillation",
+    "QAT/int6 architecture optimization stopped at feasibility gate",
+    "real product-source data curation",
+    "alias/context composition ablations (dataset contains labels only)"
+  ],
+  "limitations": [
+    "Small synthetic menus, one positive each; not representative of real menus or multi-positive judgment quality",
+    "Development used for early stopping, cutoff and diagnostics; confidence intervals are descriptive after model selection",
+    "Train alias dictionary has no covered dev labels, so lexical+alias equals lexical on these disjoint domains",
+    "No-match strings are synthetic and easy; a 5% development rate is not evidence of calibrated deployment behavior",
+    "Projected model failures and low post-cutoff coverage suggest inadequate data, not proof architecture cannot work"
+  ]
+}

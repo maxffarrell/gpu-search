@@ -1,0 +1,217 @@
+{
+  "architecture": "pooled",
+  "dimension": 16,
+  "family": "char",
+  "loss": "contrastive",
+  "margin": null,
+  "seed": 43,
+  "configuration": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architectures": [
+      "pooled",
+      "projected"
+    ],
+    "epochs": 100,
+    "patience": 10,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "temperature": 0.15,
+    "batch_size": 128,
+    "clip_norm": 1.0
+  },
+  "actualBatchSize": 90,
+  "bestDevSemanticNdcg5BeforeCutoff": 0.6243418641724898,
+  "epochs": 36,
+  "trainingSeconds": 0.6034347910026554,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.4534143209457397,
+      "devSemanticNdcg5BeforeCutoff": 0.5360545959044996
+    },
+    {
+      "epoch": 2,
+      "loss": 0.5488640666007996,
+      "devSemanticNdcg5BeforeCutoff": 0.5374368238022407
+    },
+    {
+      "epoch": 3,
+      "loss": 0.22130186855793,
+      "devSemanticNdcg5BeforeCutoff": 0.5647055999202658
+    },
+    {
+      "epoch": 4,
+      "loss": 0.12306686490774155,
+      "devSemanticNdcg5BeforeCutoff": 0.5955116427142385
+    },
+    {
+      "epoch": 5,
+      "loss": 0.0858304500579834,
+      "devSemanticNdcg5BeforeCutoff": 0.5972874340306793
+    },
+    {
+      "epoch": 6,
+      "loss": 0.06303733587265015,
+      "devSemanticNdcg5BeforeCutoff": 0.5796469137357941
+    },
+    {
+      "epoch": 7,
+      "loss": 0.047145865857601166,
+      "devSemanticNdcg5BeforeCutoff": 0.5674693112814844
+    },
+    {
+      "epoch": 8,
+      "loss": 0.037484779953956604,
+      "devSemanticNdcg5BeforeCutoff": 0.5897347079741887
+    },
+    {
+      "epoch": 9,
+      "loss": 0.03102690912783146,
+      "devSemanticNdcg5BeforeCutoff": 0.5880234215396095
+    },
+    {
+      "epoch": 10,
+      "loss": 0.026075148954987526,
+      "devSemanticNdcg5BeforeCutoff": 0.5975520064394898
+    },
+    {
+      "epoch": 11,
+      "loss": 0.022931480780243874,
+      "devSemanticNdcg5BeforeCutoff": 0.5992632928740691
+    },
+    {
+      "epoch": 12,
+      "loss": 0.020760316401720047,
+      "devSemanticNdcg5BeforeCutoff": 0.5885173815619984
+    },
+    {
+      "epoch": 13,
+      "loss": 0.01882181130349636,
+      "devSemanticNdcg5BeforeCutoff": 0.5902286679965776
+    },
+    {
+      "epoch": 14,
+      "loss": 0.01696348935365677,
+      "devSemanticNdcg5BeforeCutoff": 0.6021919057208386
+    },
+    {
+      "epoch": 15,
+      "loss": 0.015286074951291084,
+      "devSemanticNdcg5BeforeCutoff": 0.6021919057208386
+    },
+    {
+      "epoch": 16,
+      "loss": 0.013841756619513035,
+      "devSemanticNdcg5BeforeCutoff": 0.6021919057208386
+    },
+    {
+      "epoch": 17,
+      "loss": 0.012613514438271523,
+      "devSemanticNdcg5BeforeCutoff": 0.6009745793086483
+    },
+    {
+      "epoch": 18,
+      "loss": 0.01156640611588955,
+      "devSemanticNdcg5BeforeCutoff": 0.6075895929991229
+    },
+    {
+      "epoch": 19,
+      "loss": 0.010669687762856483,
+      "devSemanticNdcg5BeforeCutoff": 0.5956263552748619
+    },
+    {
+      "epoch": 20,
+      "loss": 0.009898900985717773,
+      "devSemanticNdcg5BeforeCutoff": 0.5956263552748619
+    },
+    {
+      "epoch": 21,
+      "loss": 0.009234418161213398,
+      "devSemanticNdcg5BeforeCutoff": 0.6070956329767339
+    },
+    {
+      "epoch": 22,
+      "loss": 0.008659902960062027,
+      "devSemanticNdcg5BeforeCutoff": 0.6083129593889242
+    },
+    {
+      "epoch": 23,
+      "loss": 0.008161566220223904,
+      "devSemanticNdcg5BeforeCutoff": 0.6083129593889242
+    },
+    {
+      "epoch": 24,
+      "loss": 0.007727602031081915,
+      "devSemanticNdcg5BeforeCutoff": 0.6083129593889242
+    },
+    {
+      "epoch": 25,
+      "loss": 0.007348108571022749,
+      "devSemanticNdcg5BeforeCutoff": 0.618564910678606
+    },
+    {
+      "epoch": 26,
+      "loss": 0.00701468251645565,
+      "devSemanticNdcg5BeforeCutoff": 0.6243418641724898
+    },
+    {
+      "epoch": 27,
+      "loss": 0.006720378994941711,
+      "devSemanticNdcg5BeforeCutoff": 0.6243418641724898
+    },
+    {
+      "epoch": 28,
+      "loss": 0.006459320895373821,
+      "devSemanticNdcg5BeforeCutoff": 0.6243418641724898
+    },
+    {
+      "epoch": 29,
+      "loss": 0.006226650904864073,
+      "devSemanticNdcg5BeforeCutoff": 0.6243418641724898
+    },
+    {
+      "epoch": 30,
+      "loss": 0.006018294487148523,
+      "devSemanticNdcg5BeforeCutoff": 0.6135959528604192
+    },
+    {
+      "epoch": 31,
+      "loss": 0.005830944981426001,
+      "devSemanticNdcg5BeforeCutoff": 0.6135959528604192
+    },
+    {
+      "epoch": 32,
+      "loss": 0.005661593750119209,
+      "devSemanticNdcg5BeforeCutoff": 0.5997070639715303
+    },
+    {
+      "epoch": 33,
+      "loss": 0.005508036352694035,
+      "devSemanticNdcg5BeforeCutoff": 0.5997070639715303
+    },
+    {
+      "epoch": 34,
+      "loss": 0.005368089769035578,
+      "devSemanticNdcg5BeforeCutoff": 0.5997070639715303
+    },
+    {
+      "epoch": 35,
+      "loss": 0.005240143742412329,
+      "devSemanticNdcg5BeforeCutoff": 0.5977814128069023
+    },
+    {
+      "epoch": 36,
+      "loss": 0.005122714675962925,
+      "devSemanticNdcg5BeforeCutoff": 0.5977814128069023
+    }
+  ],
+  "framework": "mlx 0.31.1",
+  "device": "Device(gpu, 0)",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "dataset": "agent-authored synthetic; no reviewed judgments",
+  "status": "experimental checkpoint; not selected for deployment"
+}

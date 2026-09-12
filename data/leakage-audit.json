@@ -1,0 +1,33 @@
+{
+  "status": "synthetic feasibility only; not reviewed or sealed generalization evidence",
+  "counts": {
+    "train": 120,
+    "dev": 80,
+    "test": 40
+  },
+  "reviewedCount": 0,
+  "families": {
+    "train": [
+      "workspace",
+      "files",
+      "projects"
+    ],
+    "dev": [
+      "commerce",
+      "calendar"
+    ],
+    "test": [
+      "publishing"
+    ]
+  },
+  "queryOverlap": {
+    "train/dev": [],
+    "train/test": [],
+    "dev/test": []
+  },
+  "encoderTruncations": {
+    "train": 0,
+    "dev": 0,
+    "test": 0
+  }
+}

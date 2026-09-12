@@ -1,0 +1,1 @@
+{"source":"User PRD v1.1 proposed gates, copied without modification before any final test scoring","semanticNdcg5Delta":0.05,"pairedBootstrap95LowerMustExceed":0,"maximumOverallRegression":0.01,"maximumNoMatchSemanticRate":0.05,"maximumQuantizationNdcgLoss":0.01,"reviewedFinalTestRequired":true,"currentStatus":"failed development pilot; final evaluation not run"}

@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-09-12T20:48:26.882Z",
+  "browser": "153.0.8010.36",
+  "checks": [
+    "exact label",
+    "alias vs labels-only",
+    "no-match",
+    "invalid JSON",
+    "safe label text",
+    "390px containment",
+    "dark mode",
+    "no page errors",
+    "zero requests after initial asset load"
+  ],
+  "requests": [],
+  "errors": []
+}

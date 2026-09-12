@@ -1,0 +1,26 @@
+{
+  "name": "gpu-search-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.4.1",
+  "scripts": {
+    "dev": "vite apps/demo --host 127.0.0.1",
+    "build": "vite build apps/demo && tsc -p tsconfig.lib.json",
+    "check": "tsc --noEmit",
+    "test:contracts": "node --import tsx --test packages/core/test/*.test.ts",
+    "test:parity": "node --import tsx --test fixtures/*.test.ts",
+    "bench:size": "node --import tsx bench/size.ts",
+    "bench:browser": "node --import tsx bench/browser.ts",
+    "release:verify": "pnpm check && pnpm test:contracts && pnpm test:parity && pnpm build && pnpm bench:size",
+    "test:demo": "node --import tsx bench/demo-check.ts"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "tsx": "4.21.0",
+    "esbuild": "0.27.2",
+    "playwright": "1.58.2"
+  }
+}

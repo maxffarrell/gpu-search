@@ -1,0 +1,14 @@
+{
+  "word": {
+    "uniqueFeaturePreimages": 149,
+    "occupiedBuckets": 139,
+    "collidingDistinctFeaturesBeyondFirst": 10,
+    "bucketsWithMultipleFeatures": 10
+  },
+  "char": {
+    "uniqueFeaturePreimages": 1421,
+    "occupiedBuckets": 795,
+    "collidingDistinctFeaturesBeyondFirst": 626,
+    "bucketsWithMultipleFeatures": 405
+  }
+}

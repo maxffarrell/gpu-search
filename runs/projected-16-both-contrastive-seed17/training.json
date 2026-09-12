@@ -1,0 +1,92 @@
+{
+  "architecture": "projected",
+  "dimension": 16,
+  "family": "both",
+  "loss": "contrastive",
+  "margin": null,
+  "seed": 17,
+  "configuration": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architectures": [
+      "pooled",
+      "projected"
+    ],
+    "epochs": 100,
+    "patience": 10,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "temperature": 0.15,
+    "batch_size": 128,
+    "clip_norm": 1.0
+  },
+  "actualBatchSize": 90,
+  "bestDevSemanticNdcg5BeforeCutoff": 0.5903928250478647,
+  "epochs": 11,
+  "trainingSeconds": 0.5081825419911183,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.1586389541625977,
+      "devSemanticNdcg5BeforeCutoff": 0.5903928250478647
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1740368604660034,
+      "devSemanticNdcg5BeforeCutoff": 0.5726526338297199
+    },
+    {
+      "epoch": 3,
+      "loss": 0.6991119384765625,
+      "devSemanticNdcg5BeforeCutoff": 0.5558007104869274
+    },
+    {
+      "epoch": 4,
+      "loss": 0.3701288104057312,
+      "devSemanticNdcg5BeforeCutoff": 0.5325825597908431
+    },
+    {
+      "epoch": 5,
+      "loss": 0.15210972726345062,
+      "devSemanticNdcg5BeforeCutoff": 0.5405798013790589
+    },
+    {
+      "epoch": 6,
+      "loss": 0.06578820198774338,
+      "devSemanticNdcg5BeforeCutoff": 0.5614479285366583
+    },
+    {
+      "epoch": 7,
+      "loss": 0.029560212045907974,
+      "devSemanticNdcg5BeforeCutoff": 0.5298188484296246
+    },
+    {
+      "epoch": 8,
+      "loss": 0.018131695687770844,
+      "devSemanticNdcg5BeforeCutoff": 0.534673112441022
+    },
+    {
+      "epoch": 9,
+      "loss": 0.014144924469292164,
+      "devSemanticNdcg5BeforeCutoff": 0.5278931972649966
+    },
+    {
+      "epoch": 10,
+      "loss": 0.0122151430696249,
+      "devSemanticNdcg5BeforeCutoff": 0.5299335422364138
+    },
+    {
+      "epoch": 11,
+      "loss": 0.011142953298985958,
+      "devSemanticNdcg5BeforeCutoff": 0.5311508686486042
+    }
+  ],
+  "framework": "mlx 0.31.1",
+  "device": "Device(gpu, 0)",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "dataset": "agent-authored synthetic; no reviewed judgments",
+  "status": "experimental checkpoint; not selected for deployment"
+}

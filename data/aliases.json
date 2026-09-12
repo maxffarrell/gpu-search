@@ -1,0 +1,92 @@
+{
+  "Members": [
+    "coworkers",
+    "people on my team",
+    "team directory"
+  ],
+  "Billing": [
+    "payments",
+    "payment history",
+    "money owed"
+  ],
+  "Profile": [
+    "my information",
+    "personal details",
+    "about me"
+  ],
+  "API Keys": [
+    "developer credentials",
+    "access tokens",
+    "integration secrets"
+  ],
+  "Notifications": [
+    "alerts",
+    "messages to me",
+    "email notices"
+  ],
+  "Security": [
+    "protect my login",
+    "sign in protection",
+    "password settings"
+  ],
+  "Upload": [
+    "send files",
+    "add a document",
+    "put files online"
+  ],
+  "Download": [
+    "save locally",
+    "get a copy",
+    "retrieve files"
+  ],
+  "Archive": [
+    "store for later",
+    "hide old items",
+    "retire documents"
+  ],
+  "Delete": [
+    "remove forever",
+    "erase a file",
+    "discard item"
+  ],
+  "Sharing": [
+    "let others view",
+    "collaborator access",
+    "send to colleague"
+  ],
+  "Versions": [
+    "previous revisions",
+    "older copies",
+    "change history"
+  ],
+  "Create Project": [
+    "start new work",
+    "begin a project",
+    "add initiative"
+  ],
+  "Delete Project": [
+    "remove project",
+    "erase initiative",
+    "discard project"
+  ],
+  "Enable Automation": [
+    "turn on rules",
+    "activate workflow",
+    "start automatic tasks"
+  ],
+  "Disable Automation": [
+    "turn off rules",
+    "deactivate workflow",
+    "stop automatic tasks"
+  ],
+  "Import Data": [
+    "bring records in",
+    "load external records",
+    "ingest data"
+  ],
+  "Export Data": [
+    "take records out",
+    "download records",
+    "extract data"
+  ]
+}

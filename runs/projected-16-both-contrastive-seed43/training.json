@@ -1,0 +1,117 @@
+{
+  "architecture": "projected",
+  "dimension": 16,
+  "family": "both",
+  "loss": "contrastive",
+  "margin": null,
+  "seed": 43,
+  "configuration": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architectures": [
+      "pooled",
+      "projected"
+    ],
+    "epochs": 100,
+    "patience": 10,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "temperature": 0.15,
+    "batch_size": 128,
+    "clip_norm": 1.0
+  },
+  "actualBatchSize": 90,
+  "bestDevSemanticNdcg5BeforeCutoff": 0.576783531451316,
+  "epochs": 16,
+  "trainingSeconds": 0.2733263339905534,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.571448564529419,
+      "devSemanticNdcg5BeforeCutoff": 0.5485117936511492
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1871272325515747,
+      "devSemanticNdcg5BeforeCutoff": 0.5428194694431612
+    },
+    {
+      "epoch": 3,
+      "loss": 0.7856453061103821,
+      "devSemanticNdcg5BeforeCutoff": 0.5657429832095414
+    },
+    {
+      "epoch": 4,
+      "loss": 0.4592852294445038,
+      "devSemanticNdcg5BeforeCutoff": 0.5413877783009221
+    },
+    {
+      "epoch": 5,
+      "loss": 0.23583947122097015,
+      "devSemanticNdcg5BeforeCutoff": 0.5275139310493969
+    },
+    {
+      "epoch": 6,
+      "loss": 0.10725180804729462,
+      "devSemanticNdcg5BeforeCutoff": 0.576783531451316
+    },
+    {
+      "epoch": 7,
+      "loss": 0.04601798579096794,
+      "devSemanticNdcg5BeforeCutoff": 0.5640969273372536
+    },
+    {
+      "epoch": 8,
+      "loss": 0.02481529489159584,
+      "devSemanticNdcg5BeforeCutoff": 0.5236475870827771
+    },
+    {
+      "epoch": 9,
+      "loss": 0.021511321887373924,
+      "devSemanticNdcg5BeforeCutoff": 0.4938294643335822
+    },
+    {
+      "epoch": 10,
+      "loss": 0.020082945004105568,
+      "devSemanticNdcg5BeforeCutoff": 0.4541034904689073
+    },
+    {
+      "epoch": 11,
+      "loss": 0.01677154004573822,
+      "devSemanticNdcg5BeforeCutoff": 0.48563289965268147
+    },
+    {
+      "epoch": 12,
+      "loss": 0.013403458520770073,
+      "devSemanticNdcg5BeforeCutoff": 0.49224791334315604
+    },
+    {
+      "epoch": 13,
+      "loss": 0.011133967898786068,
+      "devSemanticNdcg5BeforeCutoff": 0.4886109757439489
+    },
+    {
+      "epoch": 14,
+      "loss": 0.009809223935008049,
+      "devSemanticNdcg5BeforeCutoff": 0.49224791334315604
+    },
+    {
+      "epoch": 15,
+      "loss": 0.008986346423625946,
+      "devSemanticNdcg5BeforeCutoff": 0.4732903957128209
+    },
+    {
+      "epoch": 16,
+      "loss": 0.008411481976509094,
+      "devSemanticNdcg5BeforeCutoff": 0.47714169804207684
+    }
+  ],
+  "framework": "mlx 0.31.1",
+  "device": "Device(gpu, 0)",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "dataset": "agent-authored synthetic; no reviewed judgments",
+  "status": "experimental checkpoint; not selected for deployment"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "synthetic-v1",
+  "type": "agent-authored synthetic",
+  "license": "MIT (original project fixtures)",
+  "reviewerStatus": "unreviewed",
+  "externalCorpora": [],
+  "teacher": null,
+  "script": "training/prepare.py",
+  "scriptSha256": "c8629a9c6de9c662cdfec557d47b0d10aeda1a240fa93a5c70865de4ae2a39a1",
+  "warning": "Concepts and relevance are illustrative guesses, not human judgments. No product-quality claim."
+}

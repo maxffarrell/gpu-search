@@ -1,0 +1,2690 @@
+[
+  {
+    "id": "commerce-0-0",
+    "query": "Customers",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "0"
+    ],
+    "aliasIds": [
+      "0"
+    ]
+  },
+  {
+    "id": "commerce-0-1",
+    "query": "Customerss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "0"
+    ],
+    "aliasIds": [
+      "0"
+    ]
+  },
+  {
+    "id": "commerce-0-2",
+    "query": "buyers",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-0-3",
+    "query": "people who bought",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-0-4",
+    "query": "client directory",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-1-0",
+    "query": "Orders",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "1"
+    ],
+    "aliasIds": [
+      "1"
+    ]
+  },
+  {
+    "id": "commerce-1-1",
+    "query": "Orderss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "1"
+    ],
+    "aliasIds": [
+      "1"
+    ]
+  },
+  {
+    "id": "commerce-1-2",
+    "query": "purchases",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-1-3",
+    "query": "things sold",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-1-4",
+    "query": "purchase history",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-2-0",
+    "query": "Refunds",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "2"
+    ],
+    "aliasIds": [
+      "2"
+    ]
+  },
+  {
+    "id": "commerce-2-1",
+    "query": "Refundss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "2"
+    ],
+    "aliasIds": [
+      "2"
+    ]
+  },
+  {
+    "id": "commerce-2-2",
+    "query": "give money back",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-2-3",
+    "query": "return payment",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-2-4",
+    "query": "reverse purchase",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-3-0",
+    "query": "Inventory",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "3"
+    ],
+    "aliasIds": [
+      "3"
+    ]
+  },
+  {
+    "id": "commerce-3-1",
+    "query": "Inventoryy",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "3"
+    ],
+    "aliasIds": [
+      "3"
+    ]
+  },
+  {
+    "id": "commerce-3-2",
+    "query": "stock levels",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-3-3",
+    "query": "available goods",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-3-4",
+    "query": "items on hand",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-4-0",
+    "query": "Discounts",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "4"
+    ],
+    "aliasIds": [
+      "4"
+    ]
+  },
+  {
+    "id": "commerce-4-1",
+    "query": "Discountss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "4"
+    ],
+    "aliasIds": [
+      "4"
+    ]
+  },
+  {
+    "id": "commerce-4-2",
+    "query": "price reductions",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-4-3",
+    "query": "coupons",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-4-4",
+    "query": "promotion codes",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-5-0",
+    "query": "Shipping",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "5"
+    ],
+    "aliasIds": [
+      "5"
+    ]
+  },
+  {
+    "id": "commerce-5-1",
+    "query": "Shippingg",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [
+      "5"
+    ],
+    "aliasIds": [
+      "5"
+    ]
+  },
+  {
+    "id": "commerce-5-2",
+    "query": "deliveries",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-5-3",
+    "query": "send parcels",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-5-4",
+    "query": "delivery settings",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-0",
+    "query": "xqzv commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-1",
+    "query": "purple dinosaur commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-2",
+    "query": "ocean temperature commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-3",
+    "query": "banana bread recipe commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-4",
+    "query": "lunar spacecraft commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-5",
+    "query": "zzzxq commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-6",
+    "query": "dancing penguin commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-7",
+    "query": "volcano depth commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-8",
+    "query": "zebra habitat commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "commerce-none-9",
+    "query": "solar eclipse commerce",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Customers"
+      },
+      {
+        "id": "1",
+        "label": "Orders"
+      },
+      {
+        "id": "2",
+        "label": "Refunds"
+      },
+      {
+        "id": "3",
+        "label": "Inventory"
+      },
+      {
+        "id": "4",
+        "label": "Discounts"
+      },
+      {
+        "id": "5",
+        "label": "Shipping"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-0-0",
+    "query": "Events",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "0"
+    ],
+    "aliasIds": [
+      "0"
+    ]
+  },
+  {
+    "id": "calendar-0-1",
+    "query": "Eventss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "0"
+    ],
+    "aliasIds": [
+      "0"
+    ]
+  },
+  {
+    "id": "calendar-0-2",
+    "query": "scheduled occasions",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-0-3",
+    "query": "appointments",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-0-4",
+    "query": "upcoming meetings",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-1-0",
+    "query": "Availability",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "1"
+    ],
+    "aliasIds": [
+      "1"
+    ]
+  },
+  {
+    "id": "calendar-1-1",
+    "query": "Availabilityy",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "1"
+    ],
+    "aliasIds": [
+      "1"
+    ]
+  },
+  {
+    "id": "calendar-1-2",
+    "query": "free time",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-1-3",
+    "query": "open slots",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-1-4",
+    "query": "when I can meet",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-2-0",
+    "query": "Reminders",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "2"
+    ],
+    "aliasIds": [
+      "2"
+    ]
+  },
+  {
+    "id": "calendar-2-1",
+    "query": "Reminderss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "2"
+    ],
+    "aliasIds": [
+      "2"
+    ]
+  },
+  {
+    "id": "calendar-2-2",
+    "query": "notify before meeting",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-2-3",
+    "query": "appointment alerts",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-2-4",
+    "query": "upcoming notices",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-3-0",
+    "query": "Time Zone",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "3"
+    ],
+    "aliasIds": [
+      "3"
+    ]
+  },
+  {
+    "id": "calendar-3-1",
+    "query": "Time Zonee",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "3"
+    ],
+    "aliasIds": [
+      "3"
+    ]
+  },
+  {
+    "id": "calendar-3-2",
+    "query": "local clock region",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-3-3",
+    "query": "regional time",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-3-4",
+    "query": "clock location",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-4-0",
+    "query": "Invite Guests",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "4"
+    ],
+    "aliasIds": [
+      "4"
+    ]
+  },
+  {
+    "id": "calendar-4-1",
+    "query": "Invite Guestss",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "4"
+    ],
+    "aliasIds": [
+      "4"
+    ]
+  },
+  {
+    "id": "calendar-4-2",
+    "query": "add attendees",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-4-3",
+    "query": "ask people to join",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-4-4",
+    "query": "bring participants",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-5-0",
+    "query": "Cancel Meeting",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "5"
+    ],
+    "aliasIds": [
+      "5"
+    ]
+  },
+  {
+    "id": "calendar-5-1",
+    "query": "Cancel Meetingg",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [
+      "5"
+    ],
+    "aliasIds": [
+      "5"
+    ]
+  },
+  {
+    "id": "calendar-5-2",
+    "query": "call off appointment",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-5-3",
+    "query": "remove scheduled gathering",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-5-4",
+    "query": "stop meeting",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-0",
+    "query": "xqzv calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-1",
+    "query": "purple dinosaur calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-2",
+    "query": "ocean temperature calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-3",
+    "query": "banana bread recipe calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-4",
+    "query": "lunar spacecraft calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-5",
+    "query": "zzzxq calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-6",
+    "query": "dancing penguin calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-7",
+    "query": "volcano depth calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-8",
+    "query": "zebra habitat calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "calendar-none-9",
+    "query": "solar eclipse calendar",
+    "candidates": [
+      {
+        "id": "0",
+        "label": "Events"
+      },
+      {
+        "id": "1",
+        "label": "Availability"
+      },
+      {
+        "id": "2",
+        "label": "Reminders"
+      },
+      {
+        "id": "3",
+        "label": "Time Zone"
+      },
+      {
+        "id": "4",
+        "label": "Invite Guests"
+      },
+      {
+        "id": "5",
+        "label": "Cancel Meeting"
+      }
+    ],
+    "lexicalIds": [],
+    "aliasIds": []
+  },
+  {
+    "id": "adversarial-fooBar",
+    "query": "fooBar",
+    "candidates": [
+      {
+        "id": "camel",
+        "label": "Foo Bar"
+      }
+    ],
+    "lexicalIds": [
+      "camel"
+    ],
+    "aliasIds": [
+      "camel"
+    ]
+  },
+  {
+    "id": "adversarial-foo-bar",
+    "query": "foo-bar",
+    "candidates": [
+      {
+        "id": "camel",
+        "label": "fooBar"
+      }
+    ],
+    "lexicalIds": [
+      "camel"
+    ],
+    "aliasIds": [
+      "camel"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  "pooled-16-both-contrastive-seed17",
+  "pooled-16-both-contrastive-seed29",
+  "pooled-16-both-contrastive-seed43",
+  "projected-16-both-contrastive-seed17",
+  "projected-16-both-contrastive-seed29",
+  "projected-16-both-contrastive-seed43",
+  "pooled-16-both-margin-seed17",
+  "projected-24-both-contrastive-seed17",
+  "pooled-16-word-contrastive-seed17",
+  "pooled-16-char-contrastive-seed17",
+  "pooled-16-both-margin-seed29",
+  "projected-24-both-contrastive-seed29",
+  "pooled-16-word-contrastive-seed29",
+  "pooled-16-char-contrastive-seed29",
+  "pooled-16-both-margin-seed43",
+  "projected-24-both-contrastive-seed43",
+  "pooled-16-word-contrastive-seed43",
+  "pooled-16-char-contrastive-seed43"
+]

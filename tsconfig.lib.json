@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","compilerOptions":{"noEmit":false,"allowImportingTsExtensions":false,"declaration":true,"outDir":"packages/core/dist","rootDir":"packages/core/src"},"include":["packages/core/src/**/*.ts"]}
