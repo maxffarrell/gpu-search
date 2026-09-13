@@ -23,7 +23,7 @@ GNOME contains 246 queries, including 222 without a relevant lexical match. The 
 
 The new model's nDCG gain over the previous model is 0.0688. A bootstrap grouped by documented destination sets gives a 95% interval of [0.0260, 0.1102]. This supports an improvement on this provider, not a population-wide or best-in-class claim. The split contains both seen and new normalized training queries, reported separately in the full evidence.
 
-With the existing calibration cutoff, the new model's semantic nDCG falls to 0.0063 and its top-five documented hit rate to 1.35%. These data contain no reviewed negative queries, so they cannot validate abstention. The demo deliberately exposes raw model retrieval and explains that scores are not confidence ratings.
+With the existing calibration cutoff, the new model's semantic nDCG falls to 0.0063 and its top-five documented hit rate to 1.35%. These data contain no reviewed negative queries, so they cannot validate abstention. Raw model retrieval remains available in the demo’s inspection panel. Main results prioritize lexical matches and only use explicitly labeled model suggestions when no lexical matches exist; this presentation does not change the measured model quality.
 
 ## Release decision and remaining work
 

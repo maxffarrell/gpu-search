@@ -49,7 +49,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-The demo lets you change the query and candidate menu, compare results, and choose Auto, Light, or Dark appearance.
+The demo lets you change the query and candidate menu and choose Auto, Light, or Dark appearance. Results prioritize text matches; when none match, real model inference supplies explicitly labeled experimental suggestions. Expand “Inspect raw model scores” to examine the model separately.
 
 **The learned search is experimental.** The library above provides deterministic text matching. The demo also runs a real, small trained model that tries to connect different wording with related destinations. It can make mistakes and show unrelated results; its scores are not confidence ratings. It runs on the CPU, and no WebGPU acceleration is claimed. This experiment is separate from the library's reliable matching rules.
 

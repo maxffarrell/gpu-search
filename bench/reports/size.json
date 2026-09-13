@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T20:07:38.037Z",
+  "generatedAt": "2026-09-13T23:38:50.914Z",
   "node": "v26.8.1",
   "esbuild": "0.27.2",
   "compression": "Node zlib; gzip level9; Brotli quality11 window22; each served resource separately",
@@ -19,16 +19,16 @@
   ],
   "demo": [
     {
-      "resource": "apps/demo/dist/assets/index-CR4yGIhu.js",
-      "raw": 19037,
-      "gzip": 7506,
-      "brotli": 6570
-    },
-    {
       "resource": "apps/demo/dist/assets/index-D2ZaEIKN.css",
       "raw": 4976,
       "gzip": 1649,
       "brotli": 1350
+    },
+    {
+      "resource": "apps/demo/dist/assets/index-kuYvwymI.js",
+      "raw": 19323,
+      "gzip": 7580,
+      "brotli": 6641
     },
     {
       "resource": "apps/demo/dist/assets/manifest-BZJbMuw1.json",
@@ -51,14 +51,14 @@
     {
       "resource": "apps/demo/dist/index.html",
       "raw": 711,
-      "gzip": 427,
-      "brotli": 270
+      "gzip": 424,
+      "brotli": 266
     }
   ],
   "demoTotals": {
-    "raw": 58906,
-    "gzip": 38414,
-    "brotli": 36773
+    "raw": 59192,
+    "gzip": 38485,
+    "brotli": 36840
   },
   "semantic": "Demo ships experimental pooled16 CPU inference, manifest and int8 weights; core library remains lexical by default. No validated cutoff.",
   "webgpu": "Not shipped: semantic feasibility precedes GPU optimization",

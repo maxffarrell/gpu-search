@@ -3,6 +3,7 @@ import { loadModel } from '../../../packages/model/runtime';
 import manifestUrl from '../../../packages/model/experiments/navigation-align0p5-seed29/manifest.json?url';
 import weightsUrl from '../../../packages/model/experiments/navigation-align0p5-seed29/weights.bin?url';
 import './style.css';
+import { searchResults } from './ranking';
 
 type Candidate = { id: string; label: string; aliases?: readonly string[]; context?: string };
 type Index = Awaited<ReturnType<typeof createIndex>>;
@@ -27,11 +28,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <p class="intro">Small, local search for software interfaces.</p>
       <label class="sr-only" for="query">Search candidates</label><div class="search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="query" type="search" value="coworkers" placeholder="Search…" autocomplete="off" spellcheck="false" /><kbd aria-hidden="true">/</kbd></div>
       <div class="examples"><span>Try</span><button data-query="profle">profle</button><button data-query="coworkers">coworkers</button><button data-query="my information">my information</button></div>
-      <div class="comparison"><section aria-labelledby="model-title"><h2 id="model-title">Model scores <span>CPU · cosine</span></h2><div id="model-results" class="results"></div></section><section aria-labelledby="lexical-title"><h2 id="lexical-title">Lexical <span>deterministic</span></h2><div id="lexical-results" class="results"></div></section></div>
+      <section aria-labelledby="search-title"><h2 id="search-title">Results <span>text matches first</span></h2><div id="lexical-results" class="results"></div></section>
+      <details class="model-details"><summary>Inspect raw model scores</summary><section aria-labelledby="model-title"><h2 id="model-title">Model scores <span>CPU · cosine</span></h2><div id="model-results" class="results"></div></section></details>
       <p id="run-meta" class="run-meta" role="status" aria-live="polite">Loading model…</p>
-      <p class="note">Experimental model, trained on public intent datasets and software settings. Generalization is still limited. Raw cosine scores are not confidence; no relevance cutoff is applied.</p>
-      <details class="editor"><summary>Candidate menu <span id="candidate-count"></span></summary><label for="candidate-json">Edit candidate records as JSON. Both comparisons use the same records.</label><textarea id="candidate-json" spellcheck="false" rows="13"></textarea><div class="actions"><button id="apply">Apply menu</button><button id="reset">Reset</button></div><p id="editor-status" role="status" aria-live="polite"></p></details>
-      <details class="model-details"><summary>Model details</summary><p id="model-details">Loading model assets…</p><p>Inference runs locally in your browser. The initial menu contains labels only, without aliases or context. Training sources: CLINC150 (CC BY 3.0), BANKING77 (CC BY 4.0), VS Code settings (MIT), and Xfce/KDE navigation metadata (retained upstream license notices). GNOME navigation metadata is held out from training. See <a href="https://github.com/maxffarrell/gpu-search/blob/main/docs/navigation-data.md">navigation source evidence</a> and GitHub for attribution and evaluation. The model column shows the five highest raw scores; the lexical column applies exact and fuzzy matching rules.</p></details>
+      <p class="note">Exact and fuzzy text matches come first. If none match, the model suggests destinations. Suggestions are experimental and can be unrelated; they are not confirmed matches.</p>
+      <details class="editor"><summary>Candidate menu <span id="candidate-count"></span></summary><label for="candidate-json">Edit candidate records as JSON. Search and raw model inspection use the same records.</label><textarea id="candidate-json" spellcheck="false" rows="13"></textarea><div class="actions"><button id="apply">Apply menu</button><button id="reset">Reset</button></div><p id="editor-status" role="status" aria-live="polite"></p></details>
+      <details class="model-details"><summary>Model details</summary><p id="model-details">Loading model assets…</p><p>Inference runs locally in your browser. The initial menu contains labels only, without aliases or context. Training sources: CLINC150 (CC BY 3.0), BANKING77 (CC BY 4.0), VS Code settings (MIT), and Xfce/KDE navigation metadata (retained upstream license notices). GNOME navigation metadata is held out from training. See <a href="https://github.com/maxffarrell/gpu-search/blob/main/docs/navigation-data.md">navigation source evidence</a> and GitHub for attribution and evaluation. Results use text matching when available, otherwise learned suggestions. Raw model inspection shows the five highest cosine scores without a relevance cutoff. Scores are not confidence ratings.</p></details>
     </main>
     <footer><span>Inspired by</span><a href="https://gpu-lexer.vercel.app" target="_blank" rel="noreferrer">gpu-lexer ↗</a><a href="https://gpu-time.arikko.dev" target="_blank" rel="noreferrer">gpu-time ↗</a><a href="https://gpu-cron.vercel.app" target="_blank" rel="noreferrer">gpu-cron ↗</a></footer>
   </div>`;
@@ -92,11 +94,11 @@ async function search() {
     // The lexical index validates the query before either result column is rendered.
     const response = await index.search(text, { limit: 5 });
     if (current !== generation) return;
-    draw('#lexical-results', response.results.map(result => ({ id: result.id, label: result.label, detail: result.reason })));
+    const scores = text.trim() && preparedModel ? preparedModel.score(text) : [];
+    draw('#lexical-results', searchResults(response.results, scores));
     if (!text.trim()) empty('#model-results', 'Enter a query');
     else if (preparedModel) {
-      const scores = preparedModel.score(text).slice(0, 5);
-      draw('#model-results', scores.map(result => ({ id: result.id, label: result.label, detail: result.score.toFixed(3), score: result.score })));
+      draw('#model-results', scores.slice(0, 5).map(result => ({ id: result.id, label: result.label, detail: result.score.toFixed(3), score: result.score })));
     } else empty('#model-results', modelState === 'error' ? 'Model unavailable' : 'Loading model…');
     runMeta.textContent = modelState === 'ready' ? 'Model: CPU · Lexical: CPU · Queries stay on this device' : modelState === 'error' ? 'Model unavailable · Lexical: CPU' : 'Loading model · Lexical: CPU';
     document.querySelectorAll<HTMLButtonElement>('[data-query]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.query === text)));

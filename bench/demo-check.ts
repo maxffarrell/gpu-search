@@ -17,7 +17,7 @@ try {
   page.on('pageerror', e => errors.push(e.message));
   page.on('response', r => { if (/\.(bin|json)(?:\?|$)/.test(r.url())) assets.push(r.url()); });
   await page.goto(url);
-  await page.locator('#model-results [data-score]').first().waitFor();
+  await page.locator('#model-results [data-score]').first().waitFor({ state: 'attached' });
   assert.ok(assets.some(x => x.endsWith('.bin')), 'actual weights were fetched');
   assert.ok(assets.some(x => x.endsWith('.json')), 'actual manifest was fetched');
   page.on('request', r => requests.push(r.url()));
@@ -37,6 +37,10 @@ try {
     }, { expected });
     samples.push({ query, expected });
   }
+  for (const [query, id] of [['profle', 'profile'], ['profile', 'profile'], ['api k', 'api-keys']]) {
+    await page.locator('#query').fill(query);
+    await page.waitForFunction(id => document.querySelector('#lexical-results li')?.getAttribute('data-id') === id, id);
+  }
   await page.locator('#query').fill('');
   await page.waitForFunction(() => document.querySelectorAll('#model-results [data-score]').length === 0);
   await page.locator('#query').fill('profile');
@@ -46,7 +50,7 @@ try {
   await page.locator('button[data-theme="dark"]').click();
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
   await page.reload();
-  await page.locator('#model-results [data-score]').first().waitFor();
+  await page.locator('#model-results [data-score]').first().waitFor({ state: 'attached' });
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
   await page.locator('button[data-theme="light"]').click();
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'light');
@@ -72,6 +76,9 @@ try {
   }, { expected: customExpected });
   assert.equal(await page.locator('#model-results img, #lexical-results img').count(), 0);
   await page.locator('#reset').click();
+  await page.locator('#query').fill('profle');
+  await page.waitForFunction(() => document.querySelector('#lexical-results li')?.getAttribute('data-id') === 'profile');
+  await page.locator('.editor summary').click();
   await page.setViewportSize({ width: 390, height: 844 });
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
   mkdirSync('bench/screenshots', { recursive: true });
@@ -84,8 +91,10 @@ try {
   const missing = await browser.newPage();
   await missing.route('**/*.bin', r => r.abort());
   await missing.goto(url);
-  await missing.getByText(/Model unavailable/).first().waitFor();
+  await missing.getByText(/Model unavailable/).first().waitFor({ state: 'attached' });
   assert.equal(await missing.locator('#model-results [data-score]').count(), 0, 'missing weights never display substituted scores');
+  await missing.locator('#query').fill('profle');
+  await missing.waitForFunction(() => document.querySelector('#lexical-results li')?.getAttribute('data-id') === 'profile');
   await missing.close();
 
   // A causal check: valid all-zero weights eliminate every model result.
@@ -102,6 +111,6 @@ try {
   await zeroPage.close();
 
   mkdirSync('bench/reports', { recursive: true });
-  writeFileSync('bench/reports/demo.json', JSON.stringify({ generatedAt: new Date().toISOString(), browser: browser.version(), modelId: model.id, modelSha256: model.hash, assets, checks: ['model asset fetch', 'CPU scores equal exported-weight inference for six queries', 'arbitrary edited candidate inference', 'missing weights show no model results', 'zero weights eliminate model results', 'Auto/Light/Dark and persistence', 'invalid JSON', 'safe label text', '390px containment', 'zero query/edit requests'], samples, customExpected, requests, errors }, null, 2) + '\n');
+  writeFileSync('bench/reports/demo.json', JSON.stringify({ generatedAt: new Date().toISOString(), browser: browser.version(), modelId: model.id, modelSha256: model.hash, assets, checks: ['typo/exact/prefix take precedence over real model scores', 'typo search works without model assets', 'model asset fetch', 'CPU scores equal exported-weight inference for six queries', 'arbitrary edited candidate inference', 'missing weights show no model results', 'zero weights eliminate model results', 'Auto/Light/Dark and persistence', 'invalid JSON', 'safe label text', '390px containment', 'zero query/edit requests'], samples, customExpected, requests, errors }, null, 2) + '\n');
   console.log('Real model inference, theme, privacy and failure checks passed');
 } finally { await browser.close(); await new Promise<void>(resolve => server.httpServer.close(() => resolve())); }
