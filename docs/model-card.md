@@ -1,5 +1,7 @@
 # Model card: expanded experimental model
 
+Latest decision: the live artifact below is retained. The subsequent same-size word-pair candidate improved development but failed to establish reserved-test transfer improvement. The 40-row synthetic holdout has now been opened once, after selection; it is not human-reviewed and must not be described as fresh in future experiments. See [optimization experiments](optimization-experiments.md).
+
 The website currently runs `expanded-more-data-pooled-seed17`, epoch 10, from `packages/model/candidate/`. It is a real 16-dimensional pooled CPU encoder with 32,768 int8 weight bytes. The original pilot artifact remains unchanged under `packages/model/experimental/` for comparison.
 
 Training records: 7,961 total / 7,165 positive supervised, development 1,472, separate calibration 1,397. Sources are CLINC150, BANKING77, MIT VS Code descriptions and the original training fixtures. Source intent labels and documentation are adapted into weak menu relevance, not newly human-reviewed search judgments. Original dev is used only for post-selection transfer; upstream tests are unused.

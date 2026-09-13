@@ -1,0 +1,614 @@
+{
+  "architecture": "pooled",
+  "dimension": 16,
+  "family": "both",
+  "tensorParameters": 32768,
+  "int8WeightBytes": 32768,
+  "seed": 43,
+  "arm": {
+    "id": "temperature07",
+    "temperature": 0.07
+  },
+  "configuration": {
+    "data_dir": "data/expanded",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "epochs": 60,
+    "minimum_epochs": 10,
+    "patience": 10,
+    "batch_size": 128,
+    "epoch_examples": 7165,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "dimension": 16,
+    "max_dev_no_match_rate": 0.05,
+    "arms": [
+      {
+        "id": "control",
+        "temperature": 0.15
+      },
+      {
+        "id": "temperature07",
+        "temperature": 0.07
+      },
+      {
+        "id": "no-match",
+        "temperature": 0.15,
+        "no_match_weight": 0.25,
+        "no_match_target": 0.35
+      },
+      {
+        "id": "hard-margin",
+        "temperature": 0.15,
+        "hard_margin_weight": 0.25,
+        "hard_margin": 0.15
+      },
+      {
+        "id": "source-balanced",
+        "temperature": 0.15,
+        "balanced": true
+      },
+      {
+        "id": "balanced-no-match",
+        "temperature": 0.15,
+        "balanced": true,
+        "no_match_weight": 0.25,
+        "no_match_target": 0.35
+      },
+      {
+        "id": "balanced-hard-temperature07",
+        "temperature": 0.07,
+        "balanced": true,
+        "hard_margin_weight": 0.25,
+        "hard_margin": 0.15
+      }
+    ],
+    "sourceHashes": {
+      "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+      "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+      "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+    }
+  },
+  "bestEpoch": 1,
+  "epochs": 11,
+  "selectedPassesDevNoMatchGate": true,
+  "bestMetrics": {
+    "cutoff": 0.8019915819168091,
+    "calibrationNoMatchCount": 352,
+    "calibrationNoMatchSemanticRate": 0.048295454545454544,
+    "devSemanticCount": 1118,
+    "devSemanticNdcg5": 0.22768107158190667,
+    "devSemanticCoverage": 0.2513416815742397,
+    "devRelevantCoverage": 0.2526785714285714,
+    "devOverallNdcg5": 0.22906021252551043,
+    "devNoMatchSemanticRate": 0.03409090909090909,
+    "devNoMatchAnyRate": 0.03409090909090909,
+    "slices": {
+      "known-intent-wording": {
+        "count": 1146,
+        "semanticCount": 874,
+        "semanticNdcg5": 0.28094672543314836,
+        "semanticCoverage": 0.3009153318077803,
+        "noMatchCount": 270,
+        "noMatchSemanticRate": 0.037037037037037035
+      },
+      "ui-settings-unseen-namespace": {
+        "count": 87,
+        "semanticCount": 65,
+        "semanticNdcg5": 0.046153846153846156,
+        "semanticCoverage": 0.13846153846153847,
+        "noMatchCount": 22,
+        "noMatchSemanticRate": 0.09090909090909091
+      },
+      "unseen-intent-family": {
+        "count": 239,
+        "semanticCount": 179,
+        "semanticNdcg5": 0.0335195530726257,
+        "semanticCoverage": 0.05027932960893855,
+        "noMatchCount": 60,
+        "noMatchSemanticRate": 0.0
+      }
+    }
+  },
+  "trainingSeconds": 1.7846133339917287,
+  "optimizerSeconds": 0.7386263740481809,
+  "timingScope": "Training loop incl development/checkpointing; excludes feature/cache preparation",
+  "history": [
+    {
+      "epoch": 1,
+      "optimizerSteps": 56,
+      "loss": 1.1560567021369934,
+      "passesDevNoMatchGate": true,
+      "cutoff": 0.8019915819168091,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.22768107158190667,
+      "devSemanticCoverage": 0.2513416815742397,
+      "devRelevantCoverage": 0.2526785714285714,
+      "devOverallNdcg5": 0.22906021252551043,
+      "devNoMatchSemanticRate": 0.03409090909090909,
+      "devNoMatchAnyRate": 0.03409090909090909,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.28094672543314836,
+          "semanticCoverage": 0.3009153318077803,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.037037037037037035
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.046153846153846156,
+          "semanticCoverage": 0.13846153846153847,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.09090909090909091
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.0335195530726257,
+          "semanticCoverage": 0.05027932960893855,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.0
+        }
+      },
+      "elapsedSeconds": 0.15643350000027567
+    },
+    {
+      "epoch": 2,
+      "optimizerSteps": 112,
+      "loss": 0.2934390317116465,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.7525858283042908,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.33501559752108373,
+      "devSemanticCoverage": 0.36404293381037567,
+      "devRelevantCoverage": 0.3651785714285714,
+      "devOverallNdcg5": 0.3362030696683675,
+      "devNoMatchSemanticRate": 0.05113636363636364,
+      "devNoMatchAnyRate": 0.05113636363636364,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.4068048490029424,
+          "semanticCoverage": 0.43478260869565216,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.06296296296296296
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.06153846153846154,
+          "semanticCoverage": 0.12307692307692308,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.045454545454545456
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.08379888268156424,
+          "semanticCoverage": 0.10614525139664804,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.0
+        }
+      },
+      "elapsedSeconds": 0.3071964170085266
+    },
+    {
+      "epoch": 3,
+      "optimizerSteps": 168,
+      "loss": 0.16189110611698457,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.7117043137550354,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.3890341925664455,
+      "devSemanticCoverage": 0.4293381037567084,
+      "devRelevantCoverage": 0.4303571428571429,
+      "devOverallNdcg5": 0.39012520293686254,
+      "devNoMatchSemanticRate": 0.06534090909090909,
+      "devNoMatchAnyRate": 0.06534090909090909,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.47361582069712355,
+          "semanticCoverage": 0.5102974828375286,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.07407407407407407
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.06153846153846154,
+          "semanticCoverage": 0.13846153846153847,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.13636363636363635
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.09497206703910614,
+          "semanticCoverage": 0.13966480446927373,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.0
+        }
+      },
+      "elapsedSeconds": 0.455781249969732
+    },
+    {
+      "epoch": 4,
+      "optimizerSteps": 224,
+      "loss": 0.11050990263798408,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6948503851890564,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.39922452285330984,
+      "devSemanticCoverage": 0.44633273703041143,
+      "devRelevantCoverage": 0.4473214285714286,
+      "devOverallNdcg5": 0.4002973362053575,
+      "devNoMatchSemanticRate": 0.06818181818181818,
+      "devNoMatchAnyRate": 0.06818181818181818,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.4853570787144496,
+          "semanticCoverage": 0.5274599542334096,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.08148148148148149
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.06923076923076923,
+          "semanticCoverage": 0.13846153846153847,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.09090909090909091
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.09849681426576233,
+          "semanticCoverage": 0.16201117318435754,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.0
+        }
+      },
+      "elapsedSeconds": 0.6099324589595199
+    },
+    {
+      "epoch": 5,
+      "optimizerSteps": 280,
+      "loss": 0.08338391348453504,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6906998753547668,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.40981964917901886,
+      "devSemanticCoverage": 0.45080500894454384,
+      "devRelevantCoverage": 0.4517857142857143,
+      "devOverallNdcg5": 0.41087354266262777,
+      "devNoMatchSemanticRate": 0.06818181818181818,
+      "devNoMatchAnyRate": 0.06818181818181818,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.49505534071183427,
+          "semanticCoverage": 0.5297482837528604,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.07777777777777778
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.06923076923076923,
+          "semanticCoverage": 0.12307692307692308,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.09090909090909091
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.11731843575418995,
+          "semanticCoverage": 0.18435754189944134,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.016666666666666666
+        }
+      },
+      "elapsedSeconds": 0.8206571249756962
+    },
+    {
+      "epoch": 6,
+      "optimizerSteps": 336,
+      "loss": 0.06817042834258505,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6823025345802307,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.41195989002044503,
+      "devSemanticCoverage": 0.45796064400715564,
+      "devRelevantCoverage": 0.4589285714285714,
+      "devOverallNdcg5": 0.4130099616454085,
+      "devNoMatchSemanticRate": 0.0625,
+      "devNoMatchAnyRate": 0.0625,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.49535495113190625,
+          "semanticCoverage": 0.5297482837528604,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.06666666666666667
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.06923076923076923,
+          "semanticCoverage": 0.13846153846153847,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.13636363636363635
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.12922307124900256,
+          "semanticCoverage": 0.22346368715083798,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.016666666666666666
+        }
+      },
+      "elapsedSeconds": 0.9913895420031622
+    },
+    {
+      "epoch": 7,
+      "optimizerSteps": 392,
+      "loss": 0.05795970572424786,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6777814030647278,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.42782584752747277,
+      "devSemanticCoverage": 0.47048300536672627,
+      "devRelevantCoverage": 0.4714285714285714,
+      "devOverallNdcg5": 0.42884758708545945,
+      "devNoMatchSemanticRate": 0.06534090909090909,
+      "devNoMatchAnyRate": 0.06534090909090909,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.5095072054184377,
+          "semanticCoverage": 0.5423340961098398,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.06666666666666667
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.1,
+          "semanticCoverage": 0.18461538461538463,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.18181818181818182
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.14804469273743018,
+          "semanticCoverage": 0.22346368715083798,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.016666666666666666
+        }
+      },
+      "elapsedSeconds": 1.1446377089596353
+    },
+    {
+      "epoch": 8,
+      "optimizerSteps": 448,
+      "loss": 0.05092113870861275,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.679670512676239,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.4196798629663944,
+      "devSemanticCoverage": 0.4606440071556351,
+      "devRelevantCoverage": 0.4616071428571429,
+      "devOverallNdcg5": 0.420716148925383,
+      "devNoMatchSemanticRate": 0.05965909090909091,
+      "devNoMatchAnyRate": 0.05965909090909091,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.5014980521003598,
+          "semanticCoverage": 0.5331807780320366,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.05925925925925926
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.09432199620879166,
+          "semanticCoverage": 0.15384615384615385,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.13636363636363635
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.1383344106544297,
+          "semanticCoverage": 0.21787709497206703,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.03333333333333333
+        }
+      },
+      "elapsedSeconds": 1.3385820839903317
+    },
+    {
+      "epoch": 9,
+      "optimizerSteps": 504,
+      "loss": 0.046185837260314395,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6807470321655273,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.41664516774214183,
+      "devSemanticCoverage": 0.4552772808586762,
+      "devRelevantCoverage": 0.45625,
+      "devOverallNdcg5": 0.41768687279974515,
+      "devNoMatchSemanticRate": 0.056818181818181816,
+      "devNoMatchAnyRate": 0.056818181818181816,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.49433345312193555,
+          "semanticCoverage": 0.522883295194508,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.05555555555555555
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.09432199620879166,
+          "semanticCoverage": 0.15384615384615385,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.13636363636363635
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.15436273605347184,
+          "semanticCoverage": 0.2346368715083799,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.03333333333333333
+        }
+      },
+      "elapsedSeconds": 1.489843541989103
+    },
+    {
+      "epoch": 10,
+      "optimizerSteps": 560,
+      "loss": 0.04315990415800895,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6699702739715576,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.43119065925121425,
+      "devSemanticCoverage": 0.4785330948121646,
+      "devRelevantCoverage": 0.47946428571428573,
+      "devOverallNdcg5": 0.4322063902168371,
+      "devNoMatchSemanticRate": 0.056818181818181816,
+      "devNoMatchAnyRate": 0.056818181818181816,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.514506141627166,
+          "semanticCoverage": 0.5491990846681922,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.05185185185185185
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.09432199620879166,
+          "semanticCoverage": 0.16923076923076924,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.13636363636363635
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.1467142989225861,
+          "semanticCoverage": 0.24581005586592178,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.05
+        }
+      },
+      "elapsedSeconds": 1.6345447499770671
+    },
+    {
+      "epoch": 11,
+      "optimizerSteps": 616,
+      "loss": 0.04052110199284341,
+      "passesDevNoMatchGate": false,
+      "cutoff": 0.6708448529243469,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.4358971525491953,
+      "devSemanticCoverage": 0.4785330948121646,
+      "devRelevantCoverage": 0.47946428571428573,
+      "devOverallNdcg5": 0.43690447906250035,
+      "devNoMatchSemanticRate": 0.056818181818181816,
+      "devNoMatchAnyRate": 0.056818181818181816,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.5186605234962409,
+          "semanticCoverage": 0.5503432494279176,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.05185185185185185
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.09633630010989101,
+          "semanticCoverage": 0.16923076923076924,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.13636363636363635
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.15509418719074256,
+          "semanticCoverage": 0.24022346368715083,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.05
+        }
+      },
+      "elapsedSeconds": 1.7845732920104638
+    }
+  ],
+  "sampledSourceCounts": {
+    "banking77": 26906,
+    "clinc150": 47619,
+    "vscode-settings": 3300,
+    "synthetic-v1": 990
+  },
+  "sampledPositiveCount": 78815,
+  "sampledNoMatchCount": 0,
+  "uniqueInputRows": 7165,
+  "positiveRows": 7165,
+  "noMatchRows": 0,
+  "uniqueTexts": 7615,
+  "truncatedTexts": 94,
+  "status": "experimental candidate; passes dev no-match gate; original transfer dev not used",
+  "selection": "prefer <=5% dev no-match; then highest post-calibration semantic nDCG and coverage; earliest exact ties",
+  "hardNegativePolicy": "only judged negatives already in train menu; no global unjudged-negative mining",
+  "noMatchLoss": "disabled",
+  "framework": "MLX 0.31.1",
+  "device": "Device(gpu, 0)"
+}

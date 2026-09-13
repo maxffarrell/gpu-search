@@ -1,0 +1,38 @@
+{
+  "cutoff": 0.7983172535896301,
+  "calibrationNoMatchCount": 352,
+  "calibrationNoMatchSemanticRate": 0.048295454545454544,
+  "devSemanticCount": 1118,
+  "devSemanticNdcg5": 0.2195350870208283,
+  "devSemanticCoverage": 0.23881932021466906,
+  "devRelevantCoverage": 0.24017857142857144,
+  "devOverallNdcg5": 0.22092877436543396,
+  "devNoMatchSemanticRate": 0.05965909090909091,
+  "devNoMatchAnyRate": 0.05965909090909091,
+  "slices": {
+    "known-intent-wording": {
+      "count": 1146,
+      "semanticCount": 874,
+      "semanticNdcg5": 0.27281490536531583,
+      "semanticCoverage": 0.2929061784897025,
+      "noMatchCount": 270,
+      "noMatchSemanticRate": 0.07407407407407407
+    },
+    "ui-settings-unseen-namespace": {
+      "count": 87,
+      "semanticCount": 65,
+      "semanticNdcg5": 0.03076923076923077,
+      "semanticCoverage": 0.046153846153846156,
+      "noMatchCount": 22,
+      "noMatchSemanticRate": 0.045454545454545456
+    },
+    "unseen-intent-family": {
+      "count": 239,
+      "semanticCount": 179,
+      "semanticNdcg5": 0.027932960893854747,
+      "semanticCoverage": 0.0446927374301676,
+      "noMatchCount": 60,
+      "noMatchSemanticRate": 0.0
+    }
+  }
+}

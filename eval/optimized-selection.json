@@ -1,0 +1,10 @@
+{
+  "selectionFrozen": true,
+  "candidate": "packages/model/candidate-v2",
+  "modelId": "features-bigram25-seed29-e10",
+  "payloadSha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8",
+  "manifestSha256": "46ffe70dc78e630fc05676033f3535ae3fefeb3def2378668b34d721cc6e73c4",
+  "selectionData": "Expanded development and calibration; original development used as regression guard only. Reserved synthetic test unopened.",
+  "decision": "Prefer bigram25 seed29 epoch9: same32KiB weights, consistent three-seed feasible results. Adding no-match loss gains only0.00857 nDCG with CI crossing zero and weaker worst-seed results. Reject larger int6, calibration, and distillation arms.",
+  "status": "Experimental deployment candidate, not a human-reviewed release."
+}

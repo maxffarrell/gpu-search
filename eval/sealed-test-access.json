@@ -1,0 +1,20 @@
+{
+  "accessedAt": "2026-09-13T18:29:05.940123+00:00",
+  "selectionRecord": "eval/optimized-selection.json",
+  "selectionRecordSha256": "cd7241d495f170ca420524f62ca0e99caab4fff05a59e78562e922dd2d300860",
+  "candidate": {
+    "directory": "packages/model/candidate-v2",
+    "modelId": "features-bigram25-seed29-e10",
+    "manifestSha256": "46ffe70dc78e630fc05676033f3535ae3fefeb3def2378668b34d721cc6e73c4",
+    "payloadSha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8",
+    "payloadBytes": 32768,
+    "featureVersion": "gpu-search-features-bigram25-v1",
+    "dimension": 16,
+    "quantizationBits": [
+      8
+    ]
+  },
+  "dataset": "data/test.jsonl",
+  "status": "Access claimed before reading; no automatic reruns",
+  "scope": "Existing synthetic sealed pilot, not human-reviewed final evidence"
+}

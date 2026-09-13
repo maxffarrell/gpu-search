@@ -1,0 +1,8 @@
+{
+  "framework": "MLX0.31.1 Metal versus portable NumPy reference",
+  "cases": 15,
+  "maxObjectiveAbsoluteError": 2.6885031090273515e-08,
+  "maxUnjudgedGradient": 0.0,
+  "finiteGradients": true,
+  "scope": "single/multiple positives, unjudged adversarial padding, no-match-only and mixed batches across contrastive/hard-margin/no-match arms"
+}

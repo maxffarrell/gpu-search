@@ -1,3 +1,8 @@
 # Preserve pinned third-party source bytes and checksums, including original CRLF.
 data/external/** -text -whitespace
 data/ui-settings/LICENSE-vscode.txt -text -whitespace
+runs/teacher-minilm/MODEL_CARD.md -text -whitespace
+# Packed low-bit weights may contain no NUL bytes; never interpret them as text.
+*.bin binary
+*.npy binary
+*.npz binary

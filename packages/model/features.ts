@@ -1,7 +1,7 @@
 import { normalizeKey, tokenize } from '../core/src/index.js';
 export { normalizeKey, tokenize };
 const utf8 = new TextEncoder();
-function hash(bytes:number[]|Uint8Array):number {let h=2166136261;for(const b of bytes)h=Math.imul(h^b,16777619)>>>0;return h&1023}
+export function hash(bytes:number[]|Uint8Array):number {let h=2166136261;for(const b of bytes)h=Math.imul(h^b,16777619)>>>0;return h&1023}
 export function features(text:string){
  const all=tokenize(text),tokens=all.slice(0,32).map(t=>Array.from(t).slice(0,64).join(''));
  const wordIds:number[]=[],charIds:number[]=[];let total=0;

@@ -1,0 +1,341 @@
+{
+  "configuration": {
+    "description": "Frozen before teacher scoring: train-only relational cosine distillation into the unchanged pooled16 student.",
+    "teacher": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "weights": [
+      0,
+      1,
+      4
+    ],
+    "epochs": 30,
+    "batchSize": 128,
+    "temperature": 0.15,
+    "learningRate": 0.003,
+    "weightDecay": 0.0001,
+    "clipNorm": 1.0,
+    "selection": "Highest development semantic nDCG at <=5% development no-match; cutoff fit only calibration. Earliest epoch breaks ties.",
+    "deployment": "Unchanged 16 dimensions, 1024 word buckets and 1024 character buckets, int8 export. No teacher shipped."
+  },
+  "teacher": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "license": "Apache-2.0 per pinned model card",
+    "device": "mps",
+    "dimension": 384,
+    "uniqueTexts": 11504,
+    "maxWordPieces": 256,
+    "pooling": "attention-mask mean pooling, L2 normalized, deployment-equivalent alias/context composition",
+    "sourceHashes": {
+      "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+      "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+      "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+      "data/dev.jsonl": "598bd31082ab3bd23b49f14bb6f7fc6677f21d2a421700afaa1b16d803977140"
+    },
+    "modelFiles": {
+      "README.md": {
+        "bytes": 10502,
+        "sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0"
+      },
+      "config.json": {
+        "bytes": 612,
+        "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+      },
+      "model.safetensors": {
+        "bytes": 90868376,
+        "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+      },
+      "special_tokens_map.json": {
+        "bytes": 112,
+        "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+      },
+      "tokenizer.json": {
+        "bytes": 466247,
+        "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+      },
+      "tokenizer_config.json": {
+        "bytes": 350,
+        "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b"
+      },
+      "vocab.txt": {
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    },
+    "scoreHashes": {
+      "calibration-scores.npy": "7bbdd3df634c740479fe27255e17424ce0e8795fa31cab8d4a3f96a7e669ace2",
+      "dev-scores.npy": "e31bf2cd644ed8d10fb909a265d8e7cacc9bad4ae43225aba05fd379fd288a56",
+      "train-scores.npy": "e48248380358a5b570a8abf7d47e6a730ddff8446311c0cb390816cee63c68ff",
+      "transfer-scores.npy": "ca58c09ed4ae1dc5d6e825aacb38c8b0f2e3c4b89cff29b27fe5014c63cb1325"
+    },
+    "encodingSeconds": 4.719651416991837,
+    "trainingBoundary": "Student reads only train-scores.npy; other partitions exclusively for offline evaluation.",
+    "dependencies": {
+      "torch": "2.10.0",
+      "transformers": "4.57.6",
+      "numpy": "2.4.3"
+    }
+  },
+  "reference": {
+    "cutoff": 0.7195559144020081,
+    "overall": {
+      "count": 1472,
+      "positiveCount": 1120,
+      "relevantCount": 1120,
+      "noMatchCount": 352,
+      "ndcg5": 0.19846926653698996,
+      "coverage": 0.22321428571428573,
+      "noMatchAnyRate": 0.0625,
+      "noMatchSemanticRate": 0.0625,
+      "recall1": 0.19464285714285715,
+      "recall3": 0.20089285714285715,
+      "recall5": 0.20089285714285715,
+      "mrr": 0.19761904761904764
+    },
+    "semantic": {
+      "count": 1118,
+      "positiveCount": 1118,
+      "relevantCount": 1118,
+      "noMatchCount": 0,
+      "ndcg5": 0.19703540118195775,
+      "coverage": 0.22182468694096602,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "recall1": 0.19320214669051877,
+      "recall3": 0.19946332737030412,
+      "recall5": 0.19946332737030412,
+      "mrr": 0.19618366129994036
+    },
+    "rawSemantic": {
+      "count": 1118,
+      "positiveCount": 1118,
+      "relevantCount": 1118,
+      "noMatchCount": 0,
+      "ndcg5": 0.8678021679709643,
+      "coverage": 1.0,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "recall1": 0.7200357781753131,
+      "recall3": 0.9409660107334525,
+      "recall5": 0.9776386404293381,
+      "mrr": 0.8336552659227079
+    },
+    "status": "Offline reference only, never shipped; calibration fitted independently."
+  },
+  "runs": [
+    {
+      "name": "distill-minilm-mse0-seed17",
+      "artifact": "packages/model/experiments/distill-minilm-mse0-seed17",
+      "bestEpoch": 8,
+      "seed": 17,
+      "weight": 0,
+      "payloadBytes": 32768,
+      "sha256": "20953dcbea3c1697ff23be7fcfdb6e64c8a8a453fc2241dd27164532be947b4e",
+      "cutoff": 0.7058319449424744,
+      "semanticNdcg5": 0.4699182304755031,
+      "semanticCoverage": 0.4991055456171735,
+      "overallNdcg5": 0.4708648050639397,
+      "noMatchSemanticRate": 0.048295454545454544,
+      "overall": {
+        "count": 1472,
+        "positiveCount": 1120,
+        "relevantCount": 1120,
+        "noMatchCount": 352,
+        "ndcg5": 0.4708648050639397,
+        "coverage": 0.5,
+        "noMatchAnyRate": 0.048295454545454544,
+        "noMatchSemanticRate": 0.048295454545454544,
+        "recall1": 0.4607142857142857,
+        "recall3": 0.4758928571428571,
+        "recall5": 0.47767857142857145,
+        "mrr": 0.4685119047619048
+      },
+      "semanticOnly": {
+        "count": 1118,
+        "positiveCount": 1118,
+        "relevantCount": 1118,
+        "noMatchCount": 0,
+        "ndcg5": 0.4699182304755031,
+        "coverage": 0.4991055456171735,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.4597495527728086,
+        "recall3": 0.4749552772808587,
+        "recall5": 0.47674418604651164,
+        "mrr": 0.46756112104949316
+      }
+    },
+    {
+      "name": "distill-minilm-mse1-seed17",
+      "artifact": "packages/model/experiments/distill-minilm-mse1-seed17",
+      "bestEpoch": 12,
+      "seed": 17,
+      "weight": 1,
+      "payloadBytes": 32768,
+      "sha256": "b2fbfc5b1e93f3b5748ecfa02eaf18730b5ec5a0fa8c4c8e6e827c557ba0d7b6",
+      "cutoff": 0.7330401539802551,
+      "semanticNdcg5": 0.45322190232238724,
+      "semanticCoverage": 0.4847942754919499,
+      "overallNdcg5": 0.45419829178252585,
+      "noMatchSemanticRate": 0.045454545454545456,
+      "overall": {
+        "count": 1472,
+        "positiveCount": 1120,
+        "relevantCount": 1120,
+        "noMatchCount": 352,
+        "ndcg5": 0.45419829178252585,
+        "coverage": 0.4857142857142857,
+        "noMatchAnyRate": 0.045454545454545456,
+        "noMatchSemanticRate": 0.045454545454545456,
+        "recall1": 0.44642857142857145,
+        "recall3": 0.4589285714285714,
+        "recall5": 0.4589285714285714,
+        "mrr": 0.4525297619047619
+      },
+      "semanticOnly": {
+        "count": 1118,
+        "positiveCount": 1118,
+        "relevantCount": 1118,
+        "noMatchCount": 0,
+        "ndcg5": 0.45322190232238724,
+        "coverage": 0.4847942754919499,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.44543828264758495,
+        "recall3": 0.45796064400715564,
+        "recall5": 0.45796064400715564,
+        "mrr": 0.4515503875968992
+      }
+    },
+    {
+      "name": "distill-minilm-mse4-seed17",
+      "artifact": "packages/model/experiments/distill-minilm-mse4-seed17",
+      "bestEpoch": 8,
+      "seed": 17,
+      "weight": 4,
+      "payloadBytes": 32768,
+      "sha256": "36bf7b491c85afcba6e6c91d4660182e3b1c57006521f87ff6bdb4d06daf3732",
+      "cutoff": 0.7677718997001648,
+      "semanticNdcg5": 0.4241309193042425,
+      "semanticCoverage": 0.4516994633273703,
+      "overallNdcg5": 0.4251592569483421,
+      "noMatchSemanticRate": 0.045454545454545456,
+      "overall": {
+        "count": 1472,
+        "positiveCount": 1120,
+        "relevantCount": 1120,
+        "noMatchCount": 352,
+        "ndcg5": 0.4251592569483421,
+        "coverage": 0.45267857142857143,
+        "noMatchAnyRate": 0.045454545454545456,
+        "noMatchSemanticRate": 0.045454545454545456,
+        "recall1": 0.41964285714285715,
+        "recall3": 0.42857142857142855,
+        "recall5": 0.42857142857142855,
+        "mrr": 0.4239583333333333
+      },
+      "semanticOnly": {
+        "count": 1118,
+        "positiveCount": 1118,
+        "relevantCount": 1118,
+        "noMatchCount": 0,
+        "ndcg5": 0.4241309193042425,
+        "coverage": 0.4516994633273703,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.4186046511627907,
+        "recall3": 0.4275491949910555,
+        "recall5": 0.4275491949910555,
+        "mrr": 0.422927847346452
+      }
+    },
+    {
+      "name": "distill-minilm-centered1.0-seed17",
+      "artifact": "packages/model/experiments/distill-minilm-centered1.0-seed17",
+      "bestEpoch": 22,
+      "seed": 17,
+      "weight": 1.0,
+      "payloadBytes": 32768,
+      "sha256": "ac31eb86718090c91ce8da239fd85903da90d6ad34046f4826de329354f03e9f",
+      "cutoff": 0.710740864276886,
+      "semanticNdcg5": 0.4535679245113269,
+      "semanticCoverage": 0.4847942754919499,
+      "overallNdcg5": 0.4545436960746995,
+      "noMatchSemanticRate": 0.036931818181818184,
+      "overall": {
+        "count": 1472,
+        "positiveCount": 1120,
+        "relevantCount": 1120,
+        "noMatchCount": 352,
+        "ndcg5": 0.4545436960746995,
+        "coverage": 0.4857142857142857,
+        "noMatchAnyRate": 0.036931818181818184,
+        "noMatchSemanticRate": 0.036931818181818184,
+        "recall1": 0.44642857142857145,
+        "recall3": 0.4589285714285714,
+        "recall5": 0.45982142857142855,
+        "mrr": 0.4527083333333333
+      },
+      "semanticOnly": {
+        "count": 1118,
+        "positiveCount": 1118,
+        "relevantCount": 1118,
+        "noMatchCount": 0,
+        "ndcg5": 0.4535679245113269,
+        "coverage": 0.4847942754919499,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.44543828264758495,
+        "recall3": 0.45796064400715564,
+        "recall5": 0.4588550983899821,
+        "mrr": 0.4517292784734645
+      }
+    },
+    {
+      "name": "distill-minilm-centered4.0-seed17",
+      "artifact": "packages/model/experiments/distill-minilm-centered4.0-seed17",
+      "bestEpoch": 17,
+      "seed": 17,
+      "weight": 4.0,
+      "payloadBytes": 32768,
+      "sha256": "139b8aa79ba2328ab9f4775bbae66947e47d16f126b35f37f0f99ec4a3963c24",
+      "cutoff": 0.7124727368354797,
+      "semanticNdcg5": 0.4124283327881425,
+      "semanticCoverage": 0.4409660107334526,
+      "overallNdcg5": 0.4134775679081637,
+      "noMatchSemanticRate": 0.03977272727272727,
+      "overall": {
+        "count": 1472,
+        "positiveCount": 1120,
+        "relevantCount": 1120,
+        "noMatchCount": 352,
+        "ndcg5": 0.4134775679081637,
+        "coverage": 0.4419642857142857,
+        "noMatchAnyRate": 0.03977272727272727,
+        "noMatchSemanticRate": 0.03977272727272727,
+        "recall1": 0.4035714285714286,
+        "recall3": 0.41964285714285715,
+        "recall5": 0.41964285714285715,
+        "mrr": 0.4113095238095238
+      },
+      "semanticOnly": {
+        "count": 1118,
+        "positiveCount": 1118,
+        "relevantCount": 1118,
+        "noMatchCount": 0,
+        "ndcg5": 0.4124283327881425,
+        "coverage": 0.4409660107334526,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.40250447227191416,
+        "recall3": 0.4186046511627907,
+        "recall5": 0.4186046511627907,
+        "mrr": 0.4102564102564103
+      }
+    }
+  ]
+}

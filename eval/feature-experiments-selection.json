@@ -1,0 +1,10 @@
+{
+  "selected": "features-bigram25-seed29-e10",
+  "selectedEpoch": 9,
+  "selectionData": "expanded development only; independent calibration cutoff",
+  "selectionRule": "highest int8 post-cutoff semantic nDCG among same-byte arms with development no-match<=0.05",
+  "semanticNdcg5": 0.5225368071046056,
+  "payloadSha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8",
+  "pilotTransferOpened": false,
+  "status": "selection frozen before original pilot transfer; no subsequent tuning against transfer"
+}

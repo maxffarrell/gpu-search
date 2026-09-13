@@ -1,0 +1,40 @@
+# Finite 32 KiB pooled-model pilot registered before these ablation runs.
+# Development is already reused; this is model selection, not final-test evidence.
+data_dir: data/expanded
+seeds: [17, 29, 43]
+epochs: 60
+minimum_epochs: 10
+patience: 10
+batch_size: 128
+epoch_examples: 7165
+learning_rate: 0.003
+weight_decay: 0.0001
+clip_norm: 1.0
+dimension: 16
+max_dev_no_match_rate: 0.05
+arms:
+  - id: control
+    temperature: 0.15
+  - id: temperature07
+    temperature: 0.07
+  - id: no-match
+    temperature: 0.15
+    no_match_weight: 0.25
+    no_match_target: 0.35
+  - id: hard-margin
+    temperature: 0.15
+    hard_margin_weight: 0.25
+    hard_margin: 0.15
+  - id: source-balanced
+    temperature: 0.15
+    balanced: true
+  - id: balanced-no-match
+    temperature: 0.15
+    balanced: true
+    no_match_weight: 0.25
+    no_match_target: 0.35
+  - id: balanced-hard-temperature07
+    temperature: 0.07
+    balanced: true
+    hard_margin_weight: 0.25
+    hard_margin: 0.15

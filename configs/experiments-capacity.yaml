@@ -1,0 +1,18 @@
+# Follow-up capacity ablation: same train-no-match objective, more dimensions.
+data_dir: data/expanded
+seeds: [17, 29, 43]
+epochs: 30
+minimum_epochs: 10
+patience: 10
+batch_size: 128
+epoch_examples: 7165
+learning_rate: 0.003
+weight_decay: 0.0001
+clip_norm: 1.0
+dimension: 24
+max_dev_no_match_rate: 0.05
+arms:
+  - id: capacity24-no-match
+    temperature: 0.15
+    no_match_weight: 0.25
+    no_match_target: 0.35

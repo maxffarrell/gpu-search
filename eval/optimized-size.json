@@ -1,0 +1,47 @@
+{
+  "scope": "Local research build only; production demo and weights unchanged",
+  "candidate": "packages/model/candidate-v2",
+  "compression": "Brotli quality11 window22; each complete demo resource separately",
+  "resources": [
+    {
+      "resource": "assets/index-BkThD-Gd.js",
+      "raw": 17648,
+      "brotli": 6312,
+      "sha256": "c02ac024598c68776155011fb08539843c0122dd2124465dda1015d206539ee8"
+    },
+    {
+      "resource": "assets/index-D2ZaEIKN.css",
+      "raw": 4976,
+      "brotli": 1350,
+      "sha256": "edceab8642676a91f72e9d417edc368a55ea1ce4766caf5f3f3add148a9446a6"
+    },
+    {
+      "resource": "assets/manifest-DpPYypFA.json",
+      "raw": 1727,
+      "brotli": 626,
+      "sha256": "46ffe70dc78e630fc05676033f3535ae3fefeb3def2378668b34d721cc6e73c4"
+    },
+    {
+      "resource": "assets/weights-Dfctezup.bin",
+      "raw": 32768,
+      "brotli": 27491,
+      "sha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8"
+    },
+    {
+      "resource": "favicon.svg",
+      "raw": 296,
+      "brotli": 195,
+      "sha256": "28bd2136c6c8ffcddec54239d45b430f786fb4ca242bb458c65df6bad6470163"
+    },
+    {
+      "resource": "index.html",
+      "raw": 711,
+      "brotli": 269,
+      "sha256": "72fa7b47e82ec34585938616cdfe694885d52ba90c30c77f226a92ca4301fee3"
+    }
+  ],
+  "totalBrotliBytes": 36243,
+  "cpuLimitBytes": 51200,
+  "passesCpuBudget": true,
+  "webgpuShipped": false
+}

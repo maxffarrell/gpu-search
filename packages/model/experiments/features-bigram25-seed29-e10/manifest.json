@@ -1,0 +1,57 @@
+{
+  "formatVersion": "gpu-search-experimental-v1",
+  "featureVersion": "gpu-search-features-bigram25-v1",
+  "normalizationVersion": "nfkc-ascii-v1",
+  "candidateCompositionVersion": "mean-alias-context025-v1",
+  "architecture": "pooled",
+  "dimension": 16,
+  "featureFamily": "both",
+  "modelId": "features-bigram25-seed29-e10",
+  "byteOrder": "little-endian",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        1024,
+        16
+      ],
+      "byteOffset": 0,
+      "byteLength": 16384,
+      "scale": 0.007863038219511509,
+      "bits": 8,
+      "elementCount": 16384,
+      "scaleF32LE": "f9d3003c"
+    },
+    {
+      "name": "char",
+      "shape": [
+        1024,
+        16
+      ],
+      "byteOffset": 16384,
+      "byteLength": 16384,
+      "scale": 0.0092265410348773,
+      "bits": 8,
+      "elementCount": 16384,
+      "scaleF32LE": "eb2a173c"
+    }
+  ],
+  "payloadSha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8",
+  "payloadBytes": 32768,
+  "validatedSemanticCutoff": null,
+  "status": "EXPERIMENTAL ONLY; weak-label development selected; final release gate not passed; do not load in default search",
+  "researchCalibrationCutoff": 0.6561784148216248,
+  "quantizedMetrics": {
+    "cutoff": 0.6561784148216248,
+    "calibrationNoMatchCount": 352,
+    "calibrationNoMatchSemanticRate": 0.048295454545454544,
+    "devSemanticCount": 1118,
+    "devSemanticNdcg5": 0.5225368071046056,
+    "devSemanticCoverage": 0.5581395348837209,
+    "devRelevantCoverage": 0.5589285714285714,
+    "devOverallNdcg5": 0.5233894199490616,
+    "devNoMatchSemanticRate": 0.048295454545454544,
+    "devNoMatchAnyRate": 0.048295454545454544
+  },
+  "featureContractFile": "feature-contract.json"
+}

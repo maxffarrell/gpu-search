@@ -1,0 +1,19 @@
+{
+  "scope": "MLX sparse pooling vs independent NumPy; not browser parity",
+  "reports": [
+    {
+      "arm": "control",
+      "texts": 139,
+      "maximumComponentError": 3.2782554626464844e-07,
+      "maximumCosineError": 3.5762786865234375e-07,
+      "passed": true
+    },
+    {
+      "arm": "bigram25",
+      "texts": 139,
+      "maximumComponentError": 4.172325134277344e-07,
+      "maximumCosineError": 4.172325134277344e-07,
+      "passed": true
+    }
+  ]
+}

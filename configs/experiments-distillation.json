@@ -1,0 +1,14 @@
+{
+  "description": "Frozen before teacher scoring: train-only relational cosine distillation into the unchanged pooled16 student.",
+  "teacher": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "seeds": [17, 29, 43],
+  "weights": [0, 1, 4],
+  "epochs": 30,
+  "batchSize": 128,
+  "temperature": 0.15,
+  "learningRate": 0.003,
+  "weightDecay": 0.0001,
+  "clipNorm": 1.0,
+  "selection": "Highest development semantic nDCG at <=5% development no-match; cutoff fit only calibration. Earliest epoch breaks ties.",
+  "deployment": "Unchanged 16 dimensions, 1024 word buckets and 1024 character buckets, int8 export. No teacher shipped."
+}

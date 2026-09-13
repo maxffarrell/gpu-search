@@ -1,0 +1,15 @@
+{
+  "formatVersion": "candidate-linear-rejector-v1",
+  "modelSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+  "candidateCountSupported": 10,
+  "fallbackCosineCutoff": 0.7004017233848572,
+  "features": [
+    "score"
+  ],
+  "bias": -2.0109733083421704,
+  "weights": [
+    6.387648460659771
+  ],
+  "threshold": 2.462946301147046,
+  "status": "experimental weak-label dev selection; not confidence probabilities"
+}

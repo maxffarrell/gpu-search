@@ -1,0 +1,4355 @@
+{
+  "scope": "calibration-fitted rejection on existing int8 weights, weak-label development selection only",
+  "modelId": "experiment-no-match-seed17",
+  "modelSha256": "6101ea45427716210bd84fd1524449c7f581be23c6670cb77149c886d3b992c5",
+  "baselineCutoff": 0.7035104632377625,
+  "baseline": {
+    "overall": {
+      "count": 1472,
+      "positiveCount": 1120,
+      "relevantCount": 1120,
+      "noMatchCount": 352,
+      "ndcg5": 0.4686913311033984,
+      "coverage": 0.5026785714285714,
+      "noMatchAnyRate": 0.045454545454545456,
+      "noMatchSemanticRate": 0.045454545454545456,
+      "recall1": 0.4625,
+      "recall3": 0.47232142857142856,
+      "recall5": 0.4732142857142857,
+      "mrr": 0.4671428571428572
+    },
+    "semanticOnly": {
+      "count": 1118,
+      "positiveCount": 1118,
+      "relevantCount": 1118,
+      "noMatchCount": 0,
+      "ndcg5": 0.4677408683683419,
+      "coverage": 0.501788908765653,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "recall1": 0.46153846153846156,
+      "recall3": 0.47137745974955275,
+      "recall5": 0.47227191413237923,
+      "mrr": 0.4661896243291593
+    },
+    "slices": {
+      "known-intent-wording": {
+        "count": 1146,
+        "positiveCount": 876,
+        "relevantCount": 876,
+        "noMatchCount": 270,
+        "ndcg5": 0.5370051464326486,
+        "coverage": 0.5616438356164384,
+        "noMatchAnyRate": 0.025925925925925925,
+        "noMatchSemanticRate": 0.025925925925925925,
+        "recall1": 0.5319634703196348,
+        "recall3": 0.5399543378995434,
+        "recall5": 0.5399543378995434,
+        "mrr": 0.535958904109589
+      },
+      "ui-settings-unseen-namespace": {
+        "count": 87,
+        "positiveCount": 65,
+        "relevantCount": 65,
+        "noMatchCount": 22,
+        "ndcg5": 0.3327835346703301,
+        "coverage": 0.3384615384615385,
+        "noMatchAnyRate": 0.18181818181818182,
+        "noMatchSemanticRate": 0.18181818181818182,
+        "recall1": 0.3230769230769231,
+        "recall3": 0.3384615384615385,
+        "recall5": 0.3384615384615385,
+        "mrr": 0.33076923076923076
+      },
+      "unseen-intent-family": {
+        "count": 239,
+        "positiveCount": 179,
+        "relevantCount": 179,
+        "noMatchCount": 60,
+        "ndcg5": 0.18372543467728794,
+        "coverage": 0.2737430167597765,
+        "noMatchAnyRate": 0.08333333333333333,
+        "noMatchSemanticRate": 0.08333333333333333,
+        "recall1": 0.17318435754189945,
+        "recall3": 0.18994413407821228,
+        "recall5": 0.19553072625698323,
+        "mrr": 0.17988826815642459
+      }
+    }
+  },
+  "experiments": [
+    {
+      "name": "score",
+      "ridge": 0.1,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.9035753869016085,
+        "weights": [
+          6.241996506161633
+        ],
+        "threshold": 3.224700618233182
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.25046760626275516,
+          "coverage": 0.2580357142857143,
+          "noMatchAnyRate": 0.008522727272727272,
+          "noMatchSemanticRate": 0.008522727272727272,
+          "recall1": 0.24821428571428572,
+          "recall3": 0.2517857142857143,
+          "recall5": 0.2517857142857143,
+          "mrr": 0.25
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.24912676119345778,
+          "coverage": 0.2567084078711986,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.24686940966010734,
+          "recall3": 0.2504472271914132,
+          "recall5": 0.2504472271914132,
+          "mrr": 0.24865831842576028
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.29740150572407054,
+            "coverage": 0.3002283105022831,
+            "noMatchAnyRate": 0.007407407407407408,
+            "noMatchSemanticRate": 0.007407407407407408,
+            "recall1": 0.2945205479452055,
+            "recall3": 0.2990867579908676,
+            "recall5": 0.2990867579908676,
+            "mrr": 0.2968036529680365
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.12307692307692308,
+            "coverage": 0.13846153846153847,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.12307692307692308,
+            "recall3": 0.12307692307692308,
+            "recall5": 0.12307692307692308,
+            "mrr": 0.12307692307692308
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0670391061452514,
+            "coverage": 0.09497206703910614,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0670391061452514,
+            "recall3": 0.0670391061452514,
+            "recall5": 0.0670391061452514,
+            "mrr": 0.0670391061452514
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "score",
+      "ridge": 0.1,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.9035753869016085,
+        "weights": [
+          6.241996506161633
+        ],
+        "threshold": 3.059497259426782
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2956737935427297,
+          "coverage": 0.30892857142857144,
+          "noMatchAnyRate": 0.011363636363636364,
+          "noMatchSemanticRate": 0.011363636363636364,
+          "recall1": 0.29285714285714287,
+          "recall3": 0.29732142857142857,
+          "recall5": 0.29732142857142857,
+          "mrr": 0.2950892857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.29441381821811924,
+          "coverage": 0.3076923076923077,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.29159212880143115,
+          "recall3": 0.2960644007155635,
+          "recall5": 0.2960644007155635,
+          "mrr": 0.2938282647584973
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.34762981622635364,
+            "coverage": 0.3550228310502283,
+            "noMatchAnyRate": 0.011111111111111112,
+            "noMatchSemanticRate": 0.011111111111111112,
+            "recall1": 0.3447488584474886,
+            "recall3": 0.3493150684931507,
+            "recall5": 0.3493150684931507,
+            "mrr": 0.3470319634703196
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.1481681500549455,
+            "coverage": 0.15384615384615385,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.13846153846153847,
+            "recall3": 0.15384615384615385,
+            "recall5": 0.15384615384615385,
+            "mrr": 0.14615384615384616
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.09497206703910614,
+            "coverage": 0.13966480446927373,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.09497206703910614,
+            "recall3": 0.09497206703910614,
+            "recall5": 0.09497206703910614,
+            "mrr": 0.09497206703910614
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "score",
+      "ridge": 0.1,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.9035753869016085,
+        "weights": [
+          6.241996506161633
+        ],
+        "threshold": 2.4877340946246727
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4686913311033984,
+          "coverage": 0.5026785714285714,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4625,
+          "recall3": 0.47232142857142856,
+          "recall5": 0.4732142857142857,
+          "mrr": 0.4671428571428572
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4677408683683419,
+          "coverage": 0.501788908765653,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.46153846153846156,
+          "recall3": 0.47137745974955275,
+          "recall5": 0.47227191413237923,
+          "mrr": 0.4661896243291593
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5370051464326486,
+            "coverage": 0.5616438356164384,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.5319634703196348,
+            "recall3": 0.5399543378995434,
+            "recall5": 0.5399543378995434,
+            "mrr": 0.535958904109589
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.3327835346703301,
+            "coverage": 0.3384615384615385,
+            "noMatchAnyRate": 0.18181818181818182,
+            "noMatchSemanticRate": 0.18181818181818182,
+            "recall1": 0.3230769230769231,
+            "recall3": 0.3384615384615385,
+            "recall5": 0.3384615384615385,
+            "mrr": 0.33076923076923076
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.18372543467728794,
+            "coverage": 0.2737430167597765,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.17318435754189945,
+            "recall3": 0.18994413407821228,
+            "recall5": 0.19553072625698323,
+            "mrr": 0.17988826815642459
+          }
+        }
+      },
+      "admissible": true
+    },
+    {
+      "name": "score",
+      "ridge": 1.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.9021762584992117,
+        "weights": [
+          6.237286726936111
+        ],
+        "threshold": 3.2222303039391784
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.25046760626275516,
+          "coverage": 0.2580357142857143,
+          "noMatchAnyRate": 0.008522727272727272,
+          "noMatchSemanticRate": 0.008522727272727272,
+          "recall1": 0.24821428571428572,
+          "recall3": 0.2517857142857143,
+          "recall5": 0.2517857142857143,
+          "mrr": 0.25
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.24912676119345778,
+          "coverage": 0.2567084078711986,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.24686940966010734,
+          "recall3": 0.2504472271914132,
+          "recall5": 0.2504472271914132,
+          "mrr": 0.24865831842576028
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.29740150572407054,
+            "coverage": 0.3002283105022831,
+            "noMatchAnyRate": 0.007407407407407408,
+            "noMatchSemanticRate": 0.007407407407407408,
+            "recall1": 0.2945205479452055,
+            "recall3": 0.2990867579908676,
+            "recall5": 0.2990867579908676,
+            "mrr": 0.2968036529680365
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.12307692307692308,
+            "coverage": 0.13846153846153847,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.12307692307692308,
+            "recall3": 0.12307692307692308,
+            "recall5": 0.12307692307692308,
+            "mrr": 0.12307692307692308
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0670391061452514,
+            "coverage": 0.09497206703910614,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0670391061452514,
+            "recall3": 0.0670391061452514,
+            "recall5": 0.0670391061452514,
+            "mrr": 0.0670391061452514
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "score",
+      "ridge": 1.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.9021762584992117,
+        "weights": [
+          6.237286726936111
+        ],
+        "threshold": 3.057151596171357
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2956737935427297,
+          "coverage": 0.30892857142857144,
+          "noMatchAnyRate": 0.011363636363636364,
+          "noMatchSemanticRate": 0.011363636363636364,
+          "recall1": 0.29285714285714287,
+          "recall3": 0.29732142857142857,
+          "recall5": 0.29732142857142857,
+          "mrr": 0.2950892857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.29441381821811924,
+          "coverage": 0.3076923076923077,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.29159212880143115,
+          "recall3": 0.2960644007155635,
+          "recall5": 0.2960644007155635,
+          "mrr": 0.2938282647584973
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.34762981622635364,
+            "coverage": 0.3550228310502283,
+            "noMatchAnyRate": 0.011111111111111112,
+            "noMatchSemanticRate": 0.011111111111111112,
+            "recall1": 0.3447488584474886,
+            "recall3": 0.3493150684931507,
+            "recall5": 0.3493150684931507,
+            "mrr": 0.3470319634703196
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.1481681500549455,
+            "coverage": 0.15384615384615385,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.13846153846153847,
+            "recall3": 0.15384615384615385,
+            "recall5": 0.15384615384615385,
+            "mrr": 0.14615384615384616
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.09497206703910614,
+            "coverage": 0.13966480446927373,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.09497206703910614,
+            "recall3": 0.09497206703910614,
+            "recall5": 0.09497206703910614,
+            "mrr": 0.09497206703910614
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "score",
+      "ridge": 1.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.9021762584992117,
+        "weights": [
+          6.237286726936111
+        ],
+        "threshold": 2.4858198443430997
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4686913311033984,
+          "coverage": 0.5026785714285714,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4625,
+          "recall3": 0.47232142857142856,
+          "recall5": 0.4732142857142857,
+          "mrr": 0.4671428571428572
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4677408683683419,
+          "coverage": 0.501788908765653,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.46153846153846156,
+          "recall3": 0.47137745974955275,
+          "recall5": 0.47227191413237923,
+          "mrr": 0.4661896243291593
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5370051464326486,
+            "coverage": 0.5616438356164384,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.5319634703196348,
+            "recall3": 0.5399543378995434,
+            "recall5": 0.5399543378995434,
+            "mrr": 0.535958904109589
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.3327835346703301,
+            "coverage": 0.3384615384615385,
+            "noMatchAnyRate": 0.18181818181818182,
+            "noMatchSemanticRate": 0.18181818181818182,
+            "recall1": 0.3230769230769231,
+            "recall3": 0.3384615384615385,
+            "recall5": 0.3384615384615385,
+            "mrr": 0.33076923076923076
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.18372543467728794,
+            "coverage": 0.2737430167597765,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.17318435754189945,
+            "recall3": 0.18994413407821228,
+            "recall5": 0.19553072625698323,
+            "mrr": 0.17988826815642459
+          }
+        }
+      },
+      "admissible": true
+    },
+    {
+      "name": "score",
+      "ridge": 10.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.8884156560458445,
+        "weights": [
+          6.190980056532411
+        ],
+        "threshold": 3.1979464463428537
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.25046760626275516,
+          "coverage": 0.2580357142857143,
+          "noMatchAnyRate": 0.008522727272727272,
+          "noMatchSemanticRate": 0.008522727272727272,
+          "recall1": 0.24821428571428572,
+          "recall3": 0.2517857142857143,
+          "recall5": 0.2517857142857143,
+          "mrr": 0.25
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.24912676119345778,
+          "coverage": 0.2567084078711986,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.24686940966010734,
+          "recall3": 0.2504472271914132,
+          "recall5": 0.2504472271914132,
+          "mrr": 0.24865831842576028
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.29740150572407054,
+            "coverage": 0.3002283105022831,
+            "noMatchAnyRate": 0.007407407407407408,
+            "noMatchSemanticRate": 0.007407407407407408,
+            "recall1": 0.2945205479452055,
+            "recall3": 0.2990867579908676,
+            "recall5": 0.2990867579908676,
+            "mrr": 0.2968036529680365
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.12307692307692308,
+            "coverage": 0.13846153846153847,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.12307692307692308,
+            "recall3": 0.12307692307692308,
+            "recall5": 0.12307692307692308,
+            "mrr": 0.12307692307692308
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0670391061452514,
+            "coverage": 0.09497206703910614,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0670391061452514,
+            "recall3": 0.0670391061452514,
+            "recall5": 0.0670391061452514,
+            "mrr": 0.0670391061452514
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "score",
+      "ridge": 10.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.8884156560458445,
+        "weights": [
+          6.190980056532411
+        ],
+        "threshold": 3.0340933107903134
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2956737935427297,
+          "coverage": 0.30892857142857144,
+          "noMatchAnyRate": 0.011363636363636364,
+          "noMatchSemanticRate": 0.011363636363636364,
+          "recall1": 0.29285714285714287,
+          "recall3": 0.29732142857142857,
+          "recall5": 0.29732142857142857,
+          "mrr": 0.2950892857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.29441381821811924,
+          "coverage": 0.3076923076923077,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.29159212880143115,
+          "recall3": 0.2960644007155635,
+          "recall5": 0.2960644007155635,
+          "mrr": 0.2938282647584973
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.34762981622635364,
+            "coverage": 0.3550228310502283,
+            "noMatchAnyRate": 0.011111111111111112,
+            "noMatchSemanticRate": 0.011111111111111112,
+            "recall1": 0.3447488584474886,
+            "recall3": 0.3493150684931507,
+            "recall5": 0.3493150684931507,
+            "mrr": 0.3470319634703196
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.1481681500549455,
+            "coverage": 0.15384615384615385,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.13846153846153847,
+            "recall3": 0.15384615384615385,
+            "recall5": 0.15384615384615385,
+            "mrr": 0.14615384615384616
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.09497206703910614,
+            "coverage": 0.13966480446927373,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.09497206703910614,
+            "recall3": 0.09497206703910614,
+            "recall5": 0.09497206703910614,
+            "mrr": 0.09497206703910614
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "score",
+      "ridge": 10.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score"
+        ],
+        "bias": -1.8884156560458445,
+        "weights": [
+          6.190980056532411
+        ],
+        "threshold": 2.4670032224098546
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4686913311033984,
+          "coverage": 0.5026785714285714,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4625,
+          "recall3": 0.47232142857142856,
+          "recall5": 0.4732142857142857,
+          "mrr": 0.4671428571428572
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4677408683683419,
+          "coverage": 0.501788908765653,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.46153846153846156,
+          "recall3": 0.47137745974955275,
+          "recall5": 0.47227191413237923,
+          "mrr": 0.4661896243291593
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5370051464326486,
+            "coverage": 0.5616438356164384,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.5319634703196348,
+            "recall3": 0.5399543378995434,
+            "recall5": 0.5399543378995434,
+            "mrr": 0.535958904109589
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.3327835346703301,
+            "coverage": 0.3384615384615385,
+            "noMatchAnyRate": 0.18181818181818182,
+            "noMatchSemanticRate": 0.18181818181818182,
+            "recall1": 0.3230769230769231,
+            "recall3": 0.3384615384615385,
+            "recall5": 0.3384615384615385,
+            "mrr": 0.33076923076923076
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.18372543467728794,
+            "coverage": 0.2737430167597765,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.17318435754189945,
+            "recall3": 0.18994413407821228,
+            "recall5": 0.19553072625698323,
+            "mrr": 0.17988826815642459
+          }
+        }
+      },
+      "admissible": true
+    },
+    {
+      "name": "best-margin",
+      "ridge": 0.1,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.348794124054562,
+        "weights": [
+          1.6430017079532746,
+          4.480219802698634
+        ],
+        "threshold": 4.3172481729853684
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.12678571428571428,
+          "coverage": 0.12678571428571428,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.12678571428571428,
+          "recall3": 0.12678571428571428,
+          "recall5": 0.12678571428571428,
+          "mrr": 0.12678571428571428
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.1252236135957066,
+          "coverage": 0.1252236135957066,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.1252236135957066,
+          "recall3": 0.1252236135957066,
+          "recall5": 0.1252236135957066,
+          "mrr": 0.1252236135957066
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.16210045662100456,
+            "coverage": 0.16210045662100456,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.16210045662100456,
+            "recall3": 0.16210045662100456,
+            "recall5": 0.16210045662100456,
+            "mrr": 0.16210045662100456
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 0.1,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.348794124054562,
+        "weights": [
+          1.6430017079532746,
+          4.480219802698634
+        ],
+        "threshold": 3.7272646178791766
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.25535714285714284,
+          "coverage": 0.2571428571428571,
+          "noMatchAnyRate": 0.017045454545454544,
+          "noMatchSemanticRate": 0.017045454545454544,
+          "recall1": 0.25535714285714284,
+          "recall3": 0.25535714285714284,
+          "recall5": 0.25535714285714284,
+          "mrr": 0.25535714285714284
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.25402504472271914,
+          "coverage": 0.2558139534883721,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.25402504472271914,
+          "recall3": 0.25402504472271914,
+          "recall5": 0.25402504472271914,
+          "mrr": 0.25402504472271914
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3242009132420091,
+            "coverage": 0.3264840182648402,
+            "noMatchAnyRate": 0.022222222222222223,
+            "noMatchSemanticRate": 0.022222222222222223,
+            "recall1": 0.3242009132420091,
+            "recall3": 0.3242009132420091,
+            "recall5": 0.3242009132420091,
+            "mrr": 0.3242009132420091
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.0111731843575419,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 0.1,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.348794124054562,
+        "weights": [
+          1.6430017079532746,
+          4.480219802698634
+        ],
+        "threshold": 3.060474232219928
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.40714285714285714,
+          "coverage": 0.41964285714285715,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.40714285714285714,
+          "recall3": 0.40714285714285714,
+          "recall5": 0.40714285714285714,
+          "mrr": 0.40714285714285714
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.40608228980322003,
+          "coverage": 0.4186046511627907,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.40608228980322003,
+          "recall3": 0.40608228980322003,
+          "recall5": 0.40608228980322003,
+          "mrr": 0.40608228980322003
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5034246575342466,
+            "coverage": 0.5148401826484018,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5034246575342466,
+            "recall3": 0.5034246575342466,
+            "recall5": 0.5034246575342466,
+            "mrr": 0.5034246575342466
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0782122905027933,
+            "coverage": 0.1005586592178771,
+            "noMatchAnyRate": 0.03333333333333333,
+            "noMatchSemanticRate": 0.03333333333333333,
+            "recall1": 0.0782122905027933,
+            "recall3": 0.0782122905027933,
+            "recall5": 0.0782122905027933,
+            "mrr": 0.0782122905027933
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 1.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.3444812512202149,
+        "weights": [
+          1.6507580482031554,
+          4.469496889274897
+        ],
+        "threshold": 4.313040386939687
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.12678571428571428,
+          "coverage": 0.12678571428571428,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.12678571428571428,
+          "recall3": 0.12678571428571428,
+          "recall5": 0.12678571428571428,
+          "mrr": 0.12678571428571428
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.1252236135957066,
+          "coverage": 0.1252236135957066,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.1252236135957066,
+          "recall3": 0.1252236135957066,
+          "recall5": 0.1252236135957066,
+          "mrr": 0.1252236135957066
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.16210045662100456,
+            "coverage": 0.16210045662100456,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.16210045662100456,
+            "recall3": 0.16210045662100456,
+            "recall5": 0.16210045662100456,
+            "mrr": 0.16210045662100456
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 1.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.3444812512202149,
+        "weights": [
+          1.6507580482031554,
+          4.469496889274897
+        ],
+        "threshold": 3.723088858349657
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.25535714285714284,
+          "coverage": 0.2571428571428571,
+          "noMatchAnyRate": 0.017045454545454544,
+          "noMatchSemanticRate": 0.017045454545454544,
+          "recall1": 0.25535714285714284,
+          "recall3": 0.25535714285714284,
+          "recall5": 0.25535714285714284,
+          "mrr": 0.25535714285714284
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.25402504472271914,
+          "coverage": 0.2558139534883721,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.25402504472271914,
+          "recall3": 0.25402504472271914,
+          "recall5": 0.25402504472271914,
+          "mrr": 0.25402504472271914
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3242009132420091,
+            "coverage": 0.3264840182648402,
+            "noMatchAnyRate": 0.022222222222222223,
+            "noMatchSemanticRate": 0.022222222222222223,
+            "recall1": 0.3242009132420091,
+            "recall3": 0.3242009132420091,
+            "recall5": 0.3242009132420091,
+            "mrr": 0.3242009132420091
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.0111731843575419,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 1.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.3444812512202149,
+        "weights": [
+          1.6507580482031554,
+          4.469496889274897
+        ],
+        "threshold": 3.0573247598498887
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.40714285714285714,
+          "coverage": 0.41964285714285715,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.40714285714285714,
+          "recall3": 0.40714285714285714,
+          "recall5": 0.40714285714285714,
+          "mrr": 0.40714285714285714
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.40608228980322003,
+          "coverage": 0.4186046511627907,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.40608228980322003,
+          "recall3": 0.40608228980322003,
+          "recall5": 0.40608228980322003,
+          "mrr": 0.40608228980322003
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5034246575342466,
+            "coverage": 0.5148401826484018,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5034246575342466,
+            "recall3": 0.5034246575342466,
+            "recall5": 0.5034246575342466,
+            "mrr": 0.5034246575342466
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0782122905027933,
+            "coverage": 0.1005586592178771,
+            "noMatchAnyRate": 0.03333333333333333,
+            "noMatchSemanticRate": 0.03333333333333333,
+            "recall1": 0.0782122905027933,
+            "recall3": 0.0782122905027933,
+            "recall5": 0.0782122905027933,
+            "mrr": 0.0782122905027933
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 10.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.3037882526476028,
+        "weights": [
+          1.723479479713566,
+          4.367769821018805
+        ],
+        "threshold": 4.272636060403985
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.12857142857142856,
+          "coverage": 0.12857142857142856,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.12857142857142856,
+          "recall3": 0.12857142857142856,
+          "recall5": 0.12857142857142856,
+          "mrr": 0.12857142857142856
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.12701252236135957,
+          "coverage": 0.12701252236135957,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.12701252236135957,
+          "recall3": 0.12701252236135957,
+          "recall5": 0.12701252236135957,
+          "mrr": 0.12701252236135957
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.1632420091324201,
+            "coverage": 0.1632420091324201,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.1632420091324201,
+            "recall3": 0.1632420091324201,
+            "recall5": 0.1632420091324201,
+            "mrr": 0.1632420091324201
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.00558659217877095,
+            "coverage": 0.00558659217877095,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.00558659217877095,
+            "recall3": 0.00558659217877095,
+            "recall5": 0.00558659217877095,
+            "mrr": 0.00558659217877095
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 10.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.3037882526476028,
+        "weights": [
+          1.723479479713566,
+          4.367769821018805
+        ],
+        "threshold": 3.6830901473877
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2580357142857143,
+          "coverage": 0.2598214285714286,
+          "noMatchAnyRate": 0.017045454545454544,
+          "noMatchSemanticRate": 0.017045454545454544,
+          "recall1": 0.2580357142857143,
+          "recall3": 0.2580357142857143,
+          "recall5": 0.2580357142857143,
+          "mrr": 0.2580357142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.2567084078711986,
+          "coverage": 0.2584973166368515,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2567084078711986,
+          "recall3": 0.2567084078711986,
+          "recall5": 0.2567084078711986,
+          "mrr": 0.2567084078711986
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3276255707762557,
+            "coverage": 0.3299086757990868,
+            "noMatchAnyRate": 0.022222222222222223,
+            "noMatchSemanticRate": 0.022222222222222223,
+            "recall1": 0.3276255707762557,
+            "recall3": 0.3276255707762557,
+            "recall5": 0.3276255707762557,
+            "mrr": 0.3276255707762557
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.0111731843575419,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "best-margin",
+      "ridge": 10.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin"
+        ],
+        "bias": 0.3037882526476028,
+        "weights": [
+          1.723479479713566,
+          4.367769821018805
+        ],
+        "threshold": 3.0271043299184086
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4107142857142857,
+          "coverage": 0.42410714285714285,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.4107142857142857,
+          "recall3": 0.4107142857142857,
+          "recall5": 0.4107142857142857,
+          "mrr": 0.4107142857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.40966010733452596,
+          "coverage": 0.4230769230769231,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.40966010733452596,
+          "recall3": 0.40966010733452596,
+          "recall5": 0.40966010733452596,
+          "mrr": 0.40966010733452596
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5057077625570776,
+            "coverage": 0.5182648401826484,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5057077625570776,
+            "recall3": 0.5057077625570776,
+            "recall5": 0.5057077625570776,
+            "mrr": 0.5057077625570776
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.03076923076923077,
+            "coverage": 0.03076923076923077,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.03076923076923077,
+            "recall3": 0.03076923076923077,
+            "recall5": 0.03076923076923077,
+            "mrr": 0.03076923076923077
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.08379888268156424,
+            "coverage": 0.10614525139664804,
+            "noMatchAnyRate": 0.03333333333333333,
+            "noMatchSemanticRate": 0.03333333333333333,
+            "recall1": 0.08379888268156424,
+            "recall3": 0.08379888268156424,
+            "recall5": 0.08379888268156424,
+            "mrr": 0.08379888268156424
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 0.1,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.7055783403742122,
+        "weights": [
+          0.035829371529976305,
+          6.40947176290621
+        ],
+        "threshold": 3.6435208655927824
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2330357142857143,
+          "coverage": 0.2357142857142857,
+          "noMatchAnyRate": 0.011363636363636364,
+          "noMatchSemanticRate": 0.011363636363636364,
+          "recall1": 0.2330357142857143,
+          "recall3": 0.2330357142857143,
+          "recall5": 0.2330357142857143,
+          "mrr": 0.2330357142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.23166368515205724,
+          "coverage": 0.23434704830053668,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.23166368515205724,
+          "recall3": 0.23166368515205724,
+          "recall5": 0.23166368515205724,
+          "mrr": 0.23166368515205724
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.2945205479452055,
+            "coverage": 0.295662100456621,
+            "noMatchAnyRate": 0.011111111111111112,
+            "noMatchSemanticRate": 0.011111111111111112,
+            "recall1": 0.2945205479452055,
+            "recall3": 0.2945205479452055,
+            "recall5": 0.2945205479452055,
+            "mrr": 0.2945205479452055
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.01675977653631285,
+            "coverage": 0.027932960893854747,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.01675977653631285,
+            "recall3": 0.01675977653631285,
+            "recall5": 0.01675977653631285,
+            "mrr": 0.01675977653631285
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 0.1,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.7055783403742122,
+        "weights": [
+          0.035829371529976305,
+          6.40947176290621
+        ],
+        "threshold": 3.287238385901061
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.3281461776913266,
+          "coverage": 0.33482142857142855,
+          "noMatchAnyRate": 0.02556818181818182,
+          "noMatchSemanticRate": 0.02556818181818182,
+          "recall1": 0.32589285714285715,
+          "recall3": 0.3294642857142857,
+          "recall5": 0.3294642857142857,
+          "mrr": 0.32767857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.3269442924993612,
+          "coverage": 0.3336314847942755,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.32468694096601075,
+          "recall3": 0.3282647584973166,
+          "recall5": 0.3282647584973166,
+          "mrr": 0.32647584973166366
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.41041520435420753,
+            "coverage": 0.4166666666666667,
+            "noMatchAnyRate": 0.02962962962962963,
+            "noMatchSemanticRate": 0.02962962962962963,
+            "recall1": 0.4075342465753425,
+            "recall3": 0.4121004566210046,
+            "recall5": 0.4121004566210046,
+            "mrr": 0.4098173515981735
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.03910614525139665,
+            "coverage": 0.05027932960893855,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.03910614525139665,
+            "recall3": 0.03910614525139665,
+            "recall5": 0.03910614525139665,
+            "mrr": 0.03910614525139665
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 0.1,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.7055783403742122,
+        "weights": [
+          0.035829371529976305,
+          6.40947176290621
+        ],
+        "threshold": 2.657684890124664
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4512647395312502,
+          "coverage": 0.475,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.4473214285714286,
+          "recall3": 0.45357142857142857,
+          "recall5": 0.45357142857142857,
+          "mrr": 0.4504464285714286
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.45028310221377477,
+          "coverage": 0.4740608228980322,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.44633273703041143,
+          "recall3": 0.4525939177101968,
+          "recall5": 0.4525939177101968,
+          "mrr": 0.4494633273703041
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.557553091638128,
+            "coverage": 0.5799086757990868,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5525114155251142,
+            "recall3": 0.5605022831050228,
+            "recall5": 0.5605022831050228,
+            "mrr": 0.5565068493150684
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0893854748603352,
+            "coverage": 0.12849162011173185,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.0893854748603352,
+            "recall3": 0.0893854748603352,
+            "recall5": 0.0893854748603352,
+            "mrr": 0.0893854748603352
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 1.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.7060373595703815,
+        "weights": [
+          0.0745037707213172,
+          6.3666541000117745
+        ],
+        "threshold": 3.642045312197491
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2330357142857143,
+          "coverage": 0.2357142857142857,
+          "noMatchAnyRate": 0.011363636363636364,
+          "noMatchSemanticRate": 0.011363636363636364,
+          "recall1": 0.2330357142857143,
+          "recall3": 0.2330357142857143,
+          "recall5": 0.2330357142857143,
+          "mrr": 0.2330357142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.23166368515205724,
+          "coverage": 0.23434704830053668,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.23166368515205724,
+          "recall3": 0.23166368515205724,
+          "recall5": 0.23166368515205724,
+          "mrr": 0.23166368515205724
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.2945205479452055,
+            "coverage": 0.295662100456621,
+            "noMatchAnyRate": 0.011111111111111112,
+            "noMatchSemanticRate": 0.011111111111111112,
+            "recall1": 0.2945205479452055,
+            "recall3": 0.2945205479452055,
+            "recall5": 0.2945205479452055,
+            "mrr": 0.2945205479452055
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.01675977653631285,
+            "coverage": 0.027932960893854747,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.01675977653631285,
+            "recall3": 0.01675977653631285,
+            "recall5": 0.01675977653631285,
+            "mrr": 0.01675977653631285
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 1.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.7060373595703815,
+        "weights": [
+          0.0745037707213172,
+          6.3666541000117745
+        ],
+        "threshold": 3.2853961026291203
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.32725332054846945,
+          "coverage": 0.3339285714285714,
+          "noMatchAnyRate": 0.02556818181818182,
+          "noMatchSemanticRate": 0.02556818181818182,
+          "recall1": 0.325,
+          "recall3": 0.32857142857142857,
+          "recall5": 0.32857142857142857,
+          "mrr": 0.3267857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.3260498381165347,
+          "coverage": 0.33273703041144903,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.32379248658318427,
+          "recall3": 0.32737030411449014,
+          "recall5": 0.32737030411449014,
+          "mrr": 0.32558139534883723
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.409273651842792,
+            "coverage": 0.4155251141552511,
+            "noMatchAnyRate": 0.02962962962962963,
+            "noMatchSemanticRate": 0.02962962962962963,
+            "recall1": 0.4063926940639269,
+            "recall3": 0.410958904109589,
+            "recall5": 0.410958904109589,
+            "mrr": 0.408675799086758
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.03910614525139665,
+            "coverage": 0.05027932960893855,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.03910614525139665,
+            "recall3": 0.03910614525139665,
+            "recall5": 0.03910614525139665,
+            "mrr": 0.03910614525139665
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 1.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.7060373595703815,
+        "weights": [
+          0.0745037707213172,
+          6.3666541000117745
+        ],
+        "threshold": 2.646543980676365
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4512647395312502,
+          "coverage": 0.475,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.4473214285714286,
+          "recall3": 0.45357142857142857,
+          "recall5": 0.45357142857142857,
+          "mrr": 0.4504464285714286
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.45028310221377477,
+          "coverage": 0.4740608228980322,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.44633273703041143,
+          "recall3": 0.4525939177101968,
+          "recall5": 0.4525939177101968,
+          "mrr": 0.4494633273703041
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.557553091638128,
+            "coverage": 0.5799086757990868,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5525114155251142,
+            "recall3": 0.5605022831050228,
+            "recall5": 0.5605022831050228,
+            "mrr": 0.5565068493150684
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0893854748603352,
+            "coverage": 0.12849162011173185,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.0893854748603352,
+            "recall3": 0.0893854748603352,
+            "recall5": 0.0893854748603352,
+            "mrr": 0.0893854748603352
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 10.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.709623702929281,
+        "weights": [
+          0.4116479084279344,
+          5.99164061652742
+        ],
+        "threshold": 3.628145212027444
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.22767857142857142,
+          "coverage": 0.2294642857142857,
+          "noMatchAnyRate": 0.011363636363636364,
+          "noMatchSemanticRate": 0.011363636363636364,
+          "recall1": 0.22767857142857142,
+          "recall3": 0.22767857142857142,
+          "recall5": 0.22767857142857142,
+          "mrr": 0.22767857142857142
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.2262969588550984,
+          "coverage": 0.22808586762075134,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2262969588550984,
+          "recall3": 0.2262969588550984,
+          "recall5": 0.2262969588550984,
+          "mrr": 0.2262969588550984
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.2876712328767123,
+            "coverage": 0.2876712328767123,
+            "noMatchAnyRate": 0.011111111111111112,
+            "noMatchSemanticRate": 0.011111111111111112,
+            "recall1": 0.2876712328767123,
+            "recall3": 0.2876712328767123,
+            "recall5": 0.2876712328767123,
+            "mrr": 0.2876712328767123
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.01675977653631285,
+            "coverage": 0.027932960893854747,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.01675977653631285,
+            "recall3": 0.01675977653631285,
+            "recall5": 0.01675977653631285,
+            "mrr": 0.01675977653631285
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 10.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.709623702929281,
+        "weights": [
+          0.4116479084279344,
+          5.99164061652742
+        ],
+        "threshold": 3.268395644815645
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.32011046340561233,
+          "coverage": 0.32589285714285715,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.31785714285714284,
+          "recall3": 0.32142857142857145,
+          "recall5": 0.32142857142857145,
+          "mrr": 0.3196428571428571
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.3188942030539229,
+          "coverage": 0.32468694096601075,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.31663685152057247,
+          "recall3": 0.32021466905187834,
+          "recall5": 0.32021466905187834,
+          "mrr": 0.3184257602862254
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.4001412317514678,
+            "coverage": 0.4052511415525114,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.3972602739726027,
+            "recall3": 0.4018264840182648,
+            "recall5": 0.4018264840182648,
+            "mrr": 0.3995433789954338
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.03910614525139665,
+            "coverage": 0.05027932960893855,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.03910614525139665,
+            "recall3": 0.03910614525139665,
+            "recall5": 0.03910614525139665,
+            "mrr": 0.03910614525139665
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-margin",
+      "ridge": 10.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin"
+        ],
+        "bias": -1.709623702929281,
+        "weights": [
+          0.4116479084279344,
+          5.99164061652742
+        ],
+        "threshold": 2.6231175098185715
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4512647395312502,
+          "coverage": 0.47410714285714284,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.4473214285714286,
+          "recall3": 0.45357142857142857,
+          "recall5": 0.45357142857142857,
+          "mrr": 0.4504464285714286
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.45028310221377477,
+          "coverage": 0.4731663685152057,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.44633273703041143,
+          "recall3": 0.4525939177101968,
+          "recall5": 0.4525939177101968,
+          "mrr": 0.4494633273703041
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.557553091638128,
+            "coverage": 0.5799086757990868,
+            "noMatchAnyRate": 0.05555555555555555,
+            "noMatchSemanticRate": 0.05555555555555555,
+            "recall1": 0.5525114155251142,
+            "recall3": 0.5605022831050228,
+            "recall5": 0.5605022831050228,
+            "mrr": 0.5565068493150684
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0893854748603352,
+            "coverage": 0.12290502793296089,
+            "noMatchAnyRate": 0.06666666666666667,
+            "noMatchSemanticRate": 0.06666666666666667,
+            "recall1": 0.0893854748603352,
+            "recall3": 0.0893854748603352,
+            "recall5": 0.0893854748603352,
+            "mrr": 0.0893854748603352
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 0.1,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.1328066966961503,
+        "weights": [
+          0.39670816627289546,
+          3.9312906597582025,
+          1.8719083324208372
+        ],
+        "threshold": 4.322712786842348
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.1392857142857143,
+          "coverage": 0.1392857142857143,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.1392857142857143,
+          "recall3": 0.1392857142857143,
+          "recall5": 0.1392857142857143,
+          "mrr": 0.1392857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.13774597495527727,
+          "coverage": 0.13774597495527727,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.13774597495527727,
+          "recall3": 0.13774597495527727,
+          "recall5": 0.13774597495527727,
+          "mrr": 0.13774597495527727
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.1780821917808219,
+            "coverage": 0.1780821917808219,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.1780821917808219,
+            "recall3": 0.1780821917808219,
+            "recall5": 0.1780821917808219,
+            "mrr": 0.1780821917808219
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 0.1,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.1328066966961503,
+        "weights": [
+          0.39670816627289546,
+          3.9312906597582025,
+          1.8719083324208372
+        ],
+        "threshold": 3.7890901369005783
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.26071428571428573,
+          "coverage": 0.26339285714285715,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.26071428571428573,
+          "recall3": 0.26071428571428573,
+          "recall5": 0.26071428571428573,
+          "mrr": 0.26071428571428573
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.259391771019678,
+          "coverage": 0.2620751341681574,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.259391771019678,
+          "recall3": 0.259391771019678,
+          "recall5": 0.259391771019678,
+          "mrr": 0.259391771019678
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3310502283105023,
+            "coverage": 0.3333333333333333,
+            "noMatchAnyRate": 0.02962962962962963,
+            "noMatchSemanticRate": 0.02962962962962963,
+            "recall1": 0.3310502283105023,
+            "recall3": 0.3310502283105023,
+            "recall5": 0.3310502283105023,
+            "mrr": 0.3310502283105023
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.01675977653631285,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 0.1,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.1328066966961503,
+        "weights": [
+          0.39670816627289546,
+          3.9312906597582025,
+          1.8719083324208372
+        ],
+        "threshold": 3.0474528451114042
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4142857142857143,
+          "coverage": 0.4276785714285714,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4142857142857143,
+          "recall3": 0.4142857142857143,
+          "recall5": 0.4142857142857143,
+          "mrr": 0.4142857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.41323792486583183,
+          "coverage": 0.426654740608229,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.41323792486583183,
+          "recall3": 0.41323792486583183,
+          "recall5": 0.41323792486583183,
+          "mrr": 0.41323792486583183
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5136986301369864,
+            "coverage": 0.5273972602739726,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5136986301369864,
+            "recall3": 0.5136986301369864,
+            "recall5": 0.5136986301369864,
+            "mrr": 0.5136986301369864
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.07262569832402235,
+            "coverage": 0.0893854748603352,
+            "noMatchAnyRate": 0.03333333333333333,
+            "noMatchSemanticRate": 0.03333333333333333,
+            "recall1": 0.07262569832402235,
+            "recall3": 0.07262569832402235,
+            "recall5": 0.07262569832402235,
+            "mrr": 0.07262569832402235
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 1.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.1280150901241741,
+        "weights": [
+          0.4048653047832724,
+          3.9201560597271845,
+          1.872968549035409
+        ],
+        "threshold": 4.319611813495994
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.1392857142857143,
+          "coverage": 0.1392857142857143,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.1392857142857143,
+          "recall3": 0.1392857142857143,
+          "recall5": 0.1392857142857143,
+          "mrr": 0.1392857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.13774597495527727,
+          "coverage": 0.13774597495527727,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.13774597495527727,
+          "recall3": 0.13774597495527727,
+          "recall5": 0.13774597495527727,
+          "mrr": 0.13774597495527727
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.1780821917808219,
+            "coverage": 0.1780821917808219,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.1780821917808219,
+            "recall3": 0.1780821917808219,
+            "recall5": 0.1780821917808219,
+            "mrr": 0.1780821917808219
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 1.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.1280150901241741,
+        "weights": [
+          0.4048653047832724,
+          3.9201560597271845,
+          1.872968549035409
+        ],
+        "threshold": 3.785321553737028
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.26160714285714287,
+          "coverage": 0.2642857142857143,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.26160714285714287,
+          "recall3": 0.26160714285714287,
+          "recall5": 0.26160714285714287,
+          "mrr": 0.26160714285714287
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.26028622540250446,
+          "coverage": 0.2629695885509839,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.26028622540250446,
+          "recall3": 0.26028622540250446,
+          "recall5": 0.26028622540250446,
+          "mrr": 0.26028622540250446
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3321917808219178,
+            "coverage": 0.3344748858447489,
+            "noMatchAnyRate": 0.02962962962962963,
+            "noMatchSemanticRate": 0.02962962962962963,
+            "recall1": 0.3321917808219178,
+            "recall3": 0.3321917808219178,
+            "recall5": 0.3321917808219178,
+            "mrr": 0.3321917808219178
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.01675977653631285,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 1.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.1280150901241741,
+        "weights": [
+          0.4048653047832724,
+          3.9201560597271845,
+          1.872968549035409
+        ],
+        "threshold": 3.0471319528878635
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4142857142857143,
+          "coverage": 0.4276785714285714,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4142857142857143,
+          "recall3": 0.4142857142857143,
+          "recall5": 0.4142857142857143,
+          "mrr": 0.4142857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.41323792486583183,
+          "coverage": 0.426654740608229,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.41323792486583183,
+          "recall3": 0.41323792486583183,
+          "recall5": 0.41323792486583183,
+          "mrr": 0.41323792486583183
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5136986301369864,
+            "coverage": 0.5273972602739726,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5136986301369864,
+            "recall3": 0.5136986301369864,
+            "recall5": 0.5136986301369864,
+            "mrr": 0.5136986301369864
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.07262569832402235,
+            "coverage": 0.0893854748603352,
+            "noMatchAnyRate": 0.03333333333333333,
+            "noMatchSemanticRate": 0.03333333333333333,
+            "recall1": 0.07262569832402235,
+            "recall3": 0.07262569832402235,
+            "recall5": 0.07262569832402235,
+            "mrr": 0.07262569832402235
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 10.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.08271992085491875,
+        "weights": [
+          0.4822619746975043,
+          3.814681551896747,
+          1.8823672749193652
+        ],
+        "threshold": 4.289909962249676
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.14017857142857143,
+          "coverage": 0.14017857142857143,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.14017857142857143,
+          "recall3": 0.14017857142857143,
+          "recall5": 0.14017857142857143,
+          "mrr": 0.14017857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.13864042933810375,
+          "coverage": 0.13864042933810375,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.13864042933810375,
+          "recall3": 0.13864042933810375,
+          "recall5": 0.13864042933810375,
+          "mrr": 0.13864042933810375
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.17922374429223745,
+            "coverage": 0.17922374429223745,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.17922374429223745,
+            "recall3": 0.17922374429223745,
+            "recall5": 0.17922374429223745,
+            "mrr": 0.17922374429223745
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 10.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.08271992085491875,
+        "weights": [
+          0.4822619746975043,
+          3.814681551896747,
+          1.8823672749193652
+        ],
+        "threshold": 3.7493151091416475
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2642857142857143,
+          "coverage": 0.2669642857142857,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.2642857142857143,
+          "recall3": 0.2642857142857143,
+          "recall5": 0.2642857142857143,
+          "mrr": 0.2642857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.2629695885509839,
+          "coverage": 0.26565295169946335,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2629695885509839,
+          "recall3": 0.2629695885509839,
+          "recall5": 0.2629695885509839,
+          "mrr": 0.2629695885509839
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3356164383561644,
+            "coverage": 0.3378995433789954,
+            "noMatchAnyRate": 0.02962962962962963,
+            "noMatchSemanticRate": 0.02962962962962963,
+            "recall1": 0.3356164383561644,
+            "recall3": 0.3356164383561644,
+            "recall5": 0.3356164383561644,
+            "mrr": 0.3356164383561644
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.01675977653631285,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "both-margins",
+      "ridge": 10.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "bestMargin",
+          "meanMargin"
+        ],
+        "bias": 0.08271992085491875,
+        "weights": [
+          0.4822619746975043,
+          3.814681551896747,
+          1.8823672749193652
+        ],
+        "threshold": 3.0179374303969877
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.41517857142857145,
+          "coverage": 0.42857142857142855,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.41517857142857145,
+          "recall3": 0.41517857142857145,
+          "recall5": 0.41517857142857145,
+          "mrr": 0.41517857142857145
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4141323792486583,
+          "coverage": 0.4275491949910555,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4141323792486583,
+          "recall3": 0.4141323792486583,
+          "recall5": 0.4141323792486583,
+          "mrr": 0.4141323792486583
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5148401826484018,
+            "coverage": 0.5285388127853882,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5148401826484018,
+            "recall3": 0.5148401826484018,
+            "recall5": 0.5148401826484018,
+            "mrr": 0.5148401826484018
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.07262569832402235,
+            "coverage": 0.0893854748603352,
+            "noMatchAnyRate": 0.03333333333333333,
+            "noMatchSemanticRate": 0.03333333333333333,
+            "recall1": 0.07262569832402235,
+            "recall3": 0.07262569832402235,
+            "recall5": 0.07262569832402235,
+            "mrr": 0.07262569832402235
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 0.1,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.2520044838514097,
+        "weights": [
+          0.4656575853133235,
+          6.355222272929906,
+          -5.815498598450602
+        ],
+        "threshold": 3.779376253233243
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.15803571428571428,
+          "coverage": 0.15892857142857142,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.15803571428571428,
+          "recall3": 0.15803571428571428,
+          "recall5": 0.15803571428571428,
+          "mrr": 0.15803571428571428
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.15652951699463327,
+          "coverage": 0.15742397137745975,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.15652951699463327,
+          "recall3": 0.15652951699463327,
+          "recall5": 0.15652951699463327,
+          "mrr": 0.15652951699463327
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.2009132420091324,
+            "coverage": 0.2009132420091324,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.2009132420091324,
+            "recall3": 0.2009132420091324,
+            "recall5": 0.2009132420091324,
+            "mrr": 0.2009132420091324
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.00558659217877095,
+            "coverage": 0.0111731843575419,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.00558659217877095,
+            "recall3": 0.00558659217877095,
+            "recall5": 0.00558659217877095,
+            "mrr": 0.00558659217877095
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 0.1,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.2520044838514097,
+        "weights": [
+          0.4656575853133235,
+          6.355222272929906,
+          -5.815498598450602
+        ],
+        "threshold": 3.305705653349841
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2910714285714286,
+          "coverage": 0.29464285714285715,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.2910714285714286,
+          "recall3": 0.2910714285714286,
+          "recall5": 0.2910714285714286,
+          "mrr": 0.2910714285714286
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.2898032200357782,
+          "coverage": 0.29338103756708406,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2898032200357782,
+          "recall3": 0.2898032200357782,
+          "recall5": 0.2898032200357782,
+          "mrr": 0.2898032200357782
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3687214611872146,
+            "coverage": 0.3710045662100457,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.3687214611872146,
+            "recall3": 0.3687214611872146,
+            "recall5": 0.3687214611872146,
+            "mrr": 0.3687214611872146
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.0223463687150838,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 0.1,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.2520044838514097,
+        "weights": [
+          0.4656575853133235,
+          6.355222272929906,
+          -5.815498598450602
+        ],
+        "threshold": 2.7715111005028894
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.41888807925701543,
+          "coverage": 0.4357142857142857,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.4160714285714286,
+          "recall3": 0.4205357142857143,
+          "recall5": 0.4205357142857143,
+          "mrr": 0.41830357142857144
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4178485230481729,
+          "coverage": 0.4347048300536673,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4150268336314848,
+          "recall3": 0.41949910554561715,
+          "recall5": 0.41949910554561715,
+          "mrr": 0.41726296958855097
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5218660374062297,
+            "coverage": 0.5399543378995434,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5182648401826484,
+            "recall3": 0.523972602739726,
+            "recall5": 0.523972602739726,
+            "mrr": 0.5211187214611872
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.061452513966480445,
+            "coverage": 0.0782122905027933,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.061452513966480445,
+            "recall3": 0.061452513966480445,
+            "recall5": 0.061452513966480445,
+            "mrr": 0.061452513966480445
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 1.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.25367073059838763,
+        "weights": [
+          0.5010749792575487,
+          6.315108351942811,
+          -5.809603631681398
+        ],
+        "threshold": 3.774424585184406
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.15803571428571428,
+          "coverage": 0.15892857142857142,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.15803571428571428,
+          "recall3": 0.15803571428571428,
+          "recall5": 0.15803571428571428,
+          "mrr": 0.15803571428571428
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.15652951699463327,
+          "coverage": 0.15742397137745975,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.15652951699463327,
+          "recall3": 0.15652951699463327,
+          "recall5": 0.15652951699463327,
+          "mrr": 0.15652951699463327
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.2009132420091324,
+            "coverage": 0.2009132420091324,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.2009132420091324,
+            "recall3": 0.2009132420091324,
+            "recall5": 0.2009132420091324,
+            "mrr": 0.2009132420091324
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.00558659217877095,
+            "coverage": 0.0111731843575419,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.00558659217877095,
+            "recall3": 0.00558659217877095,
+            "recall5": 0.00558659217877095,
+            "mrr": 0.00558659217877095
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 1.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.25367073059838763,
+        "weights": [
+          0.5010749792575487,
+          6.315108351942811,
+          -5.809603631681398
+        ],
+        "threshold": 3.2971415717196275
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.29285714285714287,
+          "coverage": 0.29642857142857143,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.29285714285714287,
+          "recall3": 0.29285714285714287,
+          "recall5": 0.29285714285714287,
+          "mrr": 0.29285714285714287
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.29159212880143115,
+          "coverage": 0.295169946332737,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.29159212880143115,
+          "recall3": 0.29159212880143115,
+          "recall5": 0.29159212880143115,
+          "mrr": 0.29159212880143115
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3710045662100457,
+            "coverage": 0.3732876712328767,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.3710045662100457,
+            "recall3": 0.3710045662100457,
+            "recall5": 0.3710045662100457,
+            "mrr": 0.3710045662100457
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.0223463687150838,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 1.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.25367073059838763,
+        "weights": [
+          0.5010749792575487,
+          6.315108351942811,
+          -5.809603631681398
+        ],
+        "threshold": 2.7660149301306687
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4206737935427297,
+          "coverage": 0.4375,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.41785714285714287,
+          "recall3": 0.42232142857142857,
+          "recall5": 0.42232142857142857,
+          "mrr": 0.4200892857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.41963743181382585,
+          "coverage": 0.4364937388193202,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.41681574239713776,
+          "recall3": 0.4212880143112701,
+          "recall5": 0.4212880143112701,
+          "mrr": 0.41905187835420393
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5241491424290609,
+            "coverage": 0.5422374429223744,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.5205479452054794,
+            "recall3": 0.526255707762557,
+            "recall5": 0.526255707762557,
+            "mrr": 0.5234018264840182
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.061452513966480445,
+            "coverage": 0.0782122905027933,
+            "noMatchAnyRate": 0.08333333333333333,
+            "noMatchSemanticRate": 0.08333333333333333,
+            "recall1": 0.061452513966480445,
+            "recall3": 0.061452513966480445,
+            "recall5": 0.061452513966480445,
+            "mrr": 0.061452513966480445
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 10.0,
+      "calibrationBudget": 0.01,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.2701173953064546,
+        "weights": [
+          0.8090878167162668,
+          5.96317660192623,
+          -5.7480815639140905
+        ],
+        "threshold": 3.729677673817538
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.15982142857142856,
+          "coverage": 0.16071428571428573,
+          "noMatchAnyRate": 0.002840909090909091,
+          "noMatchSemanticRate": 0.002840909090909091,
+          "recall1": 0.15982142857142856,
+          "recall3": 0.15982142857142856,
+          "recall5": 0.15982142857142856,
+          "mrr": 0.15982142857142856
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.15831842576028624,
+          "coverage": 0.1592128801431127,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.15831842576028624,
+          "recall3": 0.15831842576028624,
+          "recall5": 0.15831842576028624,
+          "mrr": 0.15831842576028624
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.20319634703196346,
+            "coverage": 0.20319634703196346,
+            "noMatchAnyRate": 0.003703703703703704,
+            "noMatchSemanticRate": 0.003703703703703704,
+            "recall1": 0.20319634703196346,
+            "recall3": 0.20319634703196346,
+            "recall5": 0.20319634703196346,
+            "mrr": 0.20319634703196346
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.0,
+            "coverage": 0.0,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.0,
+            "recall3": 0.0,
+            "recall5": 0.0,
+            "mrr": 0.0
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.00558659217877095,
+            "coverage": 0.0111731843575419,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.00558659217877095,
+            "recall3": 0.00558659217877095,
+            "recall5": 0.00558659217877095,
+            "mrr": 0.00558659217877095
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 10.0,
+      "calibrationBudget": 0.025,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.2701173953064546,
+        "weights": [
+          0.8090878167162668,
+          5.96317660192623,
+          -5.7480815639140905
+        ],
+        "threshold": 3.2633515240032396
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.29375,
+          "coverage": 0.29732142857142857,
+          "noMatchAnyRate": 0.022727272727272728,
+          "noMatchSemanticRate": 0.022727272727272728,
+          "recall1": 0.29375,
+          "recall3": 0.29375,
+          "recall5": 0.29375,
+          "mrr": 0.29375
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.2924865831842576,
+          "coverage": 0.2960644007155635,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2924865831842576,
+          "recall3": 0.2924865831842576,
+          "recall5": 0.2924865831842576,
+          "mrr": 0.2924865831842576
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.3721461187214612,
+            "coverage": 0.3744292237442922,
+            "noMatchAnyRate": 0.025925925925925925,
+            "noMatchSemanticRate": 0.025925925925925925,
+            "recall1": 0.3721461187214612,
+            "recall3": 0.3721461187214612,
+            "recall5": 0.3721461187214612,
+            "mrr": 0.3721461187214612
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.0,
+            "noMatchSemanticRate": 0.0,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0111731843575419,
+            "coverage": 0.0223463687150838,
+            "noMatchAnyRate": 0.016666666666666666,
+            "noMatchSemanticRate": 0.016666666666666666,
+            "recall1": 0.0111731843575419,
+            "recall3": 0.0111731843575419,
+            "recall5": 0.0111731843575419,
+            "mrr": 0.0111731843575419
+          }
+        }
+      },
+      "admissible": false
+    },
+    {
+      "name": "mean-dispersion",
+      "ridge": 10.0,
+      "calibrationBudget": 0.05,
+      "rule": {
+        "features": [
+          "score",
+          "meanMargin",
+          "dispersion"
+        ],
+        "bias": -0.2701173953064546,
+        "weights": [
+          0.8090878167162668,
+          5.96317660192623,
+          -5.7480815639140905
+        ],
+        "threshold": 2.7115803130321567
+      },
+      "metrics": {
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.42603093639987255,
+          "coverage": 0.4455357142857143,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.4232142857142857,
+          "recall3": 0.4276785714285714,
+          "recall5": 0.4276785714285714,
+          "mrr": 0.42544642857142856
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4250041581107847,
+          "coverage": 0.4445438282647585,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4221824686940966,
+          "recall3": 0.426654740608229,
+          "recall5": 0.426654740608229,
+          "mrr": 0.42441860465116277
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 1146,
+            "positiveCount": 876,
+            "relevantCount": 876,
+            "noMatchCount": 270,
+            "ndcg5": 0.5298569049861385,
+            "coverage": 0.5513698630136986,
+            "noMatchAnyRate": 0.05185185185185185,
+            "noMatchSemanticRate": 0.05185185185185185,
+            "recall1": 0.526255707762557,
+            "recall3": 0.5319634703196348,
+            "recall5": 0.5319634703196348,
+            "mrr": 0.5291095890410958
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 87,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 22,
+            "ndcg5": 0.015384615384615385,
+            "coverage": 0.015384615384615385,
+            "noMatchAnyRate": 0.045454545454545456,
+            "noMatchSemanticRate": 0.045454545454545456,
+            "recall1": 0.015384615384615385,
+            "recall3": 0.015384615384615385,
+            "recall5": 0.015384615384615385,
+            "mrr": 0.015384615384615385
+          },
+          "unseen-intent-family": {
+            "count": 239,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 60,
+            "ndcg5": 0.0670391061452514,
+            "coverage": 0.08379888268156424,
+            "noMatchAnyRate": 0.06666666666666667,
+            "noMatchSemanticRate": 0.06666666666666667,
+            "recall1": 0.0670391061452514,
+            "recall3": 0.0670391061452514,
+            "recall5": 0.0670391061452514,
+            "mrr": 0.0670391061452514
+          }
+        }
+      },
+      "admissible": false
+    }
+  ],
+  "selected": {
+    "name": "score",
+    "ridge": 0.1,
+    "calibrationBudget": 0.05,
+    "rule": {
+      "features": [
+        "score"
+      ],
+      "bias": -1.9035753869016085,
+      "weights": [
+        6.241996506161633
+      ],
+      "threshold": 2.4877340946246727
+    },
+    "metrics": {
+      "overall": {
+        "count": 1472,
+        "positiveCount": 1120,
+        "relevantCount": 1120,
+        "noMatchCount": 352,
+        "ndcg5": 0.4686913311033984,
+        "coverage": 0.5026785714285714,
+        "noMatchAnyRate": 0.045454545454545456,
+        "noMatchSemanticRate": 0.045454545454545456,
+        "recall1": 0.4625,
+        "recall3": 0.47232142857142856,
+        "recall5": 0.4732142857142857,
+        "mrr": 0.4671428571428572
+      },
+      "semanticOnly": {
+        "count": 1118,
+        "positiveCount": 1118,
+        "relevantCount": 1118,
+        "noMatchCount": 0,
+        "ndcg5": 0.4677408683683419,
+        "coverage": 0.501788908765653,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.46153846153846156,
+        "recall3": 0.47137745974955275,
+        "recall5": 0.47227191413237923,
+        "mrr": 0.4661896243291593
+      },
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "positiveCount": 876,
+          "relevantCount": 876,
+          "noMatchCount": 270,
+          "ndcg5": 0.5370051464326486,
+          "coverage": 0.5616438356164384,
+          "noMatchAnyRate": 0.025925925925925925,
+          "noMatchSemanticRate": 0.025925925925925925,
+          "recall1": 0.5319634703196348,
+          "recall3": 0.5399543378995434,
+          "recall5": 0.5399543378995434,
+          "mrr": 0.535958904109589
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "positiveCount": 65,
+          "relevantCount": 65,
+          "noMatchCount": 22,
+          "ndcg5": 0.3327835346703301,
+          "coverage": 0.3384615384615385,
+          "noMatchAnyRate": 0.18181818181818182,
+          "noMatchSemanticRate": 0.18181818181818182,
+          "recall1": 0.3230769230769231,
+          "recall3": 0.3384615384615385,
+          "recall5": 0.3384615384615385,
+          "mrr": 0.33076923076923076
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "positiveCount": 179,
+          "relevantCount": 179,
+          "noMatchCount": 60,
+          "ndcg5": 0.18372543467728794,
+          "coverage": 0.2737430167597765,
+          "noMatchAnyRate": 0.08333333333333333,
+          "noMatchSemanticRate": 0.08333333333333333,
+          "recall1": 0.17318435754189945,
+          "recall3": 0.18994413407821228,
+          "recall5": 0.19553072625698323,
+          "mrr": 0.17988826815642459
+        }
+      }
+    },
+    "admissible": true
+  },
+  "candidateCountObserved": [
+    10
+  ],
+  "limitations": [
+    "Fitting and threshold calibration reuse calibration labels; dev selects45 finite settings",
+    "Dataset relevance is source-derived and unreviewed; no independent final claim",
+    "10-candidate menus do not identify size dependence; other menu sizes unsupported",
+    "Most supervision has one positive per menu; candidate rule permits multiple positives but real multi-positive quality is unmeasured",
+    "Query bootstrap is descriptive after dev selection and ignores source-family dependence"
+  ],
+  "pairedVersusBaseline": {
+    "count": 1118,
+    "delta": 0.0,
+    "pairedBootstrap95": [
+      0.0,
+      0.0
+    ]
+  },
+  "postSelectionTransfer": {
+    "status": "Not read or scored; candidate selection still in progress"
+  },
+  "datasetSha256": {
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39"
+  }
+}

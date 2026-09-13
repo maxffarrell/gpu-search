@@ -1,0 +1,45 @@
+{
+  "version": "candidate-linear-rejector-v1",
+  "features": {
+    "score": [
+      "score"
+    ],
+    "best-margin": [
+      "score",
+      "bestMargin"
+    ],
+    "mean-margin": [
+      "score",
+      "meanMargin"
+    ],
+    "both-margins": [
+      "score",
+      "bestMargin",
+      "meanMargin"
+    ],
+    "mean-dispersion": [
+      "score",
+      "meanMargin",
+      "dispersion"
+    ]
+  },
+  "ridge": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "calibrationFalsePositiveBudgets": [
+    0.01,
+    0.025,
+    0.05
+  ],
+  "maximumDevNoMatchRate": 0.05,
+  "minimumDevOverallDelta": -0.01,
+  "newtonSteps": 50,
+  "fit": "all calibration candidate binary relevance>=2 labels; class-balanced regularized logistic objective",
+  "threshold": "calibration no-match menu maximum linear statistics only",
+  "selection": "highest dev semantic nDCG among rules meeting5% dev no-match and baseline overall regression allowance; prefer fewer coefficients on ties",
+  "menuSize": "all observed expanded menus have10 candidates; coefficient is not identifiable and not fitted",
+  "multiPositive": "candidate-wise correctness target; best-margin optional, never mandatory positive gap; no top1-only restriction",
+  "noReviewedFinalTest": true
+}

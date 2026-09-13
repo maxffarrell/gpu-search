@@ -13,3 +13,5 @@ const demo=walk('apps/demo/dist').map(path=>({resource:path,...measure(readFileS
 const report={generatedAt:new Date().toISOString(),node:process.version,esbuild:'0.27.2',compression:'Node zlib; gzip level9; Brotli quality11 window22; each served resource separately',library:entries,demo,demoTotals:demo.reduce((a,r)=>({raw:a.raw+r.raw,gzip:a.gzip+r.gzip,brotli:a.brotli+r.brotli}),{raw:0,gzip:0,brotli:0}),semantic:'Demo ships experimental pooled16 CPU inference, manifest and int8 weights; core library remains lexical by default. No validated cutoff.',webgpu:'Not shipped: semantic feasibility precedes GPU optimization',sourceMaps:'Not built or served'};
 mkdirSync('bench/reports',{recursive:true});writeFileSync('bench/reports/size.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
 if(entries.find(x=>x.resource==='core/lexical.js')!.brotli>8192)throw new Error('Lexical transfer budget exceeded');
+// Count the entire served CPU demo, including model, metadata, UI and favicon.
+if(report.demoTotals.brotli>50*1024)throw new Error('Complete CPU demo exceeds the 50 KiB Brotli budget');

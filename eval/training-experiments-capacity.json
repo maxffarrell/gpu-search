@@ -1,0 +1,774 @@
+{
+  "status": "weak-label dev-selected capacity ablation; no original transfer data evaluated",
+  "configuration": {
+    "data_dir": "data/expanded",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "epochs": 30,
+    "minimum_epochs": 10,
+    "patience": 10,
+    "batch_size": 128,
+    "epoch_examples": 7165,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "dimension": 24,
+    "max_dev_no_match_rate": 0.05,
+    "arms": [
+      {
+        "id": "capacity24-no-match",
+        "temperature": 0.15,
+        "no_match_weight": 0.25,
+        "no_match_target": 0.35
+      }
+    ],
+    "sourceHashes": {
+      "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+      "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+      "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+    }
+  },
+  "baselineObjective": "Same no-match loss and feature contract as experiment-no-match seeds17/29/43; those selected epochs all<30",
+  "runs": [
+    {
+      "checkpoint": "runs/experiment-capacity24-no-match-seed17",
+      "arm": "capacity24-no-match",
+      "seed": 17,
+      "bestEpoch": 20,
+      "epochs": 30,
+      "passesDevNoMatchGate": true,
+      "trainingSeconds": 4.934437625051942,
+      "optimizerSeconds": 2.0834245021105744,
+      "weightsSha256": "09ae8486b457c695552f38cf1139e2f84366d7302372c9af4d89a201afcc1bbc",
+      "cutoff": 0.6672623753547668,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.4978487263480709,
+      "devSemanticCoverage": 0.5304114490161002,
+      "devRelevantCoverage": 0.53125,
+      "devOverallNdcg5": 0.4987454250510208,
+      "devNoMatchSemanticRate": 0.048295454545454544,
+      "devNoMatchAnyRate": 0.048295454545454544,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.5682818853342599,
+          "semanticCoverage": 0.5892448512585813,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.025925925925925925
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.32142752708791344,
+          "semanticCoverage": 0.38461538461538464,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.18181818181818182
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.21800960343176443,
+          "semanticCoverage": 0.29608938547486036,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.1
+        }
+      }
+    },
+    {
+      "checkpoint": "runs/experiment-capacity24-no-match-seed29",
+      "arm": "capacity24-no-match",
+      "seed": 29,
+      "bestEpoch": 16,
+      "epochs": 26,
+      "passesDevNoMatchGate": false,
+      "trainingSeconds": 4.275592916994356,
+      "optimizerSeconds": 1.7681372072547674,
+      "weightsSha256": "59bf3c48d515a7cd9dc90c936fd4702adb24cbc5f38d1eb4a448452ec2f77133",
+      "cutoff": 0.6205853223800659,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.5536318051434119,
+      "devSemanticCoverage": 0.59391771019678,
+      "devRelevantCoverage": 0.5946428571428571,
+      "devOverallNdcg5": 0.5544288912056559,
+      "devNoMatchSemanticRate": 0.09375,
+      "devNoMatchAnyRate": 0.09375,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.6362098833278851,
+          "semanticCoverage": 0.6670480549199085,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.05555555555555555
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.23479783857142947,
+          "semanticCoverage": 0.2923076923076923,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.22727272727272727
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.26620704253977623,
+          "semanticCoverage": 0.3463687150837989,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.21666666666666667
+        }
+      }
+    },
+    {
+      "checkpoint": "runs/experiment-capacity24-no-match-seed43",
+      "arm": "capacity24-no-match",
+      "seed": 43,
+      "bestEpoch": 20,
+      "epochs": 30,
+      "passesDevNoMatchGate": false,
+      "trainingSeconds": 4.910485291969962,
+      "optimizerSeconds": 2.0164916221401654,
+      "weightsSha256": "a494183fb8dcf9ea8e344eb44692fa5f9874f2d6fc957fd038d5302eca9bb8a1",
+      "cutoff": 0.6282834410667419,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.5561477791052353,
+      "devSemanticCoverage": 0.5957066189624329,
+      "devRelevantCoverage": 0.5964285714285714,
+      "devOverallNdcg5": 0.5569403723568329,
+      "devNoMatchSemanticRate": 0.09090909090909091,
+      "devNoMatchAnyRate": 0.09090909090909091,
+      "slices": {
+        "known-intent-wording": {
+          "count": 1146,
+          "semanticCount": 874,
+          "semanticNdcg5": 0.6303663927795035,
+          "semanticCoverage": 0.6590389016018307,
+          "noMatchCount": 270,
+          "noMatchSemanticRate": 0.044444444444444446
+        },
+        "ui-settings-unseen-namespace": {
+          "count": 87,
+          "semanticCount": 65,
+          "semanticNdcg5": 0.3789373808241763,
+          "semanticCoverage": 0.4153846153846154,
+          "noMatchCount": 22,
+          "noMatchSemanticRate": 0.3181818181818182
+        },
+        "unseen-intent-family": {
+          "count": 239,
+          "semanticCount": 179,
+          "semanticNdcg5": 0.25811206702120365,
+          "semanticCoverage": 0.35195530726256985,
+          "noMatchCount": 60,
+          "noMatchSemanticRate": 0.21666666666666667
+        }
+      }
+    }
+  ],
+  "quantization": [
+    {
+      "checkpoint": "runs/experiment-capacity24-no-match-seed17",
+      "floatCutoff": 0.6672624945640564,
+      "cutoffPolicy": "Frozen float cutoff fitted on calibration only; shared across float/int8/int6",
+      "float": {
+        "cutoff": 0.6672624945640564,
+        "semanticNdcg5": 0.49751860984858204,
+        "semanticCoverage": 0.5304114490161002,
+        "overallNdcg5": 0.498415898045281,
+        "noMatchSemanticRate": 0.048295454545454544,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.498415898045281,
+          "coverage": 0.53125,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.48839285714285713,
+          "recall3": 0.5044642857142857,
+          "recall5": 0.5044642857142857,
+          "mrr": 0.49627976190476186
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.49751860984858204,
+          "coverage": 0.5304114490161002,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4874776386404293,
+          "recall3": 0.5035778175313059,
+          "recall5": 0.5035778175313059,
+          "mrr": 0.49537865235539646
+        }
+      },
+      "int8": {
+        "artifact": "packages/model/experiments/experiment-capacity24-no-match-seed17-int8",
+        "payloadBytes": 49152,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4972892377710462,
+          "coverage": 0.5294642857142857,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.48839285714285713,
+          "recall3": 0.5026785714285714,
+          "recall5": 0.5026785714285714,
+          "mrr": 0.49538690476190467
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4963899340819069,
+          "coverage": 0.5286225402504472,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4874776386404293,
+          "recall3": 0.501788908765653,
+          "recall5": 0.501788908765653,
+          "mrr": 0.49448419797257
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 874,
+            "positiveCount": 874,
+            "relevantCount": 874,
+            "noMatchCount": 0,
+            "ndcg5": 0.565993555814809,
+            "coverage": 0.5869565217391305,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.5594965675057209,
+            "recall3": 0.5697940503432495,
+            "recall5": 0.5697940503432495,
+            "mrr": 0.5646453089244852
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 65,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 0,
+            "ndcg5": 0.33681214247252883,
+            "coverage": 0.4,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.3076923076923077,
+            "recall3": 0.35384615384615387,
+            "recall5": 0.35384615384615387,
+            "mrr": 0.33076923076923076
+          },
+          "unseen-intent-family": {
+            "count": 179,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 0,
+            "ndcg5": 0.21448485620510824,
+            "coverage": 0.2905027932960894,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.2011173184357542,
+            "recall3": 0.22346368715083798,
+            "recall5": 0.22346368715083798,
+            "mrr": 0.21135940409683424
+          }
+        },
+        "semanticNdcgLoss": 0.0011286757666751357,
+        "passesQuantizationLossGate": true,
+        "passesDevNoMatchGate": true
+      },
+      "int6": {
+        "artifact": "packages/model/experiments/experiment-capacity24-no-match-seed17-int6",
+        "payloadBytes": 36864,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4945149424681127,
+          "coverage": 0.5276785714285714,
+          "noMatchAnyRate": 0.04261363636363636,
+          "noMatchSemanticRate": 0.04261363636363636,
+          "recall1": 0.48392857142857143,
+          "recall3": 0.5008928571428571,
+          "recall5": 0.5008928571428571,
+          "mrr": 0.4922619047619047
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4936106758177874,
+          "coverage": 0.5268336314847942,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.48300536672629696,
+          "recall3": 0.5,
+          "recall5": 0.5,
+          "mrr": 0.4913536076326773
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 874,
+            "positiveCount": 874,
+            "relevantCount": 874,
+            "noMatchCount": 0,
+            "ndcg5": 0.5637052262953582,
+            "coverage": 0.5846681922196796,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.5572082379862701,
+            "recall3": 0.5675057208237986,
+            "recall5": 0.5675057208237986,
+            "mrr": 0.5623569794050344
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 65,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 0,
+            "ndcg5": 0.34084075027472754,
+            "coverage": 0.4153846153846154,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.2923076923076923,
+            "recall3": 0.36923076923076925,
+            "recall5": 0.36923076923076925,
+            "mrr": 0.33076923076923076
+          },
+          "unseen-intent-family": {
+            "count": 179,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 0,
+            "ndcg5": 0.2068364190742225,
+            "coverage": 0.2849162011173184,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.18994413407821228,
+            "recall3": 0.21787709497206703,
+            "recall5": 0.21787709497206703,
+            "mrr": 0.20297951582867782
+          }
+        },
+        "semanticNdcgLoss": 0.003907934030794646,
+        "passesQuantizationLossGate": true,
+        "passesDevNoMatchGate": true
+      }
+    },
+    {
+      "checkpoint": "runs/experiment-capacity24-no-match-seed29",
+      "floatCutoff": 0.6205853819847107,
+      "cutoffPolicy": "Frozen float cutoff fitted on calibration only; shared across float/int8/int6",
+      "float": {
+        "cutoff": 0.6205853819847107,
+        "semanticNdcg5": 0.5526414556449454,
+        "semanticCoverage": 0.59391771019678,
+        "overallNdcg5": 0.5534403101884365,
+        "noMatchSemanticRate": 0.09375,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5534403101884365,
+          "coverage": 0.5946428571428571,
+          "noMatchAnyRate": 0.09375,
+          "noMatchSemanticRate": 0.09375,
+          "recall1": 0.5401785714285714,
+          "recall3": 0.5580357142857143,
+          "recall5": 0.5633928571428571,
+          "mrr": 0.5500595238095237
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5526414556449454,
+          "coverage": 0.59391771019678,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.539355992844365,
+          "recall3": 0.5572450805008945,
+          "recall5": 0.5626118067978533,
+          "mrr": 0.5492546213476446
+        }
+      },
+      "int8": {
+        "artifact": "packages/model/experiments/experiment-capacity24-no-match-seed29-int8",
+        "payloadBytes": 49152,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5527600784856302,
+          "coverage": 0.5928571428571429,
+          "noMatchAnyRate": 0.09375,
+          "noMatchSemanticRate": 0.09375,
+          "recall1": 0.5401785714285714,
+          "recall3": 0.5571428571428572,
+          "recall5": 0.5625,
+          "mrr": 0.5494642857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5519600070696834,
+          "coverage": 0.592128801431127,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.539355992844365,
+          "recall3": 0.556350626118068,
+          "recall5": 0.5617173524150268,
+          "mrr": 0.5486583184257603
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 874,
+            "positiveCount": 874,
+            "relevantCount": 874,
+            "noMatchCount": 0,
+            "ndcg5": 0.6342211642285064,
+            "coverage": 0.6647597254004577,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.6270022883295194,
+            "recall3": 0.6384439359267735,
+            "recall5": 0.6384439359267735,
+            "mrr": 0.6327231121281465
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 65,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 0,
+            "ndcg5": 0.23479783857142947,
+            "coverage": 0.2923076923076923,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.2153846153846154,
+            "recall3": 0.24615384615384617,
+            "recall5": 0.24615384615384617,
+            "mrr": 0.23076923076923078
+          },
+          "unseen-intent-family": {
+            "count": 179,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 0,
+            "ndcg5": 0.2654755914025055,
+            "coverage": 0.3463687150837989,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.22905027932960895,
+            "recall3": 0.2681564245810056,
+            "recall5": 0.3016759776536313,
+            "mrr": 0.2536312849162011
+          }
+        },
+        "semanticNdcgLoss": 0.0006814485752619781,
+        "passesQuantizationLossGate": true,
+        "passesDevNoMatchGate": false
+      },
+      "int6": {
+        "artifact": "packages/model/experiments/experiment-capacity24-no-match-seed29-int6",
+        "payloadBytes": 36864,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5473019113492327,
+          "coverage": 0.5866071428571429,
+          "noMatchAnyRate": 0.08522727272727272,
+          "noMatchSemanticRate": 0.08522727272727272,
+          "recall1": 0.5348214285714286,
+          "recall3": 0.5508928571428572,
+          "recall5": 0.5571428571428572,
+          "mrr": 0.5439880952380952
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5464920757702509,
+          "coverage": 0.5858676207513417,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.5339892665474061,
+          "recall3": 0.5500894454382826,
+          "recall5": 0.556350626118068,
+          "mrr": 0.5431723315444246
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 874,
+            "positiveCount": 874,
+            "relevantCount": 874,
+            "noMatchCount": 0,
+            "ndcg5": 0.6303663927795035,
+            "coverage": 0.6613272311212814,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.6224256292906178,
+            "recall3": 0.6350114416475973,
+            "recall5": 0.6350114416475973,
+            "mrr": 0.6287185354691075
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 65,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 0,
+            "ndcg5": 0.2040286078021987,
+            "coverage": 0.24615384615384617,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.18461538461538463,
+            "recall3": 0.2153846153846154,
+            "recall5": 0.2153846153846154,
+            "mrr": 0.2
+          },
+          "unseen-intent-family": {
+            "count": 179,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 0,
+            "ndcg5": 0.2613187369536959,
+            "coverage": 0.3407821229050279,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.22905027932960895,
+            "recall3": 0.2569832402234637,
+            "recall5": 0.29608938547486036,
+            "mrr": 0.25009310986964617
+          }
+        },
+        "semanticNdcgLoss": 0.006149379874694438,
+        "passesQuantizationLossGate": true,
+        "passesDevNoMatchGate": false
+      }
+    },
+    {
+      "checkpoint": "runs/experiment-capacity24-no-match-seed43",
+      "floatCutoff": 0.6282835006713867,
+      "cutoffPolicy": "Frozen float cutoff fitted on calibration only; shared across float/int8/int6",
+      "float": {
+        "cutoff": 0.6282835006713867,
+        "semanticNdcg5": 0.5571381286037018,
+        "semanticCoverage": 0.5957066189624329,
+        "overallNdcg5": 0.5579289533740523,
+        "noMatchSemanticRate": 0.09090909090909091,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5579289533740523,
+          "coverage": 0.5964285714285714,
+          "noMatchAnyRate": 0.09090909090909091,
+          "noMatchSemanticRate": 0.09090909090909091,
+          "recall1": 0.5473214285714286,
+          "recall3": 0.5625,
+          "recall5": 0.5660714285714286,
+          "mrr": 0.5551785714285714
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5571381286037018,
+          "coverage": 0.5957066189624329,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.5465116279069767,
+          "recall3": 0.5617173524150268,
+          "recall5": 0.5652951699463328,
+          "mrr": 0.5543828264758497
+        }
+      },
+      "int8": {
+        "artifact": "packages/model/experiments/experiment-capacity24-no-match-seed43-int8",
+        "payloadBytes": 49152,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5536984707911442,
+          "coverage": 0.5928571428571429,
+          "noMatchAnyRate": 0.09090909090909091,
+          "noMatchSemanticRate": 0.09090909090909091,
+          "recall1": 0.5419642857142857,
+          "recall3": 0.5589285714285714,
+          "recall5": 0.5625,
+          "mrr": 0.5507142857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5529000780734181,
+          "coverage": 0.592128801431127,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.5411449016100179,
+          "recall3": 0.5581395348837209,
+          "recall5": 0.5617173524150268,
+          "mrr": 0.5499105545617173
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 874,
+            "positiveCount": 874,
+            "relevantCount": 874,
+            "noMatchCount": 0,
+            "ndcg5": 0.6262120109104286,
+            "coverage": 0.6544622425629291,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.6189931350114416,
+            "recall3": 0.6304347826086957,
+            "recall5": 0.6304347826086957,
+            "mrr": 0.6247139588100686
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 65,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 0,
+            "ndcg5": 0.3789373808241763,
+            "coverage": 0.4153846153846154,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.36923076923076925,
+            "recall3": 0.38461538461538464,
+            "recall5": 0.38461538461538464,
+            "mrr": 0.3769230769230769
+          },
+          "unseen-intent-family": {
+            "count": 179,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 0,
+            "ndcg5": 0.25811206702120365,
+            "coverage": 0.35195530726256985,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.22346368715083798,
+            "recall3": 0.2681564245810056,
+            "recall5": 0.2905027932960894,
+            "mrr": 0.24748603351955306
+          }
+        },
+        "semanticNdcgLoss": 0.004238050530283699,
+        "passesQuantizationLossGate": true,
+        "passesDevNoMatchGate": false
+      },
+      "int6": {
+        "artifact": "packages/model/experiments/experiment-capacity24-no-match-seed43-int6",
+        "payloadBytes": 36864,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5547082294996901,
+          "coverage": 0.5919642857142857,
+          "noMatchAnyRate": 0.09090909090909091,
+          "noMatchSemanticRate": 0.09090909090909091,
+          "recall1": 0.5428571428571428,
+          "recall3": 0.5598214285714286,
+          "recall5": 0.5633928571428571,
+          "mrr": 0.5517559523809524
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5539116431481691,
+          "coverage": 0.5912343470483006,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.5420393559928444,
+          "recall3": 0.5590339892665475,
+          "recall5": 0.5626118067978533,
+          "mrr": 0.5509540846750149
+        },
+        "slices": {
+          "known-intent-wording": {
+            "count": 874,
+            "positiveCount": 874,
+            "relevantCount": 874,
+            "noMatchCount": 0,
+            "ndcg5": 0.6265116213305006,
+            "coverage": 0.6544622425629291,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.6178489702517163,
+            "recall3": 0.631578947368421,
+            "recall5": 0.631578947368421,
+            "mrr": 0.6247139588100686
+          },
+          "ui-settings-unseen-namespace": {
+            "count": 65,
+            "positiveCount": 65,
+            "relevantCount": 65,
+            "noMatchCount": 0,
+            "ndcg5": 0.39432199620879166,
+            "coverage": 0.4153846153846154,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.38461538461538464,
+            "recall3": 0.4,
+            "recall5": 0.4,
+            "mrr": 0.3923076923076923
+          },
+          "unseen-intent-family": {
+            "count": 179,
+            "positiveCount": 179,
+            "relevantCount": 179,
+            "noMatchCount": 0,
+            "ndcg5": 0.25738061588393296,
+            "coverage": 0.3463687150837989,
+            "noMatchAnyRate": null,
+            "noMatchSemanticRate": null,
+            "recall1": 0.22905027932960895,
+            "recall3": 0.26256983240223464,
+            "recall5": 0.2849162011173184,
+            "mrr": 0.2484171322160149
+          }
+        },
+        "semanticNdcgLoss": 0.003226485455532724,
+        "passesQuantizationLossGate": true,
+        "passesDevNoMatchGate": false
+      }
+    }
+  ]
+}

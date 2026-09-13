@@ -11,6 +11,7 @@
     "test:contracts": "node --import tsx --test packages/core/test/*.test.ts",
     "test:parity": "node --import tsx --test fixtures/*.test.ts",
     "bench:size": "node --import tsx bench/size.ts",
+    "bench:size:research": "node --import tsx bench/size-research.ts",
     "bench:browser": "node --import tsx bench/browser.ts",
     "release:verify": "pnpm check && pnpm test:contracts && pnpm test:parity && pnpm build && pnpm bench:size",
     "test:demo": "node --import tsx bench/demo-check.ts"

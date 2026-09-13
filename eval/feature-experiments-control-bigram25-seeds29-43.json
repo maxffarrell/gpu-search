@@ -1,0 +1,207 @@
+{
+  "runs": [
+    {
+      "arm": "control",
+      "seed": 29,
+      "epochs": 10,
+      "selected": {
+        "epoch": 1,
+        "loss": 0.9886182429535049,
+        "cutoff": 0.7681817412376404,
+        "calibrationNoMatchCount": 352,
+        "calibrationNoMatchSemanticRate": 0.048295454545454544,
+        "devSemanticCount": 1118,
+        "devSemanticNdcg5": 0.2761411500990293,
+        "devSemanticCoverage": 0.29785330948121647,
+        "devRelevantCoverage": 0.29910714285714285,
+        "devOverallNdcg5": 0.2774337551881382,
+        "devNoMatchSemanticRate": 0.045454545454545456,
+        "devNoMatchAnyRate": 0.045454545454545456
+      },
+      "featureContract": {
+        "wordMix": 1.0,
+        "bigramMix": 0.0,
+        "wordFamily": 0.5,
+        "charFamily": 0.5
+      },
+      "weightElements": 32768,
+      "int8WeightBytes": 32768,
+      "framework": "MLX0.31.1",
+      "device": "Device(gpu, 0)",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "trainingRows": 7961,
+      "positiveTrainingRows": 7165,
+      "noMatchRowsExcluded": 796,
+      "optimizer": "AdamW lr.003 decay.0001 clip1 batch128 temperature.15",
+      "seconds": 1.4244092910084873,
+      "sourceHashes": {
+        "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+        "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+        "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+      },
+      "selection": "highest development post-cutoff semantic nDCG@5 then coverage among epochs with development no-match semantic<=.05; cutoff independently calibrated to<=.05 on calibration only",
+      "status": "weak-label feature experiment; no held-out test opened; no browser implementation for changed contracts",
+      "quantizedMetrics": {
+        "cutoff": 0.7685140371322632,
+        "calibrationNoMatchCount": 352,
+        "calibrationNoMatchSemanticRate": 0.048295454545454544,
+        "devSemanticCount": 1118,
+        "devSemanticNdcg5": 0.27736572098134465,
+        "devSemanticCoverage": 0.29874776386404295,
+        "devRelevantCoverage": 0.3,
+        "devOverallNdcg5": 0.2786561393367351,
+        "devNoMatchSemanticRate": 0.045454545454545456,
+        "devNoMatchAnyRate": 0.045454545454545456
+      },
+      "artifact": "packages/model/experiments/features-control-seed29-e10",
+      "quantizedSemanticNdcgLoss": -0.0012245708823153678
+    },
+    {
+      "arm": "bigram25",
+      "seed": 29,
+      "epochs": 10,
+      "selected": {
+        "epoch": 9,
+        "loss": 0.12605283369443246,
+        "cutoff": 0.6567686200141907,
+        "calibrationNoMatchCount": 352,
+        "calibrationNoMatchSemanticRate": 0.048295454545454544,
+        "devSemanticCount": 1118,
+        "devSemanticNdcg5": 0.521972469221268,
+        "devSemanticCoverage": 0.5572450805008945,
+        "devRelevantCoverage": 0.5580357142857143,
+        "devOverallNdcg5": 0.5228260898119443,
+        "devNoMatchSemanticRate": 0.048295454545454544,
+        "devNoMatchAnyRate": 0.048295454545454544
+      },
+      "featureContract": {
+        "wordMix": 0.75,
+        "bigramMix": 0.25,
+        "wordFamily": 0.5,
+        "charFamily": 0.5
+      },
+      "weightElements": 32768,
+      "int8WeightBytes": 32768,
+      "framework": "MLX0.31.1",
+      "device": "Device(gpu, 0)",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "trainingRows": 7961,
+      "positiveTrainingRows": 7165,
+      "noMatchRowsExcluded": 796,
+      "optimizer": "AdamW lr.003 decay.0001 clip1 batch128 temperature.15",
+      "seconds": 0.9072465419885702,
+      "sourceHashes": {
+        "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+        "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+        "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+      },
+      "selection": "highest development post-cutoff semantic nDCG@5 then coverage among epochs with development no-match semantic<=.05; cutoff independently calibrated to<=.05 on calibration only",
+      "status": "weak-label feature experiment; no held-out test opened; no browser implementation for changed contracts",
+      "quantizedMetrics": {
+        "cutoff": 0.6561784148216248,
+        "calibrationNoMatchCount": 352,
+        "calibrationNoMatchSemanticRate": 0.048295454545454544,
+        "devSemanticCount": 1118,
+        "devSemanticNdcg5": 0.5225368071046056,
+        "devSemanticCoverage": 0.5581395348837209,
+        "devRelevantCoverage": 0.5589285714285714,
+        "devOverallNdcg5": 0.5233894199490616,
+        "devNoMatchSemanticRate": 0.048295454545454544,
+        "devNoMatchAnyRate": 0.048295454545454544
+      },
+      "artifact": "packages/model/experiments/features-bigram25-seed29-e10",
+      "quantizedSemanticNdcgLoss": -0.0005643378833375401
+    },
+    {
+      "arm": "control",
+      "seed": 43,
+      "epochs": 10,
+      "selected": null,
+      "featureContract": {
+        "wordMix": 1.0,
+        "bigramMix": 0.0,
+        "wordFamily": 0.5,
+        "charFamily": 0.5
+      },
+      "weightElements": 32768,
+      "int8WeightBytes": 32768,
+      "framework": "MLX0.31.1",
+      "device": "Device(gpu, 0)",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "trainingRows": 7961,
+      "positiveTrainingRows": 7165,
+      "noMatchRowsExcluded": 796,
+      "optimizer": "AdamW lr.003 decay.0001 clip1 batch128 temperature.15",
+      "seconds": 1.209572083025705,
+      "sourceHashes": {
+        "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+        "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+        "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+      },
+      "selection": "highest development post-cutoff semantic nDCG@5 then coverage among epochs with development no-match semantic<=.05; cutoff independently calibrated to<=.05 on calibration only",
+      "status": "weak-label feature experiment; no held-out test opened; no browser implementation for changed contracts"
+    },
+    {
+      "arm": "bigram25",
+      "seed": 43,
+      "epochs": 10,
+      "selected": {
+        "epoch": 8,
+        "loss": 0.1307141732956682,
+        "cutoff": 0.6584960222244263,
+        "calibrationNoMatchCount": 352,
+        "calibrationNoMatchSemanticRate": 0.048295454545454544,
+        "devSemanticCount": 1118,
+        "devSemanticNdcg5": 0.5208368908335894,
+        "devSemanticCoverage": 0.5599284436493739,
+        "devRelevantCoverage": 0.5607142857142857,
+        "devOverallNdcg5": 0.5216925392428152,
+        "devNoMatchSemanticRate": 0.036931818181818184,
+        "devNoMatchAnyRate": 0.036931818181818184
+      },
+      "featureContract": {
+        "wordMix": 0.75,
+        "bigramMix": 0.25,
+        "wordFamily": 0.5,
+        "charFamily": 0.5
+      },
+      "weightElements": 32768,
+      "int8WeightBytes": 32768,
+      "framework": "MLX0.31.1",
+      "device": "Device(gpu, 0)",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "trainingRows": 7961,
+      "positiveTrainingRows": 7165,
+      "noMatchRowsExcluded": 796,
+      "optimizer": "AdamW lr.003 decay.0001 clip1 batch128 temperature.15",
+      "seconds": 0.9259576249751262,
+      "sourceHashes": {
+        "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+        "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+        "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+      },
+      "selection": "highest development post-cutoff semantic nDCG@5 then coverage among epochs with development no-match semantic<=.05; cutoff independently calibrated to<=.05 on calibration only",
+      "status": "weak-label feature experiment; no held-out test opened; no browser implementation for changed contracts",
+      "quantizedMetrics": {
+        "cutoff": 0.6578832268714905,
+        "calibrationNoMatchCount": 352,
+        "calibrationNoMatchSemanticRate": 0.048295454545454544,
+        "devSemanticCount": 1118,
+        "devSemanticNdcg5": 0.5216142345244915,
+        "devSemanticCoverage": 0.5626118067978533,
+        "devRelevantCoverage": 0.5633928571428571,
+        "devOverallNdcg5": 0.5224684948199835,
+        "devNoMatchSemanticRate": 0.036931818181818184,
+        "devNoMatchAnyRate": 0.036931818181818184
+      },
+      "artifact": "packages/model/experiments/features-bigram25-seed43-e10",
+      "quantizedSemanticNdcgLoss": -0.0007773436909020992
+    }
+  ],
+  "sourceHashes": {
+    "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1"
+  },
+  "scope": "same16D 32768-parameter feature ablation; matched positive rows and optimizer updates; bounded10epoch screen, not final release evidence"
+}

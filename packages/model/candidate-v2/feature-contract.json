@@ -1,0 +1,18 @@
+{
+  "version": "gpu-search-features-bigram25-v1",
+  "base": "gpu-search-features-v1 normalization, tokens, UTF8 FNV1a32 bucket1023, word and char feature IDs unchanged",
+  "wordFamily": {
+    "singleToken": "mean(word table unigrams)",
+    "multipleTokens": ".75 * mean(word table unigrams) + .25 * mean(word table bigrams)"
+  },
+  "pool": ".5 * (wordFamily + mean(char table charIds))",
+  "bigrams": {
+    "order": "adjacent ordered pairs of first32 tokens, each first64 Unicode scalar values",
+    "maxCount": 31,
+    "encoding": "ASCII b: then uint32LE UTF8 byte length token A then UTF8 A then uint32LE UTF8 byte length token B then UTF8 B",
+    "hash": "FNV1a32 then &1023, same1024x16 word table",
+    "duplicates": "preserve repeated occurrences and hash collisions; never deduplicate"
+  },
+  "normalization": "L2 normalize pooled f32 vector; invalid if norm<1e-8",
+  "totalInt8WeightBytes": 32768
+}

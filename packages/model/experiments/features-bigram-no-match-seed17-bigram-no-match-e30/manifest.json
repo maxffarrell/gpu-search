@@ -1,0 +1,83 @@
+{
+  "formatVersion": "gpu-search-experimental-v1",
+  "featureVersion": "gpu-search-features-bigram25-v1",
+  "normalizationVersion": "nfkc-ascii-v1",
+  "candidateCompositionVersion": "mean-alias-context025-v1",
+  "architecture": "pooled",
+  "dimension": 16,
+  "featureFamily": "both",
+  "modelId": "features-bigram-no-match-seed17-bigram-no-match-e30",
+  "byteOrder": "little-endian",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        1024,
+        16
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.01064472645521164,
+      "scaleF32LE": "38672e3c",
+      "byteOffset": 0,
+      "byteLength": 16384
+    },
+    {
+      "name": "char",
+      "shape": [
+        1024,
+        16
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.010226634331047535,
+      "scaleF32LE": "9d8d273c",
+      "byteOffset": 16384,
+      "byteLength": 16384
+    }
+  ],
+  "payloadSha256": "9dd106d17eaafba251ed393cb822b3ee15064938c058ea5d21031bfa305e4149",
+  "payloadBytes": 32768,
+  "validatedSemanticCutoff": null,
+  "status": "EXPERIMENTAL; weak-label development selection; no final test opened",
+  "researchCalibrationCutoff": 0.6562404632568359,
+  "quantizedMetrics": {
+    "cutoff": 0.6562404632568359,
+    "calibrationNoMatchCount": 352,
+    "calibrationNoMatchSemanticRate": 0.048295454545454544,
+    "devSemanticCount": 1118,
+    "devSemanticNdcg5": 0.5311072105466431,
+    "devSemanticCoverage": 0.5652951699463328,
+    "devRelevantCoverage": 0.5660714285714286,
+    "devOverallNdcg5": 0.5319445190992383,
+    "devNoMatchSemanticRate": 0.048295454545454544,
+    "devNoMatchAnyRate": 0.048295454545454544,
+    "slices": {
+      "known-intent-wording": {
+        "count": 1146,
+        "semanticCount": 874,
+        "semanticNdcg5": 0.6155606407322655,
+        "semanticCoverage": 0.6372997711670481,
+        "noMatchCount": 270,
+        "noMatchSemanticRate": 0.018518518518518517
+      },
+      "ui-settings-unseen-namespace": {
+        "count": 87,
+        "semanticCount": 65,
+        "semanticNdcg5": 0.2712450731318686,
+        "semanticCoverage": 0.3076923076923077,
+        "noMatchCount": 22,
+        "noMatchSemanticRate": 0.22727272727272727
+      },
+      "unseen-intent-family": {
+        "count": 239,
+        "semanticCount": 179,
+        "semanticNdcg5": 0.21311134993058958,
+        "semanticCoverage": 0.30726256983240224,
+        "noMatchCount": 60,
+        "noMatchSemanticRate": 0.11666666666666667
+      }
+    }
+  },
+  "checkpoint": "runs/features-bigram-no-match/experiment-no-match-seed17-bigram-no-match-e30"
+}

@@ -1,0 +1,51 @@
+{
+  "formatVersion": "gpu-search-feature-experiment-v1",
+  "featureVersion": "gpu-search-features-v1",
+  "contract": {
+    "wordMix": 1.0,
+    "bigramMix": 0.0,
+    "wordFamily": 0.5,
+    "charFamily": 0.5
+  },
+  "bigramEncoding": "ASCII b: then uint32LE byte-length then UTF8 token A then uint32LE byte-length then UTF8 token B; FNV1a&1023; ordered adjacent bounded lexical tokens; shared word table",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        1024,
+        16
+      ],
+      "byteOffset": 0,
+      "byteLength": 16384,
+      "scale": 0.005260480102151632,
+      "bits": 8
+    },
+    {
+      "name": "char",
+      "shape": [
+        1024,
+        16
+      ],
+      "byteOffset": 16384,
+      "byteLength": 16384,
+      "scale": 0.005740571301430464,
+      "bits": 8
+    }
+  ],
+  "payloadBytes": 32768,
+  "sha256": "98ac25fa657acee6626d1c9fca85aa6b26561be06da0f72c375f68b2c8a4f655",
+  "calibratedCutoff": 0.7685140371322632,
+  "qualityValidated": false,
+  "quantizedMetrics": {
+    "cutoff": 0.7685140371322632,
+    "calibrationNoMatchCount": 352,
+    "calibrationNoMatchSemanticRate": 0.048295454545454544,
+    "devSemanticCount": 1118,
+    "devSemanticNdcg5": 0.27736572098134465,
+    "devSemanticCoverage": 0.29874776386404295,
+    "devRelevantCoverage": 0.3,
+    "devOverallNdcg5": 0.2786561393367351,
+    "devNoMatchSemanticRate": 0.045454545454545456,
+    "devNoMatchAnyRate": 0.045454545454545456
+  }
+}
