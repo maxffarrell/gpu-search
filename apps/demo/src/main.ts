@@ -1,7 +1,7 @@
 import { createIndex } from '../../../packages/core/src/index';
 import { loadModel } from '../../../packages/model/runtime';
-import manifestUrl from '../../../packages/model/experimental/manifest.json?url';
-import weightsUrl from '../../../packages/model/experimental/weights.bin?url';
+import manifestUrl from '../../../packages/model/candidate/manifest.json?url';
+import weightsUrl from '../../../packages/model/candidate/weights.bin?url';
 import './style.css';
 
 type Candidate = { id: string; label: string; aliases?: readonly string[]; context?: string };
@@ -29,9 +29,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="examples"><span>Try</span><button data-query="profle">profle</button><button data-query="coworkers">coworkers</button><button data-query="my information">my information</button></div>
       <div class="comparison"><section aria-labelledby="model-title"><h2 id="model-title">Model scores <span>CPU · cosine</span></h2><div id="model-results" class="results"></div></section><section aria-labelledby="lexical-title"><h2 id="lexical-title">Lexical <span>deterministic</span></h2><div id="lexical-results" class="results"></div></section></div>
       <p id="run-meta" class="run-meta" role="status" aria-live="polite">Loading model…</p>
-      <p class="note">Experimental model. It has not passed the semantic quality gate. Raw cosine scores are not confidence; no relevance cutoff is applied.</p>
+      <p class="note">Experimental model, trained on public intent datasets and software settings. Generalization is still limited. Raw cosine scores are not confidence; no relevance cutoff is applied.</p>
       <details class="editor"><summary>Candidate menu <span id="candidate-count"></span></summary><label for="candidate-json">Edit candidate records as JSON. Both comparisons use the same records.</label><textarea id="candidate-json" spellcheck="false" rows="13"></textarea><div class="actions"><button id="apply">Apply menu</button><button id="reset">Reset</button></div><p id="editor-status" role="status" aria-live="polite"></p></details>
-      <details class="model-details"><summary>Model details</summary><p id="model-details">Loading model assets…</p><p>Inference runs locally in your browser. The initial menu contains labels only, without aliases or context. The model column shows the five highest raw scores; the lexical column applies exact and fuzzy matching rules.</p></details>
+      <details class="model-details"><summary>Model details</summary><p id="model-details">Loading model assets…</p><p>Inference runs locally in your browser. The initial menu contains labels only, without aliases or context. Training sources: CLINC150 (CC BY 3.0), BANKING77 (CC BY 4.0), and VS Code settings (MIT). See GitHub for attribution and evaluation. The model column shows the five highest raw scores; the lexical column applies exact and fuzzy matching rules.</p></details>
     </main>
     <footer><span>Inspired by</span><a href="https://gpu-lexer.vercel.app" target="_blank" rel="noreferrer">gpu-lexer ↗</a><a href="https://gpu-time.arikko.dev" target="_blank" rel="noreferrer">gpu-time ↗</a><a href="https://gpu-cron.vercel.app" target="_blank" rel="noreferrer">gpu-cron ↗</a></footer>
   </div>`;

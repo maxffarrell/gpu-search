@@ -1,0 +1,3 @@
+# Preserve pinned third-party source bytes and checksums, including original CRLF.
+data/external/** -text -whitespace
+data/ui-settings/LICENSE-vscode.txt -text -whitespace

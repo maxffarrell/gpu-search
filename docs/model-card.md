@@ -1,6 +1,18 @@
-# Model card: feasibility experiment, no released semantic model
+# Model card: expanded experimental model
 
-The library remains lexical with optional developer aliases. **No learned model passed the semantic release gate.** At the user's request the website now explicitly runs the experimental MLX-trained pooled16 int8 weights through a custom TypeScript CPU encoder, exposing raw cosine rankings alongside the lexical engine. The default package does not load those weights. The model panel has no validated cutoff and may rank unrelated candidates.
+The website currently runs `expanded-more-data-pooled-seed17`, epoch 10, from `packages/model/candidate/`. It is a real 16-dimensional pooled CPU encoder with 32,768 int8 weight bytes. The original pilot artifact remains unchanged under `packages/model/experimental/` for comparison.
+
+Training records: 7,961 total / 7,165 positive supervised, development 1,472, separate calibration 1,397. Sources are CLINC150, BANKING77, MIT VS Code descriptions and the original training fixtures. Source intent labels and documentation are adapted into weak menu relevance, not newly human-reviewed search judgments. Original dev is used only for post-selection transfer; upstream tests are unused.
+
+On expanded development, int8 semantic nDCG@5 is 0.4644, versus old-model 0.0277 and nearest-training-paraphrase TF-IDF 0.3852. The +0.0792 baseline delta has paired bootstrap 95% interval [0.0495, 0.1089], descriptive after checkpoint selection. No-match false positives are 4.83%; semantic relevant-query coverage is 49.55%. Measured int8 nDCG loss is zero with separately calibrated cutoffs and 0.00179 at the frozen float cutoff, within the 0.01 allowance. Provisional numerical development gates pass; independent reviewed final evaluation remains absent.
+
+The model is much stronger on new wording of seen intents than on unseen domains. Original pilot transfer semantic nDCG@5 remains only 0.0278 with the expanded calibration cutoff. Raw demo rankings deliberately apply no cutoff and can return irrelevant answers. The stable lexical engine remains responsible for guaranteed exact/typo ordering; there is no WebGPU implementation or generalization guarantee.
+
+Only seed17 met the development no-match limit among the three selected new checkpoints. Other seeds with higher retrieval scores were rejected for excessive false positives. Matched-update old-data controls and fixed epoch comparisons separate extra examples from extra optimization. See [expanded evaluation](expanded-evaluation.md) and [source/license provenance](data-sources.md). More training did help this larger dataset through epoch10, while later selected checkpoints/other seeds did not establish better acceptable coverage.
+
+## Original pilot history (superseded findings, retained for reproducibility)
+
+The library remains lexical with optional developer aliases. **No learned model passed the semantic release gate.** The first model demo explicitly ran the pilot MLX-trained pooled16 int8 weights through a custom TypeScript CPU encoder, exposing raw cosine rankings alongside the lexical engine. The default package does not load those weights. The model panel has no validated cutoff and may rank unrelated candidates.
 
 ## Intended scope
 

@@ -13,3 +13,7 @@ This is the baseline milestone allowed by the specification's semantic stop cond
 - The size report separately compresses all emitted resources with Node's zlib Brotli quality11/window22 and gzip level9. The lexical library meets the 8KiB target. The revised demo transfer includes the actual experimental manifest and int8 model weights; no source maps are served. Historical latency results above measure only the lexical engine.
 
 Not claimed: reviewed held-out semantic quality, a successful general embedding baseline comparison, selected-model numerical parity, actual WebGPU kernels, device-loss recovery, semantic latency or transfer budgets, or production model readiness. The failed feasibility result and all these omissions are intentional release disclosures.
+
+## Expanded-data update (2026-09-13)
+
+The active demo artifact is now `packages/model/candidate/` (`expanded-more-data-pooled-seed17`), with the pilot preserved for comparisons. The full pipeline passed 15 Python tests covering exporter contracts, data separation and source-label quality floors; JavaScript tests additionally cover candidate NumPy parity and the training-seen Members/Profile sanity cases. Browser verification checked actual model bytes, arbitrary candidate edits, no query transmission, themes, and missing/zero weights with the new artifact. See `docs/expanded-evaluation.md` for numerical development gates, transfer limits, and the still-unmet reviewed-final-test requirement. These results supersede the original model-quality stop finding for this expanded experiment only.

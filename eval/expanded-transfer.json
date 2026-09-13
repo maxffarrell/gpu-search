@@ -1,0 +1,3946 @@
+{
+  "scope": "Original pilot dev: post-selection out-of-domain transfer regression only",
+  "trainCount": 7961,
+  "calibrationCount": 1397,
+  "devCount": 80,
+  "semanticCount": 36,
+  "cutoffSource": "expanded/calibration only",
+  "models": {
+    "old-int8": {
+      "modelId": "pooled-16-both-contrastive-seed17",
+      "sha256": "1d209009d746bddba1077aa6812baaf026e6dc7d05279a7175d97310bf825031"
+    },
+    "new-int8": {
+      "modelId": "expanded-more-data-pooled-seed17",
+      "sha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d"
+    }
+  },
+  "cutoffs": {
+    "train-tfidf": 0.42714226245880127,
+    "nearest-train-paraphrase": 0.547999918460846,
+    "old-int8": 0.7072737812995911,
+    "new-int8": 0.7004017233848572
+  },
+  "systems": {
+    "lexical": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4,
+        "coverage": 0.4,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.4,
+        "recall3": 0.4,
+        "recall5": 0.4,
+        "mrr": 0.4
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.4,
+          "coverage": 0.4,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.4,
+          "recall3": 0.4,
+          "recall5": 0.4,
+          "mrr": 0.4
+        }
+      }
+    },
+    "lexical+all-train-aliases": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4,
+        "coverage": 0.4,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.4,
+        "recall3": 0.4,
+        "recall5": 0.4,
+        "mrr": 0.4
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.4,
+          "coverage": 0.4,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.4,
+          "recall3": 0.4,
+          "recall5": 0.4,
+          "mrr": 0.4
+        }
+      }
+    },
+    "train-tfidf": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4166666666666667,
+        "coverage": 0.4166666666666667,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.4166666666666667,
+        "recall3": 0.4166666666666667,
+        "recall5": 0.4166666666666667,
+        "mrr": 0.4166666666666667
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.027777777777777776,
+        "coverage": 0.027777777777777776,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.027777777777777776,
+        "recall3": 0.027777777777777776,
+        "recall5": 0.027777777777777776,
+        "mrr": 0.027777777777777776
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.4166666666666667,
+          "coverage": 0.4166666666666667,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.4166666666666667,
+          "recall3": 0.4166666666666667,
+          "recall5": 0.4166666666666667,
+          "mrr": 0.4166666666666667
+        }
+      }
+    },
+    "nearest-train-paraphrase": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4,
+        "coverage": 0.4,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.4,
+        "recall3": 0.4,
+        "recall5": 0.4,
+        "mrr": 0.4
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.4,
+          "coverage": 0.4,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.4,
+          "recall3": 0.4,
+          "recall5": 0.4,
+          "mrr": 0.4
+        }
+      }
+    },
+    "old-int8": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4,
+        "coverage": 0.4,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.4,
+        "recall3": 0.4,
+        "recall5": 0.4,
+        "mrr": 0.4
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.4,
+          "coverage": 0.4,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.4,
+          "recall3": 0.4,
+          "recall5": 0.4,
+          "mrr": 0.4
+        }
+      }
+    },
+    "old-int8-raw": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.6547987691088867,
+        "coverage": 1.0,
+        "noMatchAnyRate": 1.0,
+        "noMatchSemanticRate": 1.0,
+        "recall1": 0.43333333333333335,
+        "recall3": 0.6333333333333333,
+        "recall5": 0.8833333333333333,
+        "mrr": 0.6002777777777779
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.5221012021337488,
+        "coverage": 1.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.19444444444444445,
+        "recall3": 0.5,
+        "recall5": 0.8611111111111112,
+        "mrr": 0.4356481481481482
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.6547987691088867,
+          "coverage": 1.0,
+          "noMatchAnyRate": 1.0,
+          "noMatchSemanticRate": 1.0,
+          "recall1": 0.43333333333333335,
+          "recall3": 0.6333333333333333,
+          "recall5": 0.8833333333333333,
+          "mrr": 0.6002777777777779
+        }
+      }
+    },
+    "old-int8-raw-cutoff": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.21666666666666667,
+        "coverage": 0.21666666666666667,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.21666666666666667,
+        "recall3": 0.21666666666666667,
+        "recall5": 0.21666666666666667,
+        "mrr": 0.21666666666666667
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.0,
+        "coverage": 0.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "mrr": 0.0
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.21666666666666667,
+          "coverage": 0.21666666666666667,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.21666666666666667,
+          "recall3": 0.21666666666666667,
+          "recall5": 0.21666666666666667,
+          "mrr": 0.21666666666666667
+        }
+      }
+    },
+    "old-int8-combined-before-cutoff": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.7132607212802494,
+        "coverage": 1.0,
+        "noMatchAnyRate": 1.0,
+        "noMatchSemanticRate": 1.0,
+        "recall1": 0.5166666666666667,
+        "recall3": 0.7,
+        "recall5": 0.9166666666666666,
+        "mrr": 0.6613888888888888
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.5221012021337488,
+        "coverage": 1.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.19444444444444445,
+        "recall3": 0.5,
+        "recall5": 0.8611111111111112,
+        "mrr": 0.4356481481481482
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.7132607212802494,
+          "coverage": 1.0,
+          "noMatchAnyRate": 1.0,
+          "noMatchSemanticRate": 1.0,
+          "recall1": 0.5166666666666667,
+          "recall3": 0.7,
+          "recall5": 0.9166666666666666,
+          "mrr": 0.6613888888888888
+        }
+      }
+    },
+    "new-int8": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.4166666666666667,
+        "coverage": 0.4166666666666667,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.4166666666666667,
+        "recall3": 0.4166666666666667,
+        "recall5": 0.4166666666666667,
+        "mrr": 0.4166666666666667
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.027777777777777776,
+        "coverage": 0.027777777777777776,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.027777777777777776,
+        "recall3": 0.027777777777777776,
+        "recall5": 0.027777777777777776,
+        "mrr": 0.027777777777777776
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.4166666666666667,
+          "coverage": 0.4166666666666667,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.4166666666666667,
+          "recall3": 0.4166666666666667,
+          "recall5": 0.4166666666666667,
+          "mrr": 0.4166666666666667
+        }
+      }
+    },
+    "new-int8-raw": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.6459716246400172,
+        "coverage": 1.0,
+        "noMatchAnyRate": 1.0,
+        "noMatchSemanticRate": 1.0,
+        "recall1": 0.38333333333333336,
+        "recall3": 0.7,
+        "recall5": 0.9,
+        "mrr": 0.5791666666666667
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.5256384875635306,
+        "coverage": 1.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.16666666666666666,
+        "recall3": 0.6111111111111112,
+        "recall5": 0.8611111111111112,
+        "mrr": 0.437962962962963
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.6459716246400172,
+          "coverage": 1.0,
+          "noMatchAnyRate": 1.0,
+          "noMatchSemanticRate": 1.0,
+          "recall1": 0.38333333333333336,
+          "recall3": 0.7,
+          "recall5": 0.9,
+          "mrr": 0.5791666666666667
+        }
+      }
+    },
+    "new-int8-raw-cutoff": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.25,
+        "coverage": 0.25,
+        "noMatchAnyRate": 0.0,
+        "noMatchSemanticRate": 0.0,
+        "recall1": 0.25,
+        "recall3": 0.25,
+        "recall5": 0.25,
+        "mrr": 0.25
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.027777777777777776,
+        "coverage": 0.027777777777777776,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.027777777777777776,
+        "recall3": 0.027777777777777776,
+        "recall5": 0.027777777777777776,
+        "mrr": 0.027777777777777776
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.25,
+          "coverage": 0.25,
+          "noMatchAnyRate": 0.0,
+          "noMatchSemanticRate": 0.0,
+          "recall1": 0.25,
+          "recall3": 0.25,
+          "recall5": 0.25,
+          "mrr": 0.25
+        }
+      }
+    },
+    "new-int8-combined-before-cutoff": {
+      "overall": {
+        "count": 80,
+        "positiveCount": 60,
+        "relevantCount": 60,
+        "noMatchCount": 20,
+        "ndcg5": 0.7153830925381184,
+        "coverage": 1.0,
+        "noMatchAnyRate": 1.0,
+        "noMatchSemanticRate": 1.0,
+        "recall1": 0.5,
+        "recall3": 0.7666666666666667,
+        "recall5": 0.9166666666666666,
+        "mrr": 0.6627777777777778
+      },
+      "semanticOnly": {
+        "count": 36,
+        "positiveCount": 36,
+        "relevantCount": 36,
+        "noMatchCount": 0,
+        "ndcg5": 0.5256384875635306,
+        "coverage": 1.0,
+        "noMatchAnyRate": null,
+        "noMatchSemanticRate": null,
+        "recall1": 0.16666666666666666,
+        "recall3": 0.6111111111111112,
+        "recall5": 0.8611111111111112,
+        "mrr": 0.437962962962963
+      },
+      "slices": {
+        "pilot-transfer": {
+          "count": 80,
+          "positiveCount": 60,
+          "relevantCount": 60,
+          "noMatchCount": 20,
+          "ndcg5": 0.7153830925381184,
+          "coverage": 1.0,
+          "noMatchAnyRate": 1.0,
+          "noMatchSemanticRate": 1.0,
+          "recall1": 0.5,
+          "recall3": 0.7666666666666667,
+          "recall5": 0.9166666666666666,
+          "mrr": 0.6627777777777778
+        }
+      }
+    }
+  },
+  "strongestBaseline": "train-tfidf",
+  "comparisons": {
+    "old-int8": {
+      "count": 36,
+      "delta": 0.027777777777777776,
+      "pairedBootstrap95": [
+        0.0,
+        0.08333333333333333
+      ]
+    },
+    "train-tfidf": {
+      "count": 36,
+      "delta": 0.0,
+      "pairedBootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "frozenGates": {
+    "source": "User PRD v1.1 proposed gates, copied without modification before any final test scoring",
+    "semanticNdcg5Delta": 0.05,
+    "pairedBootstrap95LowerMustExceed": 0,
+    "maximumOverallRegression": 0.01,
+    "maximumNoMatchSemanticRate": 0.05,
+    "maximumQuantizationNdcgLoss": 0.01,
+    "reviewedFinalTestRequired": true,
+    "currentStatus": "failed development pilot; final evaluation not run"
+  },
+  "provisionalNumericGatesPassed": false,
+  "releaseGatePassed": false,
+  "releaseGateReason": "Reviewed independent final evaluation required; dev selected checkpoint",
+  "rowIds": [
+    "commerce-0-0",
+    "commerce-0-1",
+    "commerce-0-2",
+    "commerce-0-3",
+    "commerce-0-4",
+    "commerce-1-0",
+    "commerce-1-1",
+    "commerce-1-2",
+    "commerce-1-3",
+    "commerce-1-4",
+    "commerce-2-0",
+    "commerce-2-1",
+    "commerce-2-2",
+    "commerce-2-3",
+    "commerce-2-4",
+    "commerce-3-0",
+    "commerce-3-1",
+    "commerce-3-2",
+    "commerce-3-3",
+    "commerce-3-4",
+    "commerce-4-0",
+    "commerce-4-1",
+    "commerce-4-2",
+    "commerce-4-3",
+    "commerce-4-4",
+    "commerce-5-0",
+    "commerce-5-1",
+    "commerce-5-2",
+    "commerce-5-3",
+    "commerce-5-4",
+    "commerce-none-0",
+    "commerce-none-1",
+    "commerce-none-2",
+    "commerce-none-3",
+    "commerce-none-4",
+    "commerce-none-5",
+    "commerce-none-6",
+    "commerce-none-7",
+    "commerce-none-8",
+    "commerce-none-9",
+    "calendar-0-0",
+    "calendar-0-1",
+    "calendar-0-2",
+    "calendar-0-3",
+    "calendar-0-4",
+    "calendar-1-0",
+    "calendar-1-1",
+    "calendar-1-2",
+    "calendar-1-3",
+    "calendar-1-4",
+    "calendar-2-0",
+    "calendar-2-1",
+    "calendar-2-2",
+    "calendar-2-3",
+    "calendar-2-4",
+    "calendar-3-0",
+    "calendar-3-1",
+    "calendar-3-2",
+    "calendar-3-3",
+    "calendar-3-4",
+    "calendar-4-0",
+    "calendar-4-1",
+    "calendar-4-2",
+    "calendar-4-3",
+    "calendar-4-4",
+    "calendar-5-0",
+    "calendar-5-1",
+    "calendar-5-2",
+    "calendar-5-3",
+    "calendar-5-4",
+    "calendar-none-0",
+    "calendar-none-1",
+    "calendar-none-2",
+    "calendar-none-3",
+    "calendar-none-4",
+    "calendar-none-5",
+    "calendar-none-6",
+    "calendar-none-7",
+    "calendar-none-8",
+    "calendar-none-9"
+  ],
+  "rankings": {
+    "lexical": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "lexical+all-train-aliases": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "train-tfidf": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "nearest-train-paraphrase": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "old-int8": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "old-int8-raw": [
+      [
+        0,
+        5,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        5,
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        2,
+        5,
+        0,
+        3
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        5,
+        2,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4,
+        3,
+        5
+      ],
+      [
+        4,
+        2,
+        3,
+        0,
+        5
+      ],
+      [
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        2,
+        5
+      ],
+      [
+        2,
+        5,
+        1,
+        4,
+        0
+      ],
+      [
+        4,
+        3,
+        5,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        5,
+        1,
+        2
+      ],
+      [
+        5,
+        4,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        5,
+        0,
+        1,
+        4
+      ],
+      [
+        3,
+        5,
+        4,
+        1,
+        0
+      ],
+      [
+        5,
+        2,
+        1,
+        0,
+        4
+      ],
+      [
+        5,
+        4,
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        3,
+        4,
+        2,
+        5
+      ],
+      [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      [
+        4,
+        2,
+        5,
+        3,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        4,
+        1,
+        5,
+        2
+      ],
+      [
+        4,
+        2,
+        3,
+        0,
+        5
+      ],
+      [
+        3,
+        4,
+        2,
+        0,
+        5
+      ],
+      [
+        5,
+        2,
+        1,
+        4,
+        0
+      ],
+      [
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      [
+        5,
+        2,
+        0,
+        4,
+        3
+      ],
+      [
+        4,
+        3,
+        2,
+        1,
+        5
+      ],
+      [
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        4,
+        5,
+        1,
+        2
+      ],
+      [
+        3,
+        0,
+        1,
+        2,
+        4
+      ],
+      [
+        4,
+        0,
+        3,
+        2,
+        1
+      ],
+      [
+        4,
+        3,
+        1,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        3,
+        1,
+        5
+      ],
+      [
+        4,
+        3,
+        0,
+        5,
+        2
+      ],
+      [
+        4,
+        2,
+        0,
+        3,
+        5
+      ],
+      [
+        3,
+        5,
+        4,
+        1,
+        2
+      ],
+      [
+        4,
+        3,
+        2,
+        0,
+        5
+      ],
+      [
+        0,
+        4,
+        3,
+        5,
+        2
+      ],
+      [
+        0,
+        3,
+        4,
+        5,
+        2
+      ],
+      [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        4,
+        5,
+        2
+      ],
+      [
+        3,
+        2,
+        1,
+        5,
+        0
+      ],
+      [
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        5,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        4,
+        2,
+        0
+      ],
+      [
+        2,
+        4,
+        5,
+        3,
+        0
+      ],
+      [
+        2,
+        5,
+        4,
+        0,
+        1
+      ],
+      [
+        2,
+        5,
+        1,
+        0,
+        3
+      ],
+      [
+        5,
+        0,
+        4,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      [
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        5,
+        4
+      ],
+      [
+        4,
+        3,
+        1,
+        5,
+        0
+      ],
+      [
+        3,
+        2,
+        5,
+        1,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        1,
+        5
+      ],
+      [
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      [
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      [
+        4,
+        0,
+        3,
+        1,
+        5
+      ],
+      [
+        2,
+        4,
+        5,
+        0,
+        1
+      ],
+      [
+        5,
+        2,
+        3,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        4,
+        0,
+        5
+      ],
+      [
+        5,
+        2,
+        4,
+        3,
+        0
+      ],
+      [
+        5,
+        3,
+        1,
+        0,
+        2
+      ],
+      [
+        3,
+        4,
+        0,
+        2,
+        5
+      ],
+      [
+        1,
+        4,
+        0,
+        3,
+        2
+      ],
+      [
+        5,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        2,
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      [
+        5,
+        2,
+        0,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        0,
+        2,
+        3
+      ],
+      [
+        4,
+        1,
+        3,
+        2,
+        5
+      ],
+      [
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      [
+        4,
+        1,
+        3,
+        2,
+        5
+      ],
+      [
+        2,
+        4,
+        3,
+        5,
+        1
+      ],
+      [
+        1,
+        3,
+        2,
+        5,
+        0
+      ],
+      [
+        4,
+        5,
+        3,
+        1,
+        0
+      ]
+    ],
+    "old-int8-raw-cutoff": [
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "old-int8-combined-before-cutoff": [
+      [
+        0,
+        5,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        5,
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        2,
+        5,
+        0,
+        3
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        5,
+        2,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4,
+        3,
+        5
+      ],
+      [
+        4,
+        2,
+        3,
+        0,
+        5
+      ],
+      [
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        2,
+        5
+      ],
+      [
+        2,
+        5,
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        4,
+        3,
+        5,
+        1
+      ],
+      [
+        0,
+        3,
+        5,
+        1,
+        2
+      ],
+      [
+        5,
+        4,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        5,
+        0,
+        1,
+        4
+      ],
+      [
+        3,
+        5,
+        4,
+        1,
+        0
+      ],
+      [
+        3,
+        5,
+        2,
+        1,
+        0
+      ],
+      [
+        5,
+        4,
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        3,
+        4,
+        2,
+        5
+      ],
+      [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      [
+        4,
+        2,
+        5,
+        3,
+        1
+      ],
+      [
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      [
+        3,
+        4,
+        1,
+        5,
+        2
+      ],
+      [
+        4,
+        2,
+        3,
+        0,
+        5
+      ],
+      [
+        3,
+        4,
+        2,
+        0,
+        5
+      ],
+      [
+        5,
+        2,
+        1,
+        4,
+        0
+      ],
+      [
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      [
+        5,
+        2,
+        0,
+        4,
+        3
+      ],
+      [
+        4,
+        3,
+        2,
+        1,
+        5
+      ],
+      [
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        4,
+        5,
+        1,
+        2
+      ],
+      [
+        3,
+        0,
+        1,
+        2,
+        4
+      ],
+      [
+        4,
+        0,
+        3,
+        2,
+        1
+      ],
+      [
+        4,
+        3,
+        1,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        3,
+        1,
+        5
+      ],
+      [
+        4,
+        3,
+        0,
+        5,
+        2
+      ],
+      [
+        4,
+        2,
+        0,
+        3,
+        5
+      ],
+      [
+        3,
+        5,
+        4,
+        1,
+        2
+      ],
+      [
+        4,
+        3,
+        2,
+        0,
+        5
+      ],
+      [
+        0,
+        4,
+        3,
+        5,
+        2
+      ],
+      [
+        0,
+        3,
+        4,
+        5,
+        2
+      ],
+      [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        4,
+        5,
+        2
+      ],
+      [
+        3,
+        2,
+        1,
+        5,
+        0
+      ],
+      [
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        5,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        4,
+        2,
+        0
+      ],
+      [
+        2,
+        4,
+        5,
+        3,
+        0
+      ],
+      [
+        2,
+        5,
+        4,
+        0,
+        1
+      ],
+      [
+        2,
+        5,
+        1,
+        0,
+        3
+      ],
+      [
+        2,
+        5,
+        0,
+        4,
+        3
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      [
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        5,
+        4
+      ],
+      [
+        3,
+        4,
+        1,
+        5,
+        0
+      ],
+      [
+        3,
+        2,
+        5,
+        1,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        1,
+        5
+      ],
+      [
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      [
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      [
+        4,
+        0,
+        3,
+        1,
+        5
+      ],
+      [
+        2,
+        4,
+        5,
+        0,
+        1
+      ],
+      [
+        5,
+        2,
+        3,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        4,
+        0,
+        5
+      ],
+      [
+        5,
+        2,
+        4,
+        3,
+        0
+      ],
+      [
+        5,
+        3,
+        1,
+        0,
+        2
+      ],
+      [
+        3,
+        4,
+        0,
+        2,
+        5
+      ],
+      [
+        1,
+        4,
+        0,
+        3,
+        2
+      ],
+      [
+        5,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        2,
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      [
+        5,
+        2,
+        0,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        0,
+        2,
+        3
+      ],
+      [
+        4,
+        1,
+        3,
+        2,
+        5
+      ],
+      [
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      [
+        4,
+        1,
+        3,
+        2,
+        5
+      ],
+      [
+        2,
+        4,
+        3,
+        5,
+        1
+      ],
+      [
+        1,
+        3,
+        2,
+        5,
+        0
+      ],
+      [
+        4,
+        5,
+        3,
+        1,
+        0
+      ]
+    ],
+    "new-int8": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "new-int8-raw": [
+      [
+        0,
+        2,
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        1,
+        3,
+        0,
+        5
+      ],
+      [
+        4,
+        5,
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        5,
+        4,
+        2
+      ],
+      [
+        4,
+        5,
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        4,
+        0,
+        5,
+        3
+      ],
+      [
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        4,
+        5,
+        3
+      ],
+      [
+        2,
+        0,
+        1,
+        3,
+        4
+      ],
+      [
+        4,
+        1,
+        0,
+        5,
+        2
+      ],
+      [
+        1,
+        3,
+        5,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        2,
+        1,
+        0,
+        3
+      ],
+      [
+        3,
+        1,
+        5,
+        0,
+        2
+      ],
+      [
+        5,
+        1,
+        3,
+        4,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        4,
+        5
+      ],
+      [
+        2,
+        4,
+        0,
+        5,
+        3
+      ],
+      [
+        4,
+        1,
+        5,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        4,
+        1,
+        5
+      ],
+      [
+        3,
+        1,
+        5,
+        4,
+        0
+      ],
+      [
+        5,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        4,
+        2,
+        5,
+        0
+      ],
+      [
+        5,
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        5,
+        3,
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        2,
+        0,
+        5
+      ],
+      [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        5,
+        2,
+        4
+      ],
+      [
+        4,
+        1,
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        3,
+        5,
+        1,
+        2
+      ],
+      [
+        4,
+        5,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        5,
+        4,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        1,
+        3,
+        2
+      ],
+      [
+        4,
+        1,
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        4,
+        5,
+        3,
+        2,
+        0
+      ],
+      [
+        0,
+        4,
+        1,
+        5,
+        2
+      ],
+      [
+        1,
+        4,
+        5,
+        3,
+        2
+      ],
+      [
+        5,
+        1,
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        0
+      ],
+      [
+        2,
+        1,
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        5
+      ],
+      [
+        4,
+        5,
+        1,
+        0,
+        2
+      ],
+      [
+        5,
+        0,
+        4,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1,
+        5,
+        4
+      ],
+      [
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      [
+        5,
+        1,
+        4,
+        2,
+        0
+      ],
+      [
+        5,
+        3,
+        4,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        2,
+        4,
+        5
+      ],
+      [
+        3,
+        1,
+        2,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        4
+      ],
+      [
+        3,
+        1,
+        0,
+        5,
+        2
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        5,
+        0,
+        4
+      ],
+      [
+        4,
+        5,
+        0,
+        1,
+        2
+      ],
+      [
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      [
+        5,
+        4,
+        3,
+        0,
+        1
+      ],
+      [
+        5,
+        1,
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        5,
+        4,
+        1,
+        3
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        5,
+        4,
+        2,
+        3,
+        0
+      ],
+      [
+        4,
+        5,
+        1,
+        0,
+        3
+      ],
+      [
+        3,
+        5,
+        1,
+        4,
+        0
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        4,
+        5,
+        1
+      ],
+      [
+        0,
+        1,
+        3,
+        5,
+        2
+      ],
+      [
+        2,
+        1,
+        5,
+        4,
+        3
+      ],
+      [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      [
+        0,
+        4,
+        1,
+        2,
+        5
+      ],
+      [
+        2,
+        1,
+        0,
+        4,
+        3
+      ],
+      [
+        1,
+        4,
+        0,
+        5,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    ],
+    "new-int8-raw-cutoff": [
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "new-int8-combined-before-cutoff": [
+      [
+        0,
+        2,
+        4,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        1,
+        3,
+        5
+      ],
+      [
+        4,
+        5,
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        5,
+        4,
+        2
+      ],
+      [
+        1,
+        4,
+        5,
+        2,
+        0
+      ],
+      [
+        2,
+        4,
+        0,
+        5,
+        3
+      ],
+      [
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        4,
+        5,
+        3
+      ],
+      [
+        2,
+        0,
+        1,
+        3,
+        4
+      ],
+      [
+        2,
+        4,
+        1,
+        0,
+        5
+      ],
+      [
+        1,
+        3,
+        5,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        2,
+        1,
+        0,
+        3
+      ],
+      [
+        3,
+        1,
+        5,
+        0,
+        2
+      ],
+      [
+        3,
+        5,
+        1,
+        4,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        4,
+        5
+      ],
+      [
+        2,
+        4,
+        0,
+        5,
+        3
+      ],
+      [
+        4,
+        1,
+        5,
+        0,
+        2
+      ],
+      [
+        4,
+        0,
+        2,
+        1,
+        5
+      ],
+      [
+        3,
+        1,
+        5,
+        4,
+        0
+      ],
+      [
+        5,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        4,
+        2,
+        5,
+        0
+      ],
+      [
+        5,
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        5,
+        3,
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        2,
+        0,
+        5
+      ],
+      [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        5,
+        2,
+        4
+      ],
+      [
+        4,
+        1,
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        4,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        3,
+        5,
+        1,
+        2
+      ],
+      [
+        4,
+        5,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        5,
+        4,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        1,
+        3,
+        2
+      ],
+      [
+        4,
+        1,
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        4,
+        5,
+        3,
+        2,
+        0
+      ],
+      [
+        0,
+        4,
+        1,
+        5,
+        2
+      ],
+      [
+        0,
+        1,
+        4,
+        5,
+        3
+      ],
+      [
+        5,
+        1,
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        5
+      ],
+      [
+        4,
+        5,
+        1,
+        0,
+        2
+      ],
+      [
+        5,
+        0,
+        4,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        1,
+        5,
+        4
+      ],
+      [
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      [
+        5,
+        1,
+        4,
+        2,
+        0
+      ],
+      [
+        5,
+        3,
+        4,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        2,
+        4,
+        5
+      ],
+      [
+        3,
+        1,
+        2,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        4
+      ],
+      [
+        3,
+        1,
+        0,
+        5,
+        2
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        5,
+        0,
+        4
+      ],
+      [
+        4,
+        5,
+        0,
+        1,
+        2
+      ],
+      [
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      [
+        5,
+        4,
+        3,
+        0,
+        1
+      ],
+      [
+        5,
+        1,
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        5,
+        4,
+        1,
+        3
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        5,
+        4,
+        2,
+        3,
+        0
+      ],
+      [
+        4,
+        5,
+        1,
+        0,
+        3
+      ],
+      [
+        3,
+        5,
+        1,
+        4,
+        0
+      ],
+      [
+        5,
+        4,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        4,
+        5,
+        1
+      ],
+      [
+        0,
+        1,
+        3,
+        5,
+        2
+      ],
+      [
+        2,
+        1,
+        5,
+        4,
+        3
+      ],
+      [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      [
+        0,
+        4,
+        1,
+        2,
+        5
+      ],
+      [
+        2,
+        1,
+        0,
+        4,
+        3
+      ],
+      [
+        1,
+        4,
+        0,
+        5,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    ]
+  }
+}

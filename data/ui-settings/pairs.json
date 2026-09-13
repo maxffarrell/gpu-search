@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "accessibility.debugWatchVariableAnnouncements",
+    "label": "Accessibility debug watch variable announcements",
+    "query": "Controls whether variable changes should be announced in the debug watch view.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 878
+  },
+  {
+    "id": "accessibility.openChatEditedFiles",
+    "label": "Accessibility open chat edited files",
+    "query": "Controls whether files should be opened when the chat agent has applied edits to them.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 899
+  },
+  {
+    "id": "accessibility.replEditor.autoFocusReplExecution",
+    "label": "Accessibility repl editor auto focus repl execution",
+    "query": "Control whether focus should automatically be sent to the REPL when code is executed.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 888
+  },
+  {
+    "id": "accessibility.replEditor.readLastExecutionOutput",
+    "label": "Accessibility repl editor read last execution output",
+    "query": "Controls whether the output from an execution in the native REPL will be announced.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 883
+  },
+  {
+    "id": "accessibility.signalOptions.debouncePositionChanges",
+    "label": "Accessibility signal options debounce position changes",
+    "query": "Whether or not position changes should be debounced",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 256
+  },
+  {
+    "id": "accessibility.signalOptions.experimental.delays.general",
+    "label": "Accessibility signal options experimental delays general",
+    "query": "Delays for all signals besides error and warning at position",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 262
+  },
+  {
+    "id": "accessibility.signalOptions.volume",
+    "label": "Accessibility signal options volume",
+    "query": "The volume of the sounds in percent (0-100).",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 248
+  },
+  {
+    "id": "accessibility.signals.chatUserActionRequired",
+    "label": "Accessibility signals chat user action required",
+    "query": "Plays a signal - sound (audio cue) and/or announcement (alert) - when user action is required in the chat.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 848
+  },
+  {
+    "id": "accessibility.signals.format",
+    "label": "Accessibility signals format",
+    "query": "Plays a signal - sound (audio cue) and/or announcement (alert) - when a file or notebook is formatted.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 814
+  },
+  {
+    "id": "accessibility.signals.progress",
+    "label": "Accessibility signals progress",
+    "query": "Plays a signal - sound (audio cue) and/or announcement (alert) - on loop while progress is occurring.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 614
+  },
+  {
+    "id": "accessibility.signals.save",
+    "label": "Accessibility signals save",
+    "query": "Plays a signal - sound (audio cue) and/or announcement (alert) - when a file is saved.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 780
+  },
+  {
+    "id": "accessibility.signals.voiceModeStarted",
+    "label": "Accessibility signals voice mode started",
+    "query": "Plays a signal - sound (audio cue) and/or announcement (alert) - when voice mode has started.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 689
+  },
+  {
+    "id": "accessibility.signals.voiceModeStopped",
+    "label": "Accessibility signals voice mode stopped",
+    "query": "Plays a signal - sound (audio cue) and/or announcement (alert) - when voice mode has stopped.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 720
+  },
+  {
+    "id": "accessibility.signals.voiceRecordingStarted",
+    "label": "Accessibility signals voice recording started",
+    "query": "Plays a sound / audio cue when the voice recording has started.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 676
+  },
+  {
+    "id": "accessibility.signals.voiceRecordingStopped",
+    "label": "Accessibility signals voice recording stopped",
+    "query": "Plays a sound / audio cue when the voice recording has stopped.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 707
+  },
+  {
+    "id": "accessibility.underlineLinks",
+    "label": "Accessibility underline links",
+    "query": "Controls whether links should be underlined in the workbench.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 873
+  },
+  {
+    "id": "accessibility.verboseChatProgressUpdates",
+    "label": "Accessibility verbose chat progress updates",
+    "query": "Controls whether verbose progress announcements should be made when a chat request is in progress, including information like searched text for <search term> with X results, created file <filename>, or read file <file path>.",
+    "family": "accessibility",
+    "path": "src/vs/workbench/contrib/accessibility/browser/accessibilityConfiguration.ts",
+    "line": 904
+  },
+  {
+    "id": "agents.voice.backendUrl",
+    "label": "Agents voice backend url",
+    "query": "Voice backend WebSocket URL. Leave empty to use the default hosted backend. Set to e.g. ws://localhost:8000/api/v1/realtime/voice to point at a backend running on your machine.",
+    "family": "agents",
+    "path": "src/vs/workbench/contrib/agentsVoice/browser/agentsVoice.contribution.ts",
+    "line": 621
+  },
+  {
+    "id": "agents.voice.enabled",
+    "label": "Agents voice enabled",
+    "query": "Enable the Voice Mode panel in the chat view for voice-driven coding conversations.",
+    "family": "agents",
+    "path": "src/vs/workbench/contrib/agentsVoice/browser/agentsVoice.contribution.ts",
+    "line": 591
+  },
+  {
+    "id": "agents.voice.liveTranscript",
+    "label": "Agents voice live transcript",
+    "query": "Show your speech as a live, word-by-word transcript while you are speaking. When disabled, your transcript appears only once you finish speaking. Requires #agents.voice.showTranscript# to be enabled to be visible.",
+    "family": "agents",
+    "path": "src/vs/workbench/contrib/agentsVoice/browser/agentsVoice.contribution.ts",
+    "line": 680
+  },
+  {
+    "id": "agents.voice.showTranscript",
+    "label": "Agents voice show transcript",
+    "query": "Show the voice transcript overlay in the chat input area while voice mode is active. Enable this to read responses as text when #agents.voice.speakResponses# is disabled.",
+    "family": "agents",
+    "path": "src/vs/workbench/contrib/agentsVoice/browser/agentsVoice.contribution.ts",
+    "line": 674
+  },
+  {
+    "id": "agents.voice.speakResponses",
+    "label": "Agents voice speak responses",
+    "query": "When enabled, the assistant reads responses aloud. When disabled, responses are not spoken; enable #agents.voice.showTranscript# to read them as a text transcript instead.",
+    "family": "agents",
+    "path": "src/vs/workbench/contrib/agentsVoice/browser/agentsVoice.contribution.ts",
+    "line": 628
+  },
+  {
+    "id": "application.experimental.rendererProfiling",
+    "label": "Application experimental renderer profiling",
+    "query": "When enabled, slow renderers are automatically profiled.",
+    "family": "application",
+    "path": "src/vs/workbench/contrib/performance/electron-browser/performance.contribution.ts",
+    "line": 40
+  },
+  {
+    "id": "application.shellEnvironmentResolutionTimeout",
+    "label": "Application shell environment resolution timeout",
+    "query": "Controls the timeout in seconds before giving up resolving the shell environment when the application is not already launched from a terminal. See our documentation for more information.",
+    "family": "application",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 148
+  },
+  {
+    "id": "breadcrumbs.enabled",
+    "label": "Breadcrumbs enabled",
+    "query": "Enable/disable navigation breadcrumbs.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 126
+  },
+  {
+    "id": "breadcrumbs.filePath",
+    "label": "Breadcrumbs file path",
+    "query": "Controls whether and how file paths are shown in the breadcrumbs view.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 132
+  },
+  {
+    "id": "breadcrumbs.icons",
+    "label": "Breadcrumbs icons",
+    "query": "Render breadcrumb items with icons.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 166
+  },
+  {
+    "id": "breadcrumbs.showArrays",
+    "label": "Breadcrumbs show arrays",
+    "query": "When enabled breadcrumbs show array-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 285
+  },
+  {
+    "id": "breadcrumbs.showBooleans",
+    "label": "Breadcrumbs show booleans",
+    "query": "When enabled breadcrumbs show boolean-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 279
+  },
+  {
+    "id": "breadcrumbs.showClasses",
+    "label": "Breadcrumbs show classes",
+    "query": "When enabled breadcrumbs show class-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 207
+  },
+  {
+    "id": "breadcrumbs.showConstants",
+    "label": "Breadcrumbs show constants",
+    "query": "When enabled breadcrumbs show constant-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 261
+  },
+  {
+    "id": "breadcrumbs.showConstructors",
+    "label": "Breadcrumbs show constructors",
+    "query": "When enabled breadcrumbs show constructor-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 231
+  },
+  {
+    "id": "breadcrumbs.showEditorType",
+    "label": "Breadcrumbs show editor type",
+    "query": "Controls whether the breadcrumbs bar shows a dropdown to switch between the editors that can open the current file (for example the text editor and a custom editor). The dropdown only appears when a more specialized editor is available.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 171
+  },
+  {
+    "id": "breadcrumbs.showEnumMembers",
+    "label": "Breadcrumbs show enum members",
+    "query": "When enabled breadcrumbs show enumMember-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 309
+  },
+  {
+    "id": "breadcrumbs.showEnums",
+    "label": "Breadcrumbs show enums",
+    "query": "When enabled breadcrumbs show enum-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 237
+  },
+  {
+    "id": "breadcrumbs.showEvents",
+    "label": "Breadcrumbs show events",
+    "query": "When enabled breadcrumbs show event-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 321
+  },
+  {
+    "id": "breadcrumbs.showFields",
+    "label": "Breadcrumbs show fields",
+    "query": "When enabled breadcrumbs show field-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 225
+  },
+  {
+    "id": "breadcrumbs.showFiles",
+    "label": "Breadcrumbs show files",
+    "query": "When enabled breadcrumbs show file-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 183
+  },
+  {
+    "id": "breadcrumbs.showFunctions",
+    "label": "Breadcrumbs show functions",
+    "query": "When enabled breadcrumbs show function-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 249
+  },
+  {
+    "id": "breadcrumbs.showInterfaces",
+    "label": "Breadcrumbs show interfaces",
+    "query": "When enabled breadcrumbs show interface-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 243
+  },
+  {
+    "id": "breadcrumbs.showKeys",
+    "label": "Breadcrumbs show keys",
+    "query": "When enabled breadcrumbs show key-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 297
+  },
+  {
+    "id": "breadcrumbs.showMethods",
+    "label": "Breadcrumbs show methods",
+    "query": "When enabled breadcrumbs show method-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 213
+  },
+  {
+    "id": "breadcrumbs.showModules",
+    "label": "Breadcrumbs show modules",
+    "query": "When enabled breadcrumbs show module-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 189
+  },
+  {
+    "id": "breadcrumbs.showNamespaces",
+    "label": "Breadcrumbs show namespaces",
+    "query": "When enabled breadcrumbs show namespace-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 195
+  },
+  {
+    "id": "breadcrumbs.showNull",
+    "label": "Breadcrumbs show null",
+    "query": "When enabled breadcrumbs show null-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 303
+  },
+  {
+    "id": "breadcrumbs.showNumbers",
+    "label": "Breadcrumbs show numbers",
+    "query": "When enabled breadcrumbs show number-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 273
+  },
+  {
+    "id": "breadcrumbs.showObjects",
+    "label": "Breadcrumbs show objects",
+    "query": "When enabled breadcrumbs show object-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 291
+  },
+  {
+    "id": "breadcrumbs.showOperators",
+    "label": "Breadcrumbs show operators",
+    "query": "When enabled breadcrumbs show operator-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 327
+  },
+  {
+    "id": "breadcrumbs.showPackages",
+    "label": "Breadcrumbs show packages",
+    "query": "When enabled breadcrumbs show package-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 201
+  },
+  {
+    "id": "breadcrumbs.showProperties",
+    "label": "Breadcrumbs show properties",
+    "query": "When enabled breadcrumbs show property-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 219
+  },
+  {
+    "id": "breadcrumbs.showStrings",
+    "label": "Breadcrumbs show strings",
+    "query": "When enabled breadcrumbs show string-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 267
+  },
+  {
+    "id": "breadcrumbs.showStructs",
+    "label": "Breadcrumbs show structs",
+    "query": "When enabled breadcrumbs show struct-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 315
+  },
+  {
+    "id": "breadcrumbs.showTypeParameters",
+    "label": "Breadcrumbs show type parameters",
+    "query": "When enabled breadcrumbs show typeParameter-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 333
+  },
+  {
+    "id": "breadcrumbs.showVariables",
+    "label": "Breadcrumbs show variables",
+    "query": "When enabled breadcrumbs show variable-symbols.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 255
+  },
+  {
+    "id": "breadcrumbs.symbolPath",
+    "label": "Breadcrumbs symbol path",
+    "query": "Controls whether and how symbols are shown in the breadcrumbs view.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 143
+  },
+  {
+    "id": "breadcrumbs.symbolPathSeparator",
+    "label": "Breadcrumbs symbol path separator",
+    "query": "The separator used when copying the breadcrumb symbol path.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 177
+  },
+  {
+    "id": "breadcrumbs.symbolSortOrder",
+    "label": "Breadcrumbs symbol sort order",
+    "query": "Controls how symbols are sorted in the breadcrumbs outline view.",
+    "family": "breadcrumbs",
+    "path": "src/vs/workbench/browser/parts/editor/breadcrumbs.ts",
+    "line": 154
+  },
+  {
+    "id": "chat.agent.maxRequests",
+    "label": "Chat agent max requests",
+    "query": "The maximum number of requests to allow per-turn when using an agent. When the limit is reached, will ask to confirm to continue.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 2923
+  },
+  {
+    "id": "chat.agent.thinking.collapsedTools",
+    "label": "Chat agent thinking collapsed tools",
+    "query": "Controls how tool calls are displayed in relation to thinking sections.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 2305
+  },
+  {
+    "id": "chat.allowAnonymousAccess",
+    "label": "Chat allow anonymous access",
+    "query": "Controls whether anonymous access is allowed in chat.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 2408
+  },
+  {
+    "id": "chat.checkpoints.enabled",
+    "label": "Chat checkpoints enabled",
+    "query": "Enables checkpoints in chat. Checkpoints allow you to restore the chat to a previous state.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 1057
+  },
+  {
+    "id": "chat.checkpoints.showFileChanges",
+    "label": "Chat checkpoints show file changes",
+    "query": "Controls whether to show chat checkpoint file changes.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 1062
+  },
+  {
+    "id": "chat.defaultToCopilotHarness",
+    "label": "Chat default to copilot harness",
+    "query": "When enabled, new editor and panel chat sessions default to the Agent Host Copilot SDK instead of the local harness.",
+    "family": "chat",
+    "path": "src/vs/platform/agentHost/common/agentHostEnablementService.ts",
+    "line": 69
+  },
+  {
+    "id": "chat.detectParticipant.enabled",
+    "label": "Chat detect participant enabled",
+    "query": "Enables chat participant autodetection for panel chat.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 644
+  },
+  {
+    "id": "chat.editing.autoAcceptDelay",
+    "label": "Chat editing auto accept delay",
+    "query": "Delay after which changes made by chat are automatically accepted. Values are in seconds, 0 means disabled and 100 seconds is the maximum.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 535
+  },
+  {
+    "id": "chat.editing.confirmEditRequestRemoval",
+    "label": "Chat editing confirm edit request removal",
+    "query": "Whether to show a confirmation before removing a request and its associated edits.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 542
+  },
+  {
+    "id": "chat.editing.confirmEditRequestRetry",
+    "label": "Chat editing confirm edit request retry",
+    "query": "Whether to show a confirmation before retrying a request and its associated edits.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 548
+  },
+  {
+    "id": "chat.editing.explainChanges.enabled",
+    "label": "Chat editing explain changes enabled",
+    "query": "Controls whether the Explain button in the Chat panel and the Explain Changes context menu in the SCM view are shown. This is an experimental feature.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 554
+  },
+  {
+    "id": "chat.editor.fontFamily",
+    "label": "Chat editor font family",
+    "query": "Controls the font family in chat codeblocks.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 421
+  },
+  {
+    "id": "chat.editor.fontSize",
+    "label": "Chat editor font size",
+    "query": "Controls the font size in pixels in chat codeblocks.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 416
+  },
+  {
+    "id": "chat.editor.fontWeight",
+    "label": "Chat editor font weight",
+    "query": "Controls the font weight in chat codeblocks.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 426
+  },
+  {
+    "id": "chat.editor.lineHeight",
+    "label": "Chat editor line height",
+    "query": "Controls the line height in pixels in chat codeblocks. Use 0 to compute the line height from the font size.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 437
+  },
+  {
+    "id": "chat.editor.localAgent.enabled",
+    "label": "Chat editor local agent enabled",
+    "query": "When enabled, shows the VS Code local chat harness in the chat picker. This setting is ignored in virtual workspaces, where the local chat harness is always available.",
+    "family": "chat",
+    "path": "src/vs/platform/agentHost/common/agentHostEnablementService.ts",
+    "line": 76
+  },
+  {
+    "id": "chat.editor.preferCopilotHarness",
+    "label": "Chat editor prefer copilot harness",
+    "query": "When enabled, uses the Agent Host Copilot SDK whenever the local harness would otherwise be selected for a new editor chat session. Claude and Codex selections are unaffected.",
+    "family": "chat",
+    "path": "src/vs/platform/agentHost/common/agentHostEnablementService.ts",
+    "line": 51
+  },
+  {
+    "id": "chat.editor.wordWrap",
+    "label": "Chat editor word wrap",
+    "query": "Controls whether lines should wrap in chat codeblocks.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 431
+  },
+  {
+    "id": "chat.editRequests",
+    "label": "Chat edit requests",
+    "query": "Enables editing of requests in the chat. This allows you to change the request content and resubmit it to the model.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 960
+  },
+  {
+    "id": "chat.experimental.detectParticipant.enabled",
+    "label": "Chat experimental detect participant enabled",
+    "query": "Enables chat participant autodetection for panel chat.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 592
+  },
+  {
+    "id": "chat.experimentalModelPicker",
+    "label": "Chat experimental model picker",
+    "query": "When enabled, the model picker uses a tab per model provider and configures thinking effort and context from a detail card next to each model, instead of a separate configuration button.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 295
+  },
+  {
+    "id": "chat.experimentalSessionsWindowOverride",
+    "label": "Chat experimental sessions window override",
+    "query": "When true, enables sessions-window-specific behavior for extensions.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 288
+  },
+  {
+    "id": "chat.extensionUnification.enabled",
+    "label": "Chat extension unification enabled",
+    "query": "Enables the unification of GitHub Copilot extensions. When enabled, all GitHub Copilot functionality is served from the GitHub Copilot Chat extension. When disabled, the GitHub Copilot and GitHub Copilot Chat extensions operate independently.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 2438
+  },
+  {
+    "id": "chat.fontFamily",
+    "label": "Chat font family",
+    "query": "Controls the font family in chat messages.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 315
+  },
+  {
+    "id": "chat.fontSize",
+    "label": "Chat font size",
+    "query": "Controls the font size in pixels in chat messages.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 308
+  },
+  {
+    "id": "chat.implicitContext.enabled",
+    "label": "Chat implicit context enabled",
+    "query": "Enables automatically using the active editor as chat context for specified chat locations.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 500
+  },
+  {
+    "id": "chat.implicitContext.suggestedContext",
+    "label": "Chat implicit context suggested context",
+    "query": "Controls whether the new implicit context flow is shown. In Ask and Edit modes, the context will automatically be included. When using an agent, context will be suggested as an attachment. Selections are always included as context.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 522
+  },
+  {
+    "id": "chat.tips.enabled",
+    "label": "Chat tips enabled",
+    "query": "Controls whether tips are shown above user messages in chat. New tips are added frequently, so this is a helpful way to stay up to date with the latest features.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 573
+  },
+  {
+    "id": "chat.undoRequests.restoreInput",
+    "label": "Chat undo requests restore input",
+    "query": "Controls whether the input of the chat should be restored when an undo request is made. The input will be filled with the text of the request that was restored.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 955
+  },
+  {
+    "id": "chat.upvoteAnimation",
+    "label": "Chat upvote animation",
+    "query": "Controls whether an animation is shown when clicking the thumbs up button on a chat response.",
+    "family": "chat",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 579
+  },
+  {
+    "id": "codex.autoReviewPolicy",
+    "label": "Codex auto review policy",
+    "query": "Updates autoreview.policy in config.toml. Leave empty to remove the autoreview section.",
+    "family": "codex",
+    "path": "src/vs/platform/agentHost/node/codex/codexProviderConfiguration.ts",
+    "line": 23
+  },
+  {
+    "id": "codex.personality",
+    "label": "Codex personality",
+    "query": "Controls the default communication style for Codex. Default leaves personality unset in config.toml.",
+    "family": "codex",
+    "path": "src/vs/platform/agentHost/node/codex/codexProviderConfiguration.ts",
+    "line": 22
+  },
+  {
+    "id": "comments.collapseOnResolve",
+    "label": "Comments collapse on resolve",
+    "query": "Controls whether the comment thread should collapse when the thread is resolved.",
+    "family": "comments",
+    "path": "src/vs/workbench/contrib/comments/browser/comments.contribution.ts",
+    "line": 137
+  },
+  {
+    "id": "comments.maxHeight",
+    "label": "Comments max height",
+    "query": "Controls whether the comments widget scrolls or expands.",
+    "family": "comments",
+    "path": "src/vs/workbench/contrib/comments/browser/comments.contribution.ts",
+    "line": 132
+  },
+  {
+    "id": "comments.openPanel",
+    "label": "Comments open panel",
+    "query": "Controls when the comments panel should open.",
+    "family": "comments",
+    "path": "src/vs/workbench/contrib/comments/browser/comments.contribution.ts",
+    "line": 108
+  },
+  {
+    "id": "comments.openView",
+    "label": "Comments open view",
+    "query": "Controls when the comments view should open.",
+    "family": "comments",
+    "path": "src/vs/workbench/contrib/comments/browser/comments.contribution.ts",
+    "line": 115
+  },
+  {
+    "id": "comments.thread.confirmOnCollapse",
+    "label": "Comments thread confirm on collapse",
+    "query": "Controls whether a confirmation dialog is shown when collapsing a comment thread.",
+    "family": "comments",
+    "path": "src/vs/workbench/contrib/comments/browser/comments.contribution.ts",
+    "line": 142
+  },
+  {
+    "id": "comments.useRelativeTime",
+    "label": "Comments use relative time",
+    "query": "Determines if relative time will be used in comment timestamps (ex. '1 day ago').",
+    "family": "comments",
+    "path": "src/vs/workbench/contrib/comments/browser/comments.contribution.ts",
+    "line": 122
+  },
+  {
+    "id": "debug.allowBreakpointsEverywhere",
+    "label": "Debug allow breakpoints everywhere",
+    "query": "Allow setting breakpoints in any file.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 497
+  },
+  {
+    "id": "debug.autoExpandLazyVariables",
+    "label": "Debug auto expand lazy variables",
+    "query": "Controls whether variables that are lazily resolved, such as getters, are automatically resolved and expanded by the debugger.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 678
+  },
+  {
+    "id": "debug.breakpointsView.presentation",
+    "label": "Debug breakpoints view presentation",
+    "query": "Controls whether breakpoints are displayed in a tree view grouped by file, or as a flat list.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 641
+  },
+  {
+    "id": "debug.closeReadonlyTabsOnEnd",
+    "label": "Debug close readonly tabs on end",
+    "query": "At the end of a debug session, all the read-only tabs associated with that session will be closed",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 519
+  },
+  {
+    "id": "debug.confirmOnExit",
+    "label": "Debug confirm on exit",
+    "query": "Controls whether to confirm when the window closes if there are active debug sessions.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 663
+  },
+  {
+    "id": "debug.console.acceptSuggestionOnEnter",
+    "label": "Debug console accept suggestion on enter",
+    "query": "Controls whether suggestions should be accepted on Enter in the Debug Console. Enter is also used to evaluate whatever is typed in the Debug Console.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 603
+  },
+  {
+    "id": "debug.console.closeOnEnd",
+    "label": "Debug console close on end",
+    "query": "Controls if the Debug Console should be automatically closed when the debug session ends.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 553
+  },
+  {
+    "id": "debug.console.collapseIdenticalLines",
+    "label": "Debug console collapse identical lines",
+    "query": "Controls if the Debug Console should collapse identical lines and show a number of occurrences with a badge.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 598
+  },
+  {
+    "id": "debug.console.fontFamily",
+    "label": "Debug console font family",
+    "query": "Controls the font family in the Debug Console.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 578
+  },
+  {
+    "id": "debug.console.fontSize",
+    "label": "Debug console font size",
+    "query": "Controls the font size in pixels in the Debug Console.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 573
+  },
+  {
+    "id": "debug.console.historySuggestions",
+    "label": "Debug console history suggestions",
+    "query": "Controls if the Debug Console should suggest previously typed input.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 593
+  },
+  {
+    "id": "debug.console.lineHeight",
+    "label": "Debug console line height",
+    "query": "Controls the line height in pixels in the Debug Console. Use 0 to compute the line height from the font size.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 583
+  },
+  {
+    "id": "debug.console.maximumLines",
+    "label": "Debug console maximum lines",
+    "query": "Controls the maximum number of lines in the Debug Console.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 608
+  },
+  {
+    "id": "debug.console.wordWrap",
+    "label": "Debug console word wrap",
+    "query": "Controls if the lines should wrap in the Debug Console.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 588
+  },
+  {
+    "id": "debug.disassemblyView.showSourceCode",
+    "label": "Debug disassembly view show source code",
+    "query": "Show Source Code in Disassembly View.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 673
+  },
+  {
+    "id": "debug.enableStatusBarColor",
+    "label": "Debug enable status bar color",
+    "query": "Color of the status bar when the debugger is active.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 689
+  },
+  {
+    "id": "debug.focusEditorOnBreak",
+    "label": "Debug focus editor on break",
+    "query": "Controls whether the editor should be focused when the debugger breaks.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 625
+  },
+  {
+    "id": "debug.focusWindowOnBreak",
+    "label": "Debug focus window on break",
+    "query": "Controls whether the workbench window should be focused when the debugger breaks.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 620
+  },
+  {
+    "id": "debug.gutterMiddleClickAction",
+    "label": "Debug gutter middle click action",
+    "query": "Controls the action to perform when clicking the editor gutter with the middle mouse button.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 502
+  },
+  {
+    "id": "debug.hideSlowPreLaunchWarning",
+    "label": "Debug hide slow pre launch warning",
+    "query": "Hide the warning shown when a preLaunchTask has been running for a while.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 699
+  },
+  {
+    "id": "debug.inlineValues",
+    "label": "Debug inline values",
+    "query": "Show variable values inline in editor while debugging.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 524
+  },
+  {
+    "id": "debug.onTaskErrors",
+    "label": "Debug on task errors",
+    "query": "Controls what to do when errors are encountered after running a preLaunchTask.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 630
+  },
+  {
+    "id": "debug.openDebug",
+    "label": "Debug open debug",
+    "query": "Controls when the debug view should open.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 563
+  },
+  {
+    "id": "debug.openExplorerOnEnd",
+    "label": "Debug open explorer on end",
+    "query": "Automatically open the explorer view at the end of a debug session.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 514
+  },
+  {
+    "id": "debug.saveBeforeStart",
+    "label": "Debug save before start",
+    "query": "Controls what editors to save before starting a debug session.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 652
+  },
+  {
+    "id": "debug.showBreakpointsInOverviewRuler",
+    "label": "Debug show breakpoints in overview ruler",
+    "query": "Controls whether breakpoints should be shown in the overview ruler.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 636
+  },
+  {
+    "id": "debug.showInlineBreakpointCandidates",
+    "label": "Debug show inline breakpoint candidates",
+    "query": "Controls whether inline breakpoints candidate decorations should be shown in the editor while debugging.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 647
+  },
+  {
+    "id": "debug.showInStatusBar",
+    "label": "Debug show in status bar",
+    "query": "Controls when the debug status bar item should be visible.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 546
+  },
+  {
+    "id": "debug.showSubSessionsInToolBar",
+    "label": "Debug show sub sessions in tool bar",
+    "query": "Controls whether the debug sub-sessions are shown in the debug tool bar. When this setting is false the stop command on a sub-session will also stop the parent session.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 568
+  },
+  {
+    "id": "debug.showVariableTypes",
+    "label": "Debug show variable types",
+    "query": "Show variable type in variable pane during debug session",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 492
+  },
+  {
+    "id": "debug.terminal.clearBeforeReusing",
+    "label": "Debug terminal clear before reusing",
+    "query": "Before starting a new debug session in an integrated or external terminal, clear the terminal.",
+    "family": "debug",
+    "path": "src/vs/workbench/contrib/debug/browser/debug.contribution.ts",
+    "line": 558
+  },
+  {
+    "id": "dictation.enabled",
+    "label": "Dictation enabled",
+    "query": "Enables dictation across the product (chat input, editor, and terminal). When enabled, a microphone button appears in the chat input and the dictation shortcut becomes available. Desktop uses the selected transcription model; web uses cloud transcription.",
+    "family": "dictation",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 320
+  },
+  {
+    "id": "dictation.experimental.llmCleanupModel",
+    "label": "Dictation experimental llm cleanup model",
+    "query": "Controls the language model used for experimental dictation cleanup. auto follows the experiment-provided default.",
+    "family": "dictation",
+    "path": "src/vs/workbench/contrib/chat/browser/chat.shared.contribution.ts",
+    "line": 406
+  },
+  {
+    "id": "diffEditor.codeLens",
+    "label": "Diff editor code lens",
+    "query": "Controls whether the editor shows CodeLens.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 247
+  },
+  {
+    "id": "diffEditor.experimental.showEmptyDecorations",
+    "label": "Diff editor experimental show empty decorations",
+    "query": "Controls whether the diff editor shows empty decorations to see where characters got inserted or deleted.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 302
+  },
+  {
+    "id": "diffEditor.experimental.showMoves",
+    "label": "Diff editor experimental show moves",
+    "query": "Controls whether the diff editor should show detected code moves.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 297
+  },
+  {
+    "id": "diffEditor.experimental.useTrueInlineView",
+    "label": "Diff editor experimental use true inline view",
+    "query": "If enabled and the editor uses the inline view, word changes are rendered inline.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 307
+  },
+  {
+    "id": "diffEditor.hideUnchangedRegions.contextLineCount",
+    "label": "Diff editor hide unchanged regions context line count",
+    "query": "Controls how many lines are used as context when comparing unchanged regions.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 291
+  },
+  {
+    "id": "diffEditor.hideUnchangedRegions.enabled",
+    "label": "Diff editor hide unchanged regions enabled",
+    "query": "Controls whether the diff editor shows unchanged regions.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 273
+  },
+  {
+    "id": "diffEditor.hideUnchangedRegions.minimumLineCount",
+    "label": "Diff editor hide unchanged regions minimum line count",
+    "query": "Controls how many lines are used as a minimum for unchanged regions.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 285
+  },
+  {
+    "id": "diffEditor.hideUnchangedRegions.revealLineCount",
+    "label": "Diff editor hide unchanged regions reveal line count",
+    "query": "Controls how many lines are used for unchanged regions.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 279
+  },
+  {
+    "id": "diffEditor.ignoreTrimWhitespace",
+    "label": "Diff editor ignore trim whitespace",
+    "query": "When enabled, the diff editor ignores changes in leading or trailing whitespace.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 236
+  },
+  {
+    "id": "diffEditor.maxComputationTime",
+    "label": "Diff editor max computation time",
+    "query": "Timeout in milliseconds after which diff computation is cancelled. Use 0 for no timeout.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 197
+  },
+  {
+    "id": "diffEditor.maxFileSize",
+    "label": "Diff editor max file size",
+    "query": "Maximum file size in MB for which to compute diffs. Use 0 for no limit.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 202
+  },
+  {
+    "id": "diffEditor.renderGutterMenu",
+    "label": "Diff editor render gutter menu",
+    "query": "When enabled, the diff editor shows a special gutter for revert and stage actions.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 230
+  },
+  {
+    "id": "diffEditor.renderIndicators",
+    "label": "Diff editor render indicators",
+    "query": "Controls whether the diff editor shows +/- indicators for added/removed changes.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 241
+  },
+  {
+    "id": "diffEditor.renderMarginRevertIcon",
+    "label": "Diff editor render margin revert icon",
+    "query": "When enabled, the diff editor shows arrows in its glyph margin to revert changes.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 224
+  },
+  {
+    "id": "diffEditor.renderSideBySide",
+    "label": "Diff editor render side by side",
+    "query": "Controls whether the diff editor shows the diff side by side or inline.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 207
+  },
+  {
+    "id": "diffEditor.renderSideBySideInlineBreakpoint",
+    "label": "Diff editor render side by side inline breakpoint",
+    "query": "If the diff editor width is smaller than this value, the inline view is used.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 213
+  },
+  {
+    "id": "diffEditor.useInlineViewWhenSpaceIsLimited",
+    "label": "Diff editor use inline view when space is limited",
+    "query": "If enabled and the editor width is too small, the inline view is used.",
+    "family": "diffEditor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 218
+  },
+  {
+    "id": "editor.codeActionWidget.includeNearbyQuickFixes",
+    "label": "Editor code action widget include nearby quick fixes",
+    "query": "Enable/disable showing nearest Quick Fix within a line when not currently on a diagnostic.",
+    "family": "editor",
+    "path": "src/vs/editor/contrib/codeAction/browser/codeActionContributions.ts",
+    "line": 41
+  },
+  {
+    "id": "editor.codeActionWidget.showHeaders",
+    "label": "Editor code action widget show headers",
+    "query": "Enable/disable showing group headers in the Code Action menu.",
+    "family": "editor",
+    "path": "src/vs/editor/contrib/codeAction/browser/codeActionContributions.ts",
+    "line": 29
+  },
+  {
+    "id": "editor.experimental.asyncTokenization",
+    "label": "Editor experimental async tokenization",
+    "query": "Controls whether the tokenization should happen asynchronously on a web worker.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 99
+  },
+  {
+    "id": "editor.experimental.asyncTokenizationLogging",
+    "label": "Editor experimental async tokenization logging",
+    "query": "Controls whether async tokenization should be logged. For debugging only.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 105
+  },
+  {
+    "id": "editor.experimental.asyncTokenizationVerification",
+    "label": "Editor experimental async tokenization verification",
+    "query": "Controls whether async tokenization should be verified against legacy background tokenization. Might slow down tokenization. For debugging only.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 110
+  },
+  {
+    "id": "editor.experimental.preferTreeSitter.css",
+    "label": "Editor experimental prefer tree sitter css",
+    "query": "Controls whether tree sitter parsing should be turned on for css. This will take precedence over #editor.experimental.treeSitterTelemetry# for css.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 125
+  },
+  {
+    "id": "editor.experimental.preferTreeSitter.ini",
+    "label": "Editor experimental prefer tree sitter ini",
+    "query": "Controls whether tree sitter parsing should be turned on for ini. This will take precedence over #editor.experimental.treeSitterTelemetry# for ini.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 143
+  },
+  {
+    "id": "editor.experimental.preferTreeSitter.regex",
+    "label": "Editor experimental prefer tree sitter regex",
+    "query": "Controls whether tree sitter parsing should be turned on for regex. This will take precedence over #editor.experimental.treeSitterTelemetry# for regex.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 152
+  },
+  {
+    "id": "editor.experimental.preferTreeSitter.typescript",
+    "label": "Editor experimental prefer tree sitter typescript",
+    "query": "Controls whether tree sitter parsing should be turned on for typescript. This will take precedence over #editor.experimental.treeSitterTelemetry# for typescript.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 134
+  },
+  {
+    "id": "editor.experimental.treeSitterTelemetry",
+    "label": "Editor experimental tree sitter telemetry",
+    "query": "Controls whether tree sitter parsing should be turned on and telemetry collected. Setting #editor.experimental.preferTreeSitter# for specific languages will take precedence.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 116
+  },
+  {
+    "id": "editor.formatOnSaveMode",
+    "label": "Editor format on save mode",
+    "query": "Controls if format on save formats the whole file or only modifications. Only applies when #editor.formatOnSave# is enabled.",
+    "family": "editor",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 396
+  },
+  {
+    "id": "editor.indentSize",
+    "label": "Editor indent size",
+    "query": "The number of spaces used for indentation or \"tabSize\" to use the value from #editor.tabSize#. This setting is overridden based on the file contents when #editor.detectIndentation# is on.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 32
+  },
+  {
+    "id": "editor.language.brackets",
+    "label": "Editor language brackets",
+    "query": "Defines the bracket symbols that increase or decrease the indentation.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 161
+  },
+  {
+    "id": "editor.language.colorizedBracketPairs",
+    "label": "Editor language colorized bracket pairs",
+    "query": "Defines the bracket pairs that are colorized by their nesting level if bracket pair colorization is enabled.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 179
+  },
+  {
+    "id": "editor.largeFileOptimizations",
+    "label": "Editor large file optimizations",
+    "query": "Special handling for large files to disable certain memory intensive features.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 61
+  },
+  {
+    "id": "editor.maxTokenizationLineLength",
+    "label": "Editor max tokenization line length",
+    "query": "Lines above this length will not be tokenized for performance reasons",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 94
+  },
+  {
+    "id": "editor.rename.enablePreview",
+    "label": "Editor rename enable preview",
+    "query": "Enable/disable the ability to preview changes before renaming",
+    "family": "editor",
+    "path": "src/vs/editor/contrib/rename/browser/rename.ts",
+    "line": 534
+  },
+  {
+    "id": "editor.semanticHighlighting.enabled",
+    "label": "Editor semantic highlighting enabled",
+    "query": "Controls whether the semanticHighlighting is shown for the languages that support it.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 79
+  },
+  {
+    "id": "editor.snippets.codeActions.enabled",
+    "label": "Editor snippets code actions enabled",
+    "query": "Controls if surround-with-snippets or file template snippets show as Code Actions.",
+    "family": "editor",
+    "path": "src/vs/workbench/contrib/snippets/browser/snippets.contribution.ts",
+    "line": 42
+  },
+  {
+    "id": "editor.stablePeek",
+    "label": "Editor stable peek",
+    "query": "Keep peek editors open even when double-clicking their content or when hitting Escape.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 89
+  },
+  {
+    "id": "editor.trimAutoWhitespace",
+    "label": "Editor trim auto whitespace",
+    "query": "Remove trailing auto inserted whitespace.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 56
+  },
+  {
+    "id": "editor.wordBasedSuggestions",
+    "label": "Editor word based suggestions",
+    "query": "Controls whether completions should be computed based on words in the document and from which documents they are computed.",
+    "family": "editor",
+    "path": "src/vs/editor/common/config/editorConfigurationSchema.ts",
+    "line": 66
+  },
+  {
+    "id": "explorer.autoOpenDroppedFile",
+    "label": "Explorer auto open dropped file",
+    "query": "Controls whether the Explorer should automatically open a file when it is dropped into the explorer",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 572
+  },
+  {
+    "id": "explorer.autoReveal",
+    "label": "Explorer auto reveal",
+    "query": "Controls whether the Explorer should automatically reveal and select files when opening them.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 444
+  },
+  {
+    "id": "explorer.autoRevealExclude",
+    "label": "Explorer auto reveal exclude",
+    "query": "Configure paths or glob patterns for excluding files and folders from being revealed and selected in the Explorer when they are opened. Glob patterns are always evaluated relative to the path of the workspace folder unless they are absolute paths.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 455
+  },
+  {
+    "id": "explorer.compactFolders",
+    "label": "Explorer compact folders",
+    "query": "Controls whether the Explorer should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element. Useful for Java package structures, for example.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 577
+  },
+  {
+    "id": "explorer.confirmDelete",
+    "label": "Explorer confirm delete",
+    "query": "Controls whether the Explorer should ask for confirmation when deleting files and folders.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 494
+  },
+  {
+    "id": "explorer.confirmDragAndDrop",
+    "label": "Explorer confirm drag and drop",
+    "query": "Controls whether the Explorer should ask for confirmation to move files and folders via drag and drop.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 484
+  },
+  {
+    "id": "explorer.confirmPasteNative",
+    "label": "Explorer confirm paste native",
+    "query": "Controls whether the Explorer should ask for confirmation when pasting native files and folders.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 489
+  },
+  {
+    "id": "explorer.confirmUndo",
+    "label": "Explorer confirm undo",
+    "query": "Controls whether the Explorer should ask for confirmation when undoing.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 504
+  },
+  {
+    "id": "explorer.copyPathSeparator",
+    "label": "Explorer copy path separator",
+    "query": "The path separation character used when copying file paths.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 597
+  },
+  {
+    "id": "explorer.copyRelativePathSeparator",
+    "label": "Explorer copy relative path separator",
+    "query": "The path separation character used when copying relative file paths.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 582
+  },
+  {
+    "id": "explorer.decorations.badges",
+    "label": "Explorer decorations badges",
+    "query": "Controls whether file decorations should use badges.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 556
+  },
+  {
+    "id": "explorer.decorations.colors",
+    "label": "Explorer decorations colors",
+    "query": "Controls whether file decorations should use colors.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 551
+  },
+  {
+    "id": "explorer.enableDragAndDrop",
+    "label": "Explorer enable drag and drop",
+    "query": "Controls whether the Explorer should allow to move files and folders via drag and drop. This setting only effects drag and drop from inside the Explorer.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 479
+  },
+  {
+    "id": "explorer.enableUndo",
+    "label": "Explorer enable undo",
+    "query": "Controls whether the Explorer should support undoing file and folder operations.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 499
+  },
+  {
+    "id": "explorer.expandSingleFolderWorkspaces",
+    "label": "Explorer expand single folder workspaces",
+    "query": "Controls whether the Explorer should expand multi-root workspaces containing only one folder during initialization",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 515
+  },
+  {
+    "id": "explorer.fileNesting.enabled",
+    "label": "Explorer file nesting enabled",
+    "query": "Controls whether file nesting is enabled in the Explorer. File nesting allows for related files in a directory to be visually grouped together under a single parent file.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 618
+  },
+  {
+    "id": "explorer.incrementalNaming",
+    "label": "Explorer incremental naming",
+    "query": "Controls which naming strategy to use when giving a new name to a duplicated Explorer item on paste.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 561
+  },
+  {
+    "id": "explorer.openEditors.minVisible",
+    "label": "Explorer open editors min visible",
+    "query": "The minimum number of editor slots pre-allocated in the Open Editors pane. If set to 0 the Open Editors pane will dynamically resize based on the number of editors.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 427
+  },
+  {
+    "id": "explorer.openEditors.sortOrder",
+    "label": "Explorer open editors sort order",
+    "query": "Controls the sorting order of editors in the Open Editors pane.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 433
+  },
+  {
+    "id": "explorer.openEditors.visible",
+    "label": "Explorer open editors visible",
+    "query": "The initial maximum number of editors shown in the Open Editors pane. Exceeding this limit will show a scroll bar and allow resizing the pane to display more items.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 421
+  },
+  {
+    "id": "explorer.sortOrder",
+    "label": "Explorer sort order",
+    "query": "Controls the property-based sorting of files and folders in the Explorer. When #explorer.fileNesting.enabled# is enabled, also controls sorting of nested files.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 520
+  },
+  {
+    "id": "explorer.sortOrderLexicographicOptions",
+    "label": "Explorer sort order lexicographic options",
+    "query": "Controls the lexicographic sorting of file and folder names in the Explorer.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 534
+  },
+  {
+    "id": "explorer.sortOrderReverse",
+    "label": "Explorer sort order reverse",
+    "query": "Controls whether the file and folder sort order, should be reversed.",
+    "family": "explorer",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 546
+  },
+  {
+    "id": "extensions.allowOpenInModalEditor",
+    "label": "Extensions allow open in modal editor",
+    "query": "Controls whether extensions and MCP servers open in a modal editor overlay.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 322
+  },
+  {
+    "id": "extensions.autoCheckUpdates",
+    "label": "Extensions auto check updates",
+    "query": "When enabled, automatically checks extensions for updates. If an extension has an update, it is marked as outdated in the Extensions view. The updates are fetched from a Microsoft online service.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 190
+  },
+  {
+    "id": "extensions.autoUpdate",
+    "label": "Extensions auto update",
+    "query": "Controls the automatic update behavior of extensions. The updates are fetched from a Microsoft online service.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 139
+  },
+  {
+    "id": "extensions.autoUpdateDelay",
+    "label": "Extensions auto update delay",
+    "query": "Controls the delay in hours after an extension update is published before it is automatically installed. Only applies when #extensions.autoUpdate# is set to on. This delay helps avoid installing potentially problematic updates immediately after release.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 172
+  },
+  {
+    "id": "extensions.closeExtensionDetailsOnViewChange",
+    "label": "Extensions close extension details on view change",
+    "query": "When enabled, editors with extension details will be automatically closed upon navigating away from the Extensions View.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 209
+  },
+  {
+    "id": "extensions.confirmedUriHandlerExtensionIds",
+    "label": "Extensions confirmed uri handler extension ids",
+    "query": "When an extension is listed here, a confirmation prompt will not be shown when that extension handles a URI.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 214
+  },
+  {
+    "id": "extensions.experimental.affinity",
+    "label": "Extensions experimental affinity",
+    "query": "Configure an extension to execute in a different extension host process.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 269
+  },
+  {
+    "id": "extensions.experimental.deferredStartupFinishedActivation",
+    "label": "Extensions experimental deferred startup finished activation",
+    "query": "When enabled, extensions which declare the onStartupFinished activation event will be activated after a timeout.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 312
+  },
+  {
+    "id": "extensions.experimental.issueQuickAccess",
+    "label": "Extensions experimental issue quick access",
+    "query": "When enabled, extensions can be searched for via Quick Access and report issues from there.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 317
+  },
+  {
+    "id": "extensions.ignoreRecommendations",
+    "label": "Extensions ignore recommendations",
+    "query": "When enabled, the notifications for extension recommendations will not be shown.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 197
+  },
+  {
+    "id": "extensions.supportNodeGlobalNavigator",
+    "label": "Extensions support node global navigator",
+    "query": "When enabled, Node.js navigator object is exposed on the global scope.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 396
+  },
+  {
+    "id": "extensions.supportVirtualWorkspaces",
+    "label": "Extensions support virtual workspaces",
+    "query": "Override the virtual workspaces support of an extension.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 234
+  },
+  {
+    "id": "extensions.webWorker",
+    "label": "Extensions web worker",
+    "query": "Enable web worker extension host.",
+    "family": "extensions",
+    "path": "src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts",
+    "line": 223
+  },
+  {
+    "id": "files.autoSave",
+    "label": "Files auto save",
+    "query": "Controls auto save of editors that have unsaved changes.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 261
+  },
+  {
+    "id": "files.defaultLanguage",
+    "label": "Files default language",
+    "query": "The default language identifier that is assigned to new files. If configured to ${activeEditorLanguage}, will use the language identifier of the currently active text editor if any.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 322
+  },
+  {
+    "id": "files.dialog.defaultPath",
+    "label": "Files dialog default path",
+    "query": "Default path for file dialogs, overriding user's home path. Only used in the absence of a context-specific path, such as most recently opened file or folder.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 368
+  },
+  {
+    "id": "files.enableTrash",
+    "label": "Files enable trash",
+    "query": "Moves files/folders to the OS trash (recycle bin on Windows) when deleting. Disabling this will delete files/folders permanently.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 232
+  },
+  {
+    "id": "files.encoding",
+    "label": "Files encoding",
+    "query": "The default character set encoding to use when reading and writing files. This setting can also be configured per language.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 190
+  },
+  {
+    "id": "files.eol",
+    "label": "Files eol",
+    "query": "The default end of line character.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 216
+  },
+  {
+    "id": "files.insertFinalNewline",
+    "label": "Files insert final newline",
+    "query": "When enabled, insert a final new line at the end of the file when saving it.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 249
+  },
+  {
+    "id": "files.participants.timeout",
+    "label": "Files participants timeout",
+    "query": "Timeout in milliseconds after which file participants for create, rename, and delete are cancelled. Use 0 to disable participants.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 380
+  },
+  {
+    "id": "files.restoreUndoStack",
+    "label": "Files restore undo stack",
+    "query": "Restore the undo stack when a file is reopened.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 349
+  },
+  {
+    "id": "files.simpleDialog.enable",
+    "label": "Files simple dialog enable",
+    "query": "Enables the simple file dialog for opening and saving files and folders. The simple file dialog replaces the system file dialog when enabled.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 375
+  },
+  {
+    "id": "files.trimFinalNewlines",
+    "label": "Files trim final newlines",
+    "query": "When enabled, will trim all new lines after the final new line at the end of the file when saving it.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 255
+  },
+  {
+    "id": "files.trimTrailingWhitespace",
+    "label": "Files trim trailing whitespace",
+    "query": "When enabled, will trim trailing whitespace when saving a file.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 237
+  },
+  {
+    "id": "files.trimTrailingWhitespaceInRegexAndStrings",
+    "label": "Files trim trailing whitespace in regex and strings",
+    "query": "When enabled, trailing whitespace will be removed from multiline strings and regexes on save or when executing 'editor.action.trimTrailingWhitespace'. This can cause whitespace to not be trimmed from lines when there isn't up-to-date token information.",
+    "family": "files",
+    "path": "src/vs/workbench/contrib/files/browser/files.contribution.ts",
+    "line": 243
+  },
+  {
+    "id": "http.electronFetch",
+    "label": "Http electron fetch",
+    "query": "Controls whether use of Electron's fetch implementation instead of Node.js' should be enabled. All local extensions will get Electron's fetch implementation for the global fetch API.",
+    "family": "http",
+    "path": "src/vs/platform/request/common/request.ts",
+    "line": 261
+  },
+  {
+    "id": "http.useLocalProxyConfiguration",
+    "label": "Http use local proxy configuration",
+    "query": "Controls whether in the remote extension host the local proxy configuration should be used. This setting only applies as a remote setting during remote development.",
+    "family": "http",
+    "path": "src/vs/platform/request/common/request.ts",
+    "line": 246
+  },
+  {
+    "id": "imageCarousel.chat.enabled",
+    "label": "Image carousel chat enabled",
+    "query": "Controls whether clicking an image attachment in chat opens the Images Preview viewer.",
+    "family": "imageCarousel",
+    "path": "src/vs/workbench/contrib/imageCarousel/browser/imageCarousel.contribution.ts",
+    "line": 46
+  },
+  {
+    "id": "imageCarousel.explorerContextMenu.enabled",
+    "label": "Image carousel explorer context menu enabled",
+    "query": "Controls whether the Open in Images Preview option appears in the Explorer context menu.",
+    "family": "imageCarousel",
+    "path": "src/vs/workbench/contrib/imageCarousel/browser/imageCarousel.contribution.ts",
+    "line": 40
+  },
+  {
+    "id": "issueReporter.experimental.webReporter",
+    "label": "Issue reporter experimental web reporter",
+    "query": "Enable experimental issue reporter for web.",
+    "family": "issueReporter",
+    "path": "src/vs/workbench/contrib/issue/browser/issue.contribution.ts",
+    "line": 30
+  },
+  {
+    "id": "issueReporter.wizard.enabled",
+    "label": "Issue reporter wizard enabled",
+    "query": "Enable the new issue reporter wizard instead of the classic issue reporter.",
+    "family": "issueReporter",
+    "path": "src/vs/workbench/contrib/issue/electron-browser/issue.contribution.ts",
+    "line": 53
+  },
+  {
+    "id": "issueReporter.wizard.fullWorkspaceScan",
+    "label": "Issue reporter wizard full workspace scan",
+    "query": "When auto-collecting performance diagnostics for the issue reporter wizard, walk the full workspace instead of stopping at the default 20,000-file cap. Set to false on very large workspaces if the scan slows the initial wizard render.",
+    "family": "issueReporter",
+    "path": "src/vs/workbench/contrib/issue/electron-browser/issue.contribution.ts",
+    "line": 59
+  },
+  {
+    "id": "keyboard.dispatch",
+    "label": "Keyboard dispatch",
+    "query": "Controls the dispatching logic for key presses to use either code (recommended) or keyCode.",
+    "family": "keyboard",
+    "path": "src/vs/platform/keyboardLayout/common/keyboardConfig.ts",
+    "line": 36
+  },
+  {
+    "id": "keyboard.layout",
+    "label": "Keyboard layout",
+    "query": "Control the keyboard layout used in web.",
+    "family": "keyboard",
+    "path": "src/vs/workbench/services/keybinding/browser/keyboardLayoutService.ts",
+    "line": 649
+  },
+  {
+    "id": "keyboard.mapAltGrToCtrlAlt",
+    "label": "Keyboard map alt gr to ctrl alt",
+    "query": "Controls if the AltGraph+ modifier should be treated as Ctrl+Alt+.",
+    "family": "keyboard",
+    "path": "src/vs/platform/keyboardLayout/common/keyboardConfig.ts",
+    "line": 44
+  },
+  {
+    "id": "keyboard.touchbar.enabled",
+    "label": "Keyboard touchbar enabled",
+    "query": "Enables the macOS touchbar buttons on the keyboard if available.",
+    "family": "keyboard",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 364
+  },
+  {
+    "id": "keyboard.touchbar.ignored",
+    "label": "Keyboard touchbar ignored",
+    "query": "A set of identifiers for entries in the touchbar that should not show up (for example workbench.action.navigateBack).",
+    "family": "keyboard",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 370
+  },
+  {
+    "id": "mergeEditor.showDeletionMarkers",
+    "label": "Merge editor show deletion markers",
+    "query": "Controls if deletions in base or one of the inputs should be indicated by a vertical bar.",
+    "family": "mergeEditor",
+    "path": "src/vs/workbench/contrib/mergeEditor/browser/mergeEditor.contribution.ts",
+    "line": 58
+  },
+  {
+    "id": "network.meteredConnection",
+    "label": "Network metered connection",
+    "query": "Controls whether the current network connection should be treated as metered. When metered, automatic updates, extension downloads, and other background network activity will be postponed to reduce data usage.",
+    "family": "network",
+    "path": "src/vs/platform/meteredConnection/common/meteredConnection.config.contribution.ts",
+    "line": 17
+  },
+  {
+    "id": "notebook.diff.experimental.toggleInline",
+    "label": "Notebook diff experimental toggle inline",
+    "query": "Enable the command to toggle the experimental notebook inline diff editor.",
+    "family": "notebook",
+    "path": "src/vs/workbench/contrib/notebook/browser/diff/notebookDiffActions.ts",
+    "line": 745
+  },
+  {
+    "id": "notebook.diff.ignoreMetadata",
+    "label": "Notebook diff ignore metadata",
+    "query": "Hide Metadata Differences",
+    "family": "notebook",
+    "path": "src/vs/workbench/contrib/notebook/browser/diff/notebookDiffActions.ts",
+    "line": 735
+  },
+  {
+    "id": "notebook.diff.ignoreOutputs",
+    "label": "Notebook diff ignore outputs",
+    "query": "Hide Outputs Differences",
+    "family": "notebook",
+    "path": "src/vs/workbench/contrib/notebook/browser/diff/notebookDiffActions.ts",
+    "line": 740
+  },
+  {
+    "id": "notebook.lineNumbers",
+    "label": "Notebook line numbers",
+    "query": "Controls the display of line numbers in the cell editor.",
+    "family": "notebook",
+    "path": "src/vs/workbench/contrib/notebook/browser/view/cellParts/cellEditorOptions.ts",
+    "line": 187
+  },
+  {
+    "id": "notebook.navigation.allowNavigateToSurroundingCells",
+    "label": "Notebook navigation allow navigate to surrounding cells",
+    "query": "When enabled cursor can navigate to the next/previous cell when the current cursor in the cell editor is at the first/last line.",
+    "family": "notebook",
+    "path": "src/vs/workbench/contrib/notebook/browser/contrib/navigation/arrow.ts",
+    "line": 475
+  },
+  {
+    "id": "outline.showArrays",
+    "label": "Outline show arrays",
+    "query": "When enabled, Outline shows array-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 184
+  },
+  {
+    "id": "outline.showBooleans",
+    "label": "Outline show booleans",
+    "query": "When enabled, Outline shows boolean-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 178
+  },
+  {
+    "id": "outline.showClasses",
+    "label": "Outline show classes",
+    "query": "When enabled, Outline shows class-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 106
+  },
+  {
+    "id": "outline.showConstants",
+    "label": "Outline show constants",
+    "query": "When enabled, Outline shows constant-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 160
+  },
+  {
+    "id": "outline.showConstructors",
+    "label": "Outline show constructors",
+    "query": "When enabled, Outline shows constructor-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 130
+  },
+  {
+    "id": "outline.showEnumMembers",
+    "label": "Outline show enum members",
+    "query": "When enabled, Outline shows enumMember-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 208
+  },
+  {
+    "id": "outline.showEnums",
+    "label": "Outline show enums",
+    "query": "When enabled, Outline shows enum-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 136
+  },
+  {
+    "id": "outline.showEvents",
+    "label": "Outline show events",
+    "query": "When enabled, Outline shows event-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 220
+  },
+  {
+    "id": "outline.showFields",
+    "label": "Outline show fields",
+    "query": "When enabled, Outline shows field-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 124
+  },
+  {
+    "id": "outline.showFiles",
+    "label": "Outline show files",
+    "query": "When enabled, Outline shows file-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 82
+  },
+  {
+    "id": "outline.showFunctions",
+    "label": "Outline show functions",
+    "query": "When enabled, Outline shows function-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 148
+  },
+  {
+    "id": "outline.showInterfaces",
+    "label": "Outline show interfaces",
+    "query": "When enabled, Outline shows interface-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 142
+  },
+  {
+    "id": "outline.showKeys",
+    "label": "Outline show keys",
+    "query": "When enabled, Outline shows key-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 196
+  },
+  {
+    "id": "outline.showMethods",
+    "label": "Outline show methods",
+    "query": "When enabled, Outline shows method-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 112
+  },
+  {
+    "id": "outline.showModules",
+    "label": "Outline show modules",
+    "query": "When enabled, Outline shows module-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 88
+  },
+  {
+    "id": "outline.showNamespaces",
+    "label": "Outline show namespaces",
+    "query": "When enabled, Outline shows namespace-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 94
+  },
+  {
+    "id": "outline.showNull",
+    "label": "Outline show null",
+    "query": "When enabled, Outline shows null-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 202
+  },
+  {
+    "id": "outline.showNumbers",
+    "label": "Outline show numbers",
+    "query": "When enabled, Outline shows number-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 172
+  },
+  {
+    "id": "outline.showObjects",
+    "label": "Outline show objects",
+    "query": "When enabled, Outline shows object-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 190
+  },
+  {
+    "id": "outline.showOperators",
+    "label": "Outline show operators",
+    "query": "When enabled, Outline shows operator-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 226
+  },
+  {
+    "id": "outline.showPackages",
+    "label": "Outline show packages",
+    "query": "When enabled, Outline shows package-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 100
+  },
+  {
+    "id": "outline.showProperties",
+    "label": "Outline show properties",
+    "query": "When enabled, Outline shows property-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 118
+  },
+  {
+    "id": "outline.showStrings",
+    "label": "Outline show strings",
+    "query": "When enabled, Outline shows string-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 166
+  },
+  {
+    "id": "outline.showStructs",
+    "label": "Outline show structs",
+    "query": "When enabled, Outline shows struct-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 214
+  },
+  {
+    "id": "outline.showTypeParameters",
+    "label": "Outline show type parameters",
+    "query": "When enabled, Outline shows typeParameter-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 232
+  },
+  {
+    "id": "outline.showVariables",
+    "label": "Outline show variables",
+    "query": "When enabled, Outline shows variable-symbols.",
+    "family": "outline",
+    "path": "src/vs/workbench/contrib/outline/browser/outline.contribution.ts",
+    "line": 154
+  },
+  {
+    "id": "output.smartScroll.enabled",
+    "label": "Output smart scroll enabled",
+    "query": "Enable/disable the ability of smart scrolling in the output view. Smart scrolling allows you to lock scrolling automatically when you click in the output view and unlocks when you click in the last line.",
+    "family": "output",
+    "path": "src/vs/workbench/contrib/output/browser/output.contribution.ts",
+    "line": 843
+  },
+  {
+    "id": "problems.visibility",
+    "label": "Problems visibility",
+    "query": "Controls whether the problems are visible throughout the editor and workbench.",
+    "family": "problems",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 1005
+  },
+  {
+    "id": "remote.downloadExtensionsLocally",
+    "label": "Remote download extensions locally",
+    "query": "When enabled extensions are downloaded locally and installed on remote.",
+    "family": "remote",
+    "path": "src/vs/workbench/contrib/remote/electron-browser/remote.contribution.ts",
+    "line": 211
+  },
+  {
+    "id": "remote.forwardOnOpen",
+    "label": "Remote forward on open",
+    "query": "Controls whether local URLs with a port will be forwarded when opened from the terminal and the debug console.",
+    "family": "remote",
+    "path": "src/vs/workbench/contrib/remote/common/remote.contribution.ts",
+    "line": 248
+  },
+  {
+    "id": "remote.localPortHost",
+    "label": "Remote local port host",
+    "query": "Specifies the local host name that will be used for port forwarding.",
+    "family": "remote",
+    "path": "src/vs/workbench/contrib/remote/common/remote.contribution.ts",
+    "line": 358
+  },
+  {
+    "id": "remote.portsAttributes",
+    "label": "Remote ports attributes",
+    "query": "Set properties that are applied when a specific port number is forwarded. For example: \"3000\": { \"label\": \"Application\" }, \"40000-55000\": { \"onAutoForward\": \"ignore\" }, \".+\\\\/server.js\": { \"onAutoForward\": \"openPreview\" }",
+    "family": "remote",
+    "path": "src/vs/workbench/contrib/remote/common/remote.contribution.ts",
+    "line": 256
+  },
+  {
+    "id": "remote.restoreForwardedPorts",
+    "label": "Remote restore forwarded ports",
+    "query": "Restores the ports you forwarded in a workspace.",
+    "family": "remote",
+    "path": "src/vs/workbench/contrib/remote/common/remote.contribution.ts",
+    "line": 222
+  },
+  {
+    "id": "scm.alwaysShowActions",
+    "label": "Scm always show actions",
+    "query": "Controls whether inline actions are always visible in the Source Control view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 241
+  },
+  {
+    "id": "scm.alwaysShowRepositories",
+    "label": "Scm always show repositories",
+    "query": "Controls whether repositories should always be visible in the Source Control view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 318
+  },
+  {
+    "id": "scm.autoReveal",
+    "label": "Scm auto reveal",
+    "query": "Controls whether the Source Control view should automatically reveal and select files when opening them.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 289
+  },
+  {
+    "id": "scm.compactFolders",
+    "label": "Scm compact folders",
+    "query": "Controls whether the Source Control view should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 380
+  },
+  {
+    "id": "scm.countBadge",
+    "label": "Scm count badge",
+    "query": "Controls the count badge on the Source Control icon on the Activity Bar.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 246
+  },
+  {
+    "id": "scm.defaultViewMode",
+    "label": "Scm default view mode",
+    "query": "Controls the default Source Control repository view mode.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 268
+  },
+  {
+    "id": "scm.defaultViewSortKey",
+    "label": "Scm default view sort key",
+    "query": "Controls the default Source Control repository changes sort order when viewed as a list.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 278
+  },
+  {
+    "id": "scm.diffDecorations",
+    "label": "Scm diff decorations",
+    "query": "Controls diff decorations in the editor.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/quickDiff.contribution.ts",
+    "line": 43
+  },
+  {
+    "id": "scm.diffDecorationsGutterAction",
+    "label": "Scm diff decorations gutter action",
+    "query": "Controls the behavior of Source Control diff gutter decorations.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/quickDiff.contribution.ts",
+    "line": 72
+  },
+  {
+    "id": "scm.diffDecorationsGutterPattern",
+    "label": "Scm diff decorations gutter pattern",
+    "query": "Controls whether a pattern is used for the diff decorations in gutter.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/quickDiff.contribution.ts",
+    "line": 82
+  },
+  {
+    "id": "scm.diffDecorationsGutterVisibility",
+    "label": "Scm diff decorations gutter visibility",
+    "query": "Controls the visibility of the Source Control diff decorator in the gutter.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/quickDiff.contribution.ts",
+    "line": 62
+  },
+  {
+    "id": "scm.diffDecorationsGutterWidth",
+    "label": "Scm diff decorations gutter width",
+    "query": "Controls the width(px) of diff decorations in gutter (added & modified).",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/quickDiff.contribution.ts",
+    "line": 56
+  },
+  {
+    "id": "scm.diffDecorationsIgnoreTrimWhitespace",
+    "label": "Scm diff decorations ignore trim whitespace",
+    "query": "Controls whether leading and trailing whitespace is ignored in Source Control diff gutter decorations.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/quickDiff.contribution.ts",
+    "line": 101
+  },
+  {
+    "id": "scm.graph.badges",
+    "label": "Scm graph badges",
+    "query": "Controls which badges are shown in the Source Control Graph view. The badges are shown on the right side of the graph indicating the names of history item groups.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 397
+  },
+  {
+    "id": "scm.graph.pageOnScroll",
+    "label": "Scm graph page on scroll",
+    "query": "Controls whether the Source Control Graph view will load the next page of items when you scroll to the end of the list.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 385
+  },
+  {
+    "id": "scm.graph.pageSize",
+    "label": "Scm graph page size",
+    "query": "The number of items to show in the Source Control Graph view by default and when loading more items.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 390
+  },
+  {
+    "id": "scm.graph.showIncomingChanges",
+    "label": "Scm graph show incoming changes",
+    "query": "Controls whether to show incoming changes in the Source Control Graph view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 407
+  },
+  {
+    "id": "scm.graph.showOutgoingChanges",
+    "label": "Scm graph show outgoing changes",
+    "query": "Controls whether to show outgoing changes in the Source Control Graph view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 412
+  },
+  {
+    "id": "scm.inputFontFamily",
+    "label": "Scm input font family",
+    "query": "Controls the font for the input message. Use default for the workbench user interface font family, editor for the #editor.fontFamily#'s value, or a custom font family.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 294
+  },
+  {
+    "id": "scm.inputFontSize",
+    "label": "Scm input font size",
+    "query": "Controls the font size for the input message in pixels.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 299
+  },
+  {
+    "id": "scm.inputMaxLineCount",
+    "label": "Scm input max line count",
+    "query": "Controls the maximum number of lines that the input will auto-grow to.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 304
+  },
+  {
+    "id": "scm.inputMinLineCount",
+    "label": "Scm input min line count",
+    "query": "Controls the minimum number of lines that the input will auto-grow from.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 311
+  },
+  {
+    "id": "scm.repositories.selectionMode",
+    "label": "Scm repositories selection mode",
+    "query": "Controls the selection mode of the repositories in the Source Control Repositories view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 339
+  },
+  {
+    "id": "scm.repositories.sortOrder",
+    "label": "Scm repositories sort order",
+    "query": "Controls the sort order of the repositories in the source control repositories view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 323
+  },
+  {
+    "id": "scm.repositories.visible",
+    "label": "Scm repositories visible",
+    "query": "Controls how many repositories are visible in the Source Control Repositories section. Set to 0, to be able to manually resize the view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 334
+  },
+  {
+    "id": "scm.showActionButton",
+    "label": "Scm show action button",
+    "query": "Controls whether an action button can be shown in the Source Control view.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 355
+  },
+  {
+    "id": "scm.showInputActionButton",
+    "label": "Scm show input action button",
+    "query": "Controls whether an action button can be shown in the Source Control input.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 360
+  },
+  {
+    "id": "scm.workingSets.default",
+    "label": "Scm working sets default",
+    "query": "Controls the default working set to use when switching to a source control history item group that does not have a working set.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 370
+  },
+  {
+    "id": "scm.workingSets.enabled",
+    "label": "Scm working sets enabled",
+    "query": "Controls whether to store editor working sets when switching between source control history item groups.",
+    "family": "scm",
+    "path": "src/vs/workbench/contrib/scm/browser/scm.contribution.ts",
+    "line": 365
+  },
+  {
+    "id": "screencastMode.fontSize",
+    "label": "Screencast mode font size",
+    "query": "Controls the font size (in pixels) of the screencast mode keyboard.",
+    "family": "screencastMode",
+    "path": "src/vs/workbench/browser/actions/developerActions.ts",
+    "line": 1442
+  },
+  {
+    "id": "screencastMode.keyboardOptions",
+    "label": "Screencast mode keyboard options",
+    "query": "Options for customizing the keyboard overlay in screencast mode.",
+    "family": "screencastMode",
+    "path": "src/vs/workbench/browser/actions/developerActions.ts",
+    "line": 1449
+  },
+  {
+    "id": "screencastMode.keyboardOverlayTimeout",
+    "label": "Screencast mode keyboard overlay timeout",
+    "query": "Controls how long (in milliseconds) the keyboard overlay is shown in screencast mode.",
+    "family": "screencastMode",
+    "path": "src/vs/workbench/browser/actions/developerActions.ts",
+    "line": 1488
+  },
+  {
+    "id": "screencastMode.mouseIndicatorColor",
+    "label": "Screencast mode mouse indicator color",
+    "query": "Controls the color in hex (#RGB, #RGBA, #RRGGBB or #RRGGBBAA) of the mouse indicator in screencast mode.",
+    "family": "screencastMode",
+    "path": "src/vs/workbench/browser/actions/developerActions.ts",
+    "line": 1495
+  },
+  {
+    "id": "screencastMode.mouseIndicatorSize",
+    "label": "Screencast mode mouse indicator size",
+    "query": "Controls the size (in pixels) of the mouse indicator in screencast mode.",
+    "family": "screencastMode",
+    "path": "src/vs/workbench/browser/actions/developerActions.ts",
+    "line": 1501
+  },
+  {
+    "id": "screencastMode.verticalOffset",
+    "label": "Screencast mode vertical offset",
+    "query": "Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.",
+    "family": "screencastMode",
+    "path": "src/vs/workbench/browser/actions/developerActions.ts",
+    "line": 1435
+  },
+  {
+    "id": "search.actionsPosition",
+    "label": "Search actions position",
+    "query": "Controls the positioning of the actionbar on rows in the Search view.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 165
+  },
+  {
+    "id": "search.collapseResults",
+    "label": "Search collapse results",
+    "query": "Controls whether the search results will be collapsed or expanded.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 144
+  },
+  {
+    "id": "search.decorations.badges",
+    "label": "Search decorations badges",
+    "query": "Controls whether search file decorations should use badges.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 190
+  },
+  {
+    "id": "search.decorations.colors",
+    "label": "Search decorations colors",
+    "query": "Controls whether search file decorations should use colors.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 185
+  },
+  {
+    "id": "search.defaultViewMode",
+    "label": "Search default view mode",
+    "query": "Controls the default search result view mode.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 195
+  },
+  {
+    "id": "search.experimental.closedNotebookRichContentResults",
+    "label": "Search experimental closed notebook rich content results",
+    "query": "Show notebook editor rich content results for closed notebooks. Please refresh your search results after changing this setting.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 210
+  },
+  {
+    "id": "search.followSymlinks",
+    "label": "Search follow symlinks",
+    "query": "Controls whether to follow symlinks while searching.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 73
+  },
+  {
+    "id": "search.globalFindClipboard",
+    "label": "Search global find clipboard",
+    "query": "Controls whether the Search view should read or modify the shared find clipboard on macOS.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 138
+  },
+  {
+    "id": "search.maxResults",
+    "label": "Search max results",
+    "query": "Controls the maximum number of search results, this can be set to null (empty) to return unlimited results.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 83
+  },
+  {
+    "id": "search.quickAccess.preserveInput",
+    "label": "Search quick access preserve input",
+    "query": "Controls whether the last typed input to Quick Search should be restored when opening it the next time.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 205
+  },
+  {
+    "id": "search.quickOpen.history.filterSortOrder",
+    "label": "Search quick open history filter sort order",
+    "query": "Controls sorting order of editor history in quick open when filtering.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 128
+  },
+  {
+    "id": "search.quickOpen.includeHistory",
+    "label": "Search quick open include history",
+    "query": "Whether to include results from recently opened files in the file results for Quick Open.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 122
+  },
+  {
+    "id": "search.quickOpen.includeSymbols",
+    "label": "Search quick open include symbols",
+    "query": "Whether to include results from a global symbol search in the file results for Quick Open.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 117
+  },
+  {
+    "id": "search.ripgrep.maxThreads",
+    "label": "Search ripgrep max threads",
+    "query": "Number of threads to use for searching. When set to 0, the engine automatically determines this value.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 68
+  },
+  {
+    "id": "search.searchEditor.defaultNumberOfContextLines",
+    "label": "Search search editor default number of context lines",
+    "query": "The default number of surrounding context lines to use when creating new Search Editors. If using #search.searchEditor.reusePriorSearchConfiguration#, this can be set to null (empty) to use the prior Search Editor's configuration.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/searchEditor/browser/searchEditor.contribution.ts",
+    "line": 92
+  },
+  {
+    "id": "search.searchEditor.doubleClickBehaviour",
+    "label": "Search search editor double click behaviour",
+    "query": "Configure effect of double-clicking a result in a search editor.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/searchEditor/browser/searchEditor.contribution.ts",
+    "line": 66
+  },
+  {
+    "id": "search.searchEditor.focusResultsOnSearch",
+    "label": "Search search editor focus results on search",
+    "query": "When a search is triggered, focus the Search Editor results instead of the Search Editor input.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/searchEditor/browser/searchEditor.contribution.ts",
+    "line": 97
+  },
+  {
+    "id": "search.searchEditor.reusePriorSearchConfiguration",
+    "label": "Search search editor reuse prior search configuration",
+    "query": "When enabled, new Search Editors will reuse the includes, excludes, and flags of the previously opened Search Editor.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/searchEditor/browser/searchEditor.contribution.ts",
+    "line": 87
+  },
+  {
+    "id": "search.searchEditor.singleClickBehaviour",
+    "label": "Search search editor single click behaviour",
+    "query": "Configure effect of single-clicking a result in a search editor.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/searchEditor/browser/searchEditor.contribution.ts",
+    "line": 77
+  },
+  {
+    "id": "search.searchOnType",
+    "label": "Search search on type",
+    "query": "Search all files as you type.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 102
+  },
+  {
+    "id": "search.searchView.keywordSuggestions",
+    "label": "Search search view keyword suggestions",
+    "query": "Enable keyword suggestions in the Search view.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 233
+  },
+  {
+    "id": "search.searchView.semanticSearchBehavior",
+    "label": "Search search view semantic search behavior",
+    "query": "Controls the behavior of the semantic search results displayed in the Search view.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 221
+  },
+  {
+    "id": "search.seedOnFocus",
+    "label": "Search seed on focus",
+    "query": "Update the search query to the editor's selected text when focusing the Search view. This happens either on click or when triggering the workbench.views.search.focus command.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 180
+  },
+  {
+    "id": "search.seedWithNearestWord",
+    "label": "Search seed with nearest word",
+    "query": "Enable seeding search from the word nearest the cursor when the active editor has no selection.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 175
+  },
+  {
+    "id": "search.showLineNumbers",
+    "label": "Search show line numbers",
+    "query": "Controls whether to show line numbers for search results.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 160
+  },
+  {
+    "id": "search.smartCase",
+    "label": "Search smart case",
+    "query": "Search case-insensitively if the pattern is all lowercase, otherwise, search case-sensitively.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 78
+  },
+  {
+    "id": "search.sortOrder",
+    "label": "Search sort order",
+    "query": "Controls sorting order of search results.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 88
+  },
+  {
+    "id": "search.useIgnoreFiles",
+    "label": "Search use ignore files",
+    "query": "Controls whether to use .gitignore and .ignore files when searching for files.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.common.contribution.ts",
+    "line": 50
+  },
+  {
+    "id": "search.useReplacePreview",
+    "label": "Search use replace preview",
+    "query": "Controls whether to open Replace Preview when selecting or replacing a match.",
+    "family": "search",
+    "path": "src/vs/workbench/contrib/search/browser/search.contribution.ts",
+    "line": 155
+  },
+  {
+    "id": "security.promptForLocalFileProtocolHandling",
+    "label": "Security prompt for local file protocol handling",
+    "query": "If enabled, a dialog will ask for confirmation whenever a local file or workspace is about to open through a protocol handler.",
+    "family": "security",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 386
+  },
+  {
+    "id": "security.promptForRemoteFileProtocolHandling",
+    "label": "Security prompt for remote file protocol handling",
+    "query": "If enabled, a dialog will ask for confirmation whenever a remote file or workspace is about to open through a protocol handler.",
+    "family": "security",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 392
+  },
+  {
+    "id": "security.restrictUNCAccess",
+    "label": "Security restrict uncaccess",
+    "query": "If enabled, only allows access to UNC host names that are allowed by the #security.allowedUNCHosts# setting or after user confirmation. Find out more about this setting at https://aka.ms/vscode-windows-unc.",
+    "family": "security",
+    "path": "src/vs/workbench/common/configuration.ts",
+    "line": 230
+  },
+  {
+    "id": "settingsSync.ignoredExtensions",
+    "label": "Settings sync ignored extensions",
+    "query": "List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.",
+    "family": "settingsSync",
+    "path": "src/vs/platform/userDataSync/common/userDataSync.ts",
+    "line": 97
+  },
+  {
+    "id": "settingsSync.ignoredSettings",
+    "label": "Settings sync ignored settings",
+    "query": "Configure settings to be ignored while synchronizing.",
+    "family": "settingsSync",
+    "path": "src/vs/platform/userDataSync/common/userDataSync.ts",
+    "line": 111
+  },
+  {
+    "id": "telemetry.enableCrashReporter",
+    "label": "Telemetry enable crash reporter",
+    "query": "Enable crash reports to be collected. This helps us improve stability. This option requires restart to take effect.",
+    "family": "telemetry",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 347
+  },
+  {
+    "id": "telemetry.feedback.enabled",
+    "label": "Telemetry feedback enabled",
+    "query": "Enable feedback mechanisms such as the issue reporter, surveys, and other feedback options.",
+    "family": "telemetry",
+    "path": "src/vs/platform/telemetry/common/telemetryService.ts",
+    "line": 365
+  },
+  {
+    "id": "telemetry.performance.inputLatencySamplingProbability",
+    "label": "Telemetry performance input latency sampling probability",
+    "query": "Probability (0 to 1) that input latency telemetry is reported for this session. Set to 0 to disable, 1 to always report.",
+    "family": "telemetry",
+    "path": "src/vs/workbench/contrib/performance/browser/performance.contribution.ts",
+    "line": 151
+  },
+  {
+    "id": "terminal.external.linuxExec",
+    "label": "Terminal external linux exec",
+    "query": "Customizes which terminal to run on Linux.",
+    "family": "terminal",
+    "path": "src/vs/workbench/contrib/externalTerminal/electron-browser/externalTerminal.contribution.ts",
+    "line": 161
+  },
+  {
+    "id": "terminal.external.osxExec",
+    "label": "Terminal external osx exec",
+    "query": "Customizes which terminal application to run on macOS.",
+    "family": "terminal",
+    "path": "src/vs/workbench/contrib/externalTerminal/electron-browser/externalTerminal.contribution.ts",
+    "line": 155
+  },
+  {
+    "id": "terminal.external.windowsExec",
+    "label": "Terminal external windows exec",
+    "query": "Customizes which terminal to run on Windows.",
+    "family": "terminal",
+    "path": "src/vs/workbench/contrib/externalTerminal/electron-browser/externalTerminal.contribution.ts",
+    "line": 149
+  },
+  {
+    "id": "timeline.pageOnScroll",
+    "label": "Timeline page on scroll",
+    "query": "Controls whether the Timeline view will load the next page of items when you scroll to the end of the list.",
+    "family": "timeline",
+    "path": "src/vs/workbench/contrib/timeline/browser/timeline.contribution.ts",
+    "line": 57
+  },
+  {
+    "id": "timeline.pageSize",
+    "label": "Timeline page size",
+    "query": "The number of items to show in the Timeline view by default and when loading more items. Setting to null will automatically choose a page size based on the visible area of the Timeline view.",
+    "family": "timeline",
+    "path": "src/vs/workbench/contrib/timeline/browser/timeline.contribution.ts",
+    "line": 52
+  },
+  {
+    "id": "update.channel",
+    "label": "Update channel",
+    "query": "Configure whether you receive automatic updates. The updates are fetched from a Microsoft online service.",
+    "family": "update",
+    "path": "src/vs/platform/update/common/update.config.contribution.ts",
+    "line": 59
+  },
+  {
+    "id": "update.enableWindowsBackgroundUpdates",
+    "label": "Update enable windows background updates",
+    "query": "Enable to download and install new VS Code versions in the background.",
+    "family": "update",
+    "path": "src/vs/platform/update/common/update.config.contribution.ts",
+    "line": 66
+  },
+  {
+    "id": "update.mode",
+    "label": "Update mode",
+    "query": "Configure whether you receive automatic updates. The updates are fetched from a Microsoft online service.",
+    "family": "update",
+    "path": "src/vs/platform/update/common/update.config.contribution.ts",
+    "line": 19
+  },
+  {
+    "id": "update.showPostInstallInfo",
+    "label": "Update show post install info",
+    "query": "Show a post-install update tooltip in the title bar instead of opening the release notes editor.",
+    "family": "update",
+    "path": "src/vs/platform/update/common/update.config.contribution.ts",
+    "line": 82
+  },
+  {
+    "id": "update.showReleaseNotes",
+    "label": "Update show release notes",
+    "query": "Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.",
+    "family": "update",
+    "path": "src/vs/platform/update/common/update.config.contribution.ts",
+    "line": 74
+  },
+  {
+    "id": "update.titleBar",
+    "label": "Update title bar",
+    "query": "Show the update indicator in the title bar.",
+    "family": "update",
+    "path": "src/vs/platform/update/common/update.config.contribution.ts",
+    "line": 90
+  },
+  {
+    "id": "window.clickThroughInactive",
+    "label": "Window click through inactive",
+    "query": "If enabled, clicking on an inactive window will both activate the window and trigger the element under the mouse if it is clickable. If disabled, clicking anywhere on an inactive window will activate it only and a second click is required on the element.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 313
+  },
+  {
+    "id": "window.closeWhenEmpty",
+    "label": "Window close when empty",
+    "query": "Controls whether closing the last editor should also close the window. This setting only applies for windows that do not show folders.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 232
+  },
+  {
+    "id": "window.confirmSaveUntitledWorkspace",
+    "label": "Window confirm save untitled workspace",
+    "query": "Controls whether a confirmation dialog shows asking to save or discard an opened untitled workspace in the window when switching to another workspace. Disabling the confirmation dialog will always discard the untitled workspace.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 167
+  },
+  {
+    "id": "window.controlsStyle",
+    "label": "Window controls style",
+    "query": "Adjust the appearance of the window controls to be native by the OS, custom drawn or hidden. Changes require a full restart to apply.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 250
+  },
+  {
+    "id": "window.customMenuBarAltFocus",
+    "label": "Window custom menu bar alt focus",
+    "query": "Controls whether the menu bar will be focused by pressing the Alt-key. This setting has no effect on toggling the menu bar with the Alt-key.",
+    "family": "window",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 938
+  },
+  {
+    "id": "window.dialogStyle",
+    "label": "Window dialog style",
+    "query": "Adjust the appearance of dialogs to be native by the OS or custom.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 291
+  },
+  {
+    "id": "window.enableMenuBarMnemonics",
+    "label": "Window enable menu bar mnemonics",
+    "query": "Controls whether the main menus can be opened via Alt-key shortcuts. Disabling mnemonics allows to bind these Alt-key shortcuts to editor commands instead.",
+    "family": "window",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 931
+  },
+  {
+    "id": "window.nativeFullScreen",
+    "label": "Window native full screen",
+    "query": "Controls if native full-screen should be used on macOS. Disable this option to prevent macOS from creating a new space when going full-screen.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 306
+  },
+  {
+    "id": "window.nativeTabs",
+    "label": "Window native tabs",
+    "query": "Enables macOS native window tabs. Note that changes require a full restart to apply and that native tabs will disable a custom title bar style if configured.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 299
+  },
+  {
+    "id": "window.openFoldersInNewWindow",
+    "label": "Window open folders in new window",
+    "query": "Controls whether folders should open in a new window or replace the last active window. Note that there can still be cases where this setting is ignored (e.g. when using the --new-window or --reuse-window command line option).",
+    "family": "window",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 963
+  },
+  {
+    "id": "window.restoreFullscreen",
+    "label": "Window restore fullscreen",
+    "query": "Controls whether a window should restore to full screen mode if it was exited in full screen mode.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 197
+  },
+  {
+    "id": "window.restoreWindows",
+    "label": "Window restore windows",
+    "query": "Controls how windows and editors within are being restored when opening.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 183
+  },
+  {
+    "id": "window.titleBarStyle",
+    "label": "Window title bar style",
+    "query": "Adjust the appearance of the window title bar to be native by the OS or custom. Changes require a full restart to apply.",
+    "family": "window",
+    "path": "src/vs/workbench/electron-browser/desktop.contribution.ts",
+    "line": 243
+  },
+  {
+    "id": "workbench.browser.dataStorage",
+    "label": "Workbench browser data storage",
+    "query": "Controls how browser data (cookies, cache, storage) is shared between browser views. Note: In untrusted workspaces, this setting is ignored and ephemeral storage is always used.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/browserView/electron-browser/features/browserDataStorageFeatures.ts",
+    "line": 160
+  },
+  {
+    "id": "workbench.browser.enableChatTools",
+    "label": "Workbench browser enable chat tools",
+    "query": "When enabled, chat agents can use browser tools to open and interact with pages in the Integrated Browser.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/browserView/electron-browser/features/browserEditorChatFeatures.ts",
+    "line": 1122
+  },
+  {
+    "id": "workbench.browser.experimentalUserTools.enabled",
+    "label": "Workbench browser experimental user tools enabled",
+    "query": "When enabled, experimental user-facing tools are available in the Integrated Browser's Add to Chat menu.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/browserView/electron-browser/features/browserEditorChatFeatures.ts",
+    "line": 1142
+  },
+  {
+    "id": "workbench.browser.openLocalhostLinks",
+    "label": "Workbench browser open localhost links",
+    "query": "When enabled, localhost links (localhost, 127.0.0.1, [::1]) and all-interfaces links (0.0.0.0, [0:0:0:0:0:0:0:0], [::]) from the terminal, chat, and other sources will open in the Integrated Browser instead of the system browser.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/browserView/electron-browser/features/browserTabManagementFeatures.ts",
+    "line": 923
+  },
+  {
+    "id": "workbench.browser.pageZoom",
+    "label": "Workbench browser page zoom",
+    "query": "Default zoom level for all sites in the Integrated Browser.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/browserView/electron-browser/features/browserEditorZoomFeature.ts",
+    "line": 280
+  },
+  {
+    "id": "workbench.browser.showInTitleBar",
+    "label": "Workbench browser show in title bar",
+    "query": "Controls whether the Integrated Browser button is shown in the title bar.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/browserView/electron-browser/features/browserTabManagementFeatures.ts",
+    "line": 908
+  },
+  {
+    "id": "workbench.cloudChanges.autoResume",
+    "label": "Workbench cloud changes auto resume",
+    "query": "Controls whether to automatically resume available working changes stored in the cloud for the current workspace.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/editSessions/browser/editSessions.contribution.ts",
+    "line": 1169
+  },
+  {
+    "id": "workbench.cloudChanges.continueOn",
+    "label": "Workbench cloud changes continue on",
+    "query": "Controls whether to prompt the user to store working changes in the cloud when using Continue Working On.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/editSessions/browser/editSessions.contribution.ts",
+    "line": 1180
+  },
+  {
+    "id": "workbench.commandPalette.experimental.askChatLocation",
+    "label": "Workbench command palette experimental ask chat location",
+    "query": "Controls where the command palette should ask chat questions.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 532
+  },
+  {
+    "id": "workbench.commandPalette.experimental.enableNaturalLanguageSearch",
+    "label": "Workbench command palette experimental enable natural language search",
+    "query": "Controls whether the command palette should include similar commands. You must have an extension installed that provides Natural Language support.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 549
+  },
+  {
+    "id": "workbench.commandPalette.experimental.suggestCommands",
+    "label": "Workbench command palette experimental suggest commands",
+    "query": "Controls whether the command palette should have a list of commonly used commands.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 526
+  },
+  {
+    "id": "workbench.commandPalette.history",
+    "label": "Workbench command palette history",
+    "query": "Controls the number of recently used commands to keep in history for the command palette. Set to 0 to disable command history.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 515
+  },
+  {
+    "id": "workbench.commandPalette.preserveInput",
+    "label": "Workbench command palette preserve input",
+    "query": "Controls whether the last typed input to the command palette should be restored when opening it the next time.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 521
+  },
+  {
+    "id": "workbench.commandPalette.showAskInChat",
+    "label": "Workbench command palette show ask in chat",
+    "query": "Controls whether the command palette shows 'Ask in Chat' option at the bottom.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 543
+  },
+  {
+    "id": "workbench.editor.alwaysShowEditorActions",
+    "label": "Workbench editor always show editor actions",
+    "query": "Controls whether to always show the editor actions, even when the editor group is not active.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 86
+  },
+  {
+    "id": "workbench.editor.centeredLayoutAutoResize",
+    "label": "Workbench editor centered layout auto resize",
+    "query": "Controls if the centered layout should automatically resize to maximum width when more than one group is open. Once only one group is open it will resize back to the original centered width.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 437
+  },
+  {
+    "id": "workbench.editor.centeredLayoutFixedWidth",
+    "label": "Workbench editor centered layout fixed width",
+    "query": "Controls whether the centered layout tries to maintain constant width when the window is resized.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 442
+  },
+  {
+    "id": "workbench.editor.closeEmptyGroups",
+    "label": "Workbench editor close empty groups",
+    "query": "Controls the behavior of empty editor groups when the last tab in the group is closed. When enabled, empty groups will automatically close. When disabled, empty groups will remain part of the grid.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 363
+  },
+  {
+    "id": "workbench.editor.decorations.badges",
+    "label": "Workbench editor decorations badges",
+    "query": "Controls whether editor file decorations should use badges.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 106
+  },
+  {
+    "id": "workbench.editor.decorations.colors",
+    "label": "Workbench editor decorations colors",
+    "query": "Controls whether editor file decorations should use colors.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 111
+  },
+  {
+    "id": "workbench.editor.defaultBinaryEditor",
+    "label": "Workbench editor default binary editor",
+    "query": "The default editor for files detected as binary. If undefined, the user will be presented with a picker.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/parts/editor/editorConfiguration.ts",
+    "line": 150
+  },
+  {
+    "id": "workbench.editor.dragToOpenWindow",
+    "label": "Workbench editor drag to open window",
+    "query": "Controls if editors can be dragged out of the window to open them in a new window. Press and hold the Alt key while dragging to toggle this dynamically.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 316
+  },
+  {
+    "id": "workbench.editor.empty.hint",
+    "label": "Workbench editor empty hint",
+    "query": "Controls if the empty editor text hint should be visible in the editor.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 167
+  },
+  {
+    "id": "workbench.editor.focusRecentEditorAfterClose",
+    "label": "Workbench editor focus recent editor after close",
+    "query": "Controls whether editors are closed in most recently used order or from left to right.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 321
+  },
+  {
+    "id": "workbench.editor.historyBasedLanguageDetection",
+    "label": "Workbench editor history based language detection",
+    "query": "Enables use of editor history in language detection. This causes automatic language detection to favor languages that have been recently opened and allows for automatic language detection to operate with smaller inputs.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 179
+  },
+  {
+    "id": "workbench.editor.labelFormat",
+    "label": "Workbench editor label format",
+    "query": "Controls the format of the label for an editor.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 145
+  },
+  {
+    "id": "workbench.editor.languageDetectionHints",
+    "label": "Workbench editor language detection hints",
+    "query": "When enabled, shows a status bar Quick Fix when the editor language doesn't match detected content language.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 189
+  },
+  {
+    "id": "workbench.editor.limit.enabled",
+    "label": "Workbench editor limit enabled",
+    "query": "Controls if the number of opened editors should be limited or not. When enabled, less recently used editors will close to make space for newly opening editors.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 459
+  },
+  {
+    "id": "workbench.editor.limit.excludeDirty",
+    "label": "Workbench editor limit exclude dirty",
+    "query": "Controls if the maximum number of opened editors should exclude dirty editors for counting towards the configured limit.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 470
+  },
+  {
+    "id": "workbench.editor.limit.perEditorGroup",
+    "label": "Workbench editor limit per editor group",
+    "query": "Controls if the limit of maximum opened editors should apply per editor group or across all editor groups.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 475
+  },
+  {
+    "id": "workbench.editor.navigationScope",
+    "label": "Workbench editor navigation scope",
+    "query": "Controls the scope of history navigation in editors for commands such as 'Go Back' and 'Go Forward'.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 399
+  },
+  {
+    "id": "workbench.editor.preferHistoryBasedLanguageDetection",
+    "label": "Workbench editor prefer history based language detection",
+    "query": "When enabled, a language detection model that takes into account editor history will be given higher precedence.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 184
+  },
+  {
+    "id": "workbench.editor.preventPinnedEditorClose",
+    "label": "Workbench editor prevent pinned editor close",
+    "query": "Controls whether pinned editors should close when keyboard or middle mouse click is used for closing.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 286
+  },
+  {
+    "id": "workbench.editor.restoreEditors",
+    "label": "Workbench editor restore editors",
+    "query": "Controls whether editors are restored on startup. When disabled, only dirty editors will be restored from the previous session.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 421
+  },
+  {
+    "id": "workbench.editor.sharedViewState",
+    "label": "Workbench editor shared view state",
+    "query": "Preserves the most recent editor view state (such as scroll position) across all editor groups and restores that if no specific editor view state is found for the editor group.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 416
+  },
+  {
+    "id": "workbench.editor.showIcons",
+    "label": "Workbench editor show icons",
+    "query": "Controls whether opened editors should show with an icon or not. This requires a file icon theme to be enabled as well.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 326
+  },
+  {
+    "id": "workbench.editor.splitInGroupLayout",
+    "label": "Workbench editor split in group layout",
+    "query": "Controls the layout for when an editor is split in an editor group to be either vertical or horizontal.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 427
+  },
+  {
+    "id": "workbench.editor.splitOnDragAndDrop",
+    "label": "Workbench editor split on drag and drop",
+    "query": "Controls if editor groups can be split from drag and drop operations by dropping an editor or file on the edges of the editor area.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 310
+  },
+  {
+    "id": "workbench.editor.splitSizing",
+    "label": "Workbench editor split sizing",
+    "query": "Controls the size of editor groups when splitting them.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 298
+  },
+  {
+    "id": "workbench.editor.swipeToNavigate",
+    "label": "Workbench editor swipe to navigate",
+    "query": "Navigate between open files using three-finger swipe horizontally. Note that System Preferences > Trackpad > More Gestures > 'Swipe between pages' must be set to 'Swipe with two or three fingers'.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 388
+  },
+  {
+    "id": "workbench.editor.tabActionCloseVisibility",
+    "label": "Workbench editor tab action close visibility",
+    "query": "Controls the visibility of the tab close action button.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 216
+  },
+  {
+    "id": "workbench.editor.tabActionReserveSpace",
+    "label": "Workbench editor tab action reserve space",
+    "query": "Controls whether Modern UI editor tabs always reserve space for tab action buttons. When disabled, clean tabs stay compact; tabs with persistent dirty or pinned indicators reserve space regardless.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 211
+  },
+  {
+    "id": "workbench.editor.tabActionUnpinVisibility",
+    "label": "Workbench editor tab action unpin visibility",
+    "query": "Controls the visibility of the tab unpin action button.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 221
+  },
+  {
+    "id": "workbench.editor.titleScrollbarSizing",
+    "label": "Workbench editor title scrollbar sizing",
+    "query": "Controls the height of the scrollbars used for tabs and breadcrumbs in the editor title area.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 42
+  },
+  {
+    "id": "workbench.editor.titleScrollbarVisibility",
+    "label": "Workbench editor title scrollbar visibility",
+    "query": "Controls the visibility of the scrollbars used for tabs and breadcrumbs in the editor title area.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 52
+  },
+  {
+    "id": "workbench.editor.untitled.labelFormat",
+    "label": "Workbench editor untitled label format",
+    "query": "Controls the format of the label for an untitled editor.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 157
+  },
+  {
+    "id": "workbench.editor.useModal",
+    "label": "Workbench editor use modal",
+    "query": "Controls whether editors open in a modal overlay.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 374
+  },
+  {
+    "id": "workbench.editorLargeFileConfirmation",
+    "label": "Workbench editor large file confirmation",
+    "query": "Controls the minimum size of a file in MB before asking for confirmation when opening in the editor. Note that this setting may not apply to all editor types and environments.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/parts/editor/editorConfiguration.ts",
+    "line": 208
+  },
+  {
+    "id": "workbench.enableExperiments",
+    "label": "Workbench enable experiments",
+    "query": "Fetches experiments to run from a Microsoft online service.",
+    "family": "workbench",
+    "path": "src/vs/workbench/services/assignment/common/assignmentService.ts",
+    "line": 558
+  },
+  {
+    "id": "workbench.experimental.cloudChanges.autoStore",
+    "label": "Workbench experimental cloud changes auto store",
+    "query": "Controls whether to automatically store available working changes in the cloud for the current workspace. This setting has no effect in the web.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/editSessions/browser/editSessions.contribution.ts",
+    "line": 1158
+  },
+  {
+    "id": "workbench.experimental.cloudChanges.partialMatches.enabled",
+    "label": "Workbench experimental cloud changes partial matches enabled",
+    "query": "Controls whether to surface cloud changes which partially match the current session.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/editSessions/browser/editSessions.contribution.ts",
+    "line": 1191
+  },
+  {
+    "id": "workbench.externalBrowser",
+    "label": "Workbench external browser",
+    "query": "Configure the browser to use for opening http or https links externally. This can either be the name of the browser (edge, chrome, firefox) or an absolute path to the browser's executable. Will use the system default if not set.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 36
+  },
+  {
+    "id": "workbench.fontAliasing",
+    "label": "Workbench font aliasing",
+    "query": "Controls font aliasing method in the workbench.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 727
+  },
+  {
+    "id": "workbench.hover.delay",
+    "label": "Workbench hover delay",
+    "query": "Controls the delay in milliseconds after which the hover is shown for workbench items (ex. some extension provided tree view items). Already visible items may require a refresh before reflecting this setting change.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 757
+  },
+  {
+    "id": "workbench.hover.reducedDelay",
+    "label": "Workbench hover reduced delay",
+    "query": "Controls the reduced delay in milliseconds used for showing hovers in specific contexts where faster feedback is beneficial.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 765
+  },
+  {
+    "id": "workbench.layoutControl.type",
+    "label": "Workbench layout control type",
+    "query": "Controls whether the layout control in the custom title bar is displayed as a single menu button or with multiple UI toggles.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 811
+  },
+  {
+    "id": "workbench.localHistory.maxFileEntries",
+    "label": "Workbench local history max file entries",
+    "query": "Controls the maximum number of local file history entries per file. When the number of local file history entries exceeds this number for a file, the oldest entries will be discarded.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 493
+  },
+  {
+    "id": "workbench.localHistory.maxFileSize",
+    "label": "Workbench local history max file size",
+    "query": "Controls the maximum size of a file (in KB) to be considered for local file history. Files that are larger will not be added to the local file history. Changing this setting has no effect on existing local file history entries.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 486
+  },
+  {
+    "id": "workbench.panel.defaultLocation",
+    "label": "Workbench panel default location",
+    "query": "Controls the default location of the panel (Terminal, Debug Console, Output, Problems) in a new workspace. It can either show at the bottom, top, right, or left of the editor area.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 597
+  },
+  {
+    "id": "workbench.panel.opensMaximized",
+    "label": "Workbench panel opens maximized",
+    "query": "Controls whether the panel opens maximized. It can either always open maximized, never open maximized, or open to the last state it was in before being closed.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 604
+  },
+  {
+    "id": "workbench.panel.showLabels",
+    "label": "Workbench panel show labels",
+    "query": "Controls whether activity items in the panel title are shown as label or icon.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 592
+  },
+  {
+    "id": "workbench.quickOpen.closeOnFocusLost",
+    "label": "Workbench quick open close on focus lost",
+    "query": "Controls whether Quick Open should close automatically once it loses focus.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 555
+  },
+  {
+    "id": "workbench.quickOpen.preserveInput",
+    "label": "Workbench quick open preserve input",
+    "query": "Controls whether the last typed input to Quick Open should be restored when opening it the next time.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 560
+  },
+  {
+    "id": "workbench.reduceMotion",
+    "label": "Workbench reduce motion",
+    "query": "Controls whether the workbench should render with fewer animations.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 771
+  },
+  {
+    "id": "workbench.reduceTransparency",
+    "label": "Workbench reduce transparency",
+    "query": "Controls whether the workbench should render with fewer transparency and blur effects for improved performance.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 783
+  },
+  {
+    "id": "workbench.remoteIndicator.showExtensionRecommendations",
+    "label": "Workbench remote indicator show extension recommendations",
+    "query": "When enabled, remote extensions recommendations will be shown in the Remote Indicator menu.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/remote/browser/remoteIndicator.ts",
+    "line": 870
+  },
+  {
+    "id": "workbench.sash.hoverDelay",
+    "label": "Workbench sash hover delay",
+    "query": "Controls the hover feedback delay in milliseconds of the dragging area in between views/editors.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/sash/browser/sash.contribution.ts",
+    "line": 29
+  },
+  {
+    "id": "workbench.sash.size",
+    "label": "Workbench sash size",
+    "query": "Controls the feedback area size in pixels of the dragging area in between views/editors. Set it to a larger value if you feel it's hard to resize views using the mouse.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/sash/browser/sash.contribution.ts",
+    "line": 22
+  },
+  {
+    "id": "workbench.secondarySideBar.defaultVisibility",
+    "label": "Workbench secondary side bar default visibility",
+    "query": "Controls the default visibility of the secondary side bar in workspaces or empty windows that are opened for the first time. Can be overridden by the agent sessions startup editor setting.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 616
+  },
+  {
+    "id": "workbench.secondarySideBar.forceMaximized",
+    "label": "Workbench secondary side bar force maximized",
+    "query": "Controls whether the secondary side bar is enforced to always show maximized on startup and when there are no open editors, in layouts that support a maximized secondary side bar.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 630
+  },
+  {
+    "id": "workbench.settings.alwaysShowAdvancedSettings",
+    "label": "Workbench settings always show advanced settings",
+    "query": "Controls whether advanced settings are always shown in the settings editor without requiring the @tag:advanced filter.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 580
+  },
+  {
+    "id": "workbench.settings.editor",
+    "label": "Workbench settings editor",
+    "query": "Determines which Settings editor to use by default.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 741
+  },
+  {
+    "id": "workbench.settings.enableNaturalLanguageSearch",
+    "label": "Workbench settings enable natural language search",
+    "query": "Controls whether to enable the natural language search mode for settings. The natural language search is provided by a Microsoft online service.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/preferences/common/preferencesContribution.ts",
+    "line": 111
+  },
+  {
+    "id": "workbench.settings.openDefaultKeybindings",
+    "label": "Workbench settings open default keybindings",
+    "query": "Controls whether opening keybinding settings also opens an editor showing all default keybindings.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 575
+  },
+  {
+    "id": "workbench.settings.openDefaultSettings",
+    "label": "Workbench settings open default settings",
+    "query": "Controls whether opening settings also opens an editor showing all default settings.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 565
+  },
+  {
+    "id": "workbench.settings.settingsSearchTocBehavior",
+    "label": "Workbench settings settings search toc behavior",
+    "query": "Controls the behavior of the Settings editor Table of Contents while searching. If this setting is being changed in the Settings editor, the setting will take effect after the search query is modified.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/preferences/common/preferencesContribution.ts",
+    "line": 118
+  },
+  {
+    "id": "workbench.settings.showAISearchToggle",
+    "label": "Workbench settings show aisearch toggle",
+    "query": "Controls whether the AI search results toggle is shown in the search bar in the Settings editor after doing a search and once AI search results are available.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 752
+  },
+  {
+    "id": "workbench.settings.useSplitJSON",
+    "label": "Workbench settings use split json",
+    "query": "Controls whether to use the split JSON editor when editing settings as JSON.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 570
+  },
+  {
+    "id": "workbench.sideBar.location",
+    "label": "Workbench side bar location",
+    "query": "Controls the location of the primary side bar and activity bar. They can either show on the left or right of the workbench. The secondary side bar will show on the opposite side of the workbench.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 585
+  },
+  {
+    "id": "workbench.startupEditor",
+    "label": "Workbench startup editor",
+    "query": "Controls which editor is shown at startup, if none are restored from the previous session.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution.ts",
+    "line": 317
+  },
+  {
+    "id": "workbench.statusBar.visible",
+    "label": "Workbench status bar visible",
+    "query": "Controls the visibility of the status bar at the bottom of the workbench.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 643
+  },
+  {
+    "id": "workbench.tips.enabled",
+    "label": "Workbench tips enabled",
+    "query": "When enabled, will show the watermark tips when no editor is open.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 823
+  },
+  {
+    "id": "workbench.trustedDomains.promptInTrustedWorkspace",
+    "label": "Workbench trusted domains prompt in trusted workspace",
+    "query": "When enabled, trusted domain prompts will appear when opening links in trusted workspaces.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/url/browser/url.contribution.ts",
+    "line": 91
+  },
+  {
+    "id": "workbench.view.alwaysShowHeaderActions",
+    "label": "Workbench view always show header actions",
+    "query": "Controls the visibility of view header actions. View header actions may either be always visible, or only visible when that view is focused or hovered over.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 710
+  },
+  {
+    "id": "workbench.view.showQuietly",
+    "label": "Workbench view show quietly",
+    "query": "If an extension requests a hidden view to be shown, display a clickable status bar indicator instead.",
+    "family": "workbench",
+    "path": "src/vs/workbench/browser/workbench.contribution.ts",
+    "line": 715
+  },
+  {
+    "id": "workbench.welcomePage.experimentalOnboarding",
+    "label": "Workbench welcome page experimental onboarding",
+    "query": "When enabled, show the new onboarding experience instead of the classic walkthrough on first launch.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution.ts",
+    "line": 342
+  },
+  {
+    "id": "workbench.welcomePage.preferReducedMotion",
+    "label": "Workbench welcome page prefer reduced motion",
+    "query": "When enabled, reduce motion in welcome page.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution.ts",
+    "line": 335
+  },
+  {
+    "id": "workbench.welcomePage.walkthroughs.openOnInstall",
+    "label": "Workbench welcome page walkthroughs open on install",
+    "query": "When enabled, an extension's walkthrough will open upon install of the extension.",
+    "family": "workbench",
+    "path": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution.ts",
+    "line": 311
+  },
+  {
+    "id": "zenMode.centerLayout",
+    "label": "Zen mode center layout",
+    "query": "Controls whether turning on Zen Mode also centers the layout.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 35
+  },
+  {
+    "id": "zenMode.fullScreen",
+    "label": "Zen mode full screen",
+    "query": "Controls whether turning on Zen Mode also puts the workbench into full screen mode.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 30
+  },
+  {
+    "id": "zenMode.hideActivityBar",
+    "label": "Zen mode hide activity bar",
+    "query": "Controls whether turning on Zen Mode also hides the activity bar either at the left or right of the workbench.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 56
+  },
+  {
+    "id": "zenMode.hideLineNumbers",
+    "label": "Zen mode hide line numbers",
+    "query": "Controls whether turning on Zen Mode also hides the editor line numbers.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 61
+  },
+  {
+    "id": "zenMode.hideStatusBar",
+    "label": "Zen mode hide status bar",
+    "query": "Controls whether turning on Zen Mode also hides the status bar at the bottom of the workbench.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 51
+  },
+  {
+    "id": "zenMode.restore",
+    "label": "Zen mode restore",
+    "query": "Controls whether a window should restore to Zen Mode if it was exited in Zen Mode.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 66
+  },
+  {
+    "id": "zenMode.showTabs",
+    "label": "Zen mode show tabs",
+    "query": "Controls whether turning on Zen Mode should show multiple editor tabs, a single editor tab, or hide the editor title area completely.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 40
+  },
+  {
+    "id": "zenMode.silentNotifications",
+    "label": "Zen mode silent notifications",
+    "query": "Controls whether notifications do not disturb mode should be enabled while in Zen Mode. If true, only error notifications will pop out.",
+    "family": "zenMode",
+    "path": "src/vs/workbench/browser/workbench.zenMode.contribution.ts",
+    "line": 71
+  }
+]

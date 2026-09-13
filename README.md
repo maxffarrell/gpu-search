@@ -4,7 +4,7 @@
 
 Small, private search for software interfaces. Normalized label matches rank first, followed by deterministic aliases, prefixes, acronyms, and typo matches. Queries stay in the browser.
 
-**Status: real experimental CPU model demo, plus a stable lexical library.** The demo downloads the trained pooled16 int8 weights, verifies their SHA-256, and computes query/candidate embeddings and cosine scores locally. It shows raw model rankings alongside lexical results. The learned encoders did not pass the semantic release gate on the small synthetic development suite, so no validated cutoff or production semantic-quality claim is made. There is no WebGPU backend. See [experiment results](eval/feasibility.json), [decisions](docs/decisions.md), and the [original specification](docs/specification.md).
+**Status: improved experimental CPU model, plus a stable lexical library.** The demo runs actual pooled16 int8 weights trained with 7,961 records from licensed CLINC150, BANKING77, VS Code settings, and the original training fixtures. On the same expanded development set, semantic nDCG@5 improved from **0.028 to 0.464**; the strongest lexical baseline scored **0.385**, with new-model no-match false positives **4.83%**. These are weak-label development results, not an independent final test. Transfer to unseen software concepts remains limited. The demo shows raw model rankings without a relevance cutoff; no WebGPU backend is claimed. See [expanded evaluation](docs/expanded-evaluation.md), [data provenance](docs/data-sources.md), and [original specification](docs/specification.md).
 
 ## Try locally
 
@@ -62,7 +62,18 @@ uv run python -m training.prepare --config configs/data.yaml
 uv run python -m training.train --config configs/base.yaml
 ```
 
-See [model card](docs/model-card.md) and [experiment report](docs/experiment.md) for evaluation/export commands and the stop decision. No release checkpoint is selected; commands must name an experimental run explicitly. The reserved synthetic test set is not scored. The dataset has **zero human-reviewed records**, so none of these results establish generalization to real products.
+The commands above reproduce the original pilot. For the expanded experiment:
+
+```sh
+uv run python -m training.prepare_external
+uv run python -m training.train_expanded --config configs/expanded.yaml
+uv run python -m training.evaluate_expanded --old packages/model/experimental --new packages/model/candidate
+uv run python -m unittest training.test_export training.test_data_sources training.test_quality
+```
+
+Training preserves existing runs and refuses to overwrite them; pass `--tag my-run` to train into new run directories when rerunning. Source extraction and pinned download commands are in [data provenance](docs/data-sources.md). The new experiment includes matched-update old-data controls, three seeds, and epoch-1/10 comparisons. Regression checks enforce source-label quality floors, no-match limits, dataset hashes, and zero-weight failure. CI runs them alongside implementation tests.
+
+See the [model card](docs/model-card.md), [expanded evaluation](docs/expanded-evaluation.md), and [original pilot report](docs/experiment.md). No production release checkpoint or independently validated cutoff is selected. Upstream tests and the original reserved synthetic test remain unscored. Source intent labels are inherited; their conversion to menu relevance has **zero new human-reviewed judgments**. These results do not establish generalization to arbitrary products.
 
 [Size evidence](bench/reports/size.json) measures minified browser entry points and every demo resource separately with Brotli quality 11/window 22 and gzip level 9. [Browser evidence](bench/reports/browser.json) records the exact hardware/browser, raw samples, indexing, p50/p95, and limitations. These are local measurements, not universal latency guarantees. CI checks contracts, fixed fixtures, types, build, and the lexical byte budget without training.
 
@@ -74,6 +85,8 @@ These three projects are the main inspiration for small, focused, local learned 
 - **[gpu-time](https://gpu-time.arikko.dev)** by Arik Chakma — [source](https://github.com/arikchakma/gpu-time). Local English time parsing with CPU and WebGPU backends.
 - **[gpu-cron](https://gpu-cron.vercel.app)** by Manu Schiller — [source](https://github.com/manuschillerdev/gpu-cron). A compact learned natural-language cron parser.
 
-Also credit [fastText](https://fasttext.cc/docs/en/unsupervised-tutorial.html) for character-subword representations, [StarSpace](https://arxiv.org/abs/1709.03856) for shared-feature retrieval, [Apple MLX](https://ml-explore.github.io/mlx/build/html/index.html) for training, and [W3C WGSL](https://www.w3.org/TR/WGSL/) for the planned shader contract. Vite, TypeScript, pnpm, esbuild, Playwright, NumPy, and uv support development and reproducibility.
+Also credit [fastText](https://fasttext.cc/docs/en/unsupervised-tutorial.html) for character-subword representations, [StarSpace](https://arxiv.org/abs/1709.03856) for shared-feature retrieval, [Apple MLX](https://ml-explore.github.io/mlx/build/html/index.html) for training, and [W3C WGSL](https://www.w3.org/TR/WGSL/) for the planned shader contract. New training sources: **[CLINC150](https://github.com/clinc/oos-eval)** (Larson et al., CC BY 3.0), **[BANKING77](https://github.com/PolyAI-LDN/task-specific-datasets)** (Casanueva et al. / PolyAI, CC BY 4.0), and **[VS Code](https://github.com/microsoft/vscode)** (Microsoft Corporation, MIT). Their licenses, attribution, pinned revisions, and transformations are preserved in [data provenance](docs/data-sources.md). Third-party data retains its own license; the repository's MIT code license does not replace it.
 
-[Reference provenance](docs/credits.md) records inspected commits and license metadata. No reference-project code, weights, datasets, or performance figures were copied. MIT licensed.
+Vite, TypeScript, pnpm, esbuild, Playwright, NumPy, and uv support development and reproducibility.
+
+[Reference provenance](docs/credits.md) records inspected commits and license metadata. No code, weights, datasets, or performance figures from the three GPU inspiration projects were copied. The implementation is MIT licensed; third-party training data retains the licenses described above.

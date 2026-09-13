@@ -1,0 +1,11 @@
+{
+  "source": "https://github.com/microsoft/vscode",
+  "revision": "8e35945bae3f2b0b3d0276963281180f1ce10cb0",
+  "license": "MIT",
+  "copyright": "Microsoft Corporation",
+  "retrievedAt": "2026-09-13",
+  "extraction": "TypeScript AST: configuration properties with literal setting ID and description/localize string. Skip tests, placeholders, and inputs beyond library bounds. Query is cleaned original description; label is mechanically humanized setting ID.",
+  "queryMeaning": "Descriptions are documentation, not user-authored search queries. Relevance inherited from configuration association; alternative settings unreviewed.",
+  "pairs": 460,
+  "scriptSha256": "d873a6ccd43fb9cc04566c92c3584fc15f8900160fe2540248b3c88d0b1b17c5"
+}

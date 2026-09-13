@@ -1,0 +1,16 @@
+# Fixed pilot settings before expanded development selection.
+data_dir: data/expanded
+seeds: [17, 29, 43]
+architectures: [pooled]
+epochs: 100
+minimum_epochs: 10
+patience: 10
+learning_rate: 0.003
+weight_decay: 0.0001
+temperature: 0.15
+batch_size: 128
+clip_norm: 1.0
+dimension: 16
+control_data: data/train.jsonl
+no_match_loss: disabled
+selection: post-cutoff semantic nDCG@5, then relevant-query coverage; cutoff calibrated separately

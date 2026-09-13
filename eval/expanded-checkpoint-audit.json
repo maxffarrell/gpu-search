@@ -1,0 +1,726 @@
+{
+  "method": "Independent NumPy pooled encoder, expanded calibration cutoff, expanded dev only",
+  "originalPilotDevUsed": false,
+  "runs": [
+    {
+      "path": "runs/expanded-more-data-pooled-seed17/epoch-001",
+      "seed": 17,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.7648130059242249,
+        "semanticNdcg5": 0.27407558879695904,
+        "semanticCoverage": 0.2960644007155635,
+        "overallNdcg5": 0.275371882388393,
+        "noMatchSemanticRate": 0.05397727272727273,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.275371882388393,
+          "coverage": 0.29732142857142857,
+          "noMatchAnyRate": 0.05397727272727273,
+          "noMatchSemanticRate": 0.05397727272727273,
+          "recall1": 0.2714285714285714,
+          "recall3": 0.27767857142857144,
+          "recall5": 0.27767857142857144,
+          "mrr": 0.27455357142857145
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.27407558879695904,
+          "coverage": 0.2960644007155635,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2701252236135957,
+          "recall3": 0.276386404293381,
+          "recall5": 0.276386404293381,
+          "mrr": 0.27325581395348836
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed17/epoch-010",
+      "seed": 17,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.7008627653121948,
+        "semanticNdcg5": 0.4643617910275386,
+        "semanticCoverage": 0.49552772808586765,
+        "overallNdcg5": 0.46531828782927515,
+        "noMatchSemanticRate": 0.048295454545454544,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.46531828782927515,
+          "coverage": 0.49642857142857144,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.45535714285714285,
+          "recall3": 0.4705357142857143,
+          "recall5": 0.4714285714285714,
+          "mrr": 0.46316964285714285
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4643617910275386,
+          "coverage": 0.49552772808586765,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4543828264758497,
+          "recall3": 0.46958855098389984,
+          "recall5": 0.47048300536672627,
+          "mrr": 0.4622093023255814
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed17",
+      "seed": 17,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.7008627653121948,
+        "semanticNdcg5": 0.4643617910275386,
+        "semanticCoverage": 0.49552772808586765,
+        "overallNdcg5": 0.46531828782927515,
+        "noMatchSemanticRate": 0.048295454545454544,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.46531828782927515,
+          "coverage": 0.49642857142857144,
+          "noMatchAnyRate": 0.048295454545454544,
+          "noMatchSemanticRate": 0.048295454545454544,
+          "recall1": 0.45535714285714285,
+          "recall3": 0.4705357142857143,
+          "recall5": 0.4714285714285714,
+          "mrr": 0.46316964285714285
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4643617910275386,
+          "coverage": 0.49552772808586765,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4543828264758497,
+          "recall3": 0.46958855098389984,
+          "recall5": 0.47048300536672627,
+          "mrr": 0.4622093023255814
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed29/epoch-001",
+      "seed": 29,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.7681817412376404,
+        "semanticNdcg5": 0.27713149959749583,
+        "semanticCoverage": 0.29785330948121647,
+        "overallNdcg5": 0.27842233620535745,
+        "noMatchSemanticRate": 0.045454545454545456,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.27842233620535745,
+          "coverage": 0.29910714285714285,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.27053571428571427,
+          "recall3": 0.2830357142857143,
+          "recall5": 0.2830357142857143,
+          "mrr": 0.2767857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.27713149959749583,
+          "coverage": 0.29785330948121647,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.2692307692307692,
+          "recall3": 0.2817531305903399,
+          "recall5": 0.2817531305903399,
+          "mrr": 0.27549194991055453
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed29/epoch-010",
+      "seed": 29,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.6664600968360901,
+        "semanticNdcg5": 0.5153775022275494,
+        "semanticCoverage": 0.554561717352415,
+        "overallNdcg5": 0.5162428995450002,
+        "noMatchSemanticRate": 0.07954545454545454,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5162428995450002,
+          "coverage": 0.5553571428571429,
+          "noMatchAnyRate": 0.07954545454545454,
+          "noMatchSemanticRate": 0.07954545454545454,
+          "recall1": 0.5044642857142857,
+          "recall3": 0.5214285714285715,
+          "recall5": 0.5241071428571429,
+          "mrr": 0.5135267857142857
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5153775022275494,
+          "coverage": 0.554561717352415,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.5035778175313059,
+          "recall3": 0.5205724508050089,
+          "recall5": 0.5232558139534884,
+          "mrr": 0.5126565295169946
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed29",
+      "seed": 29,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.6360184550285339,
+        "semanticNdcg5": 0.5529658018825456,
+        "semanticCoverage": 0.6082289803220036,
+        "overallNdcg5": 0.5537640772363268,
+        "noMatchSemanticRate": 0.11079545454545454,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5537640772363268,
+          "coverage": 0.6089285714285714,
+          "noMatchAnyRate": 0.11079545454545454,
+          "noMatchSemanticRate": 0.11079545454545454,
+          "recall1": 0.5392857142857143,
+          "recall3": 0.5607142857142857,
+          "recall5": 0.5633928571428571,
+          "mrr": 0.5504315476190477
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5529658018825456,
+          "coverage": 0.6082289803220036,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.5384615384615384,
+          "recall3": 0.5599284436493739,
+          "recall5": 0.5626118067978533,
+          "mrr": 0.5496273106738223
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed43/epoch-001",
+      "seed": 43,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.748727560043335,
+        "semanticNdcg5": 0.3252190304625611,
+        "semanticCoverage": 0.35688729874776387,
+        "overallNdcg5": 0.32642399647959225,
+        "noMatchSemanticRate": 0.06534090909090909,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.32642399647959225,
+          "coverage": 0.3580357142857143,
+          "noMatchAnyRate": 0.06534090909090909,
+          "noMatchSemanticRate": 0.06534090909090909,
+          "recall1": 0.3169642857142857,
+          "recall3": 0.33214285714285713,
+          "recall5": 0.33214285714285713,
+          "mrr": 0.32440476190476186
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.3252190304625611,
+          "coverage": 0.35688729874776387,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.315742397137746,
+          "recall3": 0.33094812164579607,
+          "recall5": 0.33094812164579607,
+          "mrr": 0.32319618366129993
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed43/epoch-010",
+      "seed": 43,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.6847805380821228,
+        "semanticNdcg5": 0.49484584250271996,
+        "semanticCoverage": 0.5313059033989267,
+        "overallNdcg5": 0.4957479034982508,
+        "noMatchSemanticRate": 0.07102272727272728,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4957479034982508,
+          "coverage": 0.5321428571428571,
+          "noMatchAnyRate": 0.07102272727272728,
+          "noMatchSemanticRate": 0.07102272727272728,
+          "recall1": 0.4857142857142857,
+          "recall3": 0.5008928571428571,
+          "recall5": 0.5026785714285714,
+          "mrr": 0.4933630952380952
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.49484584250271996,
+          "coverage": 0.5313059033989267,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4847942754919499,
+          "recall3": 0.5,
+          "recall5": 0.501788908765653,
+          "mrr": 0.49245676803816335
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-more-data-pooled-seed43",
+      "seed": 43,
+      "data": "more-data",
+      "metrics": {
+        "cutoff": 0.6683843731880188,
+        "semanticNdcg5": 0.5083230721674111,
+        "semanticCoverage": 0.5509838998211091,
+        "overallNdcg5": 0.5092010666813979,
+        "noMatchSemanticRate": 0.07954545454545454,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.5092010666813979,
+          "coverage": 0.5517857142857143,
+          "noMatchAnyRate": 0.07954545454545454,
+          "noMatchSemanticRate": 0.07954545454545454,
+          "recall1": 0.49642857142857144,
+          "recall3": 0.5160714285714286,
+          "recall5": 0.5178571428571429,
+          "mrr": 0.5062053571428572
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.5083230721674111,
+          "coverage": 0.5509838998211091,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.49552772808586765,
+          "recall3": 0.5152057245080501,
+          "recall5": 0.516994633273703,
+          "mrr": 0.5053220035778175
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed17/epoch-001",
+      "seed": 17,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.7451238632202148,
+        "semanticNdcg5": 0.027866412135829417,
+        "semanticCoverage": 0.055456171735241505,
+        "overallNdcg5": 0.02960236497130115,
+        "noMatchSemanticRate": 0.03977272727272727,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.02960236497130115,
+          "coverage": 0.05714285714285714,
+          "noMatchAnyRate": 0.03977272727272727,
+          "noMatchSemanticRate": 0.03977272727272727,
+          "recall1": 0.026785714285714284,
+          "recall3": 0.03125,
+          "recall5": 0.03125,
+          "mrr": 0.029017857142857144
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.027866412135829417,
+          "coverage": 0.055456171735241505,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.025044722719141325,
+          "recall3": 0.029516994633273702,
+          "recall5": 0.029516994633273702,
+          "mrr": 0.02728085867620751
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed17/epoch-010",
+      "seed": 17,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.7456102967262268,
+        "semanticNdcg5": 0.029208093710069133,
+        "semanticCoverage": 0.05008944543828265,
+        "overallNdcg5": 0.030941650685586866,
+        "noMatchSemanticRate": 0.04261363636363636,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.030941650685586866,
+          "coverage": 0.05178571428571429,
+          "noMatchAnyRate": 0.04261363636363636,
+          "noMatchSemanticRate": 0.04261363636363636,
+          "recall1": 0.027678571428571427,
+          "recall3": 0.033035714285714286,
+          "recall5": 0.033035714285714286,
+          "mrr": 0.03020833333333333
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.029208093710069133,
+          "coverage": 0.05008944543828265,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.0259391771019678,
+          "recall3": 0.03130590339892665,
+          "recall5": 0.03130590339892665,
+          "mrr": 0.028473464519976146
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed17",
+      "seed": 17,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.746360182762146,
+        "semanticNdcg5": 0.030102548092895608,
+        "semanticCoverage": 0.052772808586762074,
+        "overallNdcg5": 0.031834507828444006,
+        "noMatchSemanticRate": 0.03977272727272727,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.031834507828444006,
+          "coverage": 0.054464285714285715,
+          "noMatchAnyRate": 0.03977272727272727,
+          "noMatchSemanticRate": 0.03977272727272727,
+          "recall1": 0.02857142857142857,
+          "recall3": 0.033928571428571426,
+          "recall5": 0.033928571428571426,
+          "mrr": 0.031101190476190473
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.030102548092895608,
+          "coverage": 0.052772808586762074,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.026833631484794274,
+          "recall3": 0.03220035778175313,
+          "recall5": 0.03220035778175313,
+          "mrr": 0.02936791890280262
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed29/epoch-001",
+      "seed": 29,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.6880637407302856,
+        "semanticNdcg5": 0.04104210387337444,
+        "semanticCoverage": 0.09660107334525939,
+        "overallNdcg5": 0.04275452868788627,
+        "noMatchSemanticRate": 0.07954545454545454,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.04275452868788627,
+          "coverage": 0.09821428571428571,
+          "noMatchAnyRate": 0.07954545454545454,
+          "noMatchSemanticRate": 0.07954545454545454,
+          "recall1": 0.0375,
+          "recall3": 0.045535714285714284,
+          "recall5": 0.04732142857142857,
+          "mrr": 0.04134778911564626
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.04104210387337444,
+          "coverage": 0.09660107334525939,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.03577817531305903,
+          "recall3": 0.04382826475849732,
+          "recall5": 0.04561717352415027,
+          "mrr": 0.03963284777238266
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed29/epoch-010",
+      "seed": 29,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.6897105574607849,
+        "semanticNdcg5": 0.0447190493268793,
+        "semanticCoverage": 0.10107334525939177,
+        "overallNdcg5": 0.04642490816736701,
+        "noMatchSemanticRate": 0.09090909090909091,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.04642490816736701,
+          "coverage": 0.10267857142857142,
+          "noMatchAnyRate": 0.09090909090909091,
+          "noMatchSemanticRate": 0.09090909090909091,
+          "recall1": 0.039285714285714285,
+          "recall3": 0.05,
+          "recall5": 0.05178571428571429,
+          "mrr": 0.04487457482993197
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.0447190493268793,
+          "coverage": 0.10107334525939177,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.03756708407871199,
+          "recall3": 0.04830053667262969,
+          "recall5": 0.05008944543828265,
+          "mrr": 0.043165942584547236
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed29",
+      "seed": 29,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.6763201355934143,
+        "semanticNdcg5": 0.05053300281525139,
+        "semanticCoverage": 0.11091234347048301,
+        "overallNdcg5": 0.05222847959593844,
+        "noMatchSemanticRate": 0.10511363636363637,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.05222847959593844,
+          "coverage": 0.1125,
+          "noMatchAnyRate": 0.10511363636363637,
+          "noMatchSemanticRate": 0.10511363636363637,
+          "recall1": 0.044642857142857144,
+          "recall3": 0.05625,
+          "recall5": 0.05803571428571429,
+          "mrr": 0.050529336734693876
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.05053300281525139,
+          "coverage": 0.11091234347048301,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.04293381037567084,
+          "recall3": 0.05456171735241502,
+          "recall5": 0.05635062611806798,
+          "mrr": 0.04883082034244825
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed43/epoch-001",
+      "seed": 43,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.726547122001648,
+        "semanticNdcg5": 0.028313639327242655,
+        "semanticCoverage": 0.0626118067978533,
+        "overallNdcg5": 0.030048793542729723,
+        "noMatchSemanticRate": 0.056818181818181816,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.030048793542729723,
+          "coverage": 0.06428571428571428,
+          "noMatchAnyRate": 0.056818181818181816,
+          "noMatchSemanticRate": 0.056818181818181816,
+          "recall1": 0.026785714285714284,
+          "recall3": 0.03214285714285714,
+          "recall5": 0.03214285714285714,
+          "mrr": 0.029315476190476187
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.028313639327242655,
+          "coverage": 0.0626118067978533,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.025044722719141325,
+          "recall3": 0.03041144901610018,
+          "recall5": 0.03041144901610018,
+          "mrr": 0.02757901013714967
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed43/epoch-010",
+      "seed": 43,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.7230368852615356,
+        "semanticNdcg5": 0.03243457916560189,
+        "semanticCoverage": 0.06529516994633273,
+        "overallNdcg5": 0.034162374559949034,
+        "noMatchSemanticRate": 0.06534090909090909,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.034162374559949034,
+          "coverage": 0.06696428571428571,
+          "noMatchAnyRate": 0.06534090909090909,
+          "noMatchSemanticRate": 0.06534090909090909,
+          "recall1": 0.03214285714285714,
+          "recall3": 0.03571428571428571,
+          "recall5": 0.03571428571428571,
+          "mrr": 0.033630952380952386
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.03243457916560189,
+          "coverage": 0.06529516994633273,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.03041144901610018,
+          "recall3": 0.03398926654740608,
+          "recall5": 0.03398926654740608,
+          "mrr": 0.03190220632081097
+        }
+      }
+    },
+    {
+      "path": "runs/expanded-old-data-control-pooled-seed43",
+      "seed": 43,
+      "data": "old-data-control",
+      "metrics": {
+        "cutoff": 0.7156192064285278,
+        "semanticNdcg5": 0.03803552684640951,
+        "semanticCoverage": 0.0742397137745975,
+        "overallNdcg5": 0.039753320548469494,
+        "noMatchSemanticRate": 0.07102272727272728,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.039753320548469494,
+          "coverage": 0.07589285714285714,
+          "noMatchAnyRate": 0.07102272727272728,
+          "noMatchSemanticRate": 0.07102272727272728,
+          "recall1": 0.03660714285714286,
+          "recall3": 0.04196428571428571,
+          "recall5": 0.04196428571428571,
+          "mrr": 0.03898809523809524
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.03803552684640951,
+          "coverage": 0.0742397137745975,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.03488372093023256,
+          "recall3": 0.04025044722719141,
+          "recall5": 0.04025044722719141,
+          "mrr": 0.037268932617769826
+        }
+      }
+    }
+  ]
+}

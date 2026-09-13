@@ -1,0 +1,16 @@
+{
+  "registeredBeforeExpandedTrainingResults": true,
+  "numericalGateSource": "configs/gates.json",
+  "semanticNdcg5Improvement": 0.05,
+  "pairedBootstrap95LowerMustExceed": 0,
+  "maximumOverallRegression": 0.01,
+  "maximumNoMatchSemanticRate": 0.05,
+  "maximumQuantizationNdcgLoss": 0.01,
+  "cutoffSelection": "calibration only",
+  "checkpointSelection": "expanded development only",
+  "originalPilotDev": "post-selection transfer regression only; never train or select checkpoint",
+  "baselineSelection": "strongest of lexical, complete train-derived aliases, train-fitted character TFIDF, nearest train paraphrase TFIDF",
+  "scope": "Weak source-intent and source-setting description labels; report seen-intent and unseen transfer independently",
+  "finalTestExecution": false,
+  "reviewedFinalTestRequired": true
+}

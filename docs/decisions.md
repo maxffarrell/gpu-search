@@ -11,3 +11,7 @@
 ## Interactive model demo revision
 
 The user explicitly requested a real model-backed demo despite the failed release gate. The demo now evaluates the existing experimental pooled16 int8 weights on CPU and displays raw cosine rankings alongside the unchanged lexical library. It does not impose a made-up validated cutoff or present model scores as confidence. Initial candidates have no aliases or contexts. Arbitrary edited candidates use the same encoder and composition, and model load failure is shown as an error rather than replaced with baseline results. The stable library still defaults to explicit lexical degradation when semantics are requested. No WebGPU claim is made.
+
+## 2026-09-13: expanded-data experiment
+
+Freeze source revisions and split hashes before training. Add CLINC150/BANKING77 intents and VS Code setting descriptions with explicit source licenses and weak-label provenance. Keep original dev out of training/checkpoint selection. Compare three seeds against repeated old-data controls with equal optimizer updates at epoch1/10. Calibrate abstention on separate calibration rows. Among development-selected checkpoints, choose seed17 (epoch10) because it is the only one meeting the pre-existing 5% no-match gate; reject higher-nDCG checkpoints that exceed that budget. Preserve pilot artifacts, deploy the improved experimental int8 artifact, and retain raw-score/limited-generalization disclosure. Quality regression thresholds freeze measured development floors; they are not independent test evidence.

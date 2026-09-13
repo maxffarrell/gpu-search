@@ -1,0 +1,17 @@
+{
+  "scope": "Frozen regression corpus after development checkpoint selection, not independent release evidence",
+  "artifact": "packages/model/candidate",
+  "recordedModelSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+  "minimumSemanticNdcg5": 0.45,
+  "minimumSemanticCoverage": 0.48,
+  "maximumNoMatchSemanticRate": 0.05,
+  "minimumTransferRawOverallNdcg5": 0.6447987691088867,
+  "minimumTransferCombinedOverallNdcg5": 0.4,
+  "observedSemanticNdcg5": 0.4643617910275386,
+  "observedSemanticCoverage": 0.49552772808586765,
+  "datasetSha256": {
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/dev.jsonl": "598bd31082ab3bd23b49f14bb6f7fc6677f21d2a421700afaa1b16d803977140"
+  }
+}

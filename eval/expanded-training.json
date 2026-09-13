@@ -1,0 +1,381 @@
+{
+  "status": "experimental weak-label development evidence only",
+  "configuration": {
+    "data_dir": "data/expanded",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architectures": [
+      "pooled"
+    ],
+    "epochs": 100,
+    "minimum_epochs": 10,
+    "patience": 10,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "temperature": 0.15,
+    "batch_size": 128,
+    "clip_norm": 1.0,
+    "dimension": 16,
+    "control_data": "data/train.jsonl",
+    "no_match_loss": "disabled",
+    "selection": "post-cutoff semantic nDCG@5, then relevant-query coverage; cutoff calibrated separately",
+    "source_hashes": {
+      "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+      "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+      "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+      "data/train.jsonl": "60bf9b26ff4217be9178eb63d35819620752ded26a08334087b241188951ff7d"
+    },
+    "epoch_examples": 7165
+  },
+  "sourceHashes": {
+    "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/train.jsonl": "60bf9b26ff4217be9178eb63d35819620752ded26a08334087b241188951ff7d"
+  },
+  "control": "Identical sparse features, optimizer, seeds, optimizer updates per epoch, development selection and calibration; only unique training records differ. The old-data control repeats shuffled original training rows to match the expanded positive-example count per epoch. Early stopping can select different total update counts. Fixed epoch-1/10 artifacts compare equal update budgets.",
+  "runs": [
+    {
+      "checkpoint": "runs/expanded-old-data-control-pooled-seed17",
+      "seed": 17,
+      "dataArm": "old-data-control",
+      "architecture": "pooled",
+      "bestEpoch": 17,
+      "epochs": 27,
+      "trainingSeconds": 1.9229917919728905,
+      "optimizerSeconds": 0.8584751649177633,
+      "cutoff": 0.7463601231575012,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.030102548092895608,
+      "devSemanticCoverage": 0.052772808586762074,
+      "devRelevantCoverage": 0.054464285714285715,
+      "devOverallNdcg5": 0.031834507828444006,
+      "devNoMatchSemanticRate": 0.03977272727272727,
+      "devNoMatchAnyRate": 0.03977272727272727
+    },
+    {
+      "checkpoint": "runs/expanded-old-data-control-pooled-seed29",
+      "seed": 29,
+      "dataArm": "old-data-control",
+      "architecture": "pooled",
+      "bestEpoch": 4,
+      "epochs": 14,
+      "trainingSeconds": 1.0058204590459354,
+      "optimizerSeconds": 0.4520754179684445,
+      "cutoff": 0.6763201355934143,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.05053300281525139,
+      "devSemanticCoverage": 0.11091234347048301,
+      "devRelevantCoverage": 0.1125,
+      "devOverallNdcg5": 0.05222847959593844,
+      "devNoMatchSemanticRate": 0.10511363636363637,
+      "devNoMatchAnyRate": 0.10511363636363637
+    },
+    {
+      "checkpoint": "runs/expanded-old-data-control-pooled-seed43",
+      "seed": 43,
+      "dataArm": "old-data-control",
+      "architecture": "pooled",
+      "bestEpoch": 15,
+      "epochs": 25,
+      "trainingSeconds": 1.8103350829915144,
+      "optimizerSeconds": 0.8094487888156436,
+      "cutoff": 0.7156191468238831,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.03803552684640951,
+      "devSemanticCoverage": 0.0742397137745975,
+      "devRelevantCoverage": 0.07589285714285714,
+      "devOverallNdcg5": 0.039753320548469494,
+      "devNoMatchSemanticRate": 0.07102272727272728,
+      "devNoMatchAnyRate": 0.07102272727272728
+    },
+    {
+      "checkpoint": "runs/expanded-more-data-pooled-seed17",
+      "seed": 17,
+      "dataArm": "more-data",
+      "architecture": "pooled",
+      "bestEpoch": 10,
+      "epochs": 20,
+      "trainingSeconds": 1.9120881669805385,
+      "optimizerSeconds": 1.1090512059163302,
+      "cutoff": 0.7008627653121948,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.4646919075270275,
+      "devSemanticCoverage": 0.49552772808586765,
+      "devRelevantCoverage": 0.49642857142857144,
+      "devOverallNdcg5": 0.46564781483501494,
+      "devNoMatchSemanticRate": 0.048295454545454544,
+      "devNoMatchAnyRate": 0.048295454545454544
+    },
+    {
+      "checkpoint": "runs/expanded-more-data-pooled-seed29",
+      "seed": 29,
+      "dataArm": "more-data",
+      "architecture": "pooled",
+      "bestEpoch": 23,
+      "epochs": 33,
+      "trainingSeconds": 3.1149813340161927,
+      "optimizerSeconds": 1.7616147068911232,
+      "cutoff": 0.6360185146331787,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.5532959183820345,
+      "devSemanticCoverage": 0.6082289803220036,
+      "devRelevantCoverage": 0.6089285714285714,
+      "devOverallNdcg5": 0.5540936042420667,
+      "devNoMatchSemanticRate": 0.11079545454545454,
+      "devNoMatchAnyRate": 0.11079545454545454
+    },
+    {
+      "checkpoint": "runs/expanded-more-data-pooled-seed43",
+      "seed": 43,
+      "dataArm": "more-data",
+      "architecture": "pooled",
+      "bestEpoch": 7,
+      "epochs": 17,
+      "trainingSeconds": 1.5679611249943264,
+      "optimizerSeconds": 0.8763289589551277,
+      "cutoff": 0.6683844923973083,
+      "calibrationNoMatchCount": 352,
+      "calibrationNoMatchSemanticRate": 0.048295454545454544,
+      "devSemanticCount": 1118,
+      "devSemanticNdcg5": 0.5083230721674111,
+      "devSemanticCoverage": 0.5509838998211091,
+      "devRelevantCoverage": 0.5517857142857143,
+      "devOverallNdcg5": 0.5092010666813979,
+      "devNoMatchSemanticRate": 0.07954545454545454,
+      "devNoMatchAnyRate": 0.07954545454545454
+    }
+  ],
+  "sparseReferenceParity": {
+    "checkpoint": "runs/expanded-more-data-pooled-seed17",
+    "maxScoreError": 2.980232238769531e-07,
+    "changedFullRankings": 7,
+    "largestInvertedReferenceScoreGap": 1.1920928955078125e-07,
+    "inversionsBeyondTwiceScoreTolerance": 0,
+    "sparseSelectionNdcg": 0.4646919075270275,
+    "numpyReferenceNdcg": 0.4643617910275386,
+    "interpretation": "Numerically equivalent within score tolerance; rank changes occur only at reference near ties. Final exported artifact evaluation is canonical."
+  },
+  "timingScope": "Materialized training loop includes optimizer updates, per-epoch development scoring and checkpoint writes; excludes data loading, feature preparation and initial lexical evaluation cache construction. OptimizerSeconds isolates minibatch work.",
+  "fixedEpochComparison": [
+    {
+      "checkpoint": "runs/expanded-old-data-control-pooled-seed17",
+      "seed": 17,
+      "dataArm": "old-data-control",
+      "optimizerStepsPerEpoch": 56,
+      "selectedEpoch": 17,
+      "selectedOptimizerSteps": 952,
+      "totalOptimizerSteps": 1512,
+      "points": [
+        {
+          "epoch": 1,
+          "optimizerSteps": 56,
+          "semanticNdcg5": 0.027866412135829417,
+          "semanticCoverage": 0.055456171735241505,
+          "devNoMatchSemanticRate": 0.03977272727272727
+        },
+        {
+          "epoch": 10,
+          "optimizerSteps": 560,
+          "semanticNdcg5": 0.029208093710069133,
+          "semanticCoverage": 0.05008944543828265,
+          "devNoMatchSemanticRate": 0.04261363636363636
+        },
+        {
+          "epoch": 17,
+          "optimizerSteps": 952,
+          "semanticNdcg5": 0.030102548092895608,
+          "semanticCoverage": 0.052772808586762074,
+          "devNoMatchSemanticRate": 0.03977272727272727
+        }
+      ]
+    },
+    {
+      "checkpoint": "runs/expanded-old-data-control-pooled-seed29",
+      "seed": 29,
+      "dataArm": "old-data-control",
+      "optimizerStepsPerEpoch": 56,
+      "selectedEpoch": 4,
+      "selectedOptimizerSteps": 224,
+      "totalOptimizerSteps": 784,
+      "points": [
+        {
+          "epoch": 1,
+          "optimizerSteps": 56,
+          "semanticNdcg5": 0.04104210387337444,
+          "semanticCoverage": 0.09660107334525939,
+          "devNoMatchSemanticRate": 0.07954545454545454
+        },
+        {
+          "epoch": 4,
+          "optimizerSteps": 224,
+          "semanticNdcg5": 0.05053300281525139,
+          "semanticCoverage": 0.11091234347048301,
+          "devNoMatchSemanticRate": 0.10511363636363637
+        },
+        {
+          "epoch": 10,
+          "optimizerSteps": 560,
+          "semanticNdcg5": 0.0447190493268793,
+          "semanticCoverage": 0.10107334525939177,
+          "devNoMatchSemanticRate": 0.09090909090909091
+        }
+      ]
+    },
+    {
+      "checkpoint": "runs/expanded-old-data-control-pooled-seed43",
+      "seed": 43,
+      "dataArm": "old-data-control",
+      "optimizerStepsPerEpoch": 56,
+      "selectedEpoch": 15,
+      "selectedOptimizerSteps": 840,
+      "totalOptimizerSteps": 1400,
+      "points": [
+        {
+          "epoch": 1,
+          "optimizerSteps": 56,
+          "semanticNdcg5": 0.028313639327242655,
+          "semanticCoverage": 0.0626118067978533,
+          "devNoMatchSemanticRate": 0.056818181818181816
+        },
+        {
+          "epoch": 10,
+          "optimizerSteps": 560,
+          "semanticNdcg5": 0.03243457916560189,
+          "semanticCoverage": 0.06529516994633273,
+          "devNoMatchSemanticRate": 0.06534090909090909
+        },
+        {
+          "epoch": 15,
+          "optimizerSteps": 840,
+          "semanticNdcg5": 0.03803552684640951,
+          "semanticCoverage": 0.0742397137745975,
+          "devNoMatchSemanticRate": 0.07102272727272728
+        }
+      ]
+    },
+    {
+      "checkpoint": "runs/expanded-more-data-pooled-seed17",
+      "seed": 17,
+      "dataArm": "more-data",
+      "optimizerStepsPerEpoch": 56,
+      "selectedEpoch": 10,
+      "selectedOptimizerSteps": 560,
+      "totalOptimizerSteps": 1120,
+      "points": [
+        {
+          "epoch": 1,
+          "optimizerSteps": 56,
+          "semanticNdcg5": 0.2727551227990036,
+          "semanticCoverage": 0.2960644007155635,
+          "devNoMatchSemanticRate": 0.05397727272727273
+        },
+        {
+          "epoch": 10,
+          "optimizerSteps": 560,
+          "semanticNdcg5": 0.4646919075270275,
+          "semanticCoverage": 0.49552772808586765,
+          "devNoMatchSemanticRate": 0.048295454545454544
+        }
+      ]
+    },
+    {
+      "checkpoint": "runs/expanded-more-data-pooled-seed29",
+      "seed": 29,
+      "dataArm": "more-data",
+      "optimizerStepsPerEpoch": 56,
+      "selectedEpoch": 23,
+      "selectedOptimizerSteps": 1288,
+      "totalOptimizerSteps": 1848,
+      "points": [
+        {
+          "epoch": 1,
+          "optimizerSteps": 56,
+          "semanticNdcg5": 0.2761411500990293,
+          "semanticCoverage": 0.29785330948121647,
+          "devNoMatchSemanticRate": 0.045454545454545456
+        },
+        {
+          "epoch": 10,
+          "optimizerSteps": 560,
+          "semanticNdcg5": 0.5147172692285716,
+          "semanticCoverage": 0.554561717352415,
+          "devNoMatchSemanticRate": 0.07954545454545454
+        },
+        {
+          "epoch": 23,
+          "optimizerSteps": 1288,
+          "semanticNdcg5": 0.5532959183820345,
+          "semanticCoverage": 0.6082289803220036,
+          "devNoMatchSemanticRate": 0.11079545454545454
+        }
+      ]
+    },
+    {
+      "checkpoint": "runs/expanded-more-data-pooled-seed43",
+      "seed": 43,
+      "dataArm": "more-data",
+      "optimizerStepsPerEpoch": 56,
+      "selectedEpoch": 7,
+      "selectedOptimizerSteps": 392,
+      "totalOptimizerSteps": 952,
+      "points": [
+        {
+          "epoch": 1,
+          "optimizerSteps": 56,
+          "semanticNdcg5": 0.3252190304625611,
+          "semanticCoverage": 0.35688729874776387,
+          "devNoMatchSemanticRate": 0.06534090909090909
+        },
+        {
+          "epoch": 7,
+          "optimizerSteps": 392,
+          "semanticNdcg5": 0.5083230721674111,
+          "semanticCoverage": 0.5509838998211091,
+          "devNoMatchSemanticRate": 0.07954545454545454
+        },
+        {
+          "epoch": 10,
+          "optimizerSteps": 560,
+          "semanticNdcg5": 0.4945157260032312,
+          "semanticCoverage": 0.5313059033989267,
+          "devNoMatchSemanticRate": 0.07102272727272728
+        }
+      ]
+    }
+  ],
+  "selectionCaveat": "Calibration constrains cutoff to <=5% no-match there; development rates are measured independently. Selected more-data seeds29 and43 exceed5% dev no-match, so highest nDCG alone is unsuitable for artifact promotion. Seed17 selected epoch10 has4.83% dev no-match.",
+  "checkpointHashes": {
+    "runs/expanded-more-data-pooled-seed17/epoch-001/weights.npz": "4edddf31bb28765bf726bf130db4088f5d62c4a8d1ad701c3e8f4917f74dfdde",
+    "runs/expanded-more-data-pooled-seed17/epoch-010/weights.npz": "96a2b3d720b9bc72384937685961f3d6910a6440a73c3d5d520482eae0934774",
+    "runs/expanded-more-data-pooled-seed17/weights.npz": "96a2b3d720b9bc72384937685961f3d6910a6440a73c3d5d520482eae0934774",
+    "runs/expanded-more-data-pooled-seed29/epoch-001/weights.npz": "36ca7094a22b8a1d7ad1d74c86b3642cd72d22fd4fcf2e81e3f1b6a25497fd7f",
+    "runs/expanded-more-data-pooled-seed29/epoch-010/weights.npz": "7414f6b346f398822830e9c655bd3f915c6943270164d85ff5f98134a6cd7893",
+    "runs/expanded-more-data-pooled-seed29/weights.npz": "5d2107a30e0836a108a782a68ce768851c443c86b569ed3bc5c8ea07ce7386c3",
+    "runs/expanded-more-data-pooled-seed43/epoch-001/weights.npz": "c12e251bb51b0d56b877c9dc6d9c1e8438247ec94ac288722e9a26323292c476",
+    "runs/expanded-more-data-pooled-seed43/epoch-010/weights.npz": "cc194e7d1def25154327ec15b427edac069d6efdc84156bfcc9ea04961c81b54",
+    "runs/expanded-more-data-pooled-seed43/weights.npz": "056f0cb73dd2f0680806dff12e13be9aa84b1db6a98df0166c65d02fd31be230",
+    "runs/expanded-old-data-control-pooled-seed17/epoch-001/weights.npz": "026dc4f6b1a61a52c2cd379e9b5afbd8b251da417c9db0830ba5b3eba3a358b9",
+    "runs/expanded-old-data-control-pooled-seed17/epoch-010/weights.npz": "c97a435b988dbd753b87b80e1bd494813ffcbc050d76a84c77862f2386db40de",
+    "runs/expanded-old-data-control-pooled-seed17/weights.npz": "01f82e188b1bc6f1f69fe10e60c80262ba848059544ffadd94769db7b412e39a",
+    "runs/expanded-old-data-control-pooled-seed29/epoch-001/weights.npz": "7452afa8bd0655edcce5dc0dd431c167e567d3e9039c5b39c8f6df00b774ab62",
+    "runs/expanded-old-data-control-pooled-seed29/epoch-010/weights.npz": "e5bf6a5691e1d1c3062ec9dc24b58f0f329f3b8de004d01bd1f32624d8d5eff9",
+    "runs/expanded-old-data-control-pooled-seed29/weights.npz": "10e359b7ebc9a7b2b2dc07dd2547f9a9a65db5c2928bebe9de7e2619910d1c58",
+    "runs/expanded-old-data-control-pooled-seed43/epoch-001/weights.npz": "f8457a039bb556992345556f2f2ba213dba7cf146a271ed62a8a7999384fb763",
+    "runs/expanded-old-data-control-pooled-seed43/epoch-010/weights.npz": "d44fd00f82408b2e344c92de9a4df157133878c7d8f0a422d3445fd9c5be764e",
+    "runs/expanded-old-data-control-pooled-seed43/weights.npz": "58e6a457418a2da4e01785a6d5f5e3659aa4273166c90df7d0431ed6a9f40bc6"
+  }
+}

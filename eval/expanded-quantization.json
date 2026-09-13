@@ -1,0 +1,78 @@
+{
+  "float": {
+    "cutoff": 0.7008627653121948,
+    "semanticNdcg5": 0.4643617910275386,
+    "semanticCoverage": 0.49552772808586765,
+    "overallNdcg5": 0.46531828782927515,
+    "noMatchSemanticRate": 0.048295454545454544,
+    "overall": {
+      "count": 1472,
+      "positiveCount": 1120,
+      "relevantCount": 1120,
+      "noMatchCount": 352,
+      "ndcg5": 0.46531828782927515,
+      "coverage": 0.49642857142857144,
+      "noMatchAnyRate": 0.048295454545454544,
+      "noMatchSemanticRate": 0.048295454545454544,
+      "recall1": 0.45535714285714285,
+      "recall3": 0.4705357142857143,
+      "recall5": 0.4714285714285714,
+      "mrr": 0.46316964285714285
+    },
+    "semanticOnly": {
+      "count": 1118,
+      "positiveCount": 1118,
+      "relevantCount": 1118,
+      "noMatchCount": 0,
+      "ndcg5": 0.4643617910275386,
+      "coverage": 0.49552772808586765,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "recall1": 0.4543828264758497,
+      "recall3": 0.46958855098389984,
+      "recall5": 0.47048300536672627,
+      "mrr": 0.4622093023255814
+    }
+  },
+  "int8": {
+    "cutoff": 0.7004017233848572,
+    "semanticNdcg5": 0.4643617910275386,
+    "semanticCoverage": 0.49552772808586765,
+    "overallNdcg5": 0.46531828782927515,
+    "noMatchSemanticRate": 0.048295454545454544,
+    "overall": {
+      "count": 1472,
+      "positiveCount": 1120,
+      "relevantCount": 1120,
+      "noMatchCount": 352,
+      "ndcg5": 0.46531828782927515,
+      "coverage": 0.49642857142857144,
+      "noMatchAnyRate": 0.048295454545454544,
+      "noMatchSemanticRate": 0.048295454545454544,
+      "recall1": 0.45535714285714285,
+      "recall3": 0.4705357142857143,
+      "recall5": 0.4714285714285714,
+      "mrr": 0.46316964285714285
+    },
+    "semanticOnly": {
+      "count": 1118,
+      "positiveCount": 1118,
+      "relevantCount": 1118,
+      "noMatchCount": 0,
+      "ndcg5": 0.4643617910275386,
+      "coverage": 0.49552772808586765,
+      "noMatchAnyRate": null,
+      "noMatchSemanticRate": null,
+      "recall1": 0.4543828264758497,
+      "recall3": 0.46958855098389984,
+      "recall5": 0.47048300536672627,
+      "mrr": 0.4622093023255814
+    }
+  },
+  "semanticNdcgLoss": 0.0,
+  "overallNdcgLoss": 0.0,
+  "fixedFloatCutoffSemanticNdcgLoss": 0.0017889087656529634,
+  "maximumPermittedLoss": 0.01,
+  "passed": true,
+  "cutoffsIndependentlyCalibrated": true
+}

@@ -1,0 +1,68 @@
+{
+  "architecture": "pooled",
+  "dimension": 16,
+  "family": "both",
+  "seed": 29,
+  "dataArm": "old-data-control",
+  "configuration": {
+    "data_dir": "data/expanded",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architectures": [
+      "pooled"
+    ],
+    "epochs": 100,
+    "minimum_epochs": 10,
+    "patience": 10,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "temperature": 0.15,
+    "batch_size": 128,
+    "clip_norm": 1.0,
+    "dimension": 16,
+    "control_data": "data/train.jsonl",
+    "no_match_loss": "disabled",
+    "selection": "post-cutoff semantic nDCG@5, then relevant-query coverage; cutoff calibrated separately",
+    "source_hashes": {
+      "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+      "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+      "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+      "data/train.jsonl": "60bf9b26ff4217be9178eb63d35819620752ded26a08334087b241188951ff7d"
+    },
+    "epoch_examples": 7165
+  },
+  "trainRecords": 120,
+  "supervisedRecords": 90,
+  "noPositiveRecordsExcluded": 30,
+  "examplesPerEpoch": 7165,
+  "optimizerStepsPerEpoch": 56,
+  "uniqueTrainingTexts": 90,
+  "truncatedTrainingTexts": 0,
+  "bestEpoch": 4,
+  "epochs": 14,
+  "totalOptimizerSteps": 784,
+  "selectedOptimizerSteps": 224,
+  "bestMetrics": {
+    "cutoff": 0.6763201355934143,
+    "calibrationNoMatchCount": 352,
+    "calibrationNoMatchSemanticRate": 0.048295454545454544,
+    "devSemanticCount": 1118,
+    "devSemanticNdcg5": 0.05053300281525139,
+    "devSemanticCoverage": 0.11091234347048301,
+    "devRelevantCoverage": 0.1125,
+    "devOverallNdcg5": 0.05222847959593844,
+    "devNoMatchSemanticRate": 0.10511363636363637,
+    "devNoMatchAnyRate": 0.10511363636363637
+  },
+  "trainingSeconds": 1.0058204590459354,
+  "optimizerSeconds": 0.4520754179684445,
+  "framework": "mlx 0.31.1",
+  "device": "Device(gpu, 0)",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "status": "fixed epoch comparison; not selected",
+  "selection": "lexicographic post-cutoff development semantic nDCG@5 then relevant-query coverage; independent no-match calibration; earliest epoch wins exact ties",
+  "checkpointEpoch": 10
+}

@@ -1,0 +1,12 @@
+{
+  "cutoff": 0.7451239228248596,
+  "calibrationNoMatchCount": 352,
+  "calibrationNoMatchSemanticRate": 0.048295454545454544,
+  "devSemanticCount": 1118,
+  "devSemanticNdcg5": 0.027866412135829417,
+  "devSemanticCoverage": 0.055456171735241505,
+  "devRelevantCoverage": 0.05714285714285714,
+  "devOverallNdcg5": 0.02960236497130115,
+  "devNoMatchSemanticRate": 0.03977272727272727,
+  "devNoMatchAnyRate": 0.03977272727272727
+}

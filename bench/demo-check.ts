@@ -5,8 +5,8 @@ import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { loadModel } from '../packages/model/runtime.js';
 
-const manifest = JSON.parse(readFileSync('packages/model/experimental/manifest.json', 'utf8'));
-const bytes = readFileSync('packages/model/experimental/weights.bin');
+const manifest = JSON.parse(readFileSync('packages/model/candidate/manifest.json', 'utf8'));
+const bytes = readFileSync('packages/model/candidate/weights.bin');
 const model = await loadModel(manifest, Uint8Array.from(bytes).buffer);
 const server = await preview({ root: 'apps/demo', preview: { host: '127.0.0.1', port: 4180, strictPort: true } });
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_CHANNEL ? { channel: process.env.CHROME_CHANNEL } : {}) });
@@ -22,6 +22,9 @@ try {
   assert.ok(assets.some(x => x.endsWith('.json')), 'actual manifest was fetched');
   page.on('request', r => requests.push(r.url()));
   const candidates = JSON.parse(await page.locator('#candidate-json').inputValue());
+  // Seen-training sanity regressions, not held-out generalization evidence.
+  assert.equal(model.score('coworkers', candidates)[0]?.id, 'members');
+  assert.equal(model.score('my information', candidates)[0]?.id, 'profile');
   assert.ok(candidates.every((c: { aliases?: unknown; context?: unknown }) => !c.aliases && !c.context), 'initial candidates contain no hidden aliases/context');
   const samples = [];
   for (const query of ['profile', 'profle', 'coworkers', 'my information', 'xqzv', 'unseen destination 47']) {
