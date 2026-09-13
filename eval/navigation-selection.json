@@ -1,0 +1,16 @@
+{
+  "directory": "packages/model/experiments/navigation-align0p5-seed29",
+  "modelId": "navigation-align0p5-seed29",
+  "manifestSha256": "667d40d7fc5c19620d49f9692edd8ec122c97173273e8843fa252313c6933894",
+  "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+  "payloadBytes": 32768,
+  "featureVersion": "gpu-search-features-v1",
+  "dimension": 16,
+  "quantizationBits": [
+    8
+  ],
+  "selectionFrozen": true,
+  "selectionBasis": "XFCE development raw semantic nDCG subject to expanded regression gates; twelve runs completed before GNOME evaluation.",
+  "trainingSelection": "eval/navigation-training-selection.json",
+  "prohibitedFurtherTuning": "GNOME results are final evaluation, never training or selection feedback."
+}

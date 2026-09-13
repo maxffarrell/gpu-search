@@ -1,0 +1,43 @@
+{
+  "formatVersion": "gpu-search-experimental-v1",
+  "featureVersion": "gpu-search-features-v1",
+  "normalizationVersion": "nfkc-ascii-v1",
+  "candidateCompositionVersion": "mean-alias-context025-v1",
+  "architecture": "pooled",
+  "dimension": 16,
+  "featureFamily": "both",
+  "modelId": "navigation-align1p0-seed29",
+  "byteOrder": "little-endian",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        1024,
+        16
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.008871291764080524,
+      "scaleF32LE": "e558113c",
+      "byteOffset": 0,
+      "byteLength": 16384
+    },
+    {
+      "name": "char",
+      "shape": [
+        1024,
+        16
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.009240565821528435,
+      "scaleF32LE": "be65173c",
+      "byteOffset": 16384,
+      "byteLength": 16384
+    }
+  ],
+  "payloadSha256": "dc45b6da23d541254255a678007e83903388c9a4ab343d11019a236243ced893",
+  "payloadBytes": 32768,
+  "validatedSemanticCutoff": null,
+  "status": "EXPERIMENTAL ONLY; release quality gate not passed; do not load in default search"
+}

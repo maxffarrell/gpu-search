@@ -1,0 +1,32 @@
+{
+  "source": "data/navigation/panels.json",
+  "sourceSha256": "080b9993f49100746e6904c63a9b1d695d23126be1c4782cfa2a1878ae81ddf7",
+  "partitions": {
+    "train": {
+      "provider": "kde",
+      "destinations": 40,
+      "queries": 646,
+      "multiPositiveQueries": 85,
+      "sha256": "f9ff863498f3009487c5d4dfde3ce1a1aa31a425bbdec2c53f16d54e96bc3881"
+    },
+    "dev": {
+      "provider": "xfce",
+      "destinations": 8,
+      "queries": 76,
+      "multiPositiveQueries": 4,
+      "sha256": "104350ac5c74ed92610a15c987ecadd612f369a01c7f25381d1b98d7892f3ecb"
+    },
+    "holdout": {
+      "provider": "gnome",
+      "destinations": 27,
+      "queries": 246,
+      "multiPositiveQueries": 50,
+      "sha256": "9e2c42177a0829e6ca081bcf9bcee505abc34e9aff2b120a7898cc66050a1a43"
+    }
+  },
+  "training": "KDE positive-alignment only; never convert unlisted candidates into negatives.",
+  "selection": "XFCE positive retrieval and existing expanded-development regression limits.",
+  "calibration": "Existing expanded calibration only; navigation corpus has no judged no-match rows.",
+  "holdout": "GNOME provider; do not score until model selection is frozen. Cross-provider wording overlap will be reported.",
+  "qualityScope": "Known-positive retrieval lower bound, not fully reviewed relevance/no-match evidence."
+}

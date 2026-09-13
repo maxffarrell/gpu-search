@@ -1,0 +1,19 @@
+{
+  "accessedAt": "2026-09-13T20:01:37.626884+00:00",
+  "selection": "eval/navigation-selection.json",
+  "selectionSha256": "6e5693ddaf75e474415b739606e787c8bc3537fae36a9688fc713d417f6fe4c6",
+  "candidate": {
+    "directory": "packages/model/experiments/navigation-align0p5-seed29",
+    "modelId": "navigation-align0p5-seed29",
+    "manifestSha256": "667d40d7fc5c19620d49f9692edd8ec122c97173273e8843fa252313c6933894",
+    "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+    "payloadBytes": 32768,
+    "featureVersion": "gpu-search-features-v1",
+    "dimension": 16,
+    "quantizationBits": [
+      8
+    ]
+  },
+  "partition": "data/navigation-splits/holdout.jsonl",
+  "scope": "One frozen evaluation event; provider holdout, not fully reviewed negatives."
+}

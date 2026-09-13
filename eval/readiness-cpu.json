@@ -1,0 +1,38 @@
+{
+  "scope": "Local Node CPU diagnostic of existing raw semantic model.score; not browser proof or full hybrid search benchmark",
+  "hardware": "Apple M4 Max",
+  "os": "27.0.0",
+  "node": "v26.8.1",
+  "arch": "arm64",
+  "powerState": "uncontrolled",
+  "modelId": "expanded-more-data-pooled-seed17",
+  "modelSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+  "loadMs": 2.362166000000002,
+  "warmups": 30,
+  "samplesPerSize": 200,
+  "candidates": "Synthetic varied labels with one alias and context each; same immutable list reused",
+  "rows": [
+    {
+      "count": 10,
+      "p50Ms": 0.4508750000000106,
+      "p95Ms": 0.4846249999999941,
+      "minMs": 0.39987500000000864,
+      "maxMs": 0.928916000000001
+    },
+    {
+      "count": 100,
+      "p50Ms": 4.256917000000044,
+      "p95Ms": 4.402582999999936,
+      "minMs": 4.004500000000007,
+      "maxMs": 4.818958000000066
+    },
+    {
+      "count": 1000,
+      "p50Ms": 42.65470899999855,
+      "p95Ms": 43.98712499999965,
+      "minMs": 41.35645799999838,
+      "maxMs": 44.95991700000013
+    }
+  ],
+  "observation": "Current model.score re-encodes each candidate on each query; no embedding index cache exists. No timing target is inferred for other devices."
+}

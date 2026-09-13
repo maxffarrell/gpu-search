@@ -1,0 +1,4057 @@
+[
+  {
+    "left": "about",
+    "right": "astir",
+    "synsets": [
+      "oewn-00032471-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "academic session",
+    "right": "session",
+    "synsets": [
+      "oewn-15250045-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "academic term",
+    "right": "session",
+    "synsets": [
+      "oewn-15250045-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "accepted",
+    "right": "recognised",
+    "synsets": [
+      "oewn-00027712-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "accessibility",
+    "right": "approachability",
+    "synsets": [
+      "oewn-04663006-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "accessibility",
+    "right": "availability",
+    "synsets": [
+      "oewn-04726275-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "accessibility",
+    "right": "availableness",
+    "synsets": [
+      "oewn-04726275-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "accessibility",
+    "right": "handiness",
+    "synsets": [
+      "oewn-04726275-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "accountant",
+    "right": "controller",
+    "synsets": [
+      "oewn-09780826-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "acme",
+    "right": "height",
+    "synsets": [
+      "oewn-13963489-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "acquiring",
+    "right": "getting",
+    "synsets": [
+      "oewn-00042637-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "activating",
+    "right": "activation",
+    "synsets": [
+      "oewn-01048908-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "activation",
+    "right": "energizing",
+    "synsets": [
+      "oewn-01048908-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "actor",
+    "right": "worker",
+    "synsets": [
+      "oewn-09786620-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "adept",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "admonisher",
+    "right": "reminder",
+    "synsets": [
+      "oewn-09791278-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "admonition",
+    "right": "warning",
+    "synsets": [
+      "oewn-06685042-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "admonitory",
+    "right": "warning",
+    "synsets": [
+      "oewn-01775648-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "adventurer",
+    "right": "explorer",
+    "synsets": [
+      "oewn-10092496-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "advise",
+    "right": "suggest",
+    "synsets": [
+      "oewn-00876925-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "aerated",
+    "right": "charged",
+    "synsets": [
+      "oewn-02284409-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "affirm",
+    "right": "verify",
+    "synsets": [
+      "oewn-01013058-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "agenda",
+    "right": "schedule",
+    "synsets": [
+      "oewn-05919534-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "alt",
+    "right": "altitude",
+    "synsets": [
+      "oewn-13858749-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "altitude",
+    "right": "height",
+    "synsets": [
+      "oewn-05138912-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ambit",
+    "right": "scope",
+    "synsets": [
+      "oewn-05132642-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "amoy",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "amoy language",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "apple",
+    "right": "malus pumila",
+    "synsets": [
+      "oewn-12654755-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "apple",
+    "right": "orchard apple tree",
+    "synsets": [
+      "oewn-12654755-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "appliance",
+    "right": "widget",
+    "synsets": [
+      "oewn-02732963-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "archive",
+    "right": "file away",
+    "synsets": [
+      "oewn-01387292-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "arrival",
+    "right": "arriver",
+    "synsets": [
+      "oewn-09829571-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "arrival",
+    "right": "comer",
+    "synsets": [
+      "oewn-09829571-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "arrival",
+    "right": "reaching",
+    "synsets": [
+      "oewn-00048966-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "assert",
+    "right": "verify",
+    "synsets": [
+      "oewn-01013058-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "asynchronous transfer mode",
+    "right": "atm",
+    "synsets": [
+      "oewn-06289724-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "automated teller",
+    "synsets": [
+      "oewn-02980517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "automated teller machine",
+    "synsets": [
+      "oewn-02980517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "automatic teller",
+    "synsets": [
+      "oewn-02980517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "automatic teller machine",
+    "synsets": [
+      "oewn-02980517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "cash dispenser",
+    "synsets": [
+      "oewn-02980517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "cash machine",
+    "synsets": [
+      "oewn-02980517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "standard atmosphere",
+    "synsets": [
+      "oewn-13733165-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "atm",
+    "right": "standard pressure",
+    "synsets": [
+      "oewn-13733165-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "aught",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "auto",
+    "right": "automobile",
+    "synsets": [
+      "oewn-02961779-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "auto",
+    "right": "motorcar",
+    "synsets": [
+      "oewn-02961779-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "automation",
+    "right": "mechanisation",
+    "synsets": [
+      "oewn-00103277-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "automation",
+    "right": "mechanization",
+    "synsets": [
+      "oewn-00103277-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "aver",
+    "right": "verify",
+    "synsets": [
+      "oewn-01013058-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "avow",
+    "right": "verify",
+    "synsets": [
+      "oewn-01013058-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "baby-sitter",
+    "right": "sitter",
+    "synsets": [
+      "oewn-09848551-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "babysitter",
+    "right": "sitter",
+    "synsets": [
+      "oewn-09848551-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "back breaker",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ball-shaped",
+    "right": "global",
+    "synsets": [
+      "oewn-02048649-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bank check",
+    "right": "cheque",
+    "synsets": [
+      "oewn-13402907-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "baptismal font",
+    "right": "font",
+    "synsets": [
+      "oewn-02791595-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "baptistery",
+    "right": "font",
+    "synsets": [
+      "oewn-02791595-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "baptistry",
+    "right": "font",
+    "synsets": [
+      "oewn-02791595-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "battery-acid",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "behavior",
+    "right": "behaviour",
+    "synsets": [
+      "oewn-01223473-n",
+      "oewn-01223743-n",
+      "oewn-04904939-n",
+      "oewn-14031827-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "behavior",
+    "right": "demeanor",
+    "synsets": [
+      "oewn-04904939-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "behavior",
+    "right": "demeanour",
+    "synsets": [
+      "oewn-04904939-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "behavior",
+    "right": "deportment",
+    "synsets": [
+      "oewn-04904939-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "behavior",
+    "right": "doings",
+    "synsets": [
+      "oewn-01223473-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "benefactive role",
+    "right": "beneficiary",
+    "synsets": [
+      "oewn-06343538-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "beneficiary",
+    "right": "donee",
+    "synsets": [
+      "oewn-09869529-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bidding",
+    "right": "dictation",
+    "synsets": [
+      "oewn-07182782-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bill of fare",
+    "right": "menu",
+    "synsets": [
+      "oewn-06504930-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "binary",
+    "right": "binary program",
+    "synsets": [
+      "oewn-06583139-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "binary",
+    "right": "binary star",
+    "synsets": [
+      "oewn-09243977-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "binary",
+    "right": "double star",
+    "synsets": [
+      "oewn-09243977-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "blocked",
+    "right": "plugged",
+    "synsets": [
+      "oewn-01625261-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "blood plasma",
+    "right": "plasma",
+    "synsets": [
+      "oewn-05410770-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "blue-pencil",
+    "right": "delete",
+    "synsets": [
+      "oewn-00201227-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "blue-pencil",
+    "right": "edit",
+    "synsets": [
+      "oewn-00201227-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bomber",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "breadth",
+    "right": "width",
+    "synsets": [
+      "oewn-05143415-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "breathe out",
+    "right": "expire",
+    "synsets": [
+      "oewn-00004227-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bring around",
+    "right": "suggest",
+    "synsets": [
+      "oewn-00022092-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bring back",
+    "right": "suggest",
+    "synsets": [
+      "oewn-00022092-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bring round",
+    "right": "suggest",
+    "synsets": [
+      "oewn-00022092-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bring to mind",
+    "right": "suggest",
+    "synsets": [
+      "oewn-00022092-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "brood hen",
+    "right": "sitter",
+    "synsets": [
+      "oewn-01795596-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "broody",
+    "right": "sitter",
+    "synsets": [
+      "oewn-01795596-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "broody hen",
+    "right": "sitter",
+    "synsets": [
+      "oewn-01795596-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "browser",
+    "right": "web browser",
+    "synsets": [
+      "oewn-06583477-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "brush aside",
+    "right": "ignore",
+    "synsets": [
+      "oewn-00802592-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "brush off",
+    "right": "ignore",
+    "synsets": [
+      "oewn-00802592-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "bung",
+    "right": "fee",
+    "synsets": [
+      "oewn-02206915-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "buy the farm",
+    "right": "expire",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cabbage",
+    "right": "swipe",
+    "synsets": [
+      "oewn-02281711-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "calculating machine",
+    "right": "calculator",
+    "synsets": [
+      "oewn-02942270-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "calculation",
+    "right": "computation",
+    "synsets": [
+      "oewn-00870588-n",
+      "oewn-05810193-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "calculator",
+    "right": "computer",
+    "synsets": [
+      "oewn-09906486-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "calculator",
+    "right": "estimator",
+    "synsets": [
+      "oewn-09906486-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "calculator",
+    "right": "figurer",
+    "synsets": [
+      "oewn-09906486-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "calculator",
+    "right": "reckoner",
+    "synsets": [
+      "oewn-09906486-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "card game",
+    "right": "cards",
+    "synsets": [
+      "oewn-00489236-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "carte",
+    "right": "menu",
+    "synsets": [
+      "oewn-06504930-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "carte du jour",
+    "right": "menu",
+    "synsets": [
+      "oewn-06504930-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cash",
+    "right": "cash in",
+    "synsets": [
+      "oewn-02261162-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cash",
+    "right": "hard cash",
+    "synsets": [
+      "oewn-13407787-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cash",
+    "right": "hard currency",
+    "synsets": [
+      "oewn-13407787-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cash",
+    "right": "immediate payment",
+    "synsets": [
+      "oewn-13407638-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "catching",
+    "right": "detection",
+    "synsets": [
+      "oewn-00151907-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cathode-ray oscilloscope",
+    "right": "scope",
+    "synsets": [
+      "oewn-03863348-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cautionary",
+    "right": "warning",
+    "synsets": [
+      "oewn-01775648-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cease",
+    "right": "terminate",
+    "synsets": [
+      "oewn-02615799-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "centered",
+    "right": "centred",
+    "synsets": [
+      "oewn-00331542-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "centrifuge",
+    "right": "separator",
+    "synsets": [
+      "oewn-02999605-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chaffer",
+    "right": "chat",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "charged",
+    "right": "supercharged",
+    "synsets": [
+      "oewn-00858176-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "charming",
+    "right": "wizard",
+    "synsets": [
+      "oewn-01580464-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "chew the fat",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "chit-chat",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "chitchat",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "claver",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "confab",
+    "synsets": [
+      "oewn-01040538-v",
+      "oewn-07149558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "confabulate",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "confabulation",
+    "synsets": [
+      "oewn-07149558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "natter",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "new world chat",
+    "synsets": [
+      "oewn-01572477-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "old world chat",
+    "synsets": [
+      "oewn-01563277-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "schmoose",
+    "synsets": [
+      "oewn-07149558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "schmooze",
+    "synsets": [
+      "oewn-07149558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chat",
+    "right": "shoot the breeze",
+    "synsets": [
+      "oewn-01040538-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "choose",
+    "right": "prefer",
+    "synsets": [
+      "oewn-00681308-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "chore",
+    "right": "task",
+    "synsets": [
+      "oewn-00720957-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cincture",
+    "right": "sash",
+    "synsets": [
+      "oewn-03442981-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "circumferent",
+    "right": "surrounding",
+    "synsets": [
+      "oewn-00451366-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "circumstance",
+    "right": "context",
+    "synsets": [
+      "oewn-14536419-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cleaning",
+    "right": "cleanup",
+    "synsets": [
+      "oewn-00251880-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cleansing",
+    "right": "cleanup",
+    "synsets": [
+      "oewn-00251880-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cleanup",
+    "right": "cleanup position",
+    "synsets": [
+      "oewn-06498242-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cleanup",
+    "right": "cleanup spot",
+    "synsets": [
+      "oewn-06498242-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cleanup",
+    "right": "killing",
+    "synsets": [
+      "oewn-13280696-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "codex",
+    "right": "leaf-book",
+    "synsets": [
+      "oewn-06419015-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "colors",
+    "right": "colours",
+    "synsets": [
+      "oewn-03075927-n",
+      "oewn-03076060-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "communications protocol",
+    "right": "protocol",
+    "synsets": [
+      "oewn-06677853-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "comptroller",
+    "right": "controller",
+    "synsets": [
+      "oewn-09780826-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "compulsory",
+    "right": "required",
+    "synsets": [
+      "oewn-00851890-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "computation",
+    "right": "computing",
+    "synsets": [
+      "oewn-00870588-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "computation",
+    "right": "figuring",
+    "synsets": [
+      "oewn-05810193-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "computation",
+    "right": "reckoning",
+    "synsets": [
+      "oewn-05810193-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "computer menu",
+    "right": "menu",
+    "synsets": [
+      "oewn-06505383-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "configuration",
+    "right": "conformation",
+    "synsets": [
+      "oewn-05071206-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "configuration",
+    "right": "constellation",
+    "synsets": [
+      "oewn-05739724-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "configuration",
+    "right": "contour",
+    "synsets": [
+      "oewn-05071206-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "context",
+    "right": "context of use",
+    "synsets": [
+      "oewn-06295551-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "context",
+    "right": "linguistic context",
+    "synsets": [
+      "oewn-06295551-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "contraption",
+    "right": "widget",
+    "synsets": [
+      "oewn-02732963-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "controller",
+    "right": "restrainer",
+    "synsets": [
+      "oewn-10544727-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "convenience",
+    "right": "widget",
+    "synsets": [
+      "oewn-02732963-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cro",
+    "right": "scope",
+    "synsets": [
+      "oewn-03863348-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "croak",
+    "right": "expire",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "crystalline lens",
+    "right": "lens",
+    "synsets": [
+      "oewn-05327912-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "cuban sandwich",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "curlicue",
+    "right": "scroll",
+    "synsets": [
+      "oewn-13898609-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "currency",
+    "right": "currentness",
+    "synsets": [
+      "oewn-05057530-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "currency",
+    "right": "up-to-dateness",
+    "synsets": [
+      "oewn-05057530-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "data-based",
+    "right": "experimental",
+    "synsets": [
+      "oewn-00863136-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "dealing",
+    "right": "transaction",
+    "synsets": [
+      "oewn-01108713-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "dealings",
+    "right": "transaction",
+    "synsets": [
+      "oewn-01108713-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "decease",
+    "right": "expire",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "decreased",
+    "right": "reduced",
+    "synsets": [
+      "oewn-00884977-a"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "decree",
+    "right": "fiat",
+    "synsets": [
+      "oewn-06551761-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "defrayal",
+    "right": "payment",
+    "synsets": [
+      "oewn-01122769-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "defrayment",
+    "right": "payment",
+    "synsets": [
+      "oewn-01122769-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "delete",
+    "right": "edit",
+    "synsets": [
+      "oewn-00201227-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "delete",
+    "right": "erase",
+    "synsets": [
+      "oewn-01001860-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "desktop",
+    "right": "screen background",
+    "synsets": [
+      "oewn-02772080-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "details",
+    "right": "inside information",
+    "synsets": [
+      "oewn-06648469-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detecting",
+    "right": "detection",
+    "synsets": [
+      "oewn-00636448-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "detective work",
+    "synsets": [
+      "oewn-00636448-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "espial",
+    "synsets": [
+      "oewn-00151907-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "sensing",
+    "synsets": [
+      "oewn-05718634-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "signal detection",
+    "synsets": [
+      "oewn-06291828-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "sleuthing",
+    "synsets": [
+      "oewn-00636448-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "spotting",
+    "synsets": [
+      "oewn-00151907-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "detection",
+    "right": "spying",
+    "synsets": [
+      "oewn-00151907-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "dialog",
+    "right": "dialogue",
+    "synsets": [
+      "oewn-06377836-n",
+      "oewn-07023657-n",
+      "oewn-07150914-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "dialog",
+    "right": "duologue",
+    "synsets": [
+      "oewn-07150914-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disable",
+    "right": "disenable",
+    "synsets": [
+      "oewn-00513267-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disable",
+    "right": "incapacitate",
+    "synsets": [
+      "oewn-00091720-v",
+      "oewn-00513267-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disassembly",
+    "right": "dismantlement",
+    "synsets": [
+      "oewn-00914105-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disassembly",
+    "right": "dismantling",
+    "synsets": [
+      "oewn-00914105-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disbursal",
+    "right": "spending",
+    "synsets": [
+      "oewn-01124470-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disbursement",
+    "right": "spending",
+    "synsets": [
+      "oewn-01124470-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disclose",
+    "right": "reveal",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "displace",
+    "right": "terminate",
+    "synsets": [
+      "oewn-02407967-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "disregarded",
+    "right": "forgotten",
+    "synsets": [
+      "oewn-01613047-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "divided",
+    "right": "shared",
+    "synsets": [
+      "oewn-00543409-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "divided up",
+    "right": "shared",
+    "synsets": [
+      "oewn-00543409-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "divulge",
+    "right": "reveal",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "docket",
+    "right": "schedule",
+    "synsets": [
+      "oewn-05919534-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "doer",
+    "right": "worker",
+    "synsets": [
+      "oewn-09786620-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "dojigger",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "done",
+    "right": "through",
+    "synsets": [
+      "oewn-01007109-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "doodad",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "doohickey",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "drop dead",
+    "right": "expire",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "drug user",
+    "right": "user",
+    "synsets": [
+      "oewn-10055991-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "dupery",
+    "right": "fraud",
+    "synsets": [
+      "oewn-00755028-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "earphone",
+    "right": "phone",
+    "synsets": [
+      "oewn-03266479-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "earpiece",
+    "right": "phone",
+    "synsets": [
+      "oewn-03266479-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "easy lay",
+    "right": "max",
+    "synsets": [
+      "oewn-04260861-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "edict",
+    "right": "fiat",
+    "synsets": [
+      "oewn-06551761-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "edit",
+    "right": "edit out",
+    "synsets": [
+      "oewn-00202086-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "edit",
+    "right": "redact",
+    "synsets": [
+      "oewn-00200761-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "edited",
+    "right": "emended",
+    "synsets": [
+      "oewn-00353978-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "editor",
+    "right": "editor in chief",
+    "synsets": [
+      "oewn-10064687-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "editor",
+    "right": "editor program",
+    "synsets": [
+      "oewn-06587017-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "electron",
+    "right": "negatron",
+    "synsets": [
+      "oewn-09294810-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "electron lens",
+    "right": "lens",
+    "synsets": [
+      "oewn-03662283-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "elvis",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "emphasise",
+    "right": "underline",
+    "synsets": [
+      "oewn-01016618-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "emphasize",
+    "right": "underline",
+    "synsets": [
+      "oewn-01016618-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "emplacement",
+    "right": "location",
+    "synsets": [
+      "oewn-01053255-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "encoding",
+    "right": "encryption",
+    "synsets": [
+      "oewn-00617127-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "encompassing",
+    "right": "surrounding",
+    "synsets": [
+      "oewn-00451366-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "environment",
+    "right": "environs",
+    "synsets": [
+      "oewn-08584764-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "environment",
+    "right": "surroundings",
+    "synsets": [
+      "oewn-08584764-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "exemplary",
+    "right": "warning",
+    "synsets": [
+      "oewn-01775648-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "exhale",
+    "right": "expire",
+    "synsets": [
+      "oewn-00004227-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expenditure",
+    "right": "spending",
+    "synsets": [
+      "oewn-13296311-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "experimental",
+    "right": "observational",
+    "synsets": [
+      "oewn-00863136-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expire",
+    "right": "give-up the ghost",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expire",
+    "right": "kick the bucket",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expire",
+    "right": "pass away",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expire",
+    "right": "perish",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expire",
+    "right": "pop off",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "expire",
+    "right": "snuff it",
+    "synsets": [
+      "oewn-00359085-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "exploiter",
+    "right": "user",
+    "synsets": [
+      "oewn-10092334-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "export",
+    "right": "exportation",
+    "synsets": [
+      "oewn-03311152-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "extractor",
+    "right": "separator",
+    "synsets": [
+      "oewn-02999605-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "extroverted",
+    "right": "outgoing",
+    "synsets": [
+      "oewn-02266005-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "faineant",
+    "right": "lazy",
+    "synsets": [
+      "oewn-00295445-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "faker",
+    "right": "fraud",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fiat",
+    "right": "rescript",
+    "synsets": [
+      "oewn-06551761-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "filch",
+    "right": "swipe",
+    "synsets": [
+      "oewn-02281711-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fill in",
+    "right": "sub",
+    "synsets": [
+      "oewn-02263424-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "font",
+    "right": "fount",
+    "synsets": [
+      "oewn-06838449-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "font",
+    "right": "typeface",
+    "synsets": [
+      "oewn-06838449-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "forbid",
+    "right": "prevent",
+    "synsets": [
+      "oewn-02458316-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "foreclose",
+    "right": "prevent",
+    "synsets": [
+      "oewn-02458316-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "forestall",
+    "right": "prevent",
+    "synsets": [
+      "oewn-02458316-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "forthcoming",
+    "right": "outgoing",
+    "synsets": [
+      "oewn-02266005-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "fraudulence",
+    "synsets": [
+      "oewn-00755028-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "hoax",
+    "synsets": [
+      "oewn-00755028-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "humbug",
+    "synsets": [
+      "oewn-00755028-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "imposter",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "impostor",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "pretender",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "pseud",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "pseudo",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "put-on",
+    "synsets": [
+      "oewn-00755028-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "role player",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "shammer",
+    "synsets": [
+      "oewn-10221154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fraud",
+    "right": "swindle",
+    "synsets": [
+      "oewn-00781784-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fukien",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fukien language",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fukkianese",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "fukkianese language",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "gadget",
+    "right": "widget",
+    "synsets": [
+      "oewn-02732963-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "georgia home boy",
+    "right": "max",
+    "synsets": [
+      "oewn-04260861-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "gimmick",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "gismo",
+    "right": "widget",
+    "synsets": [
+      "oewn-02732963-n",
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "give away",
+    "right": "reveal",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "give back",
+    "right": "refund",
+    "synsets": [
+      "oewn-02289796-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "give notice",
+    "right": "terminate",
+    "synsets": [
+      "oewn-02407967-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "give the axe",
+    "right": "terminate",
+    "synsets": [
+      "oewn-02407967-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "give the sack",
+    "right": "terminate",
+    "synsets": [
+      "oewn-02407967-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "gizmo",
+    "right": "widget",
+    "synsets": [
+      "oewn-02732963-n",
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "glance",
+    "right": "peek",
+    "synsets": [
+      "oewn-02169748-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "glint",
+    "right": "peek",
+    "synsets": [
+      "oewn-02169748-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "globose",
+    "synsets": [
+      "oewn-02048649-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "globular",
+    "synsets": [
+      "oewn-02048649-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "orbicular",
+    "synsets": [
+      "oewn-02048649-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "planetary",
+    "synsets": [
+      "oewn-01573077-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "spheric",
+    "synsets": [
+      "oewn-02048649-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "spherical",
+    "synsets": [
+      "oewn-02048649-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "world-wide",
+    "synsets": [
+      "oewn-01573077-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "global",
+    "right": "worldwide",
+    "synsets": [
+      "oewn-01573077-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "golf links",
+    "right": "links",
+    "synsets": [
+      "oewn-03679917-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "goop",
+    "right": "max",
+    "synsets": [
+      "oewn-04260861-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "goose egg",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "grievous bodily harm",
+    "right": "max",
+    "synsets": [
+      "oewn-04260861-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "grinder",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "gubbins",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "gyre",
+    "right": "scroll",
+    "synsets": [
+      "oewn-13898609-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "handling",
+    "right": "manipulation",
+    "synsets": [
+      "oewn-00141472-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "headphone",
+    "right": "phone",
+    "synsets": [
+      "oewn-03266479-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "height",
+    "right": "meridian",
+    "synsets": [
+      "oewn-13963489-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "height",
+    "right": "stature",
+    "synsets": [
+      "oewn-05009517-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "height",
+    "right": "summit",
+    "synsets": [
+      "oewn-13963489-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "height",
+    "right": "superlative",
+    "synsets": [
+      "oewn-13963489-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "height",
+    "right": "tallness",
+    "synsets": [
+      "oewn-05144430-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "height",
+    "right": "tiptop",
+    "synsets": [
+      "oewn-13963489-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "hero sandwich",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "hoagie",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "hoagy",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "hokkianese",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "hokkianese language",
+    "right": "min",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "hotshot",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "http",
+    "right": "hypertext transfer protocol",
+    "synsets": [
+      "oewn-06678592-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "icon",
+    "right": "ikon",
+    "synsets": [
+      "oewn-03564151-n",
+      "oewn-03937282-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ignoble",
+    "right": "untitled",
+    "synsets": [
+      "oewn-01598062-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ignore",
+    "right": "push aside",
+    "synsets": [
+      "oewn-00802592-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ignored",
+    "right": "neglected",
+    "synsets": [
+      "oewn-01613238-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ignored",
+    "right": "unheeded",
+    "synsets": [
+      "oewn-01613238-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "inauguration",
+    "right": "startup",
+    "synsets": [
+      "oewn-00240777-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "include",
+    "right": "let in",
+    "synsets": [
+      "oewn-02454712-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "index number",
+    "right": "indicator",
+    "synsets": [
+      "oewn-06652323-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "indicant",
+    "right": "indicator",
+    "synsets": [
+      "oewn-06652323-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "indolent",
+    "right": "lazy",
+    "synsets": [
+      "oewn-00295445-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "instal",
+    "right": "install",
+    "synsets": [
+      "oewn-01572394-v",
+      "oewn-01572936-v",
+      "oewn-02389183-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "insurance",
+    "right": "policy",
+    "synsets": [
+      "oewn-06535632-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "insurance policy",
+    "right": "policy",
+    "synsets": [
+      "oewn-06535632-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "italian sandwich",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "itinerary",
+    "right": "path",
+    "synsets": [
+      "oewn-08633886-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lazy",
+    "right": "otiose",
+    "synsets": [
+      "oewn-00295445-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lazy",
+    "right": "slothful",
+    "synsets": [
+      "oewn-00295445-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lazy",
+    "right": "work-shy",
+    "synsets": [
+      "oewn-00295445-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lens",
+    "right": "lens of the eye",
+    "synsets": [
+      "oewn-05327912-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lens",
+    "right": "lens system",
+    "synsets": [
+      "oewn-03661810-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lens",
+    "right": "lense",
+    "synsets": [
+      "oewn-03661810-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "let on",
+    "right": "reveal",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "let out",
+    "right": "reveal",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "level best",
+    "right": "maximum",
+    "synsets": [
+      "oewn-05132193-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "liquid ecstasy",
+    "right": "max",
+    "synsets": [
+      "oewn-04260861-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "llm",
+    "right": "master of laws",
+    "synsets": [
+      "oewn-06717753-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "localisation",
+    "right": "location",
+    "synsets": [
+      "oewn-00156307-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "localization",
+    "right": "location",
+    "synsets": [
+      "oewn-00156307-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "locating",
+    "right": "location",
+    "synsets": [
+      "oewn-00156307-n",
+      "oewn-01053255-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "location",
+    "right": "placement",
+    "synsets": [
+      "oewn-01053255-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "location",
+    "right": "positioning",
+    "synsets": [
+      "oewn-01053255-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "long-winded",
+    "right": "verbose",
+    "synsets": [
+      "oewn-00551456-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "loony toons",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "lower limit",
+    "right": "minimum",
+    "synsets": [
+      "oewn-13785524-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "magic",
+    "right": "wizard",
+    "synsets": [
+      "oewn-01580464-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "magical",
+    "right": "wizard",
+    "synsets": [
+      "oewn-01580464-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "magician",
+    "right": "wizard",
+    "synsets": [
+      "oewn-10645222-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "mandatory",
+    "right": "required",
+    "synsets": [
+      "oewn-00851890-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "maven",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "mavin",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "max",
+    "right": "soap",
+    "synsets": [
+      "oewn-04260861-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "maximal",
+    "right": "maximum",
+    "synsets": [
+      "oewn-01498873-a"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "maximum",
+    "right": "upper limit",
+    "synsets": [
+      "oewn-13798337-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "maximum",
+    "right": "utmost",
+    "synsets": [
+      "oewn-05132193-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "maximum",
+    "right": "uttermost",
+    "synsets": [
+      "oewn-05132193-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "measurement",
+    "right": "measuring",
+    "synsets": [
+      "oewn-00998911-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "measurement",
+    "right": "mensuration",
+    "synsets": [
+      "oewn-00998911-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "min",
+    "right": "min dialect",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "min",
+    "right": "min language",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "min",
+    "right": "taiwanese",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "min",
+    "right": "taiwanese language",
+    "synsets": [
+      "oewn-06943410-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "minimal",
+    "right": "minimum",
+    "synsets": [
+      "oewn-01499316-a"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "minutes",
+    "right": "transactions",
+    "synsets": [
+      "oewn-06520103-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "modal",
+    "right": "modal auxiliary",
+    "synsets": [
+      "oewn-06329715-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "modal",
+    "right": "modal auxiliary verb",
+    "synsets": [
+      "oewn-06329715-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "modal",
+    "right": "modal verb",
+    "synsets": [
+      "oewn-06329715-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "monition",
+    "right": "warning",
+    "synsets": [
+      "oewn-06685042-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "monitory",
+    "right": "warning",
+    "synsets": [
+      "oewn-01775648-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "nada",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "naught",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "navigate",
+    "right": "voyage",
+    "synsets": [
+      "oewn-01850262-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "navigation",
+    "right": "pilotage",
+    "synsets": [
+      "oewn-00817462-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "navigation",
+    "right": "piloting",
+    "synsets": [
+      "oewn-00817462-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "navigation",
+    "right": "sailing",
+    "synsets": [
+      "oewn-00315295-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "navigation",
+    "right": "seafaring",
+    "synsets": [
+      "oewn-00315295-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "navigator",
+    "right": "sailing master",
+    "synsets": [
+      "oewn-10565985-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "necromancer",
+    "right": "wizard",
+    "synsets": [
+      "oewn-10645222-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "needed",
+    "right": "required",
+    "synsets": [
+      "oewn-01585183-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "needful",
+    "right": "required",
+    "synsets": [
+      "oewn-01585183-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "newsperson",
+    "right": "reporter",
+    "synsets": [
+      "oewn-10541255-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "nil",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "nix",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "nobble",
+    "right": "swipe",
+    "synsets": [
+      "oewn-02281711-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "notebook",
+    "right": "notebook computer",
+    "synsets": [
+      "oewn-03838213-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "nothing",
+    "right": "null",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "null",
+    "right": "zilch",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "null",
+    "right": "zippo",
+    "synsets": [
+      "oewn-13762308-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "numbers",
+    "right": "numbers game",
+    "synsets": [
+      "oewn-00509558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "numbers",
+    "right": "numbers pool",
+    "synsets": [
+      "oewn-00509558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "numbers",
+    "right": "numbers racket",
+    "synsets": [
+      "oewn-00509558-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "opt",
+    "right": "prefer",
+    "synsets": [
+      "oewn-00681308-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "oscilloscope",
+    "right": "scope",
+    "synsets": [
+      "oewn-03863348-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "outgo",
+    "right": "spending",
+    "synsets": [
+      "oewn-13296311-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "outlay",
+    "right": "spending",
+    "synsets": [
+      "oewn-01124470-n",
+      "oewn-13296311-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "overlay",
+    "right": "overlayer",
+    "synsets": [
+      "oewn-04194276-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "overlay",
+    "right": "overlie",
+    "synsets": [
+      "oewn-01329572-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "overlay",
+    "right": "sheathing",
+    "synsets": [
+      "oewn-04194276-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "paint a picture",
+    "right": "suggest",
+    "synsets": [
+      "oewn-00022092-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "palette",
+    "right": "pallette",
+    "synsets": [
+      "oewn-03885402-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "pane",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "path",
+    "right": "way of life",
+    "synsets": [
+      "oewn-00416689-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "payment",
+    "right": "requital",
+    "synsets": [
+      "oewn-01237702-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "phone",
+    "right": "speech sound",
+    "synsets": [
+      "oewn-07125755-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "phone",
+    "right": "telephone",
+    "synsets": [
+      "oewn-00791110-v",
+      "oewn-04408223-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "phone",
+    "right": "telephone set",
+    "synsets": [
+      "oewn-04408223-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "pigboat",
+    "right": "sub",
+    "synsets": [
+      "oewn-04354832-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "pilfer",
+    "right": "swipe",
+    "synsets": [
+      "oewn-02281711-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "placeholder",
+    "right": "proxy",
+    "synsets": [
+      "oewn-10506494-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "plasm",
+    "right": "plasma",
+    "synsets": [
+      "oewn-05410770-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "poor boy",
+    "right": "sub",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "practical",
+    "right": "virtual",
+    "synsets": [
+      "oewn-01948431-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "preclude",
+    "right": "prevent",
+    "synsets": [
+      "oewn-02458316-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "preview",
+    "right": "prevue",
+    "synsets": [
+      "oewn-06901724-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "preview",
+    "right": "trailer",
+    "synsets": [
+      "oewn-06901724-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "proceedings",
+    "right": "transactions",
+    "synsets": [
+      "oewn-06520103-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "procurator",
+    "right": "proxy",
+    "synsets": [
+      "oewn-10506494-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "prole",
+    "right": "worker",
+    "synsets": [
+      "oewn-10501296-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "proletarian",
+    "right": "worker",
+    "synsets": [
+      "oewn-10501296-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "purloin",
+    "right": "swipe",
+    "synsets": [
+      "oewn-02281711-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "readjust",
+    "right": "reset",
+    "synsets": [
+      "oewn-00298450-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "recipient",
+    "right": "recipient role",
+    "synsets": [
+      "oewn-06344088-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "recognised",
+    "right": "recognized",
+    "synsets": [
+      "oewn-00027712-s",
+      "oewn-01640568-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "reduced",
+    "right": "rock-bottom",
+    "synsets": [
+      "oewn-01215762-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "refund",
+    "right": "repay",
+    "synsets": [
+      "oewn-02289796-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "refund",
+    "right": "repayment",
+    "synsets": [
+      "oewn-01124011-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "required",
+    "right": "requisite",
+    "synsets": [
+      "oewn-01585183-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "retrovert",
+    "right": "revert",
+    "synsets": [
+      "oewn-00387981-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "reveal",
+    "right": "uncover",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "reveal",
+    "right": "unveil",
+    "synsets": [
+      "oewn-02147756-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "reveal",
+    "right": "unwrap",
+    "synsets": [
+      "oewn-00935783-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ringlet",
+    "right": "scroll",
+    "synsets": [
+      "oewn-13898609-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ruler",
+    "right": "swayer",
+    "synsets": [
+      "oewn-10560786-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "rustle",
+    "right": "whisper",
+    "synsets": [
+      "oewn-07407383-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "rustling",
+    "right": "whisper",
+    "synsets": [
+      "oewn-07407383-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sash",
+    "right": "waistband",
+    "synsets": [
+      "oewn-03442981-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sash",
+    "right": "waistcloth",
+    "synsets": [
+      "oewn-03442981-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sash",
+    "right": "window sash",
+    "synsets": [
+      "oewn-04143593-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "school term",
+    "right": "session",
+    "synsets": [
+      "oewn-15250045-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "scope",
+    "right": "telescope",
+    "synsets": [
+      "oewn-04410773-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "screening",
+    "right": "showing",
+    "synsets": [
+      "oewn-06901395-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "scroll",
+    "right": "whorl",
+    "synsets": [
+      "oewn-13898609-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "seance",
+    "right": "session",
+    "synsets": [
+      "oewn-08434877-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "seeable",
+    "right": "visible",
+    "synsets": [
+      "oewn-02525399-a"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "send away",
+    "right": "terminate",
+    "synsets": [
+      "oewn-02407967-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "setting hen",
+    "right": "sitter",
+    "synsets": [
+      "oewn-01795596-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "shared",
+    "right": "shared out",
+    "synsets": [
+      "oewn-00543409-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "showing",
+    "right": "viewing",
+    "synsets": [
+      "oewn-06901395-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "snarf",
+    "right": "swipe",
+    "synsets": [
+      "oewn-02281711-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sorcerer",
+    "right": "wizard",
+    "synsets": [
+      "oewn-10645222-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sorcerous",
+    "right": "wizard",
+    "synsets": [
+      "oewn-01580464-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "stand in",
+    "right": "sub",
+    "synsets": [
+      "oewn-02263424-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "stopped",
+    "right": "stopped up",
+    "synsets": [
+      "oewn-01626075-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "stopped",
+    "right": "stopped-up",
+    "synsets": [
+      "oewn-01626075-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "string section",
+    "right": "strings",
+    "synsets": [
+      "oewn-08234223-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sub",
+    "right": "submarine sandwich",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "sub",
+    "right": "zep",
+    "synsets": [
+      "oewn-07713570-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "substance abuser",
+    "right": "user",
+    "synsets": [
+      "oewn-10055991-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "substantiation",
+    "right": "verification",
+    "synsets": [
+      "oewn-05833569-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "superman",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "superstar",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "susurration",
+    "right": "whisper",
+    "synsets": [
+      "oewn-07145049-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "swan",
+    "right": "verify",
+    "synsets": [
+      "oewn-01013058-v"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "symbol",
+    "right": "symbolic representation",
+    "synsets": [
+      "oewn-05773412-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "symbol",
+    "right": "symbolisation",
+    "synsets": [
+      "oewn-05773412-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "symbol",
+    "right": "symbolization",
+    "synsets": [
+      "oewn-05773412-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "task",
+    "right": "undertaking",
+    "synsets": [
+      "oewn-00797381-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "tedious",
+    "right": "verbose",
+    "synsets": [
+      "oewn-00551456-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thaumaturge",
+    "right": "wizard",
+    "synsets": [
+      "oewn-10645222-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thaumaturgist",
+    "right": "wizard",
+    "synsets": [
+      "oewn-10645222-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingamabob",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingamajig",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingmabob",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingmajig",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingumabob",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingumajig",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "thingummy",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "through",
+    "right": "through with",
+    "synsets": [
+      "oewn-01007109-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "timekeeper",
+    "right": "timer",
+    "synsets": [
+      "oewn-10731132-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "top-flight",
+    "right": "topping",
+    "synsets": [
+      "oewn-02353167-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "top-hole",
+    "right": "topping",
+    "synsets": [
+      "oewn-02353167-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "touch screen",
+    "right": "touchscreen",
+    "synsets": [
+      "oewn-04466078-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "tracking",
+    "right": "trailing",
+    "synsets": [
+      "oewn-00321110-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "transparence",
+    "right": "transparency",
+    "synsets": [
+      "oewn-04709475-n",
+      "oewn-11541052-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "transparency",
+    "right": "transparentness",
+    "synsets": [
+      "oewn-04709475-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "unaltered",
+    "right": "unchanged",
+    "synsets": [
+      "oewn-00354307-a"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "underline",
+    "right": "underscore",
+    "synsets": [
+      "oewn-01006280-v",
+      "oewn-01016618-v",
+      "oewn-06814276-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "ungentle",
+    "right": "untitled",
+    "synsets": [
+      "oewn-01598062-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "uniform resource locator",
+    "right": "url",
+    "synsets": [
+      "oewn-06370154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "universal resource locator",
+    "right": "url",
+    "synsets": [
+      "oewn-06370154-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "verbose",
+    "right": "windy",
+    "synsets": [
+      "oewn-00551456-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "verbose",
+    "right": "wordy",
+    "synsets": [
+      "oewn-00551456-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "virtuoso",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "visibility",
+    "right": "visibleness",
+    "synsets": [
+      "oewn-05024624-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "voicelessness",
+    "right": "whisper",
+    "synsets": [
+      "oewn-07145049-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "warning",
+    "right": "word of advice",
+    "synsets": [
+      "oewn-06685042-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "whatchamacallit",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "whatchamacallum",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "whatsis",
+    "right": "widget",
+    "synsets": [
+      "oewn-03223248-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "whisper",
+    "right": "whispering",
+    "synsets": [
+      "oewn-07145049-n",
+      "oewn-07407383-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "whiz",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "whizz",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "window pane",
+    "right": "zen",
+    "synsets": [
+      "oewn-02678511-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "witching",
+    "right": "wizard",
+    "synsets": [
+      "oewn-01580464-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "wiz",
+    "right": "wizard",
+    "synsets": [
+      "oewn-09781932-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "wizard",
+    "right": "wizardly",
+    "synsets": [
+      "oewn-01580464-s"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "work bench",
+    "right": "workbench",
+    "synsets": [
+      "oewn-04607813-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  },
+  {
+    "left": "zen",
+    "right": "zen buddhism",
+    "synsets": [
+      "oewn-06252178-n",
+      "oewn-08115995-n"
+    ],
+    "judgment": "same published synset; sense-specific, not unconditional interface equivalence"
+  }
+]

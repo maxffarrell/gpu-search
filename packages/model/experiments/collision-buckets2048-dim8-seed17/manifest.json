@@ -1,0 +1,49 @@
+{
+  "formatVersion": "gpu-search-collision-research-v1",
+  "featureVersion": "gpu-search-collision-b2048-d8-v1",
+  "architecture": "pooled",
+  "dimension": 8,
+  "featureFamily": "both",
+  "modelId": "collision-buckets2048-dim8-seed17",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        2048,
+        8
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.009278552606701851,
+      "scaleF32LE": "1205183c",
+      "byteOffset": 0,
+      "byteLength": 16384
+    },
+    {
+      "name": "char",
+      "shape": [
+        2048,
+        8
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.00916141178458929,
+      "scaleF32LE": "bf19163c",
+      "byteOffset": 16384,
+      "byteLength": 16384
+    }
+  ],
+  "payloadBytes": 32768,
+  "payloadSha256": "83eda4ae83e36d1a510f33545a67bbc59b1e64e6ce8c486592a9508db95c3639",
+  "byteOrder": "little-endian",
+  "validatedSemanticCutoff": null,
+  "status": "research only; baseline runtime unchanged",
+  "contract": {
+    "id": "buckets2048-dim8",
+    "featureVersion": "gpu-search-collision-b2048-d8-v1",
+    "wordBuckets": 2048,
+    "charBuckets": 2048,
+    "dimension": 8,
+    "int8Bytes": 32768
+  }
+}

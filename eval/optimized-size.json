@@ -4,10 +4,10 @@
   "compression": "Brotli quality11 window22; each complete demo resource separately",
   "resources": [
     {
-      "resource": "assets/index-BkThD-Gd.js",
-      "raw": 17648,
-      "brotli": 6312,
-      "sha256": "c02ac024598c68776155011fb08539843c0122dd2124465dda1015d206539ee8"
+      "resource": "assets/index-Bfx-5dHu.js",
+      "raw": 18173,
+      "brotli": 6470,
+      "sha256": "64ca279d434ebed3c113a03e99bb747eca1213b9064e2a6a3090f2b8bf714e12"
     },
     {
       "resource": "assets/index-D2ZaEIKN.css",
@@ -37,10 +37,10 @@
       "resource": "index.html",
       "raw": 711,
       "brotli": 269,
-      "sha256": "72fa7b47e82ec34585938616cdfe694885d52ba90c30c77f226a92ca4301fee3"
+      "sha256": "0e3f6dabab62f5b7d5d464f559364b7e368c18a3c5711a0a69415f89da6bc7ae"
     }
   ],
-  "totalBrotliBytes": 36243,
+  "totalBrotliBytes": 36401,
   "cpuLimitBytes": 51200,
   "passesCpuBudget": true,
   "webgpuShipped": false

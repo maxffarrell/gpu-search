@@ -1,0 +1,14 @@
+{
+  "base": "gpu-search-features-bigram25-v1",
+  "normalizationVersion": "nfkc-ascii-v1",
+  "serialization": "Word UTF8 w:token; character UTF8 c: then scalar tag0+uint32LE or BOS tag1/EOS tag2; bigram ASCII b: then uint32LE UTF8 length+bytes of left and right bounded tokens",
+  "hash": "FNV1a32 unsigned, bucket rawHash & (familyBuckets-1), repeats retained",
+  "bounds": {"tokens":32,"tokenScalars":64,"characters":512,"bigrams":31},
+  "pooling": "0.5*(word+char), word=0.75*unigramMean+0.25*orderedBigramMean if any bigrams else unigramMean; character family mean; L2 normalize",
+  "candidateComposition": "Mean valid label/alias vectors, add0.25context vector, then normalize; experiment accepts label-only candidates",
+  "arms": [
+    {"id":"control16","featureVersion":"gpu-search-features-bigram25-v1","wordBuckets":1024,"charBuckets":1024,"dimension":16,"int8Bytes":32768},
+    {"id":"buckets2048-dim8","featureVersion":"gpu-search-collision-b2048-d8-v1","wordBuckets":2048,"charBuckets":2048,"dimension":8,"int8Bytes":32768},
+    {"id":"word2048-char1024-dim10","featureVersion":"gpu-search-collision-w2048-c1024-d10-v1","wordBuckets":2048,"charBuckets":1024,"dimension":10,"int8Bytes":30720}
+  ]
+}

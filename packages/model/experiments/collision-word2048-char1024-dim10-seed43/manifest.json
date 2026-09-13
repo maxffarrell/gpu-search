@@ -1,0 +1,49 @@
+{
+  "formatVersion": "gpu-search-collision-research-v1",
+  "featureVersion": "gpu-search-collision-w2048-c1024-d10-v1",
+  "architecture": "pooled",
+  "dimension": 10,
+  "featureFamily": "both",
+  "modelId": "collision-word2048-char1024-dim10-seed43",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        2048,
+        10
+      ],
+      "elementCount": 20480,
+      "bits": 8,
+      "scale": 0.00670984573662281,
+      "scaleF32LE": "44dedb3b",
+      "byteOffset": 0,
+      "byteLength": 20480
+    },
+    {
+      "name": "char",
+      "shape": [
+        1024,
+        10
+      ],
+      "elementCount": 10240,
+      "bits": 8,
+      "scale": 0.008004856295883656,
+      "scaleF32LE": "cd26033c",
+      "byteOffset": 20480,
+      "byteLength": 10240
+    }
+  ],
+  "payloadBytes": 30720,
+  "payloadSha256": "327b34c322f6cb575896875ed389fca53ecc6408c8ff2473103b684f60676992",
+  "byteOrder": "little-endian",
+  "validatedSemanticCutoff": null,
+  "status": "research only; baseline runtime unchanged",
+  "contract": {
+    "id": "word2048-char1024-dim10",
+    "featureVersion": "gpu-search-collision-w2048-c1024-d10-v1",
+    "wordBuckets": 2048,
+    "charBuckets": 1024,
+    "dimension": 10,
+    "int8Bytes": 30720
+  }
+}

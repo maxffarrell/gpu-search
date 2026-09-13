@@ -5,8 +5,8 @@ import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { loadModel } from '../packages/model/runtime.js';
 
-const manifest = JSON.parse(readFileSync('packages/model/candidate/manifest.json', 'utf8'));
-const bytes = readFileSync('packages/model/candidate/weights.bin');
+const manifest = JSON.parse(readFileSync('packages/model/experiments/navigation-align0p5-seed29/manifest.json', 'utf8'));
+const bytes = readFileSync('packages/model/experiments/navigation-align0p5-seed29/weights.bin');
 const model = await loadModel(manifest, Uint8Array.from(bytes).buffer);
 const server = await preview({ root: 'apps/demo', preview: { host: '127.0.0.1', port: 4180, strictPort: true } });
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_CHANNEL ? { channel: process.env.CHROME_CHANNEL } : {}) });
@@ -22,6 +22,7 @@ try {
   assert.ok(assets.some(x => x.endsWith('.json')), 'actual manifest was fetched');
   page.on('request', r => requests.push(r.url()));
   const candidates = JSON.parse(await page.locator('#candidate-json').inputValue());
+  assert.ok((await page.locator('#model-details').textContent())?.includes(model.hash), 'the demo identifies the selected artifact');
   // Seen-training sanity regressions, not held-out generalization evidence.
   assert.equal(model.score('coworkers', candidates)[0]?.id, 'members');
   assert.equal(model.score('my information', candidates)[0]?.id, 'profile');

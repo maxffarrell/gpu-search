@@ -1,0 +1,2596 @@
+[
+  {
+    "provider": "gnome",
+    "product": "gnome-control-center",
+    "repo": "GNOME/gnome-control-center",
+    "revision": "cd79a897190989ca395c6f00962f0929734103c7",
+    "archiveUrl": "https://codeload.github.com/GNOME/gnome-control-center/tar.gz/cd79a897190989ca395c6f00962f0929734103c7",
+    "archiveSha256": "857a7af0b61e18900428b8d3f74b18525cacc7bfe4e519702b8b9e873c4dae1f",
+    "archiveBytes": 12438151,
+    "retainedFiles": [
+      {
+        "path": "COPYING",
+        "bytes": 18093,
+        "sha256": "640d90f6ee401241ff62834d0d1b33f83049e99b8bfdfa04ed1b0a1635dde3e7"
+      },
+      {
+        "path": "panels/applications/gnome-applications-panel.desktop.in",
+        "bytes": 715,
+        "sha256": "39d419cab55884911ad66069f9e986acda5fbfe2d37d73ab5e2bdb36af6750b1"
+      },
+      {
+        "path": "panels/background/gnome-background-panel.desktop.in",
+        "bytes": 659,
+        "sha256": "72d965b57a222db247189db5e7cf51c69a7d9e986a8d357d1e203b0749ec1d48"
+      },
+      {
+        "path": "panels/bluetooth/gnome-bluetooth-panel.desktop.in",
+        "bytes": 653,
+        "sha256": "fa58f4337b64ce09032a6d1d6ee16dbe18d77592f6c5599627a0e5b649e7a596"
+      },
+      {
+        "path": "panels/color/gnome-color-panel.desktop.in",
+        "bytes": 753,
+        "sha256": "a7c822109d4fb5be2aaab5ff309e4f16a693873156c11068fe6b2ab354fbaf1e"
+      },
+      {
+        "path": "panels/display/gnome-display-panel.desktop.in",
+        "bytes": 714,
+        "sha256": "e916f420dcba8223736aed30279dbb652562c7093d2b7c30ae939a04aff1fc67"
+      },
+      {
+        "path": "panels/keyboard/gnome-keyboard-panel.desktop.in",
+        "bytes": 731,
+        "sha256": "a34d5840091641118cea303fa2abda70206347fa39395a401c572878ee2e04d8"
+      },
+      {
+        "path": "panels/mouse/gnome-mouse-panel.desktop.in",
+        "bytes": 684,
+        "sha256": "df59a73bcbcb2b815d475daf60aaed8e999d837c69fa322111602ee806012107"
+      },
+      {
+        "path": "panels/multitasking/gnome-multitasking-panel.desktop.in",
+        "bytes": 680,
+        "sha256": "fa5dd01c97a23b8947b5883ef40952c14e5e6a9782e134a571654a12f471083a"
+      },
+      {
+        "path": "panels/network/gnome-network-panel.desktop.in",
+        "bytes": 640,
+        "sha256": "1480b3571efdde6a9cd5d2b05681163b2ccfb63e44a5b792b0647a542ba3dc88"
+      },
+      {
+        "path": "panels/network/gnome-wifi-panel.desktop.in",
+        "bytes": 623,
+        "sha256": "7002091f66bd63baf0928f2df630d49d09d47fdbbaa528a8c7bca2c68a8d409a"
+      },
+      {
+        "path": "panels/notifications/gnome-notifications-panel.desktop.in",
+        "bytes": 668,
+        "sha256": "fe07b3a0169b9760cafcc3aa7c03fae35ace242324cd092240038f5985f520cd"
+      },
+      {
+        "path": "panels/online-accounts/gnome-online-accounts-panel.desktop.in",
+        "bytes": 834,
+        "sha256": "de30c37c1b6cabfc81a00308c5a9852346a974f4cd22336f1fefc702a41d6f06"
+      },
+      {
+        "path": "panels/power/gnome-power-panel.desktop.in",
+        "bytes": 753,
+        "sha256": "7741e08f25bb0cc5f4034c08f5e60e6795a585b2dd046554c7db4a4e537a0f47"
+      },
+      {
+        "path": "panels/printers/gnome-printers-panel.desktop.in",
+        "bytes": 796,
+        "sha256": "6af764238ca5e1630211cd2ecf2f291a77a44fa57be66a61126459d6c158da53"
+      },
+      {
+        "path": "panels/privacy/gnome-privacy-panel.desktop.in",
+        "bytes": 784,
+        "sha256": "ed26d37921e81c2dfac4efbad6ab2d985343eb16199344b81ce1cbb741f43e31"
+      },
+      {
+        "path": "panels/search/gnome-search-panel.desktop.in",
+        "bytes": 736,
+        "sha256": "d0db632beb14458a72eba5c02844b5b7ca56b5f63f6bb424f02b3142b68a2498"
+      },
+      {
+        "path": "panels/sharing/gnome-sharing-panel.desktop.in",
+        "bytes": 659,
+        "sha256": "65f90902993bc4d8f76908dd23487b3a0e4c10786337f61feb427355308dac9f"
+      },
+      {
+        "path": "panels/sound/gnome-sound-panel.desktop.in",
+        "bytes": 639,
+        "sha256": "5b5631011a2b2f74eb7da776b4fda0bc099711684058073a506d02c19082a519"
+      },
+      {
+        "path": "panels/system/about/gnome-about-panel.desktop.in",
+        "bytes": 838,
+        "sha256": "e701328ff79271bfaa7f825c06153ae83bd5818cd60124225c1d154fec3ee3bb"
+      },
+      {
+        "path": "panels/system/datetime/gnome-datetime-panel.desktop.in",
+        "bytes": 681,
+        "sha256": "afbea64c09f0d2d3e99fee8acda078c3f87d06b93caf89f1b82a521c8a9ea435"
+      },
+      {
+        "path": "panels/system/gnome-system-panel.desktop.in",
+        "bytes": 760,
+        "sha256": "f268893b87313d1a39b31cf5122c58dbdf50ae85161ab7b9f4a65b93eff66c5e"
+      },
+      {
+        "path": "panels/system/region/gnome-region-panel.desktop.in",
+        "bytes": 633,
+        "sha256": "44621095ed5a0bf812cab7eb72184030b959213051923e7e0e6e514ad3fa6e6e"
+      },
+      {
+        "path": "panels/system/users/gnome-users-panel.desktop.in",
+        "bytes": 649,
+        "sha256": "026bc84d7af874c53ff7fa36baa6496615ff167f28eeeac47f333b2924b198e5"
+      },
+      {
+        "path": "panels/universal-access/gnome-universal-access-panel.desktop.in",
+        "bytes": 911,
+        "sha256": "8785cfd9f731871d5a6413cafb49583d8284116207824bd106845a9edfe61846"
+      },
+      {
+        "path": "panels/wacom/calibrator/COPYING",
+        "bytes": 1188,
+        "sha256": "7690e4156fec378736be4d58fcfe954397f6391553890bf9553d7fa7388ae86e"
+      },
+      {
+        "path": "panels/wacom/gnome-wacom-panel.desktop.in",
+        "bytes": 654,
+        "sha256": "744dabc971cc9fbd5aaa9db97eb4f7ca0979ce1cd65e573b5a30eaeb293adad8"
+      },
+      {
+        "path": "panels/wellbeing/gnome-wellbeing-panel.desktop.in",
+        "bytes": 816,
+        "sha256": "63e4b266a36dfc4da35d100878c86bf46db5e98a41f5ef9494d30bb9b774ed45"
+      },
+      {
+        "path": "panels/wwan/gnome-wwan-panel.desktop.in",
+        "bytes": 664,
+        "sha256": "5bafc5d9ef4123359823ebb06efbcbe2f70d80de4c85dd4b99f914b1d71d1b68"
+      },
+      {
+        "path": "shell/org.gnome.Settings.desktop.in",
+        "bytes": 607,
+        "sha256": "fe51ed6f0a2c032c3629f3c99c9d29267c44715842911462a42341841fa8cb38"
+      },
+      {
+        "path": "tests/interactive-panels/applications/gtp-dynamic-panel.desktop.in",
+        "bytes": 323,
+        "sha256": "b24ad0e2f42faafd9aedbf06c2de3eca681fb71697d5f8b9fd014b0990970f4d"
+      },
+      {
+        "path": "tests/interactive-panels/applications/gtp-static-init.desktop.in",
+        "bytes": 320,
+        "sha256": "01c56d7c6738cbb9c321ee96b768c81446d0e52f3d61ec124043253d7e07877b"
+      }
+    ]
+  },
+  {
+    "provider": "kde",
+    "product": "plasma-desktop",
+    "repo": "KDE/plasma-desktop",
+    "revision": "19dae94ec1d563d095b08602dd5eed60d485a5e0",
+    "archiveUrl": "https://codeload.github.com/KDE/plasma-desktop/tar.gz/19dae94ec1d563d095b08602dd5eed60d485a5e0",
+    "archiveSha256": "c1678574e5295b04443b8e7734125b2c81bcb87e70434761aec3e19345851335",
+    "archiveBytes": 22957695,
+    "retainedFiles": [
+      {
+        "path": ".gitlab/merge_request_templates/Default.md.license",
+        "bytes": 98,
+        "sha256": "28590d43d715bbdcbfb0963240b64129ad228e9bbcf6b61c4f698877d7273efa"
+      },
+      {
+        "path": ".reuse/dep5",
+        "bytes": 372,
+        "sha256": "c099cb5ab78027ab66c593b3432535c9027f89ebec41fd819c4a6f0d33545a50"
+      },
+      {
+        "path": "COPYING.DOC",
+        "bytes": 20403,
+        "sha256": "f45cc81b400a048b56c9edbd4c3317f7a8958463dfd55aa96f268ecfd6baa12c"
+      },
+      {
+        "path": "LICENSES/BSD-2-Clause.txt",
+        "bytes": 1267,
+        "sha256": "f32fb3b417a194167cfad068223fc975ba96c5960513a10f66a3c28720aec1df"
+      },
+      {
+        "path": "LICENSES/BSD-3-Clause.txt",
+        "bytes": 1480,
+        "sha256": "e11af671c491efac2f94c1d752bea92f4308ca2450c7d11e582e4b48c40e4de1"
+      },
+      {
+        "path": "LICENSES/CC0-1.0.txt",
+        "bytes": 7048,
+        "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+      },
+      {
+        "path": "LICENSES/GFDL-1.2-or-later.txt",
+        "bytes": 20272,
+        "sha256": "1118a91a3290bc8981f922dfcffc1a619592c007aa31b7a98cee694d933c86ce"
+      },
+      {
+        "path": "LICENSES/GPL-2.0-only.txt",
+        "bytes": 17277,
+        "sha256": "b58671fb4d9e9efeb9a6af1bdba02e61ac69af654855b45a372efe8f52413f83"
+      },
+      {
+        "path": "LICENSES/GPL-2.0-or-later.txt",
+        "bytes": 17277,
+        "sha256": "b58671fb4d9e9efeb9a6af1bdba02e61ac69af654855b45a372efe8f52413f83"
+      },
+      {
+        "path": "LICENSES/GPL-3.0-only.txt",
+        "bytes": 34575,
+        "sha256": "c7120bba88c79b87ca40eacc1cf4ac95bcb2e96b8a00dd91886ef81dbad87f33"
+      },
+      {
+        "path": "LICENSES/LGPL-2.0-only.txt",
+        "bytes": 24782,
+        "sha256": "e2eb0591a1bd9f9d49bb8c0dbbdae232b6ee9e1b2f5584617b0f2d6072464afe"
+      },
+      {
+        "path": "LICENSES/LGPL-2.0-or-later.txt",
+        "bytes": 24782,
+        "sha256": "e2eb0591a1bd9f9d49bb8c0dbbdae232b6ee9e1b2f5584617b0f2d6072464afe"
+      },
+      {
+        "path": "LICENSES/LGPL-2.1-only.txt",
+        "bytes": 25902,
+        "sha256": "6aee5c3d7c55f3d8ff45b1245b8427efaf0a59e9c52d7139c79bff7056e9a611"
+      },
+      {
+        "path": "LICENSES/LGPL-2.1-or-later.txt",
+        "bytes": 25902,
+        "sha256": "6aee5c3d7c55f3d8ff45b1245b8427efaf0a59e9c52d7139c79bff7056e9a611"
+      },
+      {
+        "path": "LICENSES/LGPL-3.0-only.txt",
+        "bytes": 7356,
+        "sha256": "18a78fc7bd236653ab5e2ff3393e3d5f20468ccc5500dc2d7b057c3f313a7b2b"
+      },
+      {
+        "path": "LICENSES/LicenseRef-KDE-Accepted-GPL.txt",
+        "bytes": 662,
+        "sha256": "ef839531eb65b0168f9aed14047c84be13e9ea38801a73bc18abe24dc93e6ac9"
+      },
+      {
+        "path": "LICENSES/LicenseRef-KDE-Accepted-LGPL.txt",
+        "bytes": 665,
+        "sha256": "d9f25707d20e804f15005be46527366b0604bd739754d144a83d3983d94a9a6a"
+      },
+      {
+        "path": "LICENSES/MIT.txt",
+        "bytes": 1078,
+        "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+      },
+      {
+        "path": "LICENSES/Unicode-DFS-2016.txt",
+        "bytes": 2858,
+        "sha256": "a307313c2500d85dec8b3dd7e86b17e5dc08b6bda00daebe4d68f7d36beda42d"
+      },
+      {
+        "path": "applets/kimpanel/COPYING-CMAKE-SCRIPTS",
+        "bytes": 1328,
+        "sha256": "03f96e71120ad40884decc5bb2ebb53ee85f3cc9978e29d734966852a251fdf1"
+      },
+      {
+        "path": "emojier/app/org.kde.plasma.emojier.desktop",
+        "bytes": 12359,
+        "sha256": "96edf422f752c2341fe998037ab99fef1331cec98f6351e6ad7d1f1a77458bdb"
+      },
+      {
+        "path": "kaccess/kaccess.desktop",
+        "bytes": 3002,
+        "sha256": "dc1a8a9b386f0f18b68d9ce1dd9062e74fb5171aa878d89412d803a2e886223e"
+      },
+      {
+        "path": "kcms/access/kcm_access.json",
+        "bytes": 57357,
+        "sha256": "fc203b9a7ce0a53a21e07ee43cebce090a25c3c9144b09e0ba583642ed9d0af4"
+      },
+      {
+        "path": "kcms/activities/kcm_activities.json",
+        "bytes": 17018,
+        "sha256": "c4e07d241a3cb99e7f9054672b586598057c629b1f564de85868aeaaa57a40e0"
+      },
+      {
+        "path": "kcms/baloo/kcm_baloofile.json",
+        "bytes": 18242,
+        "sha256": "58fa4fb59e3e4115d78633b1ee39f46b74ce53403039942f44e449ef532c8b3c"
+      },
+      {
+        "path": "kcms/dateandtime/kcm_clock.json",
+        "bytes": 20633,
+        "sha256": "af03850c39cd3bc1494841ba543e37a9834d5f657d3f7daa428976a76e49d525"
+      },
+      {
+        "path": "kcms/desktoppaths/kcm_desktoppaths.json",
+        "bytes": 22552,
+        "sha256": "4b66b2b8400fee50fda8c18924577ec168ad35ca6d27bf9b47cf7a9f79421c68"
+      },
+      {
+        "path": "kcms/gamecontroller/kcm_gamecontroller.json",
+        "bytes": 20692,
+        "sha256": "9fc56ac17e5a4bde0a139de867e2cd6274eb6fae12f02d2f162740dabe1d4b66"
+      },
+      {
+        "path": "kcms/kded/kcm_kded.json",
+        "bytes": 10842,
+        "sha256": "e31288e062b6bf22fcbeb039921c23d4966aea048d38b2699c909fec71d51bb1"
+      },
+      {
+        "path": "kcms/keyboard/kcm_keyboard.json",
+        "bytes": 39903,
+        "sha256": "01bee735b33d6bb1e8188d78fb103638e75d7a224fe4b809c3bf9840752ebd9d"
+      },
+      {
+        "path": "kcms/keys/kcm_keys.json",
+        "bytes": 19443,
+        "sha256": "249cfe1bdfc381c1eea4db5cbbf0fac3796d3f34bdd1026953cb1564eb5ebcb6"
+      },
+      {
+        "path": "kcms/ksmserver/kcm_smserver.json",
+        "bytes": 20463,
+        "sha256": "68567e57b7420aaf7e7977377e1a0fd6dd1470ea7397379790f2a31c12355590"
+      },
+      {
+        "path": "kcms/ksplash/kcm_splashscreen.json",
+        "bytes": 16600,
+        "sha256": "bc1e2bec977af15f2effbb0eb4ac2a41b9a2433fe6dc124950ce0a24d9a5f186"
+      },
+      {
+        "path": "kcms/landingpage/kcm_landingpage.json",
+        "bytes": 7299,
+        "sha256": "818d750a8fa168ba8a0a49248f31a5693d0717cad4b2746794ebe0e6d69f6894"
+      },
+      {
+        "path": "kcms/mouse/kcm_mouse.json",
+        "bytes": 43722,
+        "sha256": "abdb5bab8228d8686658d22c17966835758a62f56ebddb00addaee287b9b9e19"
+      },
+      {
+        "path": "kcms/qtquicksettings/kcm_qtquicksettings.json",
+        "bytes": 2692,
+        "sha256": "7d8e58a55ad888d0e1969aa64cbee4b051c5f6cb4779d173a67652fc1c40025d"
+      },
+      {
+        "path": "kcms/recentFiles/kcm_recentFiles.json",
+        "bytes": 14888,
+        "sha256": "05336c69d477e92c6c42bc0b153adb6e719b1c517d0c99a9f640b1263521a2ac"
+      },
+      {
+        "path": "kcms/runners/krunner/kcm_krunnersettings.json",
+        "bytes": 6101,
+        "sha256": "a0abcff561069769f19a2aa242d00a548ec7ee21b1d4f5400fb0ecdd15cb6658"
+      },
+      {
+        "path": "kcms/runners/plasmasearch/kcm_plasmasearch.json",
+        "bytes": 17819,
+        "sha256": "844deb0956bac6ebfb5f45fe127d0767eb4f48e92c837089070041384f91cbc3"
+      },
+      {
+        "path": "kcms/runners/plugininstaller/autotests/testplugin/org.kde.testplugin.desktop",
+        "bytes": 63,
+        "sha256": "157de58dc8c37a4a49cd25bc6764b5a35bbe7348773f2fbaed060acd61a34a53"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-Battery.desktop",
+        "bytes": 12765,
+        "sha256": "01c8f6b6d4aab4d9324adc4ec21d17f01bc1026c4352b33edcd7ae5a0c2a842e"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-Block.desktop",
+        "bytes": 7172,
+        "sha256": "6c9a207a15c870e357f493b97d7e744d4e3bbebab9776b5eeef8d276657019d1"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-Camera.desktop",
+        "bytes": 8853,
+        "sha256": "9b8e66c52dd9c0ec855e6b849779a2b30d7912abe440846d6ab5236d55b9adcf"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-OpticalDisc.desktop",
+        "bytes": 25703,
+        "sha256": "5098b2d37318e47763fde64b33edc343cd874f7a77146bb2e82c0a05baa592f3"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-OpticalDrive.desktop",
+        "bytes": 22846,
+        "sha256": "c4ab712b4431b7711391c82952288fc2220f9e6082002a686ed0550c59010709"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-PortableMediaPlayer.desktop",
+        "bytes": 8866,
+        "sha256": "39a638ad7d467b55b078f08bc42e02be474f53bde3f34a68923d25ae8bd93f02"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-Processor.desktop",
+        "bytes": 12141,
+        "sha256": "3f0408beea27a232fa0cbcf867eb27e4cb1db9d72b2f47cae7118bca56e53bef"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-StorageAccess.desktop",
+        "bytes": 6745,
+        "sha256": "fc20d66cc931082bad7f695caddba7af7ec4f4b91244bd6572c2b9204084c8ce"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-StorageDrive.desktop",
+        "bytes": 12454,
+        "sha256": "505790dee4aff15d48f137cbb3887a359e9a2cd59407d1b4b897e85181d59278"
+      },
+      {
+        "path": "kcms/solid_actions/device-actions/solid-device-StorageVolume.desktop",
+        "bytes": 12772,
+        "sha256": "b6363029810d8815b2c99a27b6e05570440381c881b67bdb12c113899234c640"
+      },
+      {
+        "path": "kcms/solid_actions/kcm_solid_actions.json",
+        "bytes": 19324,
+        "sha256": "0da3df10b8330349fddeefc014e42a9b52ced44dafc4b3e40e8eb4238254ed35"
+      },
+      {
+        "path": "kcms/solid_actions/solid-action-template.desktop",
+        "bytes": 188,
+        "sha256": "015ed47586dbb972355cbdee4a424bf15db1b9e583d38070e9d52c1f670ea6e3"
+      },
+      {
+        "path": "kcms/spellchecking/kcm_spellchecking.json",
+        "bytes": 17356,
+        "sha256": "27c0d66e3050a296c994bd5d7e03741e842739f986e075e049101445d97e52ae"
+      },
+      {
+        "path": "kcms/tablet/kcm_tablet.json",
+        "bytes": 10628,
+        "sha256": "98cbb1781290bf9bd000d9f46801266825f72da6f7bb591a0e9dd70e9595115f"
+      },
+      {
+        "path": "kcms/touchpad/kcm_touchpad.json",
+        "bytes": 38023,
+        "sha256": "15b9588065475e4ddfe17f777e739bdbb7452abd21e0c6014e8ef9a33aeac9db"
+      },
+      {
+        "path": "kcms/touchpad/org.kde.touchpadshortcuts.desktop",
+        "bytes": 7149,
+        "sha256": "c46ac0c5dfc96ec90ff82481ee5c7f29a42e9ac67bd32c0024ccb9706fe7a54c"
+      },
+      {
+        "path": "kcms/touchscreen/kcm_touchscreen.json",
+        "bytes": 7654,
+        "sha256": "9d85eb1680d0b3a180a064f60740d47d94a97fb4c4c818c9ec61d7699da71cbe"
+      },
+      {
+        "path": "kcms/workspaceoptions/kcm_workspace.json",
+        "bytes": 30928,
+        "sha256": "d2cee56f08f701c02178aea7bee628676776b3423eb66df16ec9bf8246c8f1d1"
+      },
+      {
+        "path": "kded/screenreader/metadata.json.license",
+        "bytes": 62,
+        "sha256": "82ed6833cbea9d02f1d1210eec2278ea1968d831e96ac1f14bca9ab1942d1ccd"
+      },
+      {
+        "path": "kded/screenreader/org.kde.screenreader.desktop",
+        "bytes": 4475,
+        "sha256": "bdb9b25a8b3ba375b128179fcd865a7f787108d55cd323bea89a913ae33e0a95"
+      },
+      {
+        "path": "knetattach/org.kde.knetattach.desktop",
+        "bytes": 7353,
+        "sha256": "54a240e886542b796a9a94f4733838322db54f8110530fcb043c2a59c7073aae"
+      },
+      {
+        "path": "po/af/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23306,
+        "sha256": "05a99cf24064a75ae52fc78b13b746e45fb3f5e0cd6e240ee37f91d043cfa145"
+      },
+      {
+        "path": "po/ar/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 25736,
+        "sha256": "1513db1109ebdfb913484fcff374d215ac3481d335103231835e4b11c2bac37b"
+      },
+      {
+        "path": "po/ar/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 47960,
+        "sha256": "3ccbb0082e3ac632019bd4b4fb5be4f8c23d07285545e577ac4542ebaaa710ab"
+      },
+      {
+        "path": "po/ast/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 16553,
+        "sha256": "03ddfc362074f9e6144b5b51154997932ce534ec4a550509770f3f694c587484"
+      },
+      {
+        "path": "po/ast/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 30512,
+        "sha256": "53db3d54460777b287569a1cb600cf1c39eb91b697d5d3ab45a8501b8ea71eb9"
+      },
+      {
+        "path": "po/az/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21455,
+        "sha256": "42f71615d4265c011c9afac4cbbc289b3ae7c1e492bcdda6c8d0c50de8683eed"
+      },
+      {
+        "path": "po/az/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38280,
+        "sha256": "4c05d74828ae96dfd5e93003a5fd8452956195a0563c47d4af1a9a867f8bc5b6"
+      },
+      {
+        "path": "po/be/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 31132,
+        "sha256": "1763ff8efca8c925892271dbb4c5865bd668cc8d31d68dac0e5e60205e9ca73a"
+      },
+      {
+        "path": "po/be/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 44632,
+        "sha256": "ccba7808ea09ba11592b2c5d283b1bd6fc0a3f830c40d6495e57b8714864afc6"
+      },
+      {
+        "path": "po/be@latin/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 34435,
+        "sha256": "7a4526de005b266b786dbddcf13f45fd34d8ed210f9e27198bfedd7dccf7e2d1"
+      },
+      {
+        "path": "po/bg/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 19951,
+        "sha256": "062b9d6c148e143fcf837fa7321d388155033e4886fc775cc26c9e3e6869e703"
+      },
+      {
+        "path": "po/bg/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38514,
+        "sha256": "e7a95a3ade6b6db4f3ad6a025fc650ad502a771c38b14f6ae00c5342d4fb3e49"
+      },
+      {
+        "path": "po/bn/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 25809,
+        "sha256": "2612a5bc9cbf42e250f0c403b78fda5c51725b0dbcf9cfedaf481551252e5674"
+      },
+      {
+        "path": "po/bn_IN/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 29622,
+        "sha256": "608f691586268568dbd79e083ebdd2f0d154ef2c4bd0e8d966744c389fed868f"
+      },
+      {
+        "path": "po/br/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22277,
+        "sha256": "df86dd04743367e38f1fd17195e6c9482d4c51cb2274c5cde2469efee13aefcb"
+      },
+      {
+        "path": "po/bs/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 20583,
+        "sha256": "bf276c797d70a8f3457b619d4b96a72a416f6e9891bb4b5740b28669d0a4301d"
+      },
+      {
+        "path": "po/bs/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34452,
+        "sha256": "a72f24dbb3d5a381bcb6be27a95c4401d983a65cab775b2cba7d0f12d7a97877"
+      },
+      {
+        "path": "po/ca/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 19210,
+        "sha256": "a488363ee0e154530d16643e1e48110dae851803570088defe86a20b905ef469"
+      },
+      {
+        "path": "po/ca/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34968,
+        "sha256": "caa894e255b8bf0d8e03dd88a13ea6b501dd408b74c57ea81d68848abecc65ed"
+      },
+      {
+        "path": "po/ca@valencia/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 18439,
+        "sha256": "fba9d76ef6c68064f42df3189cc9ef95a32465dff3e7112f334f26d9e619a532"
+      },
+      {
+        "path": "po/ca@valencia/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34290,
+        "sha256": "6cffddf3bb143824270bff8817a1d31d90669d118ef9432041387ccff6fbe89f"
+      },
+      {
+        "path": "po/cs/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 18043,
+        "sha256": "4591338ded5ad5a4270b1b93eb3904b2d734412225b752ba2e68802e6573a193"
+      },
+      {
+        "path": "po/cs/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34832,
+        "sha256": "f1d9475855211f84522120140cf4fbcd50c46ab66f10ac10201914ad31cc2906"
+      },
+      {
+        "path": "po/csb/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 43371,
+        "sha256": "786ef803fda3f5f01d8ea59ba845f3e120e0d43b623f233667e72ad2b26f48b9"
+      },
+      {
+        "path": "po/cy/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23212,
+        "sha256": "2e28781f4502b42d6c860d4f173a0727fa0ab41aa80b1541f6d8fd52f959aa8d"
+      },
+      {
+        "path": "po/da/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23976,
+        "sha256": "acfa5ea5409dc3149bd9ff214331adec3fff4e4ef7db0098fc46ec6f8f18da1e"
+      },
+      {
+        "path": "po/da/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 37830,
+        "sha256": "543a97e20981f89bd59ea32c69800d25207385f3b5d26939e413ef56c11cb946"
+      },
+      {
+        "path": "po/de/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22945,
+        "sha256": "8fcb0e9c266c4382cfa3f2d715b118fb8b28d6dd8c5bcef48b001762be7e57cd"
+      },
+      {
+        "path": "po/de/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 39216,
+        "sha256": "36b8aabf00a9d188a2cc34c9bc9f5391130b0bd1919ea579789e4e967f38bdc2"
+      },
+      {
+        "path": "po/el/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 27427,
+        "sha256": "d0969d84b33929250c3ce6e2f2043f5a8647456c4bc46b820ae3dc884fc7e115"
+      },
+      {
+        "path": "po/el/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 45701,
+        "sha256": "8a4fee67e5dc5b2c4c6f55462f08e495af0ad4847b84c42d104357a8186aa3bc"
+      },
+      {
+        "path": "po/en_GB/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23925,
+        "sha256": "5b725db1e0fb6004adafff8c2535199c97481f8aa125f7a903ba6cf0066374d7"
+      },
+      {
+        "path": "po/en_GB/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 44399,
+        "sha256": "e10684ca65a2e86913c3eee4936cbc979366792d310628a81ae7099d26278a3d"
+      },
+      {
+        "path": "po/eo/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21052,
+        "sha256": "3d83355db2653dedf61264573bbccff16c39dfc826b501f01bb7a6370fdb2f00"
+      },
+      {
+        "path": "po/eo/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38461,
+        "sha256": "27a57f0c8cade658027ca0042e1f160688b9e51faf402b1c6934057a8e7a2866"
+      },
+      {
+        "path": "po/es/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 18323,
+        "sha256": "d33d70442fe3d0989de651d9bd36f1bbbc76882237813afedc506bc524015894"
+      },
+      {
+        "path": "po/es/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34543,
+        "sha256": "d590b581425f81ccfa2ea2018a09b3a69bc204ce13836fe02354d35f417b7060"
+      },
+      {
+        "path": "po/et/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 42468,
+        "sha256": "6d38f8ca16d0f4729789a1fdcc68dec49cf844c69c5c0de1994488feb901f503"
+      },
+      {
+        "path": "po/et/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 35789,
+        "sha256": "444658e359324ee329a10877e118b979b43f87371a040ebb214861f0f3e4a7ea"
+      },
+      {
+        "path": "po/eu/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 37136,
+        "sha256": "58a0f711b97324dd64ea39916189c0fc71c595940c4fcd9cc90156b6967a2a9b"
+      },
+      {
+        "path": "po/eu/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 42000,
+        "sha256": "e53845734fc5bf15b18c63632c9bb11d00b4f9b8214a2a9b8f5b88a38176a68b"
+      },
+      {
+        "path": "po/fa/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23420,
+        "sha256": "4b279341d642d2991745eb05008e523bd78a35da146db61a89e3c79fee2fdb4b"
+      },
+      {
+        "path": "po/fi/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22314,
+        "sha256": "3a01906b093eb2b145322fefe9aed59d2ee9b90b8ff785050b89bb20c4782acc"
+      },
+      {
+        "path": "po/fi/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 39119,
+        "sha256": "f3ca42d5404b86e5403a166da934f8b5d2d2c286e191fcd8e5ec3ef1144423b8"
+      },
+      {
+        "path": "po/fr/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22970,
+        "sha256": "374ffca28ca56a69839ccecec160adce5350c83329858c44627b6c97fc0b7c3d"
+      },
+      {
+        "path": "po/fr/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 44003,
+        "sha256": "7d6ac2f85f0257d3d6920c2a558285a4f68ad958807f83c626b57d2c3dd238dc"
+      },
+      {
+        "path": "po/fy/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22796,
+        "sha256": "266d073802fed8d5b23c277c24146fdad2abee46a8ed939d070f84fb51eb3e71"
+      },
+      {
+        "path": "po/ga/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 18313,
+        "sha256": "205c2fb8589dc568d5c97b902de171e0cebc42c4626744e711e63cc420ae35d7"
+      },
+      {
+        "path": "po/ga/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34518,
+        "sha256": "44f0a78861aa640f66a8bdaae4ebd5b34628aa647362ea7c73542a854e436247"
+      },
+      {
+        "path": "po/gl/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 24445,
+        "sha256": "e0d9af8e1029cd02ad91f608433e67656d5fc20e4c39c0c7392320e6096106b3"
+      },
+      {
+        "path": "po/gl/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 44340,
+        "sha256": "8da5ece2a068895816d5fe0cb9ef7a0e576849e8e54558d35b2ea0eb3b954694"
+      },
+      {
+        "path": "po/gu/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 35356,
+        "sha256": "fcc363cd990d469bd71e130f7e2e5de3cd587c1cda72d95877cec1592a9c0242"
+      },
+      {
+        "path": "po/he/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21536,
+        "sha256": "bd41d6c26f2958218b2f613cd86a69f9f240a97809befeaa51f9fb86eac92d0b"
+      },
+      {
+        "path": "po/he/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 43023,
+        "sha256": "fc85289fe698a3fcdd4f38d6fa752b335fa02a19e6d95e2ffa32468d456b19b3"
+      },
+      {
+        "path": "po/hi/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 41230,
+        "sha256": "a3946aba6d8ed08910b7a871bc30627c3d1dbbf4709c5277258b04039a90d996"
+      },
+      {
+        "path": "po/hi/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 28713,
+        "sha256": "020c243aeee24769c68de0b95749fa459e4d45f2051c673e621ee7566f4c8c11"
+      },
+      {
+        "path": "po/hne/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 33225,
+        "sha256": "db78608f15c534c82a42ded38a148b0a9218d8ddf462ddf727245cfa33646fa2"
+      },
+      {
+        "path": "po/hr/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 41050,
+        "sha256": "01dcce5ac89643f9cf8e7cf13008a99ea04fa26037a258afdf1f86bfb93e60a9"
+      },
+      {
+        "path": "po/hsb/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 26142,
+        "sha256": "3e3d83700a3adbc95818d8af64009c9db650dde4cf0850aeabfc6c46020264ca"
+      },
+      {
+        "path": "po/hu/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 36802,
+        "sha256": "6cc3b08c99d595e2622b9c87e7acd68c8ae02162cfa9685dfd041a2b49e366a4"
+      },
+      {
+        "path": "po/hu/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38706,
+        "sha256": "108d6350384da75980e264d60c1e6158de6c9aa4caa1e1b3070fcd44d9f1b2cc"
+      },
+      {
+        "path": "po/ia/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 35976,
+        "sha256": "caadc190f6e59f1602db08f8020cb93d6feefba12c315205eb7fa8a862a44346"
+      },
+      {
+        "path": "po/ia/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 42291,
+        "sha256": "70e480250a2001c519dd3b813adce11db21d1b0e783bd5758d05c5bf14c0d972"
+      },
+      {
+        "path": "po/id/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 43556,
+        "sha256": "a83c38f5dbf5ac73cc13d91ed75ad6e8bba36b585749e7a66b79efae5864eff2"
+      },
+      {
+        "path": "po/id/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 40853,
+        "sha256": "d0fc36beae524c3d388e4b283fa327684b00c46f28da2f48191de6f229ba0949"
+      },
+      {
+        "path": "po/is/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 30730,
+        "sha256": "81f7033675a01348ca18d1dcf8203de95c21719e55bac5130819bf338be92e49"
+      },
+      {
+        "path": "po/is/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 35442,
+        "sha256": "6b118425d4f94c4feaa97df14a5e299ceb884849e0a380417cf3d3cdd2693139"
+      },
+      {
+        "path": "po/it/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22345,
+        "sha256": "d8927c8d5c8e9a5fc1727a5e0d35d3f7ff3cf636cd038883455b6fe0056b3de8"
+      },
+      {
+        "path": "po/it/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 42744,
+        "sha256": "4e4cc2817d3e5cace24fccfb3c611024a80d408ab07022639b480929150506ce"
+      },
+      {
+        "path": "po/ja/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 18611,
+        "sha256": "8a07b93b8c645685dd21d58e78f736e25d3adaa88c13b691d742da3660d13170"
+      },
+      {
+        "path": "po/ja/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34883,
+        "sha256": "4552eb9b33281357397d5d2103ba0b289893d18eccdbb7cb8b9d8b45f4f544c0"
+      },
+      {
+        "path": "po/ka/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22833,
+        "sha256": "af0f7b10fe4a4d844778c1b913967f67d0312854040b54ca06f85865dd5ac4d8"
+      },
+      {
+        "path": "po/ka/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 52743,
+        "sha256": "db723b39f6431f04cd5eadb704baa3d9c8c79ee793c2cc10729b70b466606c7d"
+      },
+      {
+        "path": "po/kk/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 45563,
+        "sha256": "563404ac0c417b2f5bd62ce76e5f6e270651db0ccbeff7c788187411ad72acd0"
+      },
+      {
+        "path": "po/kk/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 32632,
+        "sha256": "30bb867ef2246ccb1fe2be75da1ad8388ab32e5a7462d315a51b10e7a2448fdd"
+      },
+      {
+        "path": "po/km/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 48385,
+        "sha256": "9001408130ad7a72b10f8c58651b482b4066689d24825275ae7af0980ef9359a"
+      },
+      {
+        "path": "po/kn/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 40631,
+        "sha256": "2ed2163d96194874698efff12e13cb3f725627f78da4dc9062dcd851545dd34d"
+      },
+      {
+        "path": "po/ko/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22498,
+        "sha256": "39566a970a037280fc7c5888ec0bb43f9020854381f65040bc493788ad857516"
+      },
+      {
+        "path": "po/ko/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 39974,
+        "sha256": "a7583d068c551c724b4355d19a2ba585603b745200c1c7088ed5754d93e55a0a"
+      },
+      {
+        "path": "po/ku/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23178,
+        "sha256": "3352f4982c33d163938b59fc88bd501cb8a683fcbb41f4edfb9a109ac87c002c"
+      },
+      {
+        "path": "po/lt/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22784,
+        "sha256": "679d9749c8a1225dbfa3681e73d36fc22ac18ed39f9567fc5abda5d694b28052"
+      },
+      {
+        "path": "po/lt/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 40666,
+        "sha256": "d87d3bbc9c7d822d321e8b63aa167c72db1eed6dd8e58d46f73084dc370b4f8e"
+      },
+      {
+        "path": "po/lv/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 35586,
+        "sha256": "1f6b2f2348d97994daa7bfdb04ec7fa618816b2e9024372ecb537584d35c3706"
+      },
+      {
+        "path": "po/lv/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 39943,
+        "sha256": "aeb971a18e668a9ae3e42c8e38ffb522e404be4827a6e652eb6be4cb49a4ffe5"
+      },
+      {
+        "path": "po/mai/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 41508,
+        "sha256": "42cbcc68c16bb087f7e0d295f1c2659db22bf8ad9050f2077c5948188539ba9b"
+      },
+      {
+        "path": "po/mk/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 46921,
+        "sha256": "5cd4a363970bef247b54eac0ac0dae9cf6018d32a46d3cf114db5dbdf84631ee"
+      },
+      {
+        "path": "po/ml/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 38047,
+        "sha256": "5276905922f6b98242fedd730f8da17cb8585c0dc7b31c1c9e3f6771c7c11d93"
+      },
+      {
+        "path": "po/ml/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 28884,
+        "sha256": "ac4971884a67edf9c09f38043dca8ceaa071c4266d3f74d32e0e1268f91b0bea"
+      },
+      {
+        "path": "po/mr/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 40820,
+        "sha256": "f170555fbb574823018fb51b11700256a6138e39e4fcb9ff4a8df2515449832b"
+      },
+      {
+        "path": "po/mr/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 30946,
+        "sha256": "12f725a4f292bafdf94699202c412d6852d03fbef09c8e104e71be4c7de28a1c"
+      },
+      {
+        "path": "po/ms/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23153,
+        "sha256": "1bad4bd49d329ef1fbb2b9ae4d75b764d560707fd5bf05e624504cd3b654478d"
+      },
+      {
+        "path": "po/nan_TW/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 30829,
+        "sha256": "d9a8a8812498b0054142f7205ae25a7b1232bd7d220c8f40e16f490b6df3c886"
+      },
+      {
+        "path": "po/nan_TW@latin/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 31465,
+        "sha256": "2ab277fc00c9e0b31f1b2011af9f735b8dca229a5e0f54ce9f46fb4d9bd7a4a3"
+      },
+      {
+        "path": "po/nb/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 17968,
+        "sha256": "fd166b3a37a247c8502b0f6067f727ce90b04b0c6d8a76c3b10a4a6e87641a99"
+      },
+      {
+        "path": "po/nb/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 32589,
+        "sha256": "fb11b2fc8011c681a3d90c0cbb143f4628823acfb2ccd0c028ab4924f2131d35"
+      },
+      {
+        "path": "po/nds/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 24781,
+        "sha256": "7701bc3cf3af65f1bf62c2019da690fec0cec87c3a61017a22725d36b88b477a"
+      },
+      {
+        "path": "po/nds/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34387,
+        "sha256": "f8d62cb54e31790b7202852d01f72573162437060cdf6c9a816e5779fd366b1c"
+      },
+      {
+        "path": "po/ne/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 26626,
+        "sha256": "39d474a895ef49a5d826165d7a001d3b8a24f63dbbb209f1fd2747f5fe177d7e"
+      },
+      {
+        "path": "po/nl/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22490,
+        "sha256": "bf44c81c368f91d2524ae8c74aa86a6c7b31f8653841407e030b3ef50867af27"
+      },
+      {
+        "path": "po/nl/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 42606,
+        "sha256": "d29bb9b1d4f420242a5cdf314d47c70af758a7d7b934635cb65aeb4e9f08ba2c"
+      },
+      {
+        "path": "po/nn/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 18047,
+        "sha256": "a1313b71a4727fcecc93be06a2136bf8ed73e860219e32be86a2c4267384c835"
+      },
+      {
+        "path": "po/nn/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 33426,
+        "sha256": "40c1767cbb39d0f74cb2fdc9974f49224a41f84b568231e8a72d3cb3d58d93b3"
+      },
+      {
+        "path": "po/or/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 15946,
+        "sha256": "5e0328d2ea656efdf361d72214719139455a92e24ccd7ced702e2f7b583f8a57"
+      },
+      {
+        "path": "po/pa/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23988,
+        "sha256": "27ca7aee99373b8cb8705f1b20f4ee6a08551265bdfa4f31ed8007bab7391f7d"
+      },
+      {
+        "path": "po/pa/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 42783,
+        "sha256": "44acd88cd63ca241af5ec74b1eabd2ddba4fc989e932f82489a924004f1f755b"
+      },
+      {
+        "path": "po/pl/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22287,
+        "sha256": "db7ffd79a5bbf503148c420e070811303c32e797cf01f4ad0e3cc05b25adddc3"
+      },
+      {
+        "path": "po/pl/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 43437,
+        "sha256": "f8a765563bc94fe0325070dfac2541af7e0f54fad35f183797c692a0aa3ed1f9"
+      },
+      {
+        "path": "po/pt/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 19091,
+        "sha256": "2402c6d0d4c71cb4ace00aee5729ae6e172071212d13bc58fdbab702f1f0495f"
+      },
+      {
+        "path": "po/pt/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 35736,
+        "sha256": "822ad18adcbefcbea006b4e05f1a4964ac80ff297d7271075c894c6319811371"
+      },
+      {
+        "path": "po/pt_BR/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 19784,
+        "sha256": "711a9ee3cb5571cbedc294995084c7377a911173c7fd75ff75cb48760a978989"
+      },
+      {
+        "path": "po/pt_BR/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 37896,
+        "sha256": "ddf552349daa0562a954aa82426c5e70db79da3f7cd8699999e770325db16bc0"
+      },
+      {
+        "path": "po/ro/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 41353,
+        "sha256": "82384bac49bab0f0862a9a63d46e8a391247223fb22f0c15abdcbf2aa165869f"
+      },
+      {
+        "path": "po/ro/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38006,
+        "sha256": "08e76c2153d4938f5d2d78f40e6ca39ad09e470e89492803bb25a1d15f9f5c5a"
+      },
+      {
+        "path": "po/ru/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 26019,
+        "sha256": "e5b86d4d533a00516c7dc9d339b8831a9d62ba0b619cc0f92565635e7a05aabe"
+      },
+      {
+        "path": "po/ru/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 55038,
+        "sha256": "d5cb0ee8811a17a9a7d7739d27580474706a90ade3f435fe157a9dadd9be5d92"
+      },
+      {
+        "path": "po/sa/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23948,
+        "sha256": "98e900f6a30d3d8ea9bcc23e21ebd3ef72d81998e745edc34b48b6a51d0e125a"
+      },
+      {
+        "path": "po/sa/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 45440,
+        "sha256": "43bca7d4259f119fc870266281bed62190a31be9e5401d2aecb30e42fb0ba63a"
+      },
+      {
+        "path": "po/se/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 16230,
+        "sha256": "3635a713cb810016847834089d5d55fc38a7ec880859c2eb1765f099d92a216f"
+      },
+      {
+        "path": "po/si/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 44845,
+        "sha256": "6139ab6f3be6b27ff37e50794774ace9ac9f8abdcbe54f985cb55331f890666b"
+      },
+      {
+        "path": "po/sk/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22549,
+        "sha256": "84de719b1f734a012cd5fa9335a5723b6f6c07c16d27d7ab967064d336ba721e"
+      },
+      {
+        "path": "po/sk/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 41307,
+        "sha256": "f586a14b1b791b0c39b4d351203d7d7c03e91642dd94b6efbcb1dde5f72732a7"
+      },
+      {
+        "path": "po/sl/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21793,
+        "sha256": "6586979486d49e47ccc8ee8d8ae4a05465fcbc5315050c54841d243314c3fc67"
+      },
+      {
+        "path": "po/sl/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 43342,
+        "sha256": "9d224cf966d55a52ea28ecbad41ea2fe2f97a8f90bc36b1d4a476fda76cc9957"
+      },
+      {
+        "path": "po/sq/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23128,
+        "sha256": "c98c08bbd7f0c7c2e9ceb4d2ea9ba73dcb033a0e0879668b0d532a7d40fe39c6"
+      },
+      {
+        "path": "po/sr/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22849,
+        "sha256": "573322853923937de55775612f0c9b89321829ef5f09713715380ef02ce44250"
+      },
+      {
+        "path": "po/sr/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 35643,
+        "sha256": "90e6be60184b734e24c1afb81c2f979b68f2c5e02688c6aa2d943997148c4609"
+      },
+      {
+        "path": "po/sr@ijekavian/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22863,
+        "sha256": "8cab8eeec8e34a764b54a726edf3a71e6633000ee976d4063d478955816bb11a"
+      },
+      {
+        "path": "po/sr@ijekavian/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 35653,
+        "sha256": "764a07628f6d31bb1e233e7a382314b3e4efcb33f993814b353033370e8fcd4d"
+      },
+      {
+        "path": "po/sr@ijekavianlatin/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21874,
+        "sha256": "0d49833cbbab5b27a449f4a4eb234dcd48d85b3db8142617752bf1ae23089bad"
+      },
+      {
+        "path": "po/sr@ijekavianlatin/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34483,
+        "sha256": "0121c2b0c777d05328cd782ecaa52e11a57d822e0e6a7aa30c4d03916f44efa2"
+      },
+      {
+        "path": "po/sr@latin/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21863,
+        "sha256": "ffa053b6a4b931cee32c3890d5b77153e1ebdb0c32b882ce5dec0e401307fdbd"
+      },
+      {
+        "path": "po/sr@latin/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 34474,
+        "sha256": "2771a10afba7b7542b5c569f16488b712e502bb252609e6245a2adf4fae0c561"
+      },
+      {
+        "path": "po/sv/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22224,
+        "sha256": "505a5982105bf20cd4f1671762ce71f931e5e0ce6dc119bc72cd7851578b05e3"
+      },
+      {
+        "path": "po/sv/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38548,
+        "sha256": "0843eec20d33e540e494126276d7b8242070284236731672d66de8c9df509cd1"
+      },
+      {
+        "path": "po/ta/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 32534,
+        "sha256": "c6c155253756939aa9a2c49ae96f4af9e83bfc9829b0a09221e17fdb6e295970"
+      },
+      {
+        "path": "po/ta/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 51176,
+        "sha256": "b8fe25350022902394be785f966c5b46a52ff051df2b2c95fed590a78c6025b5"
+      },
+      {
+        "path": "po/te/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 20515,
+        "sha256": "79f1f0c6f3ac58773c472073d4b7397b7da0a83dd33cbad981b05f725b2435c4"
+      },
+      {
+        "path": "po/tg/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 39057,
+        "sha256": "99a8f79d67b441dee627f2188126047d052272613ba15ce2f6d04bf01563f8ae"
+      },
+      {
+        "path": "po/tg/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 36909,
+        "sha256": "0dfff2117906280361af1ef14873a50ccdc4ccdc9479765526e9d3f31236ea69"
+      },
+      {
+        "path": "po/th/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 49253,
+        "sha256": "1cbcb6f7c61615fd21bad1eb14dc7a9466191a5b81410886c9a3ba2fba01314b"
+      },
+      {
+        "path": "po/tok/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 15993,
+        "sha256": "76bcc25711c3aa21538c052922db58f5ced419bbe71b0efabe6c1b4121d6dc2e"
+      },
+      {
+        "path": "po/tok/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 33686,
+        "sha256": "b03e45e87c83d57e6e10ce3a7fc07947033d059b4eb6f064db339eb8e0d4e36e"
+      },
+      {
+        "path": "po/tr/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 19074,
+        "sha256": "8de62b2413d708f199f51bdbecbbe36d64d74e7c2dc5e271030c14910cfc106d"
+      },
+      {
+        "path": "po/tr/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 39263,
+        "sha256": "458bc5f3f275e2e62e062fbf7818021a35273f5bb4c6c542b7eeefeaa2478c56"
+      },
+      {
+        "path": "po/ug/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 38108,
+        "sha256": "73ab58e863b510d929f5e1038a75bf74d8e74e7222ed29b7bac0918e576a1727"
+      },
+      {
+        "path": "po/ug/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 36456,
+        "sha256": "e12ce7db97d9bcf9229e929bedce0b3b25795c0bae2f0f64b3e86b155e8ae353"
+      },
+      {
+        "path": "po/uk/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 25745,
+        "sha256": "574d7341d681feced7de5491e5998cf9f1f048382acd3376d10a84675970d974"
+      },
+      {
+        "path": "po/uk/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 51861,
+        "sha256": "5835bfc6f26dfe8f98189bb876710195d63eddaae7e28521a5a994cad753fc87"
+      },
+      {
+        "path": "po/uz/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 23501,
+        "sha256": "75cf26ee45611c2a22e0021e17c6f69fa3c4cb805809fe5e1650cb03f30bf33a"
+      },
+      {
+        "path": "po/uz@cyrillic/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 24824,
+        "sha256": "1aa62cfc9dc79b159dbf82db6a54a0812b4a6fc1dd068660ce2f373c3228b0db"
+      },
+      {
+        "path": "po/vi/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 21482,
+        "sha256": "a5a86c1b96c352ea3449ad9a7de122718d965bbc81822e7ce1c6a7c296cafdb8"
+      },
+      {
+        "path": "po/vi/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 38104,
+        "sha256": "cabb3a75b70e91c122e445a7824904b5ff03082c861cc1d9d58a539a9ea62205"
+      },
+      {
+        "path": "po/wa/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 43500,
+        "sha256": "32166b7c7fe17f811528a1f2b8f80c78811aff74477aaad86c1912a3d4fede57"
+      },
+      {
+        "path": "po/xh/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 22695,
+        "sha256": "aee04c3bfa2a5a003de3aa794ca1d21b5bd1aeadecafa5d57346f3d413f92f2f"
+      },
+      {
+        "path": "po/zh_CN/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 17482,
+        "sha256": "d67f7d2e126c03fa1c6896aabf6fff000141a870078b52552f4ce57290a32261"
+      },
+      {
+        "path": "po/zh_CN/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 32187,
+        "sha256": "e1a30ec7caeae531fbaf14246dc901d128e7a9a5d088260ff06c36a45bb3e752"
+      },
+      {
+        "path": "po/zh_TW/plasma_applet_org.kde.desktopcontainment.po",
+        "bytes": 19738,
+        "sha256": "a80bc79a0d09e8ae55b12cd82d958d212be010a4cdd7056ccb14b8f5549bdec5"
+      },
+      {
+        "path": "po/zh_TW/plasma_shell_org.kde.plasma.desktop.po",
+        "bytes": 39628,
+        "sha256": "db8007136c512c9b68113fc71bf32ffd4ff0bc0071a1798bb3fdeed1e187ccd3"
+      },
+      {
+        "path": "runners/keys/plasma-runner-keys.json.license",
+        "bytes": 62,
+        "sha256": "bebbb684e1c5eaf96f0a89114256d695007c5878d9959e085f458bbd5fc4bea7"
+      },
+      {
+        "path": "sddm-theme/metadata.desktop",
+        "bytes": 2452,
+        "sha256": "f4a961f04bf6a821dbb6400278c18fa562291cf7cb5d071a70b908fd71680edd"
+      },
+      {
+        "path": "solid-device-automounter/kcm/device_automounter_kcm.json",
+        "bytes": 12927,
+        "sha256": "ef54a40ba53eaf6b185f8f2b968c91f5aaf786e3aed68b5418d49f4d002f0dde"
+      },
+      {
+        "path": "toolboxes/plasma-toolbox-paneltoolbox.desktop",
+        "bytes": 8846,
+        "sha256": "0be3fb6cd12ea7c6492f787b2803c0d347f4db7a35456242d9fd91aecfaa508f"
+      }
+    ]
+  },
+  {
+    "provider": "kde",
+    "product": "plasma-workspace",
+    "repo": "KDE/plasma-workspace",
+    "revision": "df3bba49a2c0657d4165f6511b1771138ccc75ea",
+    "archiveUrl": "https://codeload.github.com/KDE/plasma-workspace/tar.gz/df3bba49a2c0657d4165f6511b1771138ccc75ea",
+    "archiveSha256": "a807db772f75f02bb779be27902b7f2ae706bac18ae3c30c636de804c427a94c",
+    "archiveBytes": 26884165,
+    "retainedFiles": [
+      {
+        "path": ".gitlab/merge_request_templates/Default.md.license",
+        "bytes": 98,
+        "sha256": "28590d43d715bbdcbfb0963240b64129ad228e9bbcf6b61c4f698877d7273efa"
+      },
+      {
+        "path": ".reuse/dep5",
+        "bytes": 601,
+        "sha256": "b4e47de60aacec7e107b787c7ac3fb13d942b4cc16ab9a7a0904e8448c8912a1"
+      },
+      {
+        "path": "LICENSES/BSD-2-Clause.txt",
+        "bytes": 1287,
+        "sha256": "24a7109c41c79a79ecfc245fa0c63d60b5a3bc0a08d88a33250a22e8445c2a70"
+      },
+      {
+        "path": "LICENSES/BSD-3-Clause.txt",
+        "bytes": 1480,
+        "sha256": "e11af671c491efac2f94c1d752bea92f4308ca2450c7d11e582e4b48c40e4de1"
+      },
+      {
+        "path": "LICENSES/CC0-1.0.txt",
+        "bytes": 7048,
+        "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+      },
+      {
+        "path": "LICENSES/GPL-2.0-only.txt",
+        "bytes": 17277,
+        "sha256": "b58671fb4d9e9efeb9a6af1bdba02e61ac69af654855b45a372efe8f52413f83"
+      },
+      {
+        "path": "LICENSES/GPL-2.0-or-later.txt",
+        "bytes": 17277,
+        "sha256": "b58671fb4d9e9efeb9a6af1bdba02e61ac69af654855b45a372efe8f52413f83"
+      },
+      {
+        "path": "LICENSES/GPL-3.0-only.txt",
+        "bytes": 34575,
+        "sha256": "c7120bba88c79b87ca40eacc1cf4ac95bcb2e96b8a00dd91886ef81dbad87f33"
+      },
+      {
+        "path": "LICENSES/GPL-3.0-or-later.txt",
+        "bytes": 34674,
+        "sha256": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0"
+      },
+      {
+        "path": "LICENSES/ISC.txt",
+        "bytes": 823,
+        "sha256": "f2ec607f67bb0dd3053b49835b02110d5cd0f8eb6da3aac4dc0b142a6b299be9"
+      },
+      {
+        "path": "LICENSES/LGPL-2.0-only.txt",
+        "bytes": 24782,
+        "sha256": "e2eb0591a1bd9f9d49bb8c0dbbdae232b6ee9e1b2f5584617b0f2d6072464afe"
+      },
+      {
+        "path": "LICENSES/LGPL-2.0-or-later.txt",
+        "bytes": 24782,
+        "sha256": "e2eb0591a1bd9f9d49bb8c0dbbdae232b6ee9e1b2f5584617b0f2d6072464afe"
+      },
+      {
+        "path": "LICENSES/LGPL-2.1-only.txt",
+        "bytes": 25902,
+        "sha256": "6aee5c3d7c55f3d8ff45b1245b8427efaf0a59e9c52d7139c79bff7056e9a611"
+      },
+      {
+        "path": "LICENSES/LGPL-2.1-or-later.txt",
+        "bytes": 25902,
+        "sha256": "6aee5c3d7c55f3d8ff45b1245b8427efaf0a59e9c52d7139c79bff7056e9a611"
+      },
+      {
+        "path": "LICENSES/LGPL-3.0-only.txt",
+        "bytes": 7356,
+        "sha256": "18a78fc7bd236653ab5e2ff3393e3d5f20468ccc5500dc2d7b057c3f313a7b2b"
+      },
+      {
+        "path": "LICENSES/LGPL-3.0-or-later.txt",
+        "bytes": 7427,
+        "sha256": "ed4d84ce3547932c66f7d5e383378ee7cc1a37d429bbae9cca39dc942fd3b4a6"
+      },
+      {
+        "path": "LICENSES/LicenseRef-KDE-Accepted-GPL.txt",
+        "bytes": 662,
+        "sha256": "ef839531eb65b0168f9aed14047c84be13e9ea38801a73bc18abe24dc93e6ac9"
+      },
+      {
+        "path": "LICENSES/LicenseRef-KDE-Accepted-LGPL.txt",
+        "bytes": 665,
+        "sha256": "d9f25707d20e804f15005be46527366b0604bd739754d144a83d3983d94a9a6a"
+      },
+      {
+        "path": "LICENSES/MIT.txt",
+        "bytes": 1078,
+        "sha256": "0c22d71ab6599696c5dabbdc3cc11ad68016d00a01efa2980538e42c9ccf73f3"
+      },
+      {
+        "path": "appiumtests/applets/kicker/kickertest.desktop",
+        "bytes": 1786,
+        "sha256": "6180fcf1e32ae60ea6da1d842618564621143e980b5597f2cbb95ec8d912062e"
+      },
+      {
+        "path": "appiumtests/applets/systemtraytest/org.kde.testdbusactivation/metadata.json.license",
+        "bytes": 62,
+        "sha256": "f6c79948ee8afc5cb446833139e156cf7fb57e03cfbf3de995a527d0395d83c8"
+      },
+      {
+        "path": "applets/devicenotifier/openWithFileManager.desktop",
+        "bytes": 4144,
+        "sha256": "21ae873a70e0106bbdd7c8c93861df8ad82e268ff594516340d89e0f66e5b870"
+      },
+      {
+        "path": "donationmessage/donationmessage.json.license",
+        "bytes": 63,
+        "sha256": "4be862f09dc4fa5b439a4b080488c2ca50ed7880780338f64083fa55ab01cd17"
+      },
+      {
+        "path": "geotimezoned/geotimezoned.json.license",
+        "bytes": 62,
+        "sha256": "f6c79948ee8afc5cb446833139e156cf7fb57e03cfbf3de995a527d0395d83c8"
+      },
+      {
+        "path": "gmenu-dbusmenu-proxy/gmenudbusmenuproxy.desktop",
+        "bytes": 1881,
+        "sha256": "58dfb0a0bde493f34b02fce837278156a60210dc43380816420655a8a3ea77c0"
+      },
+      {
+        "path": "interactiveconsole/org.kde.plasma-interactiveconsole.desktop",
+        "bytes": 2190,
+        "sha256": "6fb2f8eea0216c5356b0c7a1d6ac77e13fb3f81d88769c2e7b15cd3147eb1a66"
+      },
+      {
+        "path": "kcms/autostart/kcm_autostart.json",
+        "bytes": 17038,
+        "sha256": "b4d6566797c8a15e34dd7aff4b8fcc00b5a3b57ce46e8f26a71524405c1c572e"
+      },
+      {
+        "path": "kcms/colors/accentColorService/accentColorService.json",
+        "bytes": 8002,
+        "sha256": "579f659fe48d544cbea242922686081f518dc70bcf66e411c1d08ca20718ebd7"
+      },
+      {
+        "path": "kcms/colors/editor/org.kde.kcolorschemeeditor.desktop",
+        "bytes": 7608,
+        "sha256": "ecf726d06dfe469e147e9269f6b2e838539980ae03bf89b8a6741ff59fbdcf19"
+      },
+      {
+        "path": "kcms/colors/kcm_colors.json",
+        "bytes": 22467,
+        "sha256": "f169417daeac2b7fb07412da0e23b022786a59e88dde51cf61f4ee3ad32c480d"
+      },
+      {
+        "path": "kcms/componentchooser/kcm_componentchooser.json",
+        "bytes": 21310,
+        "sha256": "40a676d6cab71eb8c967db6aff6a52cb62a1fe4ad0c169ca8582466f0f3e896a"
+      },
+      {
+        "path": "kcms/cursortheme/kcm_cursortheme.json",
+        "bytes": 25965,
+        "sha256": "ab10e0f10c4ef0afb257fe08d450f6f35f889e2a0e3c4835787baf1714d07696"
+      },
+      {
+        "path": "kcms/desktoptheme/kcm_desktoptheme.json",
+        "bytes": 14945,
+        "sha256": "e621d78d5b64d036da8252504c5f85b85a73d1441dd7346d1f05c61597f5f641"
+      },
+      {
+        "path": "kcms/feedback/kcm_feedback.json",
+        "bytes": 15878,
+        "sha256": "c01f9006b9db51e18639827d9afd5f320cfccb3547415eb81b3bdaff823a0039"
+      },
+      {
+        "path": "kcms/fonts/kcm_fonts.json",
+        "bytes": 31372,
+        "sha256": "64d0f26caceb81c47b263ab53b6beb09be2464c390ec607f1d5e1b69ae0973a4"
+      },
+      {
+        "path": "kcms/icons/kcm_icons.json",
+        "bytes": 14733,
+        "sha256": "1971958c7cfd6d056d676df6642f4f665d91727f99b01014f27bbb5fb9a1b764"
+      },
+      {
+        "path": "kcms/kfontinst/apps/installfont.desktop",
+        "bytes": 1848,
+        "sha256": "580277128a2ea0616e0a1b344ed2285d1413f2d4aaa528c2f7701406c301429d"
+      },
+      {
+        "path": "kcms/kfontinst/apps/org.kde.kfontinst.desktop",
+        "bytes": 3470,
+        "sha256": "b77091a359aaab029d1eec4808e371e816e508379073dea59e700474fa534bdc"
+      },
+      {
+        "path": "kcms/kfontinst/apps/org.kde.kfontview.desktop",
+        "bytes": 3911,
+        "sha256": "c74f58b5279bb3a4cca5bc122dbc44caaff0de8f707c51c146dd33ba337ac0f2"
+      },
+      {
+        "path": "kcms/kfontinst/kcmfontinst/kcm_fontinst.json",
+        "bytes": 12938,
+        "sha256": "14f9b1bb758bc3cd985ab54488a257dab8cd2c71cbba4c6c013127d0b69d3ac7"
+      },
+      {
+        "path": "kcms/kfontinst/kio/fonts.desktop",
+        "bytes": 1401,
+        "sha256": "af8002c86c3b32bb7552d3f7feb763e429e785d45e026b35f738bd48842f825e"
+      },
+      {
+        "path": "kcms/kfontinst/kio/fonts.json",
+        "bytes": 860,
+        "sha256": "b299bf6e4c9404e3f1b756129940cb64bf296b673752260b5033a8204b88f932"
+      },
+      {
+        "path": "kcms/kfontinst/thumbnail/fontthumbnail.json",
+        "bytes": 3140,
+        "sha256": "5defeb4869a49b18d54b457403454b68c5050eca3f9ed0f937d7b98c10af564d"
+      },
+      {
+        "path": "kcms/kfontinst/viewpart/COPYING.UNICODE",
+        "bytes": 1943,
+        "sha256": "c9a694be6980c68800b5fba820b4d9c1c3f983198efe592de2dd8b2183ae5a2a"
+      },
+      {
+        "path": "kcms/kfontinst/viewpart/kfontviewpart.json",
+        "bytes": 3196,
+        "sha256": "fc4487ebafda95ee032c27a28aa692a933350478866dcbcf6ae37a5fdb99bb0e"
+      },
+      {
+        "path": "kcms/lookandfeel/kcm_lookandfeel.json",
+        "bytes": 15576,
+        "sha256": "97ba2dc3c339e648a9e9f6b9d3dbb5d9fc8044e2bc979f5cf0c533e922cad42f"
+      },
+      {
+        "path": "kcms/lookandfeel/kded/lookandfeelautoswitcher.json",
+        "bytes": 7593,
+        "sha256": "1bf8b23b772ca1fd3a3c745dd6c16a58cbd3a251ee2ab65193117d572636d3d6"
+      },
+      {
+        "path": "kcms/lookandfeel/kded/lookandfeelautoswitcher.json.license",
+        "bytes": 62,
+        "sha256": "bebbb684e1c5eaf96f0a89114256d695007c5878d9959e085f458bbd5fc4bea7"
+      },
+      {
+        "path": "kcms/nightlight/kcm_nightlight.json",
+        "bytes": 20871,
+        "sha256": "26bf75b3985122452262b126d75394196a28016caa60985aadc47154f7f582a3"
+      },
+      {
+        "path": "kcms/nighttime/kcm_nighttime.json",
+        "bytes": 8091,
+        "sha256": "a6f795485f31f318693f4b7ac0944e942c591b99adfc2b1bb233143a43fc2ecd"
+      },
+      {
+        "path": "kcms/notifications/kcm_notifications.json",
+        "bytes": 22788,
+        "sha256": "ecfa792ee270c595c8f07c4a7d7a8be22e356626479af4282230390dab375d73"
+      },
+      {
+        "path": "kcms/region_language/kcm_regionandlang.json",
+        "bytes": 41069,
+        "sha256": "938e686de4ec6c34488f7d8aa9035061e54d49bfbb2a74650001d1a09a1d997e"
+      },
+      {
+        "path": "kcms/soundtheme/kcm_soundtheme.json",
+        "bytes": 12054,
+        "sha256": "074dbe65bf59081ea9e58c8460c4c5c211fb5f1f12e93f059868ee839c3a709f"
+      },
+      {
+        "path": "kcms/style/kcm_style.json",
+        "bytes": 24432,
+        "sha256": "875aa9eab496a27688f729ebc485015eeb8a20de6e41e2a0dc6aa9369e53536f"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Air Balloon.png.license",
+        "bytes": 208,
+        "sha256": "0867e868aa2e32402672d828e282c9c337933a2686fa6a8ad0728a60a9eb10d0"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Astronaut.png.license",
+        "bytes": 168,
+        "sha256": "33240eafb16a848852caa552e7224e2a2be252f00ba4dc866048c9c7edccae63"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Books.png.license",
+        "bytes": 159,
+        "sha256": "20c78c7c032d6b05713dea361e58d5becf5aec873dcdb41e1e4346b6e6fdcd2b"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Brushes.png.license",
+        "bytes": 165,
+        "sha256": "ccc398b162c98b0c8f15cf00aacbf6126a91e2a39cd0e2a01ba942f3a463102a"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Bulb.png.license",
+        "bytes": 170,
+        "sha256": "96d4bd2c8e526684455dec194094fbc2f7e9e8875da9c85be39e57ed57511bf9"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Car.png.license",
+        "bytes": 174,
+        "sha256": "acf7751f5d380453205a2bd0d446b8900bfe6ecd3e182592dc1eeda2dc90ab8d"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Cat.png.license",
+        "bytes": 172,
+        "sha256": "f77b3289f5099ad1ca58532ff9943d617876b37479af6747593173e99c7e6242"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Chameleon.png.license",
+        "bytes": 163,
+        "sha256": "7f0761998dde30640882759b20a02378d998a16a8fb49704f0f7b84e927c4415"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Cocktail.png.license",
+        "bytes": 156,
+        "sha256": "f547152506eb3c9d80227d024b8b675eb1fe2e527b8afc7b96c867818ae24320"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Dog.png.license",
+        "bytes": 156,
+        "sha256": "9e56d09d3688ffe56fbd80138975e7f6ede06d1758fc93437be060daa07637f5"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Fish.png.license",
+        "bytes": 168,
+        "sha256": "907333191bfaf13d0f9c241034c343098257a6a86f268e6c2dc42e7bbba82bab"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Gamepad.png.license",
+        "bytes": 170,
+        "sha256": "70085a723ed5427ed6f04a7ea29096029ca7ce5ebc8f6363d7b6af258bf3c19f"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Owl.png.license",
+        "bytes": 150,
+        "sha256": "904fa4c79a1b591eb3b1971090ccc244193669faaf6ed550e9f9ae8eaada6bcd"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Pancakes.png.license",
+        "bytes": 183,
+        "sha256": "b458a676d08d252aa85dd34bb3df319fe39211e608096fbc32cd2092fc4456a5"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Parrot.png.license",
+        "bytes": 179,
+        "sha256": "7249c94ad5a339c9518c8bfd237cd1af5afa70b3fc5260dd2162d12e6eaf183f"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Pencils.png.license",
+        "bytes": 173,
+        "sha256": "c9dfdc62c4c6607ca99e68d44b5bfc543654b08e538df888150a53543f7694f1"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Shuttle.png.license",
+        "bytes": 157,
+        "sha256": "2c876a8c2687babc4079f88cac393d5ffc71d6199b8b9df0b0dd76a5ca6a542a"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Soccer.png.license",
+        "bytes": 177,
+        "sha256": "5ac19962c120be9ae787381696b60385eca2c8c673e00890c7d01c998479d6aa"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Sunflower.png.license",
+        "bytes": 162,
+        "sha256": "e5007617b1a77a9e6d3f45b6733436d02d88dfbcd500c1cac1854098aef3385d"
+      },
+      {
+        "path": "kcms/users/avatars/photos/Sushi.png.license",
+        "bytes": 177,
+        "sha256": "23c80ddbbe5b66dd3514fabed7d9b01648e1aa35b345b26d3db5e881aeb8f1a5"
+      },
+      {
+        "path": "kcms/users/src/kcm_users.json",
+        "bytes": 22146,
+        "sha256": "6c4b3cbdaeb4459a94e797e8bab71064789a26021bc69be2441b0be5ab3a78a5"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/base.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/left-index-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/left-little-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/left-middle-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/left-ring-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/left-thumb.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/palm.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/right-index-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/right-little-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/right-middle-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/right-ring-finger.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/users/src/ui/hand-images/right-thumb.svg.license",
+        "bytes": 98,
+        "sha256": "576acfd2477c3325d507ecf9cea5c453d81bfda29bfdba6a6406fc3c077a1da6"
+      },
+      {
+        "path": "kcms/wallpaper/kcm_wallpaper.json",
+        "bytes": 14000,
+        "sha256": "c7212bde5fef1512fb664909feac971e07f9e5e0a02d97f21f20d44076598624"
+      },
+      {
+        "path": "kioworkers/desktop/directory.desktop",
+        "bytes": 50,
+        "sha256": "0ade2293644f804372387288d3ad67a4127e4c0d56fe5a2d2a8936c0ab0ae5a9"
+      },
+      {
+        "path": "klipper/org.kde.klipper.desktop",
+        "bytes": 12146,
+        "sha256": "9577da2937fbd3d344fca28d21c87d48818dfe8c3f475dcff249d3a6e694f4cf"
+      },
+      {
+        "path": "krunner/org.kde.krunner.desktop.cmake",
+        "bytes": 5263,
+        "sha256": "9cc34e104b5dddf39de170457dc571319713dcb7d51869aff1b516e6b33251b6"
+      },
+      {
+        "path": "ksecretprompter/src/org.kde.secretprompter.desktop",
+        "bytes": 1526,
+        "sha256": "7e456ec6c35879757236221cd2f487c028e5cb3b4ee4db7b7a09dcf2a80fa6e7"
+      },
+      {
+        "path": "ksmserver/LICENSE",
+        "bytes": 1003,
+        "sha256": "ac7a68c43766c0c7092c6f73e9de4701e56a8291097da970e663791c7554d466"
+      },
+      {
+        "path": "libkmpris/kded/mprisservice.json.license",
+        "bytes": 62,
+        "sha256": "f6c79948ee8afc5cb446833139e156cf7fb57e03cfbf3de995a527d0395d83c8"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/GammaRay.desktop",
+        "bytes": 378,
+        "sha256": "a1b9195e210fcf4ddc8413534f5976d65f45e57a8625194d745d8b6eb7290b0c"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/brave-browser.desktop",
+        "bytes": 87,
+        "sha256": "97965e34ecbc32b03abbeaecccaae478d8bdaef2b836cf19fb373eaa6ecd204e"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/brave-efmjfjelnicpmdcmfikempdhlmainjcb-Default.desktop",
+        "bytes": 212,
+        "sha256": "45464addb6ed21ddd055ad6d3bf3fc41cbb0ad4f0938b21b12d289e9a17a6434"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/com.spotify.Client.desktop",
+        "bytes": 512,
+        "sha256": "aeda6742ebdb4f206a094e150a7b4803d68432c7547dc236255b2042b895881f"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/im.riot.Riot.desktop",
+        "bytes": 396,
+        "sha256": "7063744d9c42ac3c6d81fcd17112a860ba25029498ce0b2887afa11080bcb0a3"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/kcm_autostart.desktop",
+        "bytes": 3213,
+        "sha256": "5cba4b19b7124e7edd6e1afb080b2f3836b43cca74e7fd91b6ffbee1b4cd442e"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/kcm_kdeconnect.desktop",
+        "bytes": 22974,
+        "sha256": "900dedfc21c8ad7c85b36579e5f6f1eb8688f293d1d3430c33b6f3b147692d5e"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/marisa..desktop",
+        "bytes": 168,
+        "sha256": "89d0cc2e4776f373d0f77937e4d79a9386537758dbc2a79e89ae593a019b1f6f"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/org.kde.dolphin.desktop",
+        "bytes": 375,
+        "sha256": "9166f580d42104bddab280ea8724cd4c0ac34785ab3d5604ebae40c36ed620b7"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/org.kde.gwenview_importer.desktop",
+        "bytes": 111,
+        "sha256": "d9824f55d95500ce508d1b0672fabf905d111583b075e9fb72dd761cf7d41a93"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/org.kde.konversation.desktop",
+        "bytes": 420,
+        "sha256": "bbabb4cd5309187ed96ab6a1d2523cb56c6396c33fe891b42ca75685ef72283a"
+      },
+      {
+        "path": "libtaskmanager/autotests/data/applications/org.telegram.desktop.desktop",
+        "bytes": 712,
+        "sha256": "8f8a8aed80fb1854dba3fd17095802c8a241585a3637ceb1479c4dae73f7a67f"
+      },
+      {
+        "path": "login-sessions/plasmawayland-dev.desktop.cmake",
+        "bytes": 6352,
+        "sha256": "1b1633d3453e20bedef69b4d54323387630703b9fe2f9fc79f0b0bb1dd42d8b3"
+      },
+      {
+        "path": "login-sessions/plasmawayland.desktop.cmake",
+        "bytes": 4057,
+        "sha256": "75564e98599c941706a2e44a2d974fed20315a5fd09efc7957f009aa1dfdaca8"
+      },
+      {
+        "path": "lookandfeel/org.kde.breeze/contents/layouts/org.kde.plasma.desktop-layout.js",
+        "bytes": 220,
+        "sha256": "f3e641417c4d49827e84174b6ef08e5ef914984a0cd93e04164644f64b8b3ddb"
+      },
+      {
+        "path": "lookandfeel/org.kde.breezedark/contents/layouts/org.kde.plasma.desktop-layout.js",
+        "bytes": 220,
+        "sha256": "f3e641417c4d49827e84174b6ef08e5ef914984a0cd93e04164644f64b8b3ddb"
+      },
+      {
+        "path": "lookandfeel/org.kde.breezetwilight/contents/layouts/org.kde.plasma.desktop-layout.js",
+        "bytes": 220,
+        "sha256": "f3e641417c4d49827e84174b6ef08e5ef914984a0cd93e04164644f64b8b3ddb"
+      },
+      {
+        "path": "oom_notifier/oom_notifier.json.license",
+        "bytes": 98,
+        "sha256": "3fc5c2d75c579b99078ac65c97bc63628d116ea8f2d3d10669c7aef48dbae422"
+      },
+      {
+        "path": "plasma-windowed/org.kde.plasmawindowed.desktop.cmake",
+        "bytes": 6630,
+        "sha256": "974a6745f948d17c1863a04c3954e21ae88adf22963a664fd317a026e2229dbd"
+      },
+      {
+        "path": "runners/baloo/org.kde.baloorunner.desktop",
+        "bytes": 1564,
+        "sha256": "40660a7e9fc122db3bc869bcd755b7c2c28437cc682ac9c2fe64dfe3228f86da"
+      },
+      {
+        "path": "runners/baloo/plasma-runner-baloosearch.desktop",
+        "bytes": 5025,
+        "sha256": "d9102caa424a89a2f2fdf231eef3c7e253f97f8ad85992a7d9373a369480184f"
+      },
+      {
+        "path": "runners/bookmarks/autotests/firefox/firefox-config-home/atnsd8ae.testmekde/favicons.sqlite.license",
+        "bytes": 105,
+        "sha256": "f0062e8c88033c9028ba47be3ec4e45191fe9a59ab6498ffa68e35bc681b456e"
+      },
+      {
+        "path": "runners/bookmarks/autotests/firefox/firefox-config-home/atnsd8ae.testmekde/places.sqlite.license",
+        "bytes": 105,
+        "sha256": "f0062e8c88033c9028ba47be3ec4e45191fe9a59ab6498ffa68e35bc681b456e"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/Alacritty.desktop",
+        "bytes": 404,
+        "sha256": "a57d4ed88b2332a3e36a68cb9a4b5f1c494bdb670f43f7b81cc5575a5350ef82"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/Set Resolution 2560x1440.desktop",
+        "bytes": 341,
+        "sha256": "604c9498d7c7cc89ab83d81b4d492196efa3fce058ca1ff1dea426d4110bfd62"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/Set Resolution 3440x1440.desktop",
+        "bytes": 368,
+        "sha256": "20b86abdc3accbac40fd86d3f48d8a663864a177964029eb67e03749ee1d2b56"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/audacity.desktop",
+        "bytes": 516,
+        "sha256": "4fd16b6cf0def133ae0136e3c0790b6d6484545f3343508942bb5b210dd3ce08"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/code-oss.desktop",
+        "bytes": 443,
+        "sha256": "a37c3c0c25c3962bdec74b860b224d073b405b1672912a8f8f687e1c44bed91a"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/code_code.desktop",
+        "bytes": 563,
+        "sha256": "563c9f185694f18a3951a2daafda7cca5bc52eecf4b58c11ffad78a11dffb3d9"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/com.belmoussaoui.ashpd.demo.desktop",
+        "bytes": 459,
+        "sha256": "acb9ab97b05d27c3106c6944ccd7cb901363eb2e5946a9cf1c8478caafd2b201"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/google-chrome.desktop",
+        "bytes": 683,
+        "sha256": "abd549a631101c9bd673e73133a725e0afedbc9b04103cbfd4ad829cc098bcc1"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/kdesystemsettings.desktop",
+        "bytes": 261,
+        "sha256": "6fc48afafa57ccecbaab2c3315d9c3feda39af25b1a1f8b168ea9e889509036b"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.gimp.GIMP.desktop",
+        "bytes": 1278,
+        "sha256": "ab3777bdfccca4958d38f9ad67db008a4222f9db8747e71647ec8f5028cb631c"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.discover.desktop",
+        "bytes": 625,
+        "sha256": "7a4caa4291fbbaed7c50923effb1b66577a4d868e02ef25972bc81b9dbf02ee4"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.dolphin.desktop",
+        "bytes": 506,
+        "sha256": "5e6bc1c5b67dc4e238f12ff127347a123a2d581936ff1114fbc44c116b43e286"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.kate.desktop",
+        "bytes": 496,
+        "sha256": "4470659c09f4097a702a869390bf1781de701707bfc14ce30bdaf85d31e3a972"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.konsole.desktop",
+        "bytes": 647,
+        "sha256": "0d332d60dca3c2217126836b41b983fe4a90cba6f5f51e1248e3315bf44c813e"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.kpat.desktop",
+        "bytes": 441,
+        "sha256": "828e39e6a4049b50b78f3dd13d12d63616168405b32a40825d4c8bba1b586e05"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.palapeli.desktop",
+        "bytes": 316,
+        "sha256": "7cadf7841761aafd39bfd8d2a3bf8cdf02b5d5e2d6e3d9e739ad0c86a8abc784"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.plasma-welcome.desktop",
+        "bytes": 474,
+        "sha256": "2dda20d1bcfbe0022c32fddf2da498e3bbd36351d5493c23ed77f8e4e3d4032a"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.plasma.emojier.desktop",
+        "bytes": 458,
+        "sha256": "32327b87926c06ef053dd2a0502bbd6e698d6a9cc2e6bad4b3d974b1672a3f58"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.rkward.desktop",
+        "bytes": 694,
+        "sha256": "a8e5f67974d78b011de1c2bbf696fa28a8583860663d927dcb99dffb139eb1f6"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.systemsettings.desktop",
+        "bytes": 382,
+        "sha256": "643dbe30a2376fd4d340ecdd84fce0392811bf31ab8114afc4048405372a06b7"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.virtthings.desktop",
+        "bytes": 276,
+        "sha256": "b2c991e2f7ae7e00beb27e0ca7e8b89b7548a3fdf7620908734f9dbabfd31dde"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.kde.yakuake.desktop",
+        "bytes": 363,
+        "sha256": "0bcd93d7fe68a73cd9330b0f524e5f318705ce248ceea1fd2cb04ffbf07eea21"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/org.libreoffice.LibreOffice.impress.desktop",
+        "bytes": 1865,
+        "sha256": "bfc401e8af97f00150d13bd2ff0b43c984921c0f418f8bdc065ed8fc60e2c081"
+      },
+      {
+        "path": "runners/services/autotests/fixtures/virt-manager.desktop",
+        "bytes": 182,
+        "sha256": "73c43790476b07861a399e5712d3180889cf5503e9157d692b2b170d6d2a30cb"
+      },
+      {
+        "path": "shell/org.kde.plasmashell.desktop.cmake",
+        "bytes": 1136,
+        "sha256": "aa8a200421c43f6ded97c0e377393aa4cc1ecbc80a7136916f587947d70db0c2"
+      },
+      {
+        "path": "startkde/session-restore/org.kde.plasma-fallback-session-restore.desktop.in",
+        "bytes": 2390,
+        "sha256": "f58fd239ca7783a1d3767978e6e9e8ec010609a43cb1e8926900bd7489d88975"
+      },
+      {
+        "path": "startkde/session-restore/org.kde.plasma-fallback-session-save.desktop.in",
+        "bytes": 2288,
+        "sha256": "5701fd8bf2facdab1703bee18a24e7d89fd9f9e62d9e3c9b27d2e475a0b3c619"
+      },
+      {
+        "path": "wallpapers/image/plugin/autotests/testdata/default/FEATURE207976-dark-wallpaper/metadata.desktop",
+        "bytes": 224,
+        "sha256": "9b1770d8cdac4d577ff5d11794527593511584b38cf6c903e5779538cd3e2178"
+      },
+      {
+        "path": "xembed-sni-proxy/xembedsniproxy.desktop",
+        "bytes": 1808,
+        "sha256": "29b687434a97780aa0fdf50502b9cf5ffb8c10a976827bce6136cd6a2cbbffda"
+      }
+    ]
+  },
+  {
+    "provider": "xfce",
+    "product": "xfce4-settings",
+    "repo": "xfce-mirror/xfce4-settings",
+    "revision": "488c919d23c979c9b28abd192c05b9b2310fa732",
+    "archiveUrl": "https://codeload.github.com/xfce-mirror/xfce4-settings/tar.gz/488c919d23c979c9b28abd192c05b9b2310fa732",
+    "archiveSha256": "91c6bf53f3151e462b13c14df59df4da6b53bb7cf74286318f329ddeac99d1fc",
+    "archiveBytes": 2337507,
+    "retainedFiles": [
+      {
+        "path": "AUTHORS",
+        "bytes": 171,
+        "sha256": "06c257c69204b739d7835ccde96e4bf705b1eb72bb8af19ecf5dbc8b79fdd57b"
+      },
+      {
+        "path": "COPYING",
+        "bytes": 18092,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      {
+        "path": "dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in",
+        "bytes": 500,
+        "sha256": "ba5cdd48301a3ea7ab1c6f0f34996b85d038752494525d58063a5b785d54f320"
+      },
+      {
+        "path": "dialogs/appearance-settings/xfce4-appearance-settings.desktop.in",
+        "bytes": 569,
+        "sha256": "4028a7505c942498a45edea709276329d9edea792f5e7b5d6267d0b61315a9d1"
+      },
+      {
+        "path": "dialogs/color-settings/xfce4-color-settings.desktop.in",
+        "bytes": 411,
+        "sha256": "106e06c2b9bdcead5437f12a55865225239ae561e92afa06e065421e42b036c1"
+      },
+      {
+        "path": "dialogs/display-settings/xfce4-display-settings.desktop.in",
+        "bytes": 459,
+        "sha256": "a57387eea46dc62e5dce1cf1d25d6cf63b45b280de17c5e809991ac70366eb41"
+      },
+      {
+        "path": "dialogs/keyboard-settings/xfce4-keyboard-settings.desktop.in",
+        "bytes": 409,
+        "sha256": "13a360ffc02d44e142cce559200975b2d3111a8ac6248793872d8b59d97e4ec0"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/alacritty.desktop.in.in",
+        "bytes": 216,
+        "sha256": "96fcf68980ab1337bdcca23b1a08a1bfd6d0bf720e47ab52029c79dfd3b0a5d5"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/amarok.desktop.in.in",
+        "bytes": 198,
+        "sha256": "8e08cdc0464839bc96443ceb578298bc716812c349ed9649e70afd5b22da1b09"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/amberol.desktop.in.in",
+        "bytes": 210,
+        "sha256": "2bff804ad7de94a25c409d359569b05f523a63e0158574808e112f1cf38ffce4"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/aterm.desktop.in.in",
+        "bytes": 204,
+        "sha256": "33f8a0ca9bfd12618c2553b0237744485b25d67a3f7ee92ec4031b436e7d6a1f"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/audacious.desktop.in.in",
+        "bytes": 207,
+        "sha256": "60f516cfa7455b13d0a5f22328083eeca7cac45d9b9db0cb5e6c8ece57445ec5"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/balsa.desktop.in.in",
+        "bytes": 246,
+        "sha256": "41b7c1b9417af65f531d9038b4905fb6a82af221b43122adc642789b25c671f2"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/brave.desktop.in.in",
+        "bytes": 213,
+        "sha256": "3f062b52fff067086fdbe9524fb7ae870972273fe7c67e09a3fa1f705d3d0750"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/caja.desktop.in.in",
+        "bytes": 243,
+        "sha256": "8f397ff1642e8ef6e1fa93dbb092c4787712238beaa6cb1fa52d88f8675dbf42"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/chromium.desktop.in.in",
+        "bytes": 243,
+        "sha256": "91fab69e8b2e41bed031fef631b4201ac64ce96e870c39aba67c1f2435da5dfc"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/clementine.desktop.in.in",
+        "bytes": 232,
+        "sha256": "b3ce7136ced7ddc0f7f070634e5507baa82b00b2ff68f163a06a5a1c8da76455"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/debian-sensible-browser.desktop.in.in",
+        "bytes": 225,
+        "sha256": "66998dc83615af7238937fd1710e9bc191728f1af2ddc0fd23bfe41b770ca567"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/debian-x-terminal-emulator.desktop.in.in",
+        "bytes": 240,
+        "sha256": "514d218702b3f776602ef9fd17576dd457f905df94afb436925b7c35290c46af"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/decibels.desktop.in.in",
+        "bytes": 239,
+        "sha256": "29b51b4e65767099e3601a56b87fd7fdd87fd059b5c1a16394a4f7a6b3d12c89"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/digikam.desktop.in.in",
+        "bytes": 201,
+        "sha256": "bbcf0bb760d305ae414032b71acd534f7aa1405b8d42dada12f30e458b0dac59"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/dillo.desktop.in.in",
+        "bytes": 211,
+        "sha256": "e495870af791e9713a9be23ad626630ea9b3b51f9756a5ab3d130e85c8e57f74"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/dragonplayer.desktop.in.in",
+        "bytes": 210,
+        "sha256": "44ad32736f745ee713b0f22e527e3ed2d7929c5feefbdc826e771cb61661783c"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/elisa.desktop.in.in",
+        "bytes": 195,
+        "sha256": "7bc21bea13c82230eb2f8e45118cc71e05d8a1041758871ebe8e039d9291b0a7"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/emacs-gtk.desktop.in.in",
+        "bytes": 204,
+        "sha256": "cd3df704ec30fc076ec4632e8610768444c622728ed53552c46b368a8601eb40"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/emacs.desktop.in.in",
+        "bytes": 277,
+        "sha256": "e56224131b999d729a16351cd774ae9d7170aaf6adc360a3f0b28993f7d555f4"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/encompass.desktop.in.in",
+        "bytes": 206,
+        "sha256": "e654c00bcc4e39693b141738a27b06e07632609f4e514a4a16dcfcbeceb16abf"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/eog.desktop.in.in",
+        "bytes": 208,
+        "sha256": "7c24e7a64c94c0a7949cf8b4965a9a61f589c813aa929ef9c9bd1caa65881a30"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/eom.desktop.in.in",
+        "bytes": 197,
+        "sha256": "18f14856f1025c0868ef69876c0c879714954f441c3eae6cc95476204542f12d"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/epiphany.desktop.in.in",
+        "bytes": 237,
+        "sha256": "dff50b1d4b066d3a77c22e20fc21fdd3b43956a80a4486b3df794c3880767008"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/eterm.desktop.in.in",
+        "bytes": 232,
+        "sha256": "e28473f8aed63bfcecc5c585f0920462e76f05a0efa28e14da538625c16f1ee1"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/evolution.desktop.in.in",
+        "bytes": 373,
+        "sha256": "e86acaa435913c280f93569cb662b6d74f65f3d04becc041bc2378b025b0f9d5"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/firefox.desktop.in.in",
+        "bytes": 270,
+        "sha256": "52f1e271d65181b66527eca3f8cc0d7e75f674c0f9242d993f8f1fd6b69fd4df"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/galeon.desktop.in.in",
+        "bytes": 209,
+        "sha256": "1cb00f1d3291bfe1c159c0ef51b2f47d87178ab518c380cf116e5e9c50bc433b"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/geary.desktop.in.in",
+        "bytes": 255,
+        "sha256": "8bf8bb636eee64c12ad2a4f9edc6e0b31fa3bbcaa9978b71dcd1ca6cba10cbf4"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/gedit.desktop.in.in",
+        "bytes": 218,
+        "sha256": "8b18cdb3325f9185846b8c7d29808f28db36954ab6f30216d9abd8e4115b7da1"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/geeqie.desktop.in.in",
+        "bytes": 198,
+        "sha256": "8ceea433b836754366294658295ef91ed9319e977fd59ec517df76e28b353c7a"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/gnome-terminal.desktop.in.in",
+        "bytes": 244,
+        "sha256": "0c46f94aba925d9b9e2588236c00c26e35bce91662783c38405226d508f831b8"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/google-chrome.desktop.in.in",
+        "bytes": 258,
+        "sha256": "c69fb0cfb96fbf4c6fdf32a86bb71eb33b7d5941e31f1cf1f9df1d6ad88e4ea9"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/gthumb.desktop.in.in",
+        "bytes": 223,
+        "sha256": "b9b63ab3627d573db1b165804171d223d359c3f0ecbb9c4136a2843484997a17"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/gvim.desktop.in.in",
+        "bytes": 201,
+        "sha256": "1d2b4cc6cb2aa722eb8ed2a39d211ec7a384658703f73f5151b8d3fd3298483e"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/icecat.desktop.in.in",
+        "bytes": 221,
+        "sha256": "f26c2ca576cc86f61288d0b5a6a584a0e9f996b5093817a8c5168898879fd0d5"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/icedove.desktop.in.in",
+        "bytes": 306,
+        "sha256": "7fc2d852f3825af5622c75de1c0f141c2a62a52a310390e32ceaf67482d00488"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/iceweasel.desktop.in.in",
+        "bytes": 236,
+        "sha256": "f36ec4fa3c1aabedc1a925c062f61d0b7736db82ec6b975543b03aea90b22e4d"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/imagemagick.desktop.in.in",
+        "bytes": 237,
+        "sha256": "6cb223d9974a0fd417e49af4c1fb34483f4950064c2f4ac2b10456f8322e3f4c"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/jumanji.desktop.in.in",
+        "bytes": 200,
+        "sha256": "e2a4139a137a534c0a20530fa15582a1eb4971470d8231046b1cf4f5c5f7ddca"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/kate.desktop.in.in",
+        "bytes": 191,
+        "sha256": "59e58dc5c8ab6a07e5834318ba4b9e260b09db148830125c7b909f94aab2eb2e"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/kitty.desktop.in.in",
+        "bytes": 201,
+        "sha256": "d88027e2a94c08394a72737853ad9b92eb54c92ec9eff13d58557c13deb2238f"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/kmail.desktop.in.in",
+        "bytes": 238,
+        "sha256": "1690872f741aca820e31191b50f88e84062a960348d48f67e8520cb87ea704d7"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/konqueror.desktop.in.in",
+        "bytes": 218,
+        "sha256": "062ccb3345b87dadbaa60bc670fc37b8a37d931d6fa15fa6cf4d34ae76261a96"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/kphotoalbum.desktop.in.in",
+        "bytes": 213,
+        "sha256": "b0ddd2901e9a7a7d802351bae6f0c042f982534cb6946eec23825eed0bb2c2f1"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/links.desktop.in.in",
+        "bytes": 294,
+        "sha256": "29d410925715a5b20f4cd68c4b6d25226e57616baa0c43d5622976de2ddc017f"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/loupe.desktop.in.in",
+        "bytes": 220,
+        "sha256": "9146f933c4b91b5abb992c8e4ca1c6068ebe6a7030322f0e3740c7b11425e424"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/lynx.desktop.in.in",
+        "bytes": 291,
+        "sha256": "29ab9ea74114930dbcad5ca9934cc6c553468d16cd95bd0021db7e1a6db4b304"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/midori.desktop.in.in",
+        "bytes": 224,
+        "sha256": "cbcb0e63eff49bc282ba41008f0448f29fd368c3a59c5c6764c2226abf9543ec"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/mousepad.desktop.in.in",
+        "bytes": 212,
+        "sha256": "4f1f75159aba8706412bae5c298d92172ec16850086e7f312bb6478f89a99930"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/mozilla-browser.desktop.in.in",
+        "bytes": 313,
+        "sha256": "98953560867a9b986190c13812ddb1dcf4cf1705df12fcbb6067f1a2b8c23a03"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/mozilla-mailer.desktop.in.in",
+        "bytes": 342,
+        "sha256": "c3ff2bfbe49977247ab61bda38f2ea8ea0456e6a85e48635e506d073cebb2517"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/mutt.desktop.in.in",
+        "bytes": 307,
+        "sha256": "0eb5f41d6650b8360c3c1e026c2843e54dd60a42952306431089b2a51a14a420"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/nano.desktop.in.in",
+        "bytes": 272,
+        "sha256": "a21a247c4fb7ee50108fad66eae192bd491e1dbd0592b2b411555952330c898f"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/nautilus.desktop.in.in",
+        "bytes": 214,
+        "sha256": "e8812459a05931abaa5f4d79bac53898c90f040cc4db0745d8a742543e498275"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/netscape-navigator.desktop.in.in",
+        "bytes": 292,
+        "sha256": "13fd0c5bee4b381d2a7ae70ddc05d81d9f072d3c21cf1411acb43868c877f959"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/nxterm.desktop.in.in",
+        "bytes": 207,
+        "sha256": "ec7751ba18f92dba0e3c1ec15e1930a9c146da2dc572ff3a3ae62738d2600558"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/opera-browser.desktop.in.in",
+        "bytes": 203,
+        "sha256": "ff43e79400af17283aebad02b38c9103b2e7288689b8e905e71e8bef1f03662b"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/opera-mailer.desktop.in.in",
+        "bytes": 237,
+        "sha256": "737eb62ad3239c0d1342a5c11a884b054c0b820f387f470a5763d8a4c47564e0"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/parole-audio.desktop.in.in",
+        "bytes": 207,
+        "sha256": "cd70a41d5a17b0997070fc7bc9eaa40e532ab609019b24f1559dcb95897f9fe8"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/parole-video.desktop.in.in",
+        "bytes": 207,
+        "sha256": "9bd1b7a5eafe13457b3b9deeb5f9d05c47a62992c3655c0d99cdec5ff3b3e3db"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/pcmanfm-qt.desktop.in.in",
+        "bytes": 211,
+        "sha256": "f0d397b0027db2b49df1d3a819d5505a4ca7f0237daebf9d12e1a43a09f3be69"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/pcmanfm.desktop.in.in",
+        "bytes": 213,
+        "sha256": "06921beb5f7e1f0813e9d78858315b93a67587d511d3065a9aa01c7030fac969"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/pluma.desktop.in.in",
+        "bytes": 194,
+        "sha256": "997128527c2ee9573cb18e3c83a18c9b69f2f46f2989155e759179c975eef7a2"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/qterminal.desktop.in.in",
+        "bytes": 225,
+        "sha256": "0c593f9354a1a0a4c0f1cd9613a122c9d0bf651efb0b234feb649aa41ffca506"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/qtfm.desktop.in.in",
+        "bytes": 192,
+        "sha256": "92547dd4b265f17fd631f381afd03d581b447bfa5aa6d0f7919bd9f3cdaa2d0d"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/qupzilla.desktop.in.in",
+        "bytes": 203,
+        "sha256": "e764094f5494e12ee07a6c5c67e22e404fc2036de88abc5aef0bf9cf193cbc93"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/ristretto.desktop.in.in",
+        "bytes": 216,
+        "sha256": "4318677ee89528dbe45d50363b2961b3b19eab396653d8b8506bb580aa0e1d53"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/rodent.desktop.in.in",
+        "bytes": 218,
+        "sha256": "b635c39ea4b45002998fa4f3fc23a986d3df4d7192670e02692d05f84d28e407"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/rox-filer.desktop.in.in",
+        "bytes": 223,
+        "sha256": "422d7a8f9484a7c6ce576209e8f69bb2e4141a9174689862fde9a1ecffeea3f3"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/sakura.desktop.in.in",
+        "bytes": 215,
+        "sha256": "1b93844ec8540e6485624a8cb8fec5954920a23f911a0d28ccd98f2bf57bc3c1"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/shotwell.desktop.in.in",
+        "bytes": 214,
+        "sha256": "c21dfcb70ca6377a3aa10e61d5c638ca6b28e540714a2fb3e97c3f601cca293d"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/showtime.desktop.in.in",
+        "bytes": 229,
+        "sha256": "a984aac01a34718217f86d76f7b19d8b06bd3484a4dad0092849e018b665387d"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/surf.desktop.in.in",
+        "bytes": 191,
+        "sha256": "c7e8f3a358fe5db456268953a89bb0311fbdce1505d08919d1b821597fe85883"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/sylpheed-claws.desktop.in.in",
+        "bytes": 317,
+        "sha256": "a990af4e1fe1c88caa428c04d82667aaaee0908c8016a62909051e86bb3569d9"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/sylpheed.desktop.in.in",
+        "bytes": 250,
+        "sha256": "0a61f5ecefe2289e2dc825cdd6360b5582610ccea419fabbc9de4b2fbab01cfa"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/terminator.desktop.in.in",
+        "bytes": 218,
+        "sha256": "c427a90a3bff66d87befb29f786b5a08ce9f5b8c415a589ea29007b137439619"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/thunar.desktop.in.in",
+        "bytes": 208,
+        "sha256": "3ee400065aa42d678774867bc1ea97e77584a92716762738940f056727f6a365"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/thunderbird.desktop.in.in",
+        "bytes": 403,
+        "sha256": "0249391c40132a413be535e8a6ce4098398e3b833f031cde2f690eda488d61fa"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/totem.desktop.in.in",
+        "bytes": 214,
+        "sha256": "c256239c8f08f9a19f495b2e98bbdfba349c66537d44e6776bf5876ecf08de19"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/urxvt.desktop.in.in",
+        "bytes": 210,
+        "sha256": "fdca784f525b1542f1da787cdba4d613a56e4c23c0abd9af904a4d8ba5e25e5e"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/vim.desktop.in.in",
+        "bytes": 275,
+        "sha256": "c3010e8a0348e5b8ff7fc67dea9a25e8a1e5f49aa234b4ececc8e991e55a7676"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/vimprobable2.desktop.in.in",
+        "bytes": 215,
+        "sha256": "9046f728561da1357adcfc4c0c5ceb631b9e5907d049c9178f7859ce220f04b8"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/vlc-audio.desktop.in.in",
+        "bytes": 209,
+        "sha256": "d720edeffa62b48d95e5f27e63fc245a6530668e2dc060b08da98614707ca230"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/vlc-video.desktop.in.in",
+        "bytes": 209,
+        "sha256": "dd2b5d583de882126987172e4477395f9fbbec957d3cace1a950e0dc2bbacf5f"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/w3m.desktop.in.in",
+        "bytes": 274,
+        "sha256": "1ab78583597b8c54956b916111a76863435e2961373aa98b74b950da486696cf"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/xed.desktop.in.in",
+        "bytes": 188,
+        "sha256": "e0293dfd4cb2554c510c361b2812c89fbdfb173565afbb643c298fffc52c3351"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/xfce4-terminal.desktop.in.in",
+        "bytes": 252,
+        "sha256": "680278045817648dbb5b6f51df19a1ad53c4f792b86a9894779eccb3323143b8"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/xfe.desktop.in.in",
+        "bytes": 202,
+        "sha256": "7f5a0aa8a2e13ccece1ac5e61074d8a074bbc409e0e712842e16ed68fba45b88"
+      },
+      {
+        "path": "dialogs/mime-settings/helpers/xterm.desktop.in.in",
+        "bytes": 209,
+        "sha256": "584778da9bf20d49507ec4e6aeff108c5792330b2daac7e10471a4333d74e093"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-audio-player.desktop.in",
+        "bytes": 1107,
+        "sha256": "4ce15694bb90adb4ef783f1d6486865a7e71b281233fe630be11d4d9eee2043c"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-file-manager.desktop.in",
+        "bytes": 405,
+        "sha256": "2d68f273b9a3537984e320576e4dc7ef71a5c22567307acff0308cf75550136e"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-image-viewer.desktop.in",
+        "bytes": 478,
+        "sha256": "7f03b49aca8fd14607d9ffd45730f67fa6d71d311b43a217fc4ed3793ccf73a7"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-mail-reader.desktop.in",
+        "bytes": 357,
+        "sha256": "e4843da897670e672f81f760a0d8e0d837f684e4687c628fd4cfa943e8cf6ffe"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-mime-settings.desktop.in",
+        "bytes": 486,
+        "sha256": "60694195168fec6fc9e4141410be909ab54a72865ca894bd2c6a560e13634388"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-terminal-emulator.desktop.in",
+        "bytes": 338,
+        "sha256": "ce355fe35507eb20ba8ceeba0365ff528502bee9b50f65ae59408ff85b475c48"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-text-editor.desktop.in",
+        "bytes": 358,
+        "sha256": "eca98e7e7674b1a1b02a5bf138e83e41cde91cfa9a9defac03c68d3abc52ecb0"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-video-player.desktop.in",
+        "bytes": 959,
+        "sha256": "0bcf137c90a6800c2f09bf1decda54faa090ad3cc592c893fba4867530acfff8"
+      },
+      {
+        "path": "dialogs/mime-settings/xfce4-web-browser.desktop.in",
+        "bytes": 377,
+        "sha256": "2afcff379121c4ac626896999d8fbca403f561240a3f4048af92122e17b1214f"
+      },
+      {
+        "path": "dialogs/mouse-settings/xfce4-mouse-settings.desktop.in",
+        "bytes": 449,
+        "sha256": "ad9313473d81d27310ddd116022f9010f94ec79e78863269833d024c43c49b31"
+      },
+      {
+        "path": "xfce4-settings-editor/xfce4-settings-editor.desktop.in",
+        "bytes": 378,
+        "sha256": "a50fbcb9db0eb2bdddeb347cea9bfdace2a8f23123fd87dc15e8fd73a315c37c"
+      },
+      {
+        "path": "xfce4-settings-manager/xfce4-settings-manager.desktop.in",
+        "bytes": 335,
+        "sha256": "264e748b0c9159ce5d8479ef96db345a53994d7c190d2d79b1eb93b679b5c3b3"
+      },
+      {
+        "path": "xfsettingsd/xfsettingsd.desktop.in",
+        "bytes": 311,
+        "sha256": "5f0a4584e667b4f771c08589947e790b6cbf162c9bbcc7848fbfe91134127838"
+      }
+    ]
+  }
+]

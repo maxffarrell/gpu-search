@@ -1,0 +1,5205 @@
+{
+  "scope": "Known-positive retrieval on source-authored software search keywords; absence is not a negative judgment.",
+  "partition": "data/navigation-splits/dev.jsonl",
+  "partitionSha256": "104350ac5c74ed92610a15c987ecadd612f369a01c7f25381d1b98d7892f3ecb",
+  "artifacts": {
+    "live": {
+      "directory": "packages/model/candidate",
+      "modelId": "expanded-more-data-pooled-seed17",
+      "manifestSha256": "b0b2d5e8eab66cd73b33da9e7073124d80c74a0c7bca0d5128e352f8e55db1d6",
+      "payloadSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+      "payloadBytes": 32768,
+      "featureVersion": "gpu-search-features-v1",
+      "dimension": 16,
+      "quantizationBits": [
+        8
+      ]
+    },
+    "prior-research": {
+      "directory": "packages/model/candidate-v2",
+      "modelId": "features-bigram25-seed29-e10",
+      "manifestSha256": "46ffe70dc78e630fc05676033f3535ae3fefeb3def2378668b34d721cc6e73c4",
+      "payloadSha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8",
+      "payloadBytes": 32768,
+      "featureVersion": "gpu-search-features-bigram25-v1",
+      "dimension": 16,
+      "quantizationBits": [
+        8
+      ]
+    },
+    "candidate": {
+      "directory": "packages/model/candidate",
+      "modelId": "expanded-more-data-pooled-seed17",
+      "manifestSha256": "b0b2d5e8eab66cd73b33da9e7073124d80c74a0c7bca0d5128e352f8e55db1d6",
+      "payloadSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+      "payloadBytes": 32768,
+      "featureVersion": "gpu-search-features-v1",
+      "dimension": 16,
+      "quantizationBits": [
+        8
+      ]
+    }
+  },
+  "teacher": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "weightBytes": 90868376,
+    "dimension": 384,
+    "shipped": false,
+    "device": "mps"
+  },
+  "cutoffs": {
+    "live": 0.7004017233848572,
+    "prior-research": 0.6561784148216248,
+    "candidate": 0.7004017233848572,
+    "tfidf": 0.4217764735221863,
+    "train-paraphrase-tfidf": 0.5446854829788208,
+    "teacher": 0.7195559144020081
+  },
+  "cutoffFit": "Existing expanded calibration only; no navigation threshold fitting.",
+  "slices": {
+    "all": 76,
+    "semanticOnly": 73,
+    "seenTrainingQuery": 29,
+    "newTrainingQuery": 47
+  },
+  "metrics": {
+    "lexical": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.03438351569428235,
+        "coverage": 0.05263157894736842,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.039473684210526314,
+        "success3": 0.039473684210526314,
+        "success5": 0.039473684210526314
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.0,
+        "coverage": 0.0136986301369863,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.09010852388846408,
+        "coverage": 0.10344827586206896,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.10344827586206896,
+        "success3": 0.10344827586206896,
+        "success5": 0.10344827586206896
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.0,
+        "coverage": 0.02127659574468085,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      }
+    },
+    "live-raw": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.39162221908909844,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.19736842105263158,
+        "success3": 0.34210526315789475,
+        "success5": 0.618421052631579
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.3666203924763217,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1643835616438356,
+        "success3": 0.3150684931506849,
+        "success5": 0.6027397260273972
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.4599193181502214,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2413793103448276,
+        "success3": 0.41379310344827586,
+        "success5": 0.6896551724137931
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.34948145583861834,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1702127659574468,
+        "success3": 0.2978723404255319,
+        "success5": 0.574468085106383
+      }
+    },
+    "live-calibrated": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.03438351569428235,
+        "coverage": 0.05263157894736842,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.039473684210526314,
+        "success3": 0.039473684210526314,
+        "success5": 0.039473684210526314
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.0,
+        "coverage": 0.0136986301369863,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.09010852388846408,
+        "coverage": 0.10344827586206896,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.10344827586206896,
+        "success3": 0.10344827586206896,
+        "success5": 0.10344827586206896
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.0,
+        "coverage": 0.02127659574468085,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      }
+    },
+    "prior-research-raw": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.3661815630906266,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.14473684210526316,
+        "success3": 0.35526315789473684,
+        "success5": 0.6447368421052632
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.34543358359071463,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1095890410958904,
+        "success3": 0.3287671232876712,
+        "success5": 0.6301369863013698
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.4580610705170112,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2413793103448276,
+        "success3": 0.5172413793103449,
+        "success5": 0.7241379310344828
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.3094899521254107,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0851063829787234,
+        "success3": 0.2553191489361702,
+        "success5": 0.5957446808510638
+      }
+    },
+    "prior-research-calibrated": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.03438351569428235,
+        "coverage": 0.09210526315789473,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.039473684210526314,
+        "success3": 0.039473684210526314,
+        "success5": 0.039473684210526314
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.0,
+        "coverage": 0.0547945205479452,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.09010852388846408,
+        "coverage": 0.1724137931034483,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.10344827586206896,
+        "success3": 0.10344827586206896,
+        "success5": 0.10344827586206896
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.0,
+        "coverage": 0.0425531914893617,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      }
+    },
+    "candidate-raw": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.39162221908909844,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.19736842105263158,
+        "success3": 0.34210526315789475,
+        "success5": 0.618421052631579
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.3666203924763217,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1643835616438356,
+        "success3": 0.3150684931506849,
+        "success5": 0.6027397260273972
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.4599193181502214,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2413793103448276,
+        "success3": 0.41379310344827586,
+        "success5": 0.6896551724137931
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.34948145583861834,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1702127659574468,
+        "success3": 0.2978723404255319,
+        "success5": 0.574468085106383
+      }
+    },
+    "candidate-calibrated": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.03438351569428235,
+        "coverage": 0.05263157894736842,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.039473684210526314,
+        "success3": 0.039473684210526314,
+        "success5": 0.039473684210526314
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.0,
+        "coverage": 0.0136986301369863,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.09010852388846408,
+        "coverage": 0.10344827586206896,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.10344827586206896,
+        "success3": 0.10344827586206896,
+        "success5": 0.10344827586206896
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.0,
+        "coverage": 0.02127659574468085,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      }
+    },
+    "tfidf-raw": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.43186706037947853,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.17105263157894737,
+        "success3": 0.42105263157894735,
+        "success5": 0.7368421052631579
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.4138184848777385,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.136986301369863,
+        "success3": 0.3972602739726027,
+        "success5": 0.726027397260274
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.37653004395014805,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.13793103448275862,
+        "success3": 0.3448275862068966,
+        "success5": 0.6896551724137931
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.46601117689970367,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.19148936170212766,
+        "success3": 0.46808510638297873,
+        "success5": 0.7659574468085106
+      }
+    },
+    "tfidf-calibrated": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.03438351569428235,
+        "coverage": 0.07894736842105263,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.039473684210526314,
+        "success3": 0.039473684210526314,
+        "success5": 0.039473684210526314
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.0,
+        "coverage": 0.0410958904109589,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.09010852388846408,
+        "coverage": 0.10344827586206896,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.10344827586206896,
+        "success3": 0.10344827586206896,
+        "success5": 0.10344827586206896
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.0,
+        "coverage": 0.06382978723404255,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      }
+    },
+    "train-paraphrase-tfidf-raw": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.44375365042653014,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.25,
+        "success3": 0.40789473684210525,
+        "success5": 0.6710526315789473
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.4363050785275058,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2465753424657534,
+        "success3": 0.3835616438356164,
+        "success5": 0.6575342465753424
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.5670458436792052,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.41379310344827586,
+        "success3": 0.4827586206896552,
+        "success5": 0.7931034482758621
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.36767974395147535,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.14893617021276595,
+        "success3": 0.3617021276595745,
+        "success5": 0.5957446808510638
+      }
+    },
+    "train-paraphrase-tfidf-calibrated": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.23175193674691394,
+        "coverage": 0.3157894736842105,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.23684210526315788,
+        "success3": 0.23684210526315788,
+        "success5": 0.23684210526315788
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.2054794520547945,
+        "coverage": 0.2876712328767123,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2054794520547945,
+        "success3": 0.2054794520547945,
+        "success5": 0.2054794520547945
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.400453351474671,
+        "coverage": 0.5172413793103449,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.41379310344827586,
+        "success3": 0.41379310344827586,
+        "success5": 0.41379310344827586
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.1276595744680851,
+        "coverage": 0.19148936170212766,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1276595744680851,
+        "success3": 0.1276595744680851,
+        "success5": 0.1276595744680851
+      }
+    },
+    "teacher-raw": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.5929041309824267,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.34210526315789475,
+        "success3": 0.6710526315789473,
+        "success5": 0.8552631578947368
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.5814735172862873,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.3150684931506849,
+        "success3": 0.6575342465753424,
+        "success5": 0.8493150684931506
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.6705751186923264,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.4482758620689655,
+        "success3": 0.7586206896551724,
+        "success5": 0.896551724137931
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.5449794789912119,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2765957446808511,
+        "success3": 0.6170212765957447,
+        "success5": 0.8297872340425532
+      }
+    },
+    "teacher-calibrated": {
+      "all": {
+        "queries": 76,
+        "ndcg5": 0.03438351569428235,
+        "coverage": 0.05263157894736842,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.039473684210526314,
+        "success3": 0.039473684210526314,
+        "success5": 0.039473684210526314
+      },
+      "semanticOnly": {
+        "queries": 73,
+        "ndcg5": 0.0,
+        "coverage": 0.0136986301369863,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      },
+      "seenTrainingQuery": {
+        "queries": 29,
+        "ndcg5": 0.09010852388846408,
+        "coverage": 0.10344827586206896,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.10344827586206896,
+        "success3": 0.10344827586206896,
+        "success5": 0.10344827586206896
+      },
+      "newTrainingQuery": {
+        "queries": 47,
+        "ndcg5": 0.0,
+        "coverage": 0.02127659574468085,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.0,
+        "success3": 0.0,
+        "success5": 0.0
+      }
+    }
+  },
+  "comparisons": {
+    "candidate-minus-live-raw": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": 0.0,
+      "queryBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "destinationGroupBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-live-calibrated": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": 0.0,
+      "queryBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "destinationGroupBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-prior-research-raw": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": 0.021186808885607058,
+      "queryBootstrap95": [
+        -0.0846379738265436,
+        0.12640791417084798
+      ],
+      "destinationGroupBootstrap95": [
+        -0.15997058062927505,
+        0.16143911689244683
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-prior-research-calibrated": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": 0.0,
+      "queryBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "destinationGroupBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-tfidf-raw": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": -0.04719809240141681,
+      "queryBootstrap95": [
+        -0.15523185044286986,
+        0.06347003347572262
+      ],
+      "destinationGroupBootstrap95": [
+        -0.2170919148033804,
+        0.10919755614684826
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-tfidf-calibrated": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": 0.0,
+      "queryBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "destinationGroupBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-train-paraphrase-tfidf-raw": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": -0.06968468605118405,
+      "queryBootstrap95": [
+        -0.19700228645415305,
+        0.05927857692696589
+      ],
+      "destinationGroupBootstrap95": [
+        -0.4116366450116951,
+        0.21254068623827674
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-train-paraphrase-tfidf-calibrated": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": -0.2054794520547945,
+      "queryBootstrap95": [
+        -0.3013698630136986,
+        -0.1232876712328767
+      ],
+      "destinationGroupBootstrap95": [
+        -0.43426435406698566,
+        0.0
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-teacher-raw": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": -0.21485312480996552,
+      "queryBootstrap95": [
+        -0.3223039061535122,
+        -0.10588041629518777
+      ],
+      "destinationGroupBootstrap95": [
+        -0.35146497649522107,
+        -0.10592224842802749
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    },
+    "candidate-minus-teacher-calibrated": {
+      "count": 73,
+      "documentedDestinationGroups": 11,
+      "delta": 0.0,
+      "queryBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "destinationGroupBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "scope": "One provider and partial source labels; intervals do not establish population-wide or best-in-class quality."
+    }
+  },
+  "sourceHashes": {
+    "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/navigation-splits/train.jsonl": "f9ff863498f3009487c5d4dfde3ce1a1aa31a425bbdec2c53f16d54e96bc3881",
+    "training/evaluate_navigation.py": "99ce4206a6c805aedd5ce53e8d88ffa945583375637585dae6227559af307eb5"
+  },
+  "negativeJudgmentsAvailable": false,
+  "productionReadinessEstablished": false,
+  "bestInClassEstablished": false,
+  "perQuery": [
+    {
+      "id": "navigation-xfce-0000",
+      "query": "a11y",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          1,
+          3,
+          7,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          7,
+          2,
+          0,
+          5,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          1,
+          3,
+          7,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          3,
+          2,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          1,
+          3,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          3,
+          0,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0001",
+      "query": "anti-aliasing",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          2,
+          0,
+          6,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          0,
+          3,
+          7,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          2,
+          0,
+          6,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          7,
+          5,
+          6
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          1,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          0,
+          3,
+          2,
+          1,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0002",
+      "query": "assistive",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          1,
+          0,
+          5,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          5,
+          0,
+          6,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          1,
+          0,
+          5,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          7,
+          3,
+          5
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          1,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          0,
+          4,
+          1,
+          6,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0003",
+      "query": "association",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          6,
+          7,
+          0,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          6,
+          2,
+          7,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          6,
+          7,
+          0,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          0,
+          1,
+          7,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          1,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          5
+        ],
+        "teacher-raw": [
+          1,
+          0,
+          4,
+          2,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0004",
+      "query": "AT-SPI",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          5,
+          0,
+          2,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          3,
+          1,
+          0,
+          5,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          5,
+          0,
+          2,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          0,
+          3,
+          5,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          1,
+          3,
+          5
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          0,
+          7,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0005",
+      "query": "ATK",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          4,
+          1,
+          5,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          6,
+          3,
+          1,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          4,
+          1,
+          5,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          0,
+          5,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          1,
+          5,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          5,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0006",
+      "query": "BGR",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          6,
+          7,
+          5,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          7,
+          5,
+          6,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          6,
+          7,
+          5,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          5,
+          0,
+          7,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          2,
+          3,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0007",
+      "query": "bounce",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          1,
+          3,
+          0,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          0,
+          7,
+          4,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          1,
+          3,
+          0,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          4,
+          0,
+          6,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          3,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0008",
+      "query": "buttons",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          3,
+          4,
+          1,
+          7
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          3,
+          4,
+          5,
+          7
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          3,
+          4,
+          1,
+          7
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          7,
+          2,
+          6,
+          0
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          7,
+          4,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          7,
+          6,
+          0,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0009",
+      "query": "ClearType",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          2,
+          0,
+          1,
+          7
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          7,
+          4,
+          2,
+          6,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          2,
+          0,
+          1,
+          7
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          0,
+          2,
+          4,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          1,
+          0,
+          5,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          2,
+          0,
+          4,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0010",
+      "query": "color",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          3,
+          6,
+          1,
+          0
+        ],
+        "live-calibrated": [
+          2
+        ],
+        "prior-research-raw": [
+          2,
+          7,
+          0,
+          6,
+          4
+        ],
+        "prior-research-calibrated": [
+          2
+        ],
+        "candidate-raw": [
+          2,
+          3,
+          6,
+          1,
+          0
+        ],
+        "candidate-calibrated": [
+          2
+        ],
+        "tfidf-raw": [
+          2,
+          7,
+          0,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [
+          2
+        ],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          2,
+          7,
+          5,
+          4
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          2,
+          0
+        ],
+        "teacher-raw": [
+          2,
+          1,
+          4,
+          3,
+          0
+        ],
+        "teacher-calibrated": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "navigation-xfce-0011",
+      "query": "configuration file",
+      "knownPositives": {
+        "xfce:xfce4-settings:xfce4-settings-editor/xfce4-settings-editor.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          5,
+          0,
+          1,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          1,
+          3,
+          0,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          5,
+          0,
+          1,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          5,
+          1,
+          0,
+          7
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          2,
+          0,
+          4,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          7,
+          5,
+          2,
+          3,
+          1
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0012",
+      "query": "CRT",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          2,
+          5,
+          4,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          5,
+          2,
+          4,
+          7
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          2,
+          5,
+          4,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          0,
+          1,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          3,
+          0,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0013",
+      "query": "direction",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          4,
+          5,
+          2,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          1,
+          5,
+          2,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          4,
+          5,
+          2,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          3,
+          5,
+          7,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          3,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          3,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0014",
+      "query": "display",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3,
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          2,
+          5,
+          6,
+          0
+        ],
+        "live-calibrated": [
+          3
+        ],
+        "prior-research-raw": [
+          3,
+          1,
+          6,
+          4,
+          5
+        ],
+        "prior-research-calibrated": [
+          3
+        ],
+        "candidate-raw": [
+          3,
+          2,
+          5,
+          6,
+          0
+        ],
+        "candidate-calibrated": [
+          3
+        ],
+        "tfidf-raw": [
+          3,
+          5,
+          0,
+          7,
+          1
+        ],
+        "tfidf-calibrated": [
+          3
+        ],
+        "train-paraphrase-tfidf-raw": [
+          3,
+          4,
+          5,
+          0,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          3
+        ],
+        "teacher-raw": [
+          3,
+          1,
+          4,
+          0,
+          7
+        ],
+        "teacher-calibrated": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "navigation-xfce-0015",
+      "query": "double click",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          3,
+          7,
+          2,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          4,
+          6,
+          3,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          3,
+          7,
+          2,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          3,
+          6,
+          0,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          5,
+          0,
+          3,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          6,
+          4,
+          3,
+          7,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0016",
+      "query": "DPI",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          5,
+          2,
+          4,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          2,
+          7,
+          3,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          5,
+          2,
+          4,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          3,
+          5,
+          0,
+          1,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          3,
+          5,
+          4,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          3,
+          0,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0017",
+      "query": "emulation",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          4,
+          7,
+          1,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          3,
+          1,
+          7,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          4,
+          7,
+          1,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          3,
+          7,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          3,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          4,
+          0,
+          7,
+          3,
+          1
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0018",
+      "query": "event",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          2,
+          4,
+          6,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          4,
+          6,
+          5,
+          7
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          2,
+          4,
+          6,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          4,
+          0,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          0,
+          3,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0019",
+      "query": "extension",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          4,
+          3,
+          5,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          6,
+          3,
+          1,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          4,
+          3,
+          5,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          0,
+          1,
+          4,
+          5,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0020",
+      "query": "external",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          4,
+          6,
+          2,
+          7
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          7,
+          3,
+          0,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          4,
+          6,
+          2,
+          7
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          4,
+          0,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          0,
+          4,
+          5,
+          1,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0021",
+      "query": "file",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          2,
+          0,
+          7,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          2,
+          7,
+          4,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          2,
+          0,
+          7,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          0,
+          1,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          2,
+          0,
+          4,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          7,
+          4,
+          1,
+          3,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0022",
+      "query": "file manager",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          6,
+          7,
+          4,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          0,
+          3,
+          6,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          6,
+          7,
+          4,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          7,
+          0,
+          6,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          2,
+          0,
+          4,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          5
+        ],
+        "teacher-raw": [
+          7,
+          5,
+          4,
+          2,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0023",
+      "query": "fonts",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          2,
+          5,
+          6,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          7,
+          1,
+          0,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          2,
+          5,
+          6,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          2,
+          0,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          5,
+          0,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          3,
+          0,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0024",
+      "query": "HiDPI",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3,
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          7,
+          5,
+          4,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          5,
+          7,
+          6,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          7,
+          5,
+          4,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          0,
+          3,
+          2,
+          1
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0025",
+      "query": "hinting",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          3,
+          2,
+          0,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          6,
+          1,
+          5,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          3,
+          2,
+          0,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          5,
+          0,
+          1,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          7,
+          5,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          3,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0026",
+      "query": "i18n",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          4,
+          5,
+          7,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          7,
+          2,
+          4,
+          6,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          4,
+          5,
+          7,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          0,
+          7,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0027",
+      "query": "icons",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          6,
+          0,
+          3,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          2,
+          0,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          4,
+          0,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0028",
+      "query": "impairment",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          6,
+          2,
+          5,
+          7
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          1,
+          3,
+          6,
+          4,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          6,
+          2,
+          5,
+          7
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          6,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          6,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          0,
+          1,
+          4,
+          3,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0029",
+      "query": "keyboard",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/keyboard-settings/xfce4-keyboard-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          7,
+          6,
+          5,
+          1
+        ],
+        "live-calibrated": [
+          4
+        ],
+        "prior-research-raw": [
+          4,
+          6,
+          3,
+          5,
+          1
+        ],
+        "prior-research-calibrated": [
+          4
+        ],
+        "candidate-raw": [
+          4,
+          7,
+          6,
+          5,
+          1
+        ],
+        "candidate-calibrated": [
+          4
+        ],
+        "tfidf-raw": [
+          4,
+          6,
+          1,
+          0,
+          2
+        ],
+        "tfidf-calibrated": [
+          4
+        ],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          6,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          4,
+          0
+        ],
+        "teacher-raw": [
+          4,
+          0,
+          6,
+          3,
+          7
+        ],
+        "teacher-calibrated": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "navigation-xfce-0030",
+      "query": "keyboard shortcuts",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          6,
+          7,
+          0,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          6,
+          3,
+          5,
+          2
+        ],
+        "prior-research-calibrated": [
+          4
+        ],
+        "candidate-raw": [
+          4,
+          6,
+          7,
+          0,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          4,
+          2,
+          5,
+          1,
+          7
+        ],
+        "tfidf-calibrated": [
+          4
+        ],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0,
+          4
+        ],
+        "teacher-raw": [
+          4,
+          7,
+          0,
+          6,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0031",
+      "query": "keys",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          3,
+          5,
+          7,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          1,
+          6,
+          3,
+          5,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          3,
+          5,
+          7,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          4,
+          2,
+          5,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          4,
+          1,
+          2,
+          7,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0032",
+      "query": "l10n",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          4,
+          7,
+          1,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          1,
+          3,
+          6,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          4,
+          7,
+          1,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          3,
+          0,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0033",
+      "query": "layout",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/keyboard-settings/xfce4-keyboard-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          7,
+          1,
+          3,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          2,
+          0,
+          6,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          7,
+          1,
+          3,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          3,
+          6,
+          0,
+          1,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          3,
+          0,
+          5,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          4
+        ],
+        "teacher-raw": [
+          3,
+          4,
+          7,
+          1,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0034",
+      "query": "LCD",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          7,
+          6,
+          4,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          6,
+          4,
+          1,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          7,
+          6,
+          4,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          4,
+          6,
+          0,
+          1,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          6,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0035",
+      "query": "magnifiers",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          5,
+          3,
+          0,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          3,
+          4,
+          7,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          5,
+          3,
+          0,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          6,
+          5,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          2,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          6,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0036",
+      "query": "mail reader",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          2,
+          7,
+          4,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          2,
+          7,
+          0,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          2,
+          7,
+          4,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          6,
+          7,
+          0,
+          2,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          6,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          0,
+          5,
+          3,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0037",
+      "query": "management",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          7,
+          5,
+          0,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          4,
+          3,
+          5,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          7,
+          5,
+          0,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          6,
+          1,
+          0,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          6,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          3,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0038",
+      "query": "menu accelerators",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          2,
+          4,
+          0,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          6,
+          2,
+          5,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          2,
+          4,
+          0,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          7,
+          2,
+          6,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          7,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          7,
+          0,
+          6,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0039",
+      "query": "monitors",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3,
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          4,
+          2,
+          5,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          7,
+          6,
+          5,
+          2,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          4,
+          2,
+          5,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          6,
+          2,
+          5,
+          0
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          7,
+          6,
+          4,
+          5
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          4,
+          0,
+          6,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0040",
+      "query": "numlock",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/keyboard-settings/xfce4-keyboard-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          0,
+          3,
+          1,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          1,
+          3,
+          7,
+          6,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          0,
+          3,
+          1,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          0,
+          1,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          4
+        ],
+        "teacher-raw": [
+          4,
+          1,
+          0,
+          6,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0041",
+      "query": "open with",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          0,
+          4,
+          2,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          1,
+          5,
+          3,
+          4
+        ],
+        "prior-research-calibrated": [
+          0
+        ],
+        "candidate-raw": [
+          1,
+          0,
+          4,
+          2,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          7,
+          0,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          1,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          5
+        ],
+        "teacher-raw": [
+          5,
+          4,
+          0,
+          1,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0042",
+      "query": "pointer",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          1,
+          3,
+          6,
+          7
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          0,
+          6,
+          5,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          1,
+          3,
+          6,
+          7
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          7,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          4,
+          6,
+          0,
+          3,
+          1
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0043",
+      "query": "printers",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          1,
+          7,
+          0,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          3,
+          4,
+          5,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          1,
+          7,
+          0,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          5,
+          7,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          2,
+          4,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          3,
+          1,
+          0,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0044",
+      "query": "projectors",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          1,
+          3,
+          7,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          7,
+          2,
+          5,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          1,
+          3,
+          7,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          7,
+          5,
+          6,
+          0
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          2,
+          7,
+          5,
+          4
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          4,
+          0,
+          1,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0045",
+      "query": "rate",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          5,
+          7,
+          3,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          3,
+          4,
+          2,
+          1,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          5,
+          7,
+          3,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          5,
+          0,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          3,
+          2,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0046",
+      "query": "refresh",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          6,
+          5,
+          1,
+          7
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          4,
+          5,
+          6,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          6,
+          5,
+          1,
+          7
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          0,
+          2,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          4,
+          0,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          4,
+          1,
+          7,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0047",
+      "query": "regedit",
+      "knownPositives": {
+        "xfce:xfce4-settings:xfce4-settings-editor/xfce4-settings-editor.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          5,
+          2,
+          1,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          4,
+          1,
+          0,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          5,
+          2,
+          1,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          3,
+          0,
+          1,
+          2
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          7,
+          4,
+          5,
+          0,
+          3
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          7,
+          1,
+          4,
+          5,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0048",
+      "query": "registry",
+      "knownPositives": {
+        "xfce:xfce4-settings:xfce4-settings-editor/xfce4-settings-editor.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          7,
+          0,
+          4,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          7,
+          6,
+          4,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          7,
+          0,
+          4,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          3,
+          0,
+          1,
+          2,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          5,
+          0,
+          3,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          7,
+          5,
+          2,
+          0,
+          4
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0049",
+      "query": "rendering",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          7,
+          5,
+          0,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          7,
+          5,
+          0,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          5,
+          6,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          7,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          1,
+          0,
+          4,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0050",
+      "query": "resolution",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          4,
+          6,
+          1,
+          0,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          7,
+          4,
+          3,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          4,
+          6,
+          1,
+          0,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          2,
+          0,
+          7,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          2,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          1,
+          4,
+          0,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0051",
+      "query": "Retina display",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          0,
+          2,
+          5,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          3,
+          1,
+          2,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          0,
+          2,
+          5,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          3,
+          7,
+          0,
+          5,
+          1
+        ],
+        "tfidf-calibrated": [
+          3
+        ],
+        "train-paraphrase-tfidf-raw": [
+          3,
+          4,
+          5,
+          7,
+          0
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          3
+        ],
+        "teacher-raw": [
+          3,
+          4,
+          6,
+          0,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0052",
+      "query": "RGB",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          7,
+          0,
+          4,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          7,
+          5,
+          6,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          7,
+          0,
+          4,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          2,
+          1,
+          4,
+          0,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0053",
+      "query": "rotation",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          5,
+          6,
+          2,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          5,
+          6,
+          2,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          2,
+          7,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          4,
+          2,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          1,
+          6,
+          3,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0054",
+      "query": "scanners",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          2,
+          1,
+          5,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          5,
+          6,
+          0,
+          7
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          2,
+          1,
+          5,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          5,
+          2,
+          1,
+          6
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          7,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          0,
+          4,
+          3,
+          6,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0055",
+      "query": "screen",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          3,
+          1,
+          7,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          1,
+          5,
+          6,
+          7,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          3,
+          1,
+          7,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          7,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          3,
+          4,
+          0,
+          1,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0056",
+      "query": "screen readers",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          7,
+          1,
+          6,
+          3,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          1,
+          5,
+          7,
+          0,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          7,
+          1,
+          6,
+          3,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          5,
+          2,
+          6,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          5,
+          7,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          0,
+          4,
+          3,
+          6,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0057",
+      "query": "scroll",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          0,
+          5,
+          3,
+          6,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          7,
+          1,
+          2,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          0,
+          5,
+          3,
+          6,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          7,
+          0,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          2,
+          4,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          4,
+          0,
+          6,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0058",
+      "query": "settings",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3,
+        "xfce:xfce4-settings:dialogs/display-settings/xfce4-display-settings.desktop.in": 3,
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          7,
+          6,
+          4,
+          0,
+          3
+        ],
+        "live-calibrated": [
+          7
+        ],
+        "prior-research-raw": [
+          7,
+          2,
+          0,
+          6,
+          1
+        ],
+        "prior-research-calibrated": [
+          7
+        ],
+        "candidate-raw": [
+          7,
+          6,
+          4,
+          0,
+          3
+        ],
+        "candidate-calibrated": [
+          7
+        ],
+        "tfidf-raw": [
+          7,
+          5,
+          2,
+          6,
+          0
+        ],
+        "tfidf-calibrated": [
+          7
+        ],
+        "train-paraphrase-tfidf-raw": [
+          7,
+          0,
+          4,
+          5,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          7
+        ],
+        "teacher-raw": [
+          7,
+          3,
+          5,
+          4,
+          2
+        ],
+        "teacher-calibrated": [
+          7
+        ]
+      }
+    },
+    {
+      "id": "navigation-xfce-0059",
+      "query": "shortcuts",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/keyboard-settings/xfce4-keyboard-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          6,
+          7,
+          0,
+          4,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          7,
+          3,
+          2,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          6,
+          7,
+          0,
+          4,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          2,
+          5,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          7,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          7,
+          0,
+          5,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0060",
+      "query": "sounds",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          1,
+          0,
+          3,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          1,
+          3,
+          0,
+          6,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          1,
+          0,
+          3,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          6,
+          2,
+          5,
+          0
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          7,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          3,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0061",
+      "query": "speed",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          3,
+          5,
+          1,
+          6,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          4,
+          3,
+          6,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          7,
+          3,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          0,
+          3,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0062",
+      "query": "sticky",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          7,
+          4,
+          5,
+          3,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          5,
+          7,
+          6,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          7,
+          4,
+          5,
+          3,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          3,
+          0,
+          5,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          4,
+          7,
+          3,
+          5
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          0
+        ],
+        "teacher-raw": [
+          1,
+          4,
+          3,
+          0,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0063",
+      "query": "styles",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          7,
+          1,
+          5,
+          6,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          2,
+          0,
+          1,
+          3
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          7,
+          1,
+          5,
+          6,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          0,
+          7,
+          5,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          2,
+          0,
+          5,
+          4,
+          7
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          2,
+          0,
+          4,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0064",
+      "query": "sub-pixel",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          3,
+          4,
+          1,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          6,
+          5,
+          3,
+          0
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          3,
+          4,
+          1,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          7,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          1,
+          2,
+          4,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0065",
+      "query": "subpixel",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          3,
+          0,
+          5,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          3,
+          4,
+          5,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          3,
+          0,
+          5,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          0,
+          1,
+          2,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          7,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          0,
+          1,
+          4,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0066",
+      "query": "technologies",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/accessibility-settings/xfce4-accessibility-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          7,
+          4,
+          2,
+          6,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          7,
+          4,
+          0,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          7,
+          4,
+          2,
+          6,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          5,
+          0,
+          6,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          2,
+          0,
+          5,
+          4,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          0,
+          4,
+          1,
+          6,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0067",
+      "query": "terminal emulator",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          7,
+          6,
+          0,
+          3
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          2,
+          5,
+          7,
+          0,
+          4
+        ],
+        "prior-research-calibrated": [
+          2
+        ],
+        "candidate-raw": [
+          1,
+          7,
+          6,
+          0,
+          3
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          3,
+          5,
+          2,
+          6
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          7,
+          4,
+          3
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          5
+        ],
+        "teacher-raw": [
+          4,
+          3,
+          7,
+          5,
+          6
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0068",
+      "query": "theme",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          2,
+          0,
+          5,
+          4
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          6,
+          0,
+          4,
+          1,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          2,
+          0,
+          5,
+          4
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          0,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          4,
+          2,
+          3,
+          7
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0069",
+      "query": "themes",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          7,
+          3,
+          5,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          2,
+          7,
+          0,
+          1
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          7,
+          3,
+          5,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          2,
+          5,
+          0,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          0,
+          5,
+          2,
+          4,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          1,
+          2,
+          0,
+          4,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0070",
+      "query": "type",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          3,
+          1,
+          6,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          7,
+          0,
+          6,
+          5
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          3,
+          1,
+          6,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          1,
+          5,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          4
+        ],
+        "teacher-raw": [
+          4,
+          1,
+          0,
+          3,
+          2
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0071",
+      "query": "user interface",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          1,
+          2,
+          4,
+          0,
+          6
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          5,
+          3,
+          1,
+          6,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          1,
+          2,
+          4,
+          0,
+          6
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          1,
+          6,
+          5,
+          0,
+          7
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          0,
+          4,
+          1,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          0,
+          3,
+          4,
+          7,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0072",
+      "query": "web browser",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mime-settings/xfce4-mime-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          0,
+          6,
+          5,
+          1
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          4,
+          0,
+          3,
+          5,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          0,
+          6,
+          5,
+          1
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          2,
+          6,
+          0,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          4,
+          0,
+          7,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [
+          5
+        ],
+        "teacher-raw": [
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0073",
+      "query": "webcams",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/color-settings/xfce4-color-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          5,
+          4,
+          7,
+          6,
+          0
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          7,
+          3,
+          5,
+          0,
+          2
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          5,
+          4,
+          7,
+          6,
+          0
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          5,
+          2,
+          0,
+          1,
+          3
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          5,
+          4,
+          0,
+          2,
+          1
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          0,
+          6,
+          3,
+          1
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0074",
+      "query": "wheel",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/mouse-settings/xfce4-mouse-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          2,
+          1,
+          3,
+          7,
+          5
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          0,
+          2,
+          1,
+          3,
+          6
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          2,
+          1,
+          3,
+          7,
+          5
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          5,
+          1,
+          2
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          4,
+          0,
+          6,
+          1,
+          3
+        ],
+        "teacher-calibrated": []
+      }
+    },
+    {
+      "id": "navigation-xfce-0075",
+      "query": "window scaling",
+      "knownPositives": {
+        "xfce:xfce4-settings:dialogs/appearance-settings/xfce4-appearance-settings.desktop.in": 3
+      },
+      "top5": {
+        "live-raw": [
+          3,
+          0,
+          5,
+          1,
+          2
+        ],
+        "live-calibrated": [],
+        "prior-research-raw": [
+          3,
+          1,
+          5,
+          6,
+          4
+        ],
+        "prior-research-calibrated": [],
+        "candidate-raw": [
+          3,
+          0,
+          5,
+          1,
+          2
+        ],
+        "candidate-calibrated": [],
+        "tfidf-raw": [
+          7,
+          5,
+          0,
+          6,
+          1
+        ],
+        "tfidf-calibrated": [],
+        "train-paraphrase-tfidf-raw": [
+          4,
+          0,
+          7,
+          5,
+          6
+        ],
+        "train-paraphrase-tfidf-calibrated": [],
+        "teacher-raw": [
+          3,
+          0,
+          2,
+          7,
+          5
+        ],
+        "teacher-calibrated": []
+      }
+    }
+  ]
+}

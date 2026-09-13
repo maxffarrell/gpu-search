@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-13T18:34:39.082Z",
+  "generatedAt": "2026-09-13T20:05:52.593Z",
   "browser": "153.0.8010.36",
-  "modelId": "expanded-more-data-pooled-seed17",
-  "modelSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+  "modelId": "navigation-align0p5-seed29",
+  "modelSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
   "assets": [
-    "http://127.0.0.1:4180/assets/weights-84_3K2Vc.bin",
-    "http://127.0.0.1:4180/assets/manifest-HeuAs5pG.json",
-    "http://127.0.0.1:4180/assets/manifest-HeuAs5pG.json",
-    "http://127.0.0.1:4180/assets/weights-84_3K2Vc.bin"
+    "http://127.0.0.1:4180/assets/weights-DzGJHMjn.bin",
+    "http://127.0.0.1:4180/assets/manifest-BZJbMuw1.json",
+    "http://127.0.0.1:4180/assets/manifest-BZJbMuw1.json",
+    "http://127.0.0.1:4180/assets/weights-DzGJHMjn.bin"
   ],
   "checks": [
     "model asset fetch",
@@ -33,22 +33,22 @@
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.16151732206344604
-        },
-        {
-          "id": "billing",
-          "label": "Billing",
-          "score": 0.00004190998151898384
-        },
-        {
-          "id": "create",
-          "label": "Create Account",
-          "score": -0.0762130618095398
+          "score": 0.2431342452764511
         },
         {
           "id": "notifications",
           "label": "Notifications",
-          "score": -0.1405598223209381
+          "score": -0.06166600063443184
+        },
+        {
+          "id": "members",
+          "label": "Members",
+          "score": -0.0964088886976242
+        },
+        {
+          "id": "create",
+          "label": "Create Account",
+          "score": -0.13454584777355194
         }
       ]
     },
@@ -56,29 +56,29 @@
       "query": "profle",
       "expected": [
         {
-          "id": "billing",
-          "label": "Billing",
-          "score": 0.3767991364002228
-        },
-        {
           "id": "invoices",
           "label": "Invoices",
-          "score": 0.330835223197937
+          "score": 0.7065011262893677
+        },
+        {
+          "id": "notifications",
+          "label": "Notifications",
+          "score": 0.37730544805526733
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.2978135347366333
+          "score": 0.3338041305541992
+        },
+        {
+          "id": "billing",
+          "label": "Billing",
+          "score": 0.33210277557373047
         },
         {
           "id": "members",
           "label": "Members",
-          "score": 0.22893540561199188
-        },
-        {
-          "id": "delete",
-          "label": "Delete Account",
-          "score": 0.1062619537115097
+          "score": 0.3182832598686218
         }
       ]
     },
@@ -88,27 +88,27 @@
         {
           "id": "members",
           "label": "Members",
-          "score": 0.6246423721313477
+          "score": 0.6012478470802307
         },
         {
           "id": "invoices",
           "label": "Invoices",
-          "score": 0.375124454498291
-        },
-        {
-          "id": "delete",
-          "label": "Delete Account",
-          "score": 0.3137802183628082
-        },
-        {
-          "id": "billing",
-          "label": "Billing",
-          "score": 0.2397773563861847
+          "score": 0.4414193332195282
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.22387570142745972
+          "score": 0.39065074920654297
+        },
+        {
+          "id": "delete",
+          "label": "Delete Account",
+          "score": 0.28548702597618103
+        },
+        {
+          "id": "billing",
+          "label": "Billing",
+          "score": 0.22996218502521515
         }
       ]
     },
@@ -118,27 +118,27 @@
         {
           "id": "profile",
           "label": "Profile",
-          "score": 0.5197398662567139
-        },
-        {
-          "id": "profiles",
-          "label": "Profiles",
-          "score": 0.28212669491767883
+          "score": 0.4789857864379883
         },
         {
           "id": "delete",
           "label": "Delete Account",
-          "score": 0.23799064755439758
+          "score": 0.2811584174633026
         },
         {
-          "id": "api-keys",
-          "label": "API Keys",
-          "score": 0.06729143857955933
+          "id": "profiles",
+          "label": "Profiles",
+          "score": 0.22078678011894226
         },
         {
           "id": "billing",
           "label": "Billing",
-          "score": -0.03132633492350578
+          "score": -0.0408744215965271
+        },
+        {
+          "id": "create",
+          "label": "Create Account",
+          "score": -0.10748500376939774
         }
       ]
     },
@@ -146,29 +146,29 @@
       "query": "xqzv",
       "expected": [
         {
-          "id": "invoices",
-          "label": "Invoices",
-          "score": 0.27045926451683044
-        },
-        {
           "id": "notifications",
           "label": "Notifications",
-          "score": 0.16978511214256287
+          "score": 0.15801042318344116
         },
         {
           "id": "members",
           "label": "Members",
-          "score": 0.05390448868274689
+          "score": 0.09049106389284134
         },
         {
           "id": "plan",
           "label": "Plan",
-          "score": 0.03826916590332985
+          "score": -0.018502209335565567
+        },
+        {
+          "id": "profile",
+          "label": "Profile",
+          "score": -0.07037100195884705
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": -0.09646488726139069
+          "score": -0.08417893946170807
         }
       ]
     },
@@ -176,29 +176,29 @@
       "query": "unseen destination 47",
       "expected": [
         {
-          "id": "profiles",
-          "label": "Profiles",
-          "score": 0.31672072410583496
-        },
-        {
           "id": "plan",
           "label": "Plan",
-          "score": 0.2234516441822052
+          "score": 0.4007212817668915
+        },
+        {
+          "id": "profiles",
+          "label": "Profiles",
+          "score": 0.37006834149360657
+        },
+        {
+          "id": "notifications",
+          "label": "Notifications",
+          "score": 0.24767084419727325
         },
         {
           "id": "delete",
           "label": "Delete Account",
-          "score": 0.1841687560081482
-        },
-        {
-          "id": "invoices",
-          "label": "Invoices",
-          "score": 0.1678149402141571
+          "score": 0.18141329288482666
         },
         {
           "id": "members",
           "label": "Members",
-          "score": 0.13062983751296997
+          "score": 0.1588371992111206
         }
       ]
     }
@@ -207,12 +207,12 @@
     {
       "id": "new",
       "label": "A completely new destination",
-      "score": 0.710616946220398
+      "score": 0.7449478507041931
     },
     {
       "id": "safe",
       "label": "<img src=x onerror=alert(1)>",
-      "score": -0.077882781624794
+      "score": 0.049454428255558014
     }
   ],
   "requests": [],

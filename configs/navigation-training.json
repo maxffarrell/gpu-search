@@ -1,0 +1,22 @@
+{
+  "initialArtifact":"packages/model/candidate",
+  "navigationTrain":"data/navigation-splits/train.jsonl",
+  "navigationDev":"data/navigation-splits/dev.jsonl",
+  "anchorData":"data/expanded",
+  "weights":[0.0,0.1,0.5,1.0],
+  "seeds":[17,29],
+  "epochs":15,
+  "batchSize":128,
+  "navigationBatchSize":128,
+  "alignmentTarget":0.7,
+  "learningRate":0.001,
+  "weightDecay":0.0001,
+  "clipNorm":1.0,
+  "temperature":0.15,
+  "minimumExpandedSemanticNdcg5":0.45,
+  "minimumExpandedRelevantCoverage":0.48,
+  "maximumExpandedNoMatchRate":0.05,
+  "maximumInt8WeightBytes":32768,
+  "selection":"Highest XFCE semantic-only raw-cosine known-positive nDCG@5 among expanded-dev gate-passing checkpoints; initial checkpoint is an eligible control; earliest ties",
+  "judgments":"Navigation listed positives only; unlisted labels never become training negatives. Navigation retrieval metrics are partial-judgment diagnostics."
+}

@@ -1,7 +1,7 @@
 import { createIndex } from '../../../packages/core/src/index';
 import { loadModel } from '../../../packages/model/runtime';
-import manifestUrl from '../../../packages/model/candidate/manifest.json?url';
-import weightsUrl from '../../../packages/model/candidate/weights.bin?url';
+import manifestUrl from '../../../packages/model/experiments/navigation-align0p5-seed29/manifest.json?url';
+import weightsUrl from '../../../packages/model/experiments/navigation-align0p5-seed29/weights.bin?url';
 import './style.css';
 
 type Candidate = { id: string; label: string; aliases?: readonly string[]; context?: string };
@@ -31,7 +31,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <p id="run-meta" class="run-meta" role="status" aria-live="polite">Loading model…</p>
       <p class="note">Experimental model, trained on public intent datasets and software settings. Generalization is still limited. Raw cosine scores are not confidence; no relevance cutoff is applied.</p>
       <details class="editor"><summary>Candidate menu <span id="candidate-count"></span></summary><label for="candidate-json">Edit candidate records as JSON. Both comparisons use the same records.</label><textarea id="candidate-json" spellcheck="false" rows="13"></textarea><div class="actions"><button id="apply">Apply menu</button><button id="reset">Reset</button></div><p id="editor-status" role="status" aria-live="polite"></p></details>
-      <details class="model-details"><summary>Model details</summary><p id="model-details">Loading model assets…</p><p>Inference runs locally in your browser. The initial menu contains labels only, without aliases or context. Training sources: CLINC150 (CC BY 3.0), BANKING77 (CC BY 4.0), and VS Code settings (MIT). See GitHub for attribution and evaluation. The model column shows the five highest raw scores; the lexical column applies exact and fuzzy matching rules.</p></details>
+      <details class="model-details"><summary>Model details</summary><p id="model-details">Loading model assets…</p><p>Inference runs locally in your browser. The initial menu contains labels only, without aliases or context. Training sources: CLINC150 (CC BY 3.0), BANKING77 (CC BY 4.0), VS Code settings (MIT), and Xfce/KDE navigation metadata (retained upstream license notices). GNOME navigation metadata is held out from training. See <a href="https://github.com/maxffarrell/gpu-search/blob/main/docs/navigation-data.md">navigation source evidence</a> and GitHub for attribution and evaluation. The model column shows the five highest raw scores; the lexical column applies exact and fuzzy matching rules.</p></details>
     </main>
     <footer><span>Inspired by</span><a href="https://gpu-lexer.vercel.app" target="_blank" rel="noreferrer">gpu-lexer ↗</a><a href="https://gpu-time.arikko.dev" target="_blank" rel="noreferrer">gpu-time ↗</a><a href="https://gpu-cron.vercel.app" target="_blank" rel="noreferrer">gpu-cron ↗</a></footer>
   </div>`;
@@ -53,6 +53,7 @@ const editorStatus = document.querySelector<HTMLParagraphElement>('#editor-statu
 const runMeta = document.querySelector<HTMLParagraphElement>('#run-meta')!;
 let index: Index | undefined;
 let model: Model | undefined;
+let preparedModel: ReturnType<Model['prepare']> | undefined;
 let modelState: 'loading' | 'ready' | 'error' = 'loading';
 let candidates: Candidate[] = [];
 let generation = 0;
@@ -93,8 +94,8 @@ async function search() {
     if (current !== generation) return;
     draw('#lexical-results', response.results.map(result => ({ id: result.id, label: result.label, detail: result.reason })));
     if (!text.trim()) empty('#model-results', 'Enter a query');
-    else if (model) {
-      const scores = model.score(text, candidates).slice(0, 5);
+    else if (preparedModel) {
+      const scores = preparedModel.score(text).slice(0, 5);
       draw('#model-results', scores.map(result => ({ id: result.id, label: result.label, detail: result.score.toFixed(3), score: result.score })));
     } else empty('#model-results', modelState === 'error' ? 'Model unavailable' : 'Loading model…');
     runMeta.textContent = modelState === 'ready' ? 'Model: CPU · Lexical: CPU · Queries stay on this device' : modelState === 'error' ? 'Model unavailable · Lexical: CPU' : 'Loading model · Lexical: CPU';
@@ -111,10 +112,15 @@ async function setCandidates(records: Candidate[]) {
   const next = await createIndex(records, { semantic: false });
   if (current !== menuGeneration) { next.dispose(); return; }
   // Construction validates every record. Retain a separate snapshot for model inference.
-  candidates = records.map(record => ({ ...record, ...(record.aliases ? { aliases: [...record.aliases] } : {}) }));
+  const nextCandidates = records.map(record => ({ ...record, ...(record.aliases ? { aliases: [...record.aliases] } : {}) }));
+  let nextPrepared: ReturnType<Model['prepare']> | undefined;
+  try { nextPrepared = model?.prepare(nextCandidates); } catch (error) { next.dispose(); throw error; }
   generation++;
   index?.dispose();
+  preparedModel?.dispose();
   index = next;
+  preparedModel = nextPrepared;
+  candidates = nextCandidates;
   document.querySelector('#candidate-count')!.textContent = `${candidates.length} labels`;
   await search();
 }
@@ -140,6 +146,9 @@ async function fetchModel() {
   return loadModel(manifest, weights);
 }
 void fetchModel().then(loaded => {
+  const prepared = loaded.prepare(candidates);
+  preparedModel?.dispose();
+  preparedModel = prepared;
   model = loaded;
   modelState = 'ready';
   document.querySelector('#model-details')!.textContent = `Model: ${loaded.id} · 32 KiB weights · CPU inference · SHA-256: ${loaded.hash}`;
@@ -149,4 +158,4 @@ void fetchModel().then(loaded => {
   document.querySelector('#model-details')!.textContent = `Model unavailable: ${error instanceof Error ? error.message : String(error)}`;
   void search();
 });
-window.addEventListener('pagehide', event => { if (!event.persisted) index?.dispose(); });
+window.addEventListener('pagehide', event => { if (!event.persisted) { index?.dispose(); preparedModel?.dispose(); } });

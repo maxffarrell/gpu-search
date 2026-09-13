@@ -17,4 +17,4 @@ jobs:
         with:
           version: '0.12.10'
       - run: uv sync --frozen
-      - run: uv run python -m unittest training.test_export training.test_data_sources training.test_quality training.test_calibration training.test_experiment_objectives training.test_release_candidate
+      - run: uv run python -m unittest training.test_export training.test_data_sources training.test_quality training.test_calibration training.test_experiment_objectives training.test_release_candidate training.test_navigation training.test_navigation_augmentation training.test_evaluate_navigation

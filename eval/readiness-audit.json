@@ -1,0 +1,1106 @@
+{
+  "scope": "Read-only failure analysis; consumed test is development regression only; no weights fit or thresholds changed",
+  "distribution": {
+    "train": {
+      "count": 7961,
+      "queryTokens": {
+        "min": 1.0,
+        "p10": 5.0,
+        "median": 8.0,
+        "p90": 14.0,
+        "max": 51.0
+      },
+      "queryScalars": {
+        "min": 4.0,
+        "p10": 22.0,
+        "median": 39.0,
+        "p90": 72.0,
+        "max": 256.0
+      },
+      "candidateCounts": {
+        "6": 120,
+        "10": 7841
+      },
+      "positiveCount": 7165,
+      "positiveTargetsSeenInTraining": 7165,
+      "queryUnseenTokenOccurrences": 61,
+      "queryTokenOccurrences": 74482,
+      "noMatchCount": 796,
+      "removedPositiveNoMatchCount": 766
+    },
+    "calibration": {
+      "count": 1397,
+      "queryTokens": {
+        "min": 1.0,
+        "p10": 5.0,
+        "median": 9.0,
+        "p90": 16.0,
+        "max": 53.0
+      },
+      "queryScalars": {
+        "min": 5.0,
+        "p10": 25.0,
+        "median": 42.0,
+        "p90": 78.40000000000009,
+        "max": 254.0
+      },
+      "candidateCounts": {
+        "10": 1397
+      },
+      "positiveCount": 1045,
+      "positiveTargetsSeenInTraining": 849,
+      "queryUnseenTokenOccurrences": 591,
+      "queryTokenOccurrences": 13975,
+      "noMatchCount": 352,
+      "removedPositiveNoMatchCount": 352
+    },
+    "expandedDev": {
+      "count": 1472,
+      "queryTokens": {
+        "min": 1.0,
+        "p10": 5.0,
+        "median": 9.0,
+        "p90": 15.0,
+        "max": 47.0
+      },
+      "queryScalars": {
+        "min": 6.0,
+        "p10": 25.0,
+        "median": 42.0,
+        "p90": 77.90000000000009,
+        "max": 255.0
+      },
+      "candidateCounts": {
+        "10": 1472
+      },
+      "positiveCount": 1120,
+      "positiveTargetsSeenInTraining": 876,
+      "queryUnseenTokenOccurrences": 804,
+      "queryTokenOccurrences": 14469,
+      "noMatchCount": 352,
+      "removedPositiveNoMatchCount": 352
+    },
+    "originalDev": {
+      "count": 80,
+      "queryTokens": {
+        "min": 1.0,
+        "p10": 1.0,
+        "median": 2.0,
+        "p90": 3.0,
+        "max": 4.0
+      },
+      "queryScalars": {
+        "min": 6.0,
+        "p10": 8.0,
+        "median": 14.0,
+        "p90": 24.0,
+        "max": 28.0
+      },
+      "candidateCounts": {
+        "6": 80
+      },
+      "positiveCount": 60,
+      "positiveTargetsSeenInTraining": 0,
+      "queryUnseenTokenOccurrences": 44,
+      "queryTokenOccurrences": 166,
+      "noMatchCount": 20,
+      "removedPositiveNoMatchCount": 0
+    },
+    "consumedSyntheticRegression": {
+      "count": 40,
+      "queryTokens": {
+        "min": 1.0,
+        "p10": 1.0,
+        "median": 2.0,
+        "p90": 3.0,
+        "max": 4.0
+      },
+      "queryScalars": {
+        "min": 6.0,
+        "p10": 7.9,
+        "median": 15.0,
+        "p90": 26.0,
+        "max": 30.0
+      },
+      "candidateCounts": {
+        "6": 40
+      },
+      "positiveCount": 30,
+      "positiveTargetsSeenInTraining": 0,
+      "queryUnseenTokenOccurrences": 42,
+      "queryTokenOccurrences": 80,
+      "noMatchCount": 10,
+      "removedPositiveNoMatchCount": 0
+    }
+  },
+  "fixedModels": {
+    "current": {
+      "path": "packages/model/candidate",
+      "sha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+      "cutoff": 0.7004017233848572,
+      "partitions": {
+        "calibration": {
+          "semanticCount": 1045,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 5.0,
+            "median": 9.0,
+            "p90": 15.0,
+            "max": 53.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.39450857043266296,
+            "p10": 0.19813077449798586,
+            "median": 0.6837248802185059,
+            "p90": 0.8888958215713502,
+            "max": 0.9889463186264038
+          },
+          "maxMenuCosine": {
+            "min": 0.08063341677188873,
+            "p10": 0.40920047760009765,
+            "median": 0.6968970894813538,
+            "p90": 0.8892136216163635,
+            "max": 0.9889463186264038
+          },
+          "noMatchMaxCosine": {
+            "min": 0.033550187945365906,
+            "p10": 0.22234384268522261,
+            "median": 0.3998580127954483,
+            "p90": 0.616553866863251,
+            "max": 0.9267356395721436
+          },
+          "rawTop1Correct": 785,
+          "correctRawTop1SuppressedByCutoff": 301,
+          "relevantAboveCutoff": 493,
+          "examples": []
+        },
+        "expandedDev": {
+          "semanticCount": 1118,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 5.0,
+            "median": 9.0,
+            "p90": 16.0,
+            "max": 47.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.6979568600654602,
+            "p10": 0.18168534338474274,
+            "median": 0.6824948191642761,
+            "p90": 0.8965579271316528,
+            "max": 0.9837567806243896
+          },
+          "maxMenuCosine": {
+            "min": -0.05591195449233055,
+            "p10": 0.38187932670116426,
+            "median": 0.6972106695175171,
+            "p90": 0.8971133232116699,
+            "max": 0.9837567806243896
+          },
+          "noMatchMaxCosine": {
+            "min": -0.0019594579935073853,
+            "p10": 0.19268353134393693,
+            "median": 0.3748484253883362,
+            "p90": 0.6201725125312807,
+            "max": 0.9508092403411865
+          },
+          "rawTop1Correct": 822,
+          "correctRawTop1SuppressedByCutoff": 314,
+          "relevantAboveCutoff": 526,
+          "examples": []
+        },
+        "originalDev": {
+          "semanticCount": 36,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 1.0,
+            "median": 2.0,
+            "p90": 3.0,
+            "max": 4.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.358708918094635,
+            "p10": -0.21560977399349213,
+            "median": 0.12763957679271698,
+            "p90": 0.417607918381691,
+            "max": 0.9229629039764404
+          },
+          "maxMenuCosine": {
+            "min": 0.15405099093914032,
+            "p10": 0.2454226240515709,
+            "median": 0.38128671050071716,
+            "p90": 0.6295752227306366,
+            "max": 0.9229629039764404
+          },
+          "noMatchMaxCosine": {
+            "min": -0.0026949644088745117,
+            "p10": 0.05565355755388737,
+            "median": 0.29755446314811707,
+            "p90": 0.4887747764587403,
+            "max": 0.5768762826919556
+          },
+          "rawTop1Correct": 6,
+          "correctRawTop1SuppressedByCutoff": 5,
+          "relevantAboveCutoff": 1,
+          "examples": []
+        },
+        "consumedSyntheticRegression": {
+          "semanticCount": 18,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 1.7000000000000002,
+            "median": 2.0,
+            "p90": 3.0,
+            "max": 3.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.4860549569129944,
+            "p10": -0.3655964225530624,
+            "median": -0.09549855440855026,
+            "p90": 0.24964945614337924,
+            "max": 0.65995854139328
+          },
+          "maxMenuCosine": {
+            "min": 0.08166895806789398,
+            "p10": 0.20451237708330156,
+            "median": 0.3325728178024292,
+            "p90": 0.532133811712265,
+            "max": 0.65995854139328
+          },
+          "noMatchMaxCosine": {
+            "min": 0.0965060293674469,
+            "p10": 0.10489907041192055,
+            "median": 0.3765130043029785,
+            "p90": 0.5665993332862853,
+            "max": 0.6562352180480957
+          },
+          "rawTop1Correct": 2,
+          "correctRawTop1SuppressedByCutoff": 2,
+          "relevantAboveCutoff": 0,
+          "examples": [
+            {
+              "query": "unfinished writing",
+              "target": [
+                "Drafts"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.32222050428390503,
+              "bestRelevantScore": 0.07371296733617783,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "unpublished articles",
+              "target": [
+                "Drafts"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.31412312388420105,
+              "bestRelevantScore": -0.23393456637859344,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "work in progress",
+              "target": [
+                "Drafts"
+              ],
+              "bestLabel": "Published",
+              "bestScore": 0.5383277535438538,
+              "bestRelevantScore": -0.14313837885856628,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "live articles",
+              "target": [
+                "Published"
+              ],
+              "bestLabel": "Comments",
+              "bestScore": 0.24809205532073975,
+              "bestRelevantScore": 0.08795896917581558,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "visible posts",
+              "target": [
+                "Published"
+              ],
+              "bestLabel": "Comments",
+              "bestScore": 0.34292513132095337,
+              "bestRelevantScore": -0.18413928151130676,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "released stories",
+              "target": [
+                "Published"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.5294792652130127,
+              "bestRelevantScore": -0.04785872995853424,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "reader replies",
+              "target": [
+                "Comments"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.4897978603839874,
+              "bestRelevantScore": -0.41317784786224365,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "audience feedback",
+              "target": [
+                "Comments"
+              ],
+              "bestLabel": "Drafts",
+              "bestScore": 0.37351441383361816,
+              "bestRelevantScore": 0.18029946088790894,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "discussion",
+              "target": [
+                "Comments"
+              ],
+              "bestLabel": "Analytics",
+              "bestScore": 0.08166895806789398,
+              "bestRelevantScore": -0.16443490982055664,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "pictures and videos",
+              "target": [
+                "Media Library"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.2185492068529129,
+              "bestRelevantScore": 0.2185492068529129,
+              "top1Correct": true,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "uploaded images",
+              "target": [
+                "Media Library"
+              ],
+              "bestLabel": "Published",
+              "bestScore": 0.3662452697753906,
+              "bestRelevantScore": 0.19355431199073792,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "visual assets",
+              "target": [
+                "Media Library"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.65995854139328,
+              "bestRelevantScore": 0.65995854139328,
+              "top1Correct": true,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "writers",
+              "target": [
+                "Authors"
+              ],
+              "bestLabel": "Comments",
+              "bestScore": 0.2987546920776367,
+              "bestRelevantScore": 0.27105867862701416,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "content creators",
+              "target": [
+                "Authors"
+              ],
+              "bestLabel": "Drafts",
+              "bestScore": 0.2904883027076721,
+              "bestRelevantScore": -0.31099438667297363,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "people who write",
+              "target": [
+                "Authors"
+              ],
+              "bestLabel": "Analytics",
+              "bestScore": 0.19765329360961914,
+              "bestRelevantScore": -0.2410155087709427,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "reader statistics",
+              "target": [
+                "Analytics"
+              ],
+              "bestLabel": "Published",
+              "bestScore": 0.41655662655830383,
+              "bestRelevantScore": 0.24047407507896423,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "traffic reports",
+              "target": [
+                "Analytics"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.2074519842863083,
+              "bestRelevantScore": -0.4860549569129944,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            },
+            {
+              "query": "audience numbers",
+              "target": [
+                "Analytics"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.40519699454307556,
+              "bestRelevantScore": -0.3452043831348419,
+              "top1Correct": false,
+              "cutoff": 0.7004017233848572
+            }
+          ]
+        }
+      }
+    },
+    "rejectedBigram": {
+      "path": "packages/model/candidate-v2",
+      "sha256": "166f105df6a3f4e0941828b1130d06671c2b5bbd759471811f607a2fa7ae30f8",
+      "cutoff": 0.6561784148216248,
+      "partitions": {
+        "calibration": {
+          "semanticCount": 1045,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 5.0,
+            "median": 9.0,
+            "p90": 15.0,
+            "max": 53.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.6011736392974854,
+            "p10": 0.2048995614051819,
+            "median": 0.6758910417556763,
+            "p90": 0.8920544385910034,
+            "max": 0.9714927673339844
+          },
+          "maxMenuCosine": {
+            "min": 0.07587486505508423,
+            "p10": 0.3779016673564911,
+            "median": 0.6954525709152222,
+            "p90": 0.8920544385910034,
+            "max": 0.9714927673339844
+          },
+          "noMatchMaxCosine": {
+            "min": 0.03464062511920929,
+            "p10": 0.2073225736618042,
+            "median": 0.37531405687332153,
+            "p90": 0.5926103949546815,
+            "max": 0.842117190361023
+          },
+          "rawTop1Correct": 796,
+          "correctRawTop1SuppressedByCutoff": 254,
+          "relevantAboveCutoff": 548,
+          "examples": []
+        },
+        "expandedDev": {
+          "semanticCount": 1118,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 5.0,
+            "median": 9.0,
+            "p90": 16.0,
+            "max": 47.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.49732422828674316,
+            "p10": 0.17602557688951492,
+            "median": 0.6750636398792267,
+            "p90": 0.8915553092956543,
+            "max": 0.9732127785682678
+          },
+          "maxMenuCosine": {
+            "min": 0.07767777144908905,
+            "p10": 0.3838270425796509,
+            "median": 0.6882796287536621,
+            "p90": 0.8921923637390138,
+            "max": 0.9732127785682678
+          },
+          "noMatchMaxCosine": {
+            "min": 0.007450230419635773,
+            "p10": 0.2162337213754654,
+            "median": 0.3775864690542221,
+            "p90": 0.5999300718307498,
+            "max": 0.8129693865776062
+          },
+          "rawTop1Correct": 828,
+          "correctRawTop1SuppressedByCutoff": 253,
+          "relevantAboveCutoff": 591,
+          "examples": []
+        },
+        "originalDev": {
+          "semanticCount": 36,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 1.0,
+            "median": 2.0,
+            "p90": 3.0,
+            "max": 4.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.3321993350982666,
+            "p10": -0.17970272153615952,
+            "median": -0.0018258839845657349,
+            "p90": 0.2519074007868767,
+            "max": 0.7970060110092163
+          },
+          "maxMenuCosine": {
+            "min": -0.09327791631221771,
+            "p10": 0.12289010733366013,
+            "median": 0.30956941843032837,
+            "p90": 0.593099445104599,
+            "max": 0.7970060110092163
+          },
+          "noMatchMaxCosine": {
+            "min": 0.09604993462562561,
+            "p10": 0.22145476639270784,
+            "median": 0.27608585357666016,
+            "p90": 0.43911439478397374,
+            "max": 0.6576032042503357
+          },
+          "rawTop1Correct": 7,
+          "correctRawTop1SuppressedByCutoff": 5,
+          "relevantAboveCutoff": 2,
+          "examples": []
+        },
+        "consumedSyntheticRegression": {
+          "semanticCount": 18,
+          "semanticQueryTokens": {
+            "min": 1.0,
+            "p10": 1.7000000000000002,
+            "median": 2.0,
+            "p90": 3.0,
+            "max": 3.0
+          },
+          "bestRelevantCosine": {
+            "min": -0.5440173149108887,
+            "p10": -0.2700608164072037,
+            "median": -0.03357739746570587,
+            "p90": 0.24261305034160616,
+            "max": 0.3285759389400482
+          },
+          "maxMenuCosine": {
+            "min": 0.12481287121772766,
+            "p10": 0.2360879048705101,
+            "median": 0.3983056843280792,
+            "p90": 0.53841313123703,
+            "max": 0.5997652411460876
+          },
+          "noMatchMaxCosine": {
+            "min": 0.1955857276916504,
+            "p10": 0.2288984015583992,
+            "median": 0.31839117407798767,
+            "p90": 0.5122928261756897,
+            "max": 0.5386950969696045
+          },
+          "rawTop1Correct": 0,
+          "correctRawTop1SuppressedByCutoff": 0,
+          "relevantAboveCutoff": 0,
+          "examples": [
+            {
+              "query": "unfinished writing",
+              "target": [
+                "Drafts"
+              ],
+              "bestLabel": "Analytics",
+              "bestScore": 0.4456061124801636,
+              "bestRelevantScore": -0.2615770697593689,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "unpublished articles",
+              "target": [
+                "Drafts"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.40431398153305054,
+              "bestRelevantScore": 0.0635777935385704,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "work in progress",
+              "target": [
+                "Drafts"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.45789143443107605,
+              "bestRelevantScore": -0.2898562252521515,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "live articles",
+              "target": [
+                "Published"
+              ],
+              "bestLabel": "Analytics",
+              "bestScore": 0.5240020155906677,
+              "bestRelevantScore": 0.2601098418235779,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "visible posts",
+              "target": [
+                "Published"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.2125767171382904,
+              "bestRelevantScore": -0.07326105982065201,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "released stories",
+              "target": [
+                "Published"
+              ],
+              "bestLabel": "Drafts",
+              "bestScore": 0.3995729088783264,
+              "bestRelevantScore": 0.0928865373134613,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "reader replies",
+              "target": [
+                "Comments"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.39703845977783203,
+              "bestRelevantScore": 0.22325068712234497,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "audience feedback",
+              "target": [
+                "Comments"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.5720390677452087,
+              "bestRelevantScore": -0.19885219633579254,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "discussion",
+              "target": [
+                "Comments"
+              ],
+              "bestLabel": "Drafts",
+              "bestScore": 0.24616412818431854,
+              "bestRelevantScore": 0.015006393194198608,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "pictures and videos",
+              "target": [
+                "Media Library"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.5227007865905762,
+              "bestRelevantScore": -0.1486705243587494,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "uploaded images",
+              "target": [
+                "Media Library"
+              ],
+              "bestLabel": "Published",
+              "bestScore": 0.5060349106788635,
+              "bestRelevantScore": 0.2351144254207611,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "visual assets",
+              "target": [
+                "Media Library"
+              ],
+              "bestLabel": "Published",
+              "bestScore": 0.370824933052063,
+              "bestRelevantScore": 0.3285759389400482,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "writers",
+              "target": [
+                "Authors"
+              ],
+              "bestLabel": "Comments",
+              "bestScore": 0.31811800599098206,
+              "bestRelevantScore": 0.006106264889240265,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "content creators",
+              "target": [
+                "Authors"
+              ],
+              "bestLabel": "Media Library",
+              "bestScore": 0.26382920145988464,
+              "bestRelevantScore": -0.2590750455856323,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "people who write",
+              "target": [
+                "Authors"
+              ],
+              "bestLabel": "Comments",
+              "bestScore": 0.2489810585975647,
+              "bestRelevantScore": -0.5440173149108887,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "reader statistics",
+              "target": [
+                "Analytics"
+              ],
+              "bestLabel": "Drafts",
+              "bestScore": 0.12481287121772766,
+              "bestRelevantScore": -0.14105403423309326,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "traffic reports",
+              "target": [
+                "Analytics"
+              ],
+              "bestLabel": "Published",
+              "bestScore": 0.339664101600647,
+              "bestRelevantScore": -0.1488967090845108,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            },
+            {
+              "query": "audience numbers",
+              "target": [
+                "Analytics"
+              ],
+              "bestLabel": "Authors",
+              "bestScore": 0.5997652411460876,
+              "bestRelevantScore": 0.17083700001239777,
+              "top1Correct": false,
+              "cutoff": 0.6561784148216248
+            }
+          ]
+        }
+      }
+    }
+  },
+  "supervisionRisks": {
+    "train": {
+      "removedPositiveWithRelatedCandidateFlags": 161,
+      "rule": "at least2 shared label tokens and token Jaccard>=0.5; review flag, not proof of wrong label",
+      "examples": [
+        {
+          "query": "can you schedule a meeting with jessica at the office, please",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "tell me how i can schedule a meeting",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "can you schedule a meeting with john for 12",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "a meeting needs to be schedule and i need to know how",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "when is my meeting with bob",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "do i have any meetings with michael today",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "tell me the meeting schdule please",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "what meetings do i have scheduled today",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "what's on my meeting schedule today",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "am i scheduled for any meetings between noon and one",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "what meetings do i have today between noon and one",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "are there meetings schedules today between noon and one",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        }
+      ],
+      "targetMappingMissing": 35,
+      "exactLabelContradictoryMenus": 0,
+      "multiPositiveMenus": 0
+    },
+    "calibration": {
+      "removedPositiveWithRelatedCandidateFlags": 106,
+      "rule": "at least2 shared label tokens and token Jaccard>=0.5; review flag, not proof of wrong label",
+      "examples": [
+        {
+          "query": "schedule my meeting with jim at 3pm",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "what if any meetings do i have today",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "how many meetings do i have today",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "read me my meeting schedule",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "I think my card is broke it's not working anymore",
+          "removedTarget": "Card not working",
+          "remainingCandidate": "Virtual card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "My card was declined at a restaurant today and I am not sure why.",
+          "removedTarget": "Card not working",
+          "remainingCandidate": "Virtual card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "Please help.  The card won't work.",
+          "removedTarget": "Card not working",
+          "remainingCandidate": "Virtual card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "I need clarity on why my card is not working.",
+          "removedTarget": "Card not working",
+          "remainingCandidate": "Virtual card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "My disposable virtual card isn't working.",
+          "removedTarget": "Virtual card not working",
+          "remainingCandidate": "Card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "I can't use my virtual disposable card",
+          "removedTarget": "Virtual card not working",
+          "remainingCandidate": "Card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "I cannot get my virtual card to function.",
+          "removedTarget": "Virtual card not working",
+          "remainingCandidate": "Card not working",
+          "tokenJaccard": 0.75
+        },
+        {
+          "query": "Why can't I make multiple payments with my virtual card?",
+          "removedTarget": "Virtual card not working",
+          "remainingCandidate": "Card not working",
+          "tokenJaccard": 0.75
+        }
+      ],
+      "targetMappingMissing": 6,
+      "exactLabelContradictoryMenus": 0,
+      "multiPositiveMenus": 0
+    },
+    "expandedDev": {
+      "removedPositiveWithRelatedCandidateFlags": 77,
+      "rule": "at least2 shared label tokens and token Jaccard>=0.5; review flag, not proof of wrong label",
+      "examples": [
+        {
+          "query": "how can i set up a meeting",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "make sure i get a meeting room for 9am on friday",
+          "removedTarget": "Schedule meeting",
+          "remainingCandidate": "Meeting schedule",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "do i have any meetings today between 9:30 and 10:30",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "do i have any meetings today between 9 and 10",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "what time am i meeting with john",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "what time is my meeting with fred scheduled for",
+          "removedTarget": "Meeting schedule",
+          "remainingCandidate": "Schedule meeting",
+          "tokenJaccard": 1.0
+        },
+        {
+          "query": "stop calling me charlie and from now on always call me chip",
+          "removedTarget": "Change user name",
+          "remainingCandidate": "User name",
+          "tokenJaccard": 0.6666666666666666
+        },
+        {
+          "query": "jason is my name",
+          "removedTarget": "Change user name",
+          "remainingCandidate": "User name",
+          "tokenJaccard": 0.6666666666666666
+        },
+        {
+          "query": "i'm not sure if watermelon is on my shopping list, but if it isn't can you put it on there",
+          "removedTarget": "Shopping list update",
+          "remainingCandidate": "Shopping list",
+          "tokenJaccard": 0.6666666666666666
+        },
+        {
+          "query": "is it possible to add grapes to my shopping list if they aren't on there already",
+          "removedTarget": "Shopping list update",
+          "remainingCandidate": "Shopping list",
+          "tokenJaccard": 0.6666666666666666
+        },
+        {
+          "query": "i don't have any more steak, please put that on my grocery list",
+          "removedTarget": "Shopping list update",
+          "remainingCandidate": "Shopping list",
+          "tokenJaccard": 0.6666666666666666
+        },
+        {
+          "query": "say my name in a sentence",
+          "removedTarget": "User name",
+          "remainingCandidate": "Change user name",
+          "tokenJaccard": 0.6666666666666666
+        }
+      ],
+      "targetMappingMissing": 22,
+      "exactLabelContradictoryMenus": 0,
+      "multiPositiveMenus": 0
+    }
+  },
+  "trainingFeatureCollisions": {
+    "word": {
+      "uniqueFeaturePreimages": 5179,
+      "occupiedBuckets": 1019,
+      "multiPreimageBuckets": 983,
+      "largestBucket": 14,
+      "featuresBeyondFirstPerBucket": 4160
+    },
+    "char": {
+      "uniqueFeaturePreimages": 15710,
+      "occupiedBuckets": 1024,
+      "multiPreimageBuckets": 1024,
+      "largestBucket": 27,
+      "featuresBeyondFirstPerBucket": 14686
+    },
+    "wordPlusBigram": {
+      "uniqueFeaturePreimages": 27282,
+      "occupiedBuckets": 1024,
+      "multiPreimageBuckets": 1024,
+      "largestBucket": 47,
+      "featuresBeyondFirstPerBucket": 26258
+    }
+  },
+  "sourceSha256": {
+    "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+    "data/dev.jsonl": "598bd31082ab3bd23b49f14bb6f7fc6677f21d2a421700afaa1b16d803977140",
+    "data/test.jsonl": "fa8ebae3fadd62fbc596bee7861a67bac49b8918f5f8b952f0be0f68cba7dbc2"
+  },
+  "limits": "Unreviewed source-class labels; correlation and collisions are diagnostic, not causal ablation evidence"
+}

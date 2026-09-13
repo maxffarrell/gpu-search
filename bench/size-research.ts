@@ -15,8 +15,15 @@ try {
       name: 'isolated-bigram-research-build', enforce: 'pre',
       transform(code, id) {
         if (!id.endsWith('/apps/demo/src/main.ts')) return;
-        return code.replace("import { loadModel } from '../../../packages/model/runtime';", "import { loadBigramModel as loadModel } from '../../../packages/model/runtime-bigram';")
-          .replaceAll('packages/model/candidate/', 'packages/model/candidate-v2/');
+        return code.replace("import { loadModel } from '../../../packages/model/runtime';", `import { loadBigramModel } from '../../../packages/model/runtime-bigram';
+async function loadModel(...args) {
+  const model = await loadBigramModel(...args);
+  return { ...model, prepare(candidates) {
+    const snapshot = structuredClone(candidates);
+    return { score: query => model.score(query, snapshot), dispose() {} };
+  } };
+}`)
+          .replaceAll('packages/model/experiments/navigation-align0p5-seed29/', 'packages/model/candidate-v2/');
       },
     }],
   });

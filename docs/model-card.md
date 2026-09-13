@@ -1,8 +1,8 @@
 # Model card: expanded experimental model
 
-Latest decision: the live artifact below is retained. The subsequent same-size word-pair candidate improved development but failed to establish reserved-test transfer improvement. The 40-row synthetic holdout has now been opened once, after selection; it is not human-reviewed and must not be described as fresh in future experiments. See [optimization experiments](optimization-experiments.md).
+Latest decision: the experimental demo now runs `navigation-align0p5-seed29`, epoch 2, using the same 16-dimensional CPU encoder and **32,768 int8 weight bytes**. Its payload SHA-256 is `fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2`. [Navigation evaluation](navigation-evaluation.md) records the frozen provider test, existing regression gates, provenance, and remaining quality gap. No production semantic release is claimed.
 
-The website currently runs `expanded-more-data-pooled-seed17`, epoch 10, from `packages/model/candidate/`. It is a real 16-dimensional pooled CPU encoder with 32,768 int8 weight bytes. The original pilot artifact remains unchanged under `packages/model/experimental/` for comparison.
+The previous demo artifact remains under `packages/model/candidate/`, the prior word-pair research artifact under `packages/model/candidate-v2/`, and the original pilot under `packages/model/experimental/`. Both the original synthetic test and new GNOME provider evaluation are now consumed; neither is fresh evidence for future selection. The sections below retain historical pilot and expanded-data evidence.
 
 Training records: 7,961 total / 7,165 positive supervised, development 1,472, separate calibration 1,397. Sources are CLINC150, BANKING77, MIT VS Code descriptions and the original training fixtures. Source intent labels and documentation are adapted into weak menu relevance, not newly human-reviewed search judgments. Original dev is used only for post-selection transfer; upstream tests are unused.
 

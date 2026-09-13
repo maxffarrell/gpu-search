@@ -6,3 +6,8 @@ runs/teacher-minilm/MODEL_CARD.md -text -whitespace
 *.bin binary
 *.npy binary
 *.npz binary
+# Preserve newly pinned upstream metadata and license evidence verbatim.
+data/navigation/raw/** -text -whitespace
+data/lexicon/WNDB_License.txt -text -whitespace
+
+data/lexicon/LICENSE.md -text -whitespace

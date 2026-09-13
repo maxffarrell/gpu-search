@@ -1,0 +1,61 @@
+{
+  "panels": 85,
+  "keyword_pairs": 1209,
+  "query_groups": 1047,
+  "entry_roles": {
+    "settings-panel": 35,
+    "settings-module": 40,
+    "preferred-application-launcher": 8,
+    "settings-catalog": 1,
+    "background-service": 1
+  },
+  "multiple_positive_query_groups": 128,
+  "providers": {
+    "gnome": {
+      "panels": 27,
+      "keyword_pairs": 315
+    },
+    "kde": {
+      "panels": 40,
+      "keyword_pairs": 754
+    },
+    "xfce": {
+      "panels": 18,
+      "keyword_pairs": 140
+    }
+  },
+  "skipped": {
+    "gnome-nonpanel": 3,
+    "kde-nonkcm": 238,
+    "json-without-authored-keywords": 8,
+    "missing-name-or-keywords": 89
+  },
+  "split_policy": "not assigned; root must freeze lineage groups before training/evaluation",
+  "relevance_policy": "author-listed positive destinations only; all unlisted destinations unjudged",
+  "sources": [
+    {
+      "provider": "gnome",
+      "product": "gnome-control-center",
+      "repo": "GNOME/gnome-control-center",
+      "revision": "cd79a897190989ca395c6f00962f0929734103c7"
+    },
+    {
+      "provider": "kde",
+      "product": "plasma-desktop",
+      "repo": "KDE/plasma-desktop",
+      "revision": "19dae94ec1d563d095b08602dd5eed60d485a5e0"
+    },
+    {
+      "provider": "kde",
+      "product": "plasma-workspace",
+      "repo": "KDE/plasma-workspace",
+      "revision": "df3bba49a2c0657d4165f6511b1771138ccc75ea"
+    },
+    {
+      "provider": "xfce",
+      "product": "xfce4-settings",
+      "repo": "xfce-mirror/xfce4-settings",
+      "revision": "488c919d23c979c9b28abd192c05b9b2310fa732"
+    }
+  ]
+}

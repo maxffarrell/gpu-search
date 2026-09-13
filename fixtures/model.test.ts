@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { loadModel, ModelAssetError } from '../packages/model/runtime.js';
+import { loadModel, ModelAssetError, ModelIndexDisposedError } from '../packages/model/runtime.js';
+import { SearchInputError } from '../packages/core/src/index.js';
 
 const location = new URL('../packages/model/experimental/', import.meta.url);
 const manifest = JSON.parse(readFileSync(new URL('manifest.json', location), 'utf8'));
@@ -88,4 +89,51 @@ test('loading snapshots caller data and returned embeddings cannot mutate the mo
   const before = Array.from(model.encode('Profile'));
   model.encode('Profile').fill(0);
   assert.deepEqual(Array.from(model.encode('Profile')), before);
+});
+
+test('prepared index exactly matches raw reference scoring and isolates all candidate mutation', async () => {
+  const model = await loadModel(manifest, payload);
+  const candidates = [{ id: 'a', label: 'Profile', aliases: ['my information'], context: 'personal settings' }, { id: 'b', label: 'Members', aliases: ['coworkers'], context: 'organization settings' }];
+  const expected = model.score('coworkers', candidates);
+  const index = model.prepare(candidates);
+  assert.equal(index.size, 2);
+  assert.deepEqual(index.score('coworkers'), expected);
+  candidates[0]!.id = 'changed'; candidates[0]!.label = 'Billing'; candidates[0]!.aliases[0] = 'Invoices'; candidates[0]!.context = 'payments'; candidates.splice(1, 1);
+  assert.deepEqual(index.score('coworkers'), expected);
+  const result = index.score('coworkers'); result[0]!.label = 'changed result'; result[0]!.score = -1;
+  assert.deepEqual(index.score('coworkers'), expected);
+  for (const query of fixtures.map(f => f.text)) {
+    const stable = [{ id: 'profile', label: 'Profile' }, { id: 'members', label: 'Members' }];
+    const prepared = model.prepare(stable);
+    assert.deepEqual(prepared.score(query), model.score(query, stable));
+    prepared.dispose();
+  }
+});
+
+test('prepared candidates are encoded once; independent indexes and disposal have isolated lifetimes', async () => {
+  const model = await loadModel(manifest, payload);
+  let labelReads = 0;
+  const candidate = { id: 'p', get label() { labelReads++; return 'Profile'; } };
+  const a = model.prepare([candidate]), b = model.prepare([{ id: 'b', label: 'Billing' }]);
+  const afterPrepare = labelReads;
+  for (let i = 0; i < 100; i++) assert.equal(a.score('profile')[0]!.id, 'p');
+  assert.equal(labelReads, afterPrepare, 'queries must not consult candidate records again');
+  a.dispose(); a.dispose();
+  assert.throws(() => a.score('profile'), ModelIndexDisposedError);
+  assert.equal(b.score('billing')[0]!.id, 'b');
+  assert.equal(model.prepare([{ id: 'new', label: 'Members' }]).score('coworkers')[0]!.id, 'new');
+});
+
+test('prepared index validates bounds, preserves stable ties, and omits zero embeddings', async () => {
+  const model = await loadModel(manifest, payload);
+  for (const candidates of [null, new Array(1), [{ id: 'p', label: '' }], [{ id: 'p', label: 'x'.repeat(257) }], [{ id: 'p', label: 'Profile', aliases: Array(9).fill('p') }], [{ id: 'p', label: 'Profile' }, { id: 'p', label: 'Members' }]]) {
+    assert.throws(() => model.prepare(candidates as never), SearchInputError);
+  }
+  const tied = model.prepare([{ id: 'z', label: 'Profile' }, { id: 'a', label: 'Profile' }]);
+  assert.deepEqual(tied.score('profile').map(r => r.id), ['z', 'a']);
+  assert.throws(() => tied.score('x'.repeat(257)), SearchInputError);
+  assert.deepEqual(tied.score(' \n '), []);
+  assert.deepEqual(model.prepare([]).score('profile'), []);
+  const zeros = new ArrayBuffer(payload.byteLength), zeroModel = await loadModel(await rehash(zeros), zeros);
+  assert.deepEqual(zeroModel.prepare([{ id: 'z', label: 'Profile' }]).score('profile'), []);
 });

@@ -1,0 +1,49 @@
+{
+  "formatVersion": "gpu-search-collision-research-v1",
+  "featureVersion": "gpu-search-features-bigram25-v1",
+  "architecture": "pooled",
+  "dimension": 16,
+  "featureFamily": "both",
+  "modelId": "collision-control16-seed17",
+  "tensors": [
+    {
+      "name": "word",
+      "shape": [
+        1024,
+        16
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.00671740248799324,
+      "scaleF32LE": "a81ddc3b",
+      "byteOffset": 0,
+      "byteLength": 16384
+    },
+    {
+      "name": "char",
+      "shape": [
+        1024,
+        16
+      ],
+      "elementCount": 16384,
+      "bits": 8,
+      "scale": 0.0073119946755468845,
+      "scaleF32LE": "7599ef3b",
+      "byteOffset": 16384,
+      "byteLength": 16384
+    }
+  ],
+  "payloadBytes": 32768,
+  "payloadSha256": "055bb09a4b71ce20cea0f853cf9d4d2d33f912ffa6a33e76b96fd26c9e055f1c",
+  "byteOrder": "little-endian",
+  "validatedSemanticCutoff": null,
+  "status": "research only; baseline runtime unchanged",
+  "contract": {
+    "id": "control16",
+    "featureVersion": "gpu-search-features-bigram25-v1",
+    "wordBuckets": 1024,
+    "charBuckets": 1024,
+    "dimension": 16,
+    "int8Bytes": 32768
+  }
+}

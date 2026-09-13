@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/globalwordnet/english-wordnet/releases/download/2025-edition/english-wordnet-2025.xml.gz",
+  "sourceSha256": "9ca6d1dcb75f822fdd66617f7d9da48142ace38dd544d6ad5e2feca1674ad3fe",
+  "revision": "dc343f2683279ecbb13fab4e2fd778d7b162d287",
+  "license": "Open English WordNet CC BY4.0 with Princeton WordNet license attribution",
+  "seedSources": {
+    "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+    "data/navigation-splits/train.jsonl": "f9ff863498f3009487c5d4dfde3ce1a1aa31a425bbdec2c53f16d54e96bc3881"
+  },
+  "seedWords": 610,
+  "pairs": 504,
+  "pairSha256": "697a7bc5cba37cf6640dfc42c3924f78999639d7a1772b91337e41f21321a459",
+  "filter": "Only noun/verb/adjective synsets directly touching TRAIN positive-label words; ASCII terms3-64chars<=4tokens, <=4senses per term.",
+  "negativeJudgments": "none",
+  "holdoutAccess": "No navigation dev/holdout, expanded dev/calibration or consumed synthetic test is read.",
+  "use": "Optional positive-only regularization, no shipped dictionary/lookup; polysemy still requires caution."
+}

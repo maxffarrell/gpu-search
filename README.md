@@ -53,7 +53,7 @@ The demo lets you change the query and candidate menu, compare results, and choo
 
 **The learned search is experimental.** The library above provides deterministic text matching. The demo also runs a real, small trained model that tries to connect different wording with related destinations. It can make mistakes and show unrelated results; its scores are not confidence ratings. It runs on the CPU, and no WebGPU acceleration is claimed. This experiment is separate from the library's reliable matching rules.
 
-For implementation and research details, see the [API specification](docs/specification.md), [model card](docs/model-card.md), [experiment findings](docs/optimization-experiments.md), and [reproduction evidence](docs/verification.md).
+For implementation and research details, see the [API specification](docs/specification.md), [model card](docs/model-card.md), [latest model findings](docs/navigation-evaluation.md), and [reproduction evidence](docs/verification.md).
 
 ## Credits
 
@@ -66,5 +66,7 @@ The three main inspirations are:
 Their focused, local browser tools inspired this project. Their code, weights, and datasets were not copied.
 
 Research builds on **fastText**, **StarSpace**, and **Apple MLX**, with **W3C WGSL** informing planned GPU work. Data comes from **CLINC150** (Larson et al., CC BY 3.0), **BANKING77** (Casanueva et al. / PolyAI, CC BY 4.0), and **VS Code** (Microsoft, MIT). Offline teacher experiments used **Sentence Transformers all-MiniLM-L6-v2** (Apache-2.0), **PyTorch**, and **Hugging Face Transformers**; these do not ship to the browser.
+
+Navigation experiments use authored search metadata from [GNOME](https://github.com/GNOME/gnome-control-center), [KDE](https://develop.kde.org/docs/features/configuration/kcm/), and [Xfce](https://github.com/xfce-mirror/xfce4-settings). Offline vocabulary experiments credit [Open English WordNet](https://en-word.net/) and Princeton WordNet; no WordNet dictionary ships to the browser.
 
 Thanks also to Vite, TypeScript, pnpm, esbuild, Playwright, NumPy, and uv. [Source credits](docs/credits.md), [data attribution](docs/data-sources.md), and [teacher details](docs/optimization-experiments.md) preserve provenance and license information. Project code is MIT licensed; third-party materials retain their own licenses.

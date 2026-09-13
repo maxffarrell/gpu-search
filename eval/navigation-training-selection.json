@@ -1,0 +1,852 @@
+{
+  "selectionStatus": "Frozen research candidate for root-only untouched holdout evaluation; not live or production-approved",
+  "rule": "Highest quantized XFCE semantic-only raw-cosine known-positive nDCG among the12completedruns satisfying expanded semantic>=.45,coverage>=.48,noMatch<=.05,overall regression<=.01 from baseline.4653183,andpayload<=32768bytes",
+  "holdoutAccessed": false,
+  "baselineExpandedOverall": 0.4653183,
+  "baselineXfceSemanticNdcg5": 0.3666203924763217,
+  "selected": {
+    "report": "eval/navigation-training.json",
+    "checkpoint": "runs/navigation-align0p5-seed29",
+    "artifact": "packages/model/experiments/navigation-align0p5-seed29",
+    "alignmentWeight": 0.5,
+    "lexiconWeight": 0,
+    "shortQueryAugmentation": false,
+    "seed": 29,
+    "selectedEpoch": 2,
+    "payloadBytes": 32768,
+    "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+    "expandedSemanticNdcg5": 0.4567377131972293,
+    "expandedOverallNdcg5": 0.4577078244236628,
+    "overallRegression": 0.007610475576337206,
+    "expandedCoverage": 0.4875,
+    "expandedNoMatchRate": 0.03977272727272727,
+    "calibratedCutoff": 0.7053964138031006,
+    "navigation": {
+      "raw": {
+        "queryCount": 76,
+        "knownPositivePairs": 81,
+        "multiPositiveQueries": 4,
+        "ndcg5": 0.5487016424043035,
+        "coverage": 1.0,
+        "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+        "recall1": 0.29605263157894735,
+        "recall5": 0.8114035087719299
+      },
+      "calibrated": {
+        "queryCount": 76,
+        "knownPositivePairs": 81,
+        "multiPositiveQueries": 4,
+        "ndcg5": 0.08701509464165076,
+        "coverage": 0.18421052631578946,
+        "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+        "recall1": 0.08552631578947369,
+        "recall5": 0.08552631578947369
+      },
+      "semanticOnlyRaw": {
+        "queryCount": 73,
+        "knownPositivePairs": 77,
+        "multiPositiveQueries": 3,
+        "ndcg5": 0.5312548497750532,
+        "coverage": 1.0,
+        "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+        "recall1": 0.273972602739726,
+        "recall5": 0.8036529680365297
+      },
+      "semanticOnlyCalibrated": {
+        "queryCount": 73,
+        "knownPositivePairs": 77,
+        "multiPositiveQueries": 3,
+        "ndcg5": 0.0547945205479452,
+        "coverage": 0.1506849315068493,
+        "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+        "recall1": 0.0547945205479452,
+        "recall5": 0.0547945205479452
+      },
+      "cutoffSource": "expanded calibration only",
+      "cutoff": 0.7053964138031006
+    },
+    "passesAllFinalGates": true,
+    "failedGates": []
+  },
+  "auditedRuns": [
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align0p0-seed17",
+      "artifact": "packages/model/experiments/navigation-align0p0-seed17",
+      "alignmentWeight": 0.0,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 17,
+      "selectedEpoch": 7,
+      "payloadBytes": 32768,
+      "payloadSha256": "dd4e4ca0bab50a95b16973d8f5a286f2c4fbb1d0164e69afd2d60414ae5a0a26",
+      "expandedSemanticNdcg5": 0.4480681818329929,
+      "expandedOverallNdcg5": 0.449053774365434,
+      "overallRegression": 0.01626452563456604,
+      "expandedCoverage": 0.48035714285714287,
+      "expandedNoMatchRate": 0.045454545454545456,
+      "calibratedCutoff": 0.7131285071372986,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.4114959857756043,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.19078947368421054,
+          "recall5": 0.6271929824561404
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.03438351569428235,
+          "coverage": 0.05263157894736842,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.03289473684210526,
+          "recall5": 0.03289473684210526
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.38841060451777726,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.1643835616438356,
+          "recall5": 0.6118721461187215
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0,
+          "coverage": 0.0136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0,
+          "recall5": 0.0
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7131285071372986
+      },
+      "passesAllFinalGates": false,
+      "failedGates": [
+        "expanded semantic nDCG below0.45",
+        "expanded overall regression above0.01"
+      ]
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align0p0-seed29",
+      "artifact": "packages/model/experiments/navigation-align0p0-seed29",
+      "alignmentWeight": 0.0,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 29,
+      "selectedEpoch": 0,
+      "payloadBytes": 32768,
+      "payloadSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+      "expandedSemanticNdcg5": 0.4643617910275386,
+      "expandedOverallNdcg5": 0.46531828782927515,
+      "overallRegression": 1.217072487236237e-08,
+      "expandedCoverage": 0.49642857142857144,
+      "expandedNoMatchRate": 0.048295454545454544,
+      "calibratedCutoff": 0.7004017233848572,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.39162221908909844,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.19078947368421054,
+          "recall5": 0.6074561403508772
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.03438351569428235,
+          "coverage": 0.05263157894736842,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.03289473684210526,
+          "recall5": 0.03289473684210526
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.3666203924763217,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.1643835616438356,
+          "recall5": 0.591324200913242
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0,
+          "coverage": 0.0136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0,
+          "recall5": 0.0
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7004017233848572
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align0p1-seed17",
+      "artifact": "packages/model/experiments/navigation-align0p1-seed17",
+      "alignmentWeight": 0.1,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 17,
+      "selectedEpoch": 2,
+      "payloadBytes": 32768,
+      "payloadSha256": "ba1ecaa59e8e300057b5ad5fcf016ab67e27e995b6d7dbc1775dd3f0bde2d2a5",
+      "expandedSemanticNdcg5": 0.4565867140461287,
+      "expandedOverallNdcg5": 0.4575570949139035,
+      "overallRegression": 0.007761205086096512,
+      "expandedCoverage": 0.4901785714285714,
+      "expandedNoMatchRate": 0.04261363636363636,
+      "calibratedCutoff": 0.707268238067627,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5282422863434778,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.3092105263157895,
+          "recall5": 0.7587719298245614
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.03438351569428235,
+          "coverage": 0.05263157894736842,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.03289473684210526,
+          "recall5": 0.03289473684210526
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5088549830425246,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.2876712328767123,
+          "recall5": 0.7488584474885845
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0,
+          "coverage": 0.0136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0,
+          "recall5": 0.0
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.707268238067627
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align0p1-seed29",
+      "artifact": "packages/model/experiments/navigation-align0p1-seed29",
+      "alignmentWeight": 0.1,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 29,
+      "selectedEpoch": 12,
+      "payloadBytes": 32768,
+      "payloadSha256": "220b07259723a714cbf6e8fdc0e3d21bb9fb754fe1720d65fab30bdced87a9ab",
+      "expandedSemanticNdcg5": 0.45807939477146903,
+      "expandedOverallNdcg5": 0.4590471101379485,
+      "overallRegression": 0.006271189862051496,
+      "expandedCoverage": 0.49107142857142855,
+      "expandedNoMatchRate": 0.04261363636363636,
+      "calibratedCutoff": 0.7043400406837463,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5395248268844455,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.3092105263157895,
+          "recall5": 0.7850877192982457
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.047541410431124455,
+          "coverage": 0.11842105263157894,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.046052631578947366,
+          "recall5": 0.046052631578947366
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5206011896331213,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.2876712328767123,
+          "recall5": 0.7762557077625571
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0136986301369863,
+          "coverage": 0.0821917808219178,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0136986301369863,
+          "recall5": 0.0136986301369863
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7043400406837463
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align0p5-seed17",
+      "artifact": "packages/model/experiments/navigation-align0p5-seed17",
+      "alignmentWeight": 0.5,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 17,
+      "selectedEpoch": 8,
+      "payloadBytes": 32768,
+      "payloadSha256": "c0c9a19612a1bd8b6b0e17a7f1c1183f547bf875ffc0c68c4a2a4e10c3c09711",
+      "expandedSemanticNdcg5": 0.4552238168956047,
+      "expandedOverallNdcg5": 0.4561966315082911,
+      "overallRegression": 0.009121668491708923,
+      "expandedCoverage": 0.4901785714285714,
+      "expandedNoMatchRate": 0.03977272727272727,
+      "calibratedCutoff": 0.7102027535438538,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5346746436501789,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.3092105263157895,
+          "recall5": 0.7587719298245614
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.07385719990480866,
+          "coverage": 0.15789473684210525,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.07236842105263158,
+          "recall5": 0.07236842105263158
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5155516838001863,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.2876712328767123,
+          "recall5": 0.7488584474885845
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0410958904109589,
+          "coverage": 0.1232876712328767,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0410958904109589,
+          "recall5": 0.0410958904109589
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7102027535438538
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align0p5-seed29",
+      "artifact": "packages/model/experiments/navigation-align0p5-seed29",
+      "alignmentWeight": 0.5,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 29,
+      "selectedEpoch": 2,
+      "payloadBytes": 32768,
+      "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+      "expandedSemanticNdcg5": 0.4567377131972293,
+      "expandedOverallNdcg5": 0.4577078244236628,
+      "overallRegression": 0.007610475576337206,
+      "expandedCoverage": 0.4875,
+      "expandedNoMatchRate": 0.03977272727272727,
+      "calibratedCutoff": 0.7053964138031006,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5487016424043035,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.29605263157894735,
+          "recall5": 0.8114035087719299
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.08701509464165076,
+          "coverage": 0.18421052631578946,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.08552631578947369,
+          "recall5": 0.08552631578947369
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5312548497750532,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.273972602739726,
+          "recall5": 0.8036529680365297
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0547945205479452,
+          "coverage": 0.1506849315068493,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0547945205479452,
+          "recall5": 0.0547945205479452
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7053964138031006
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align1p0-seed17",
+      "artifact": "packages/model/experiments/navigation-align1p0-seed17",
+      "alignmentWeight": 1.0,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 17,
+      "selectedEpoch": 4,
+      "payloadBytes": 32768,
+      "payloadSha256": "ec44e15a9faf1201e9b6e4e215a9568fb52089a2909f0c190b0c2a2251dccc57",
+      "expandedSemanticNdcg5": 0.45395845493310977,
+      "expandedOverallNdcg5": 0.4549335291207292,
+      "overallRegression": 0.01038477087927081,
+      "expandedCoverage": 0.49107142857142855,
+      "expandedNoMatchRate": 0.045454545454545456,
+      "calibratedCutoff": 0.706242024898529,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5403701843689357,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.29605263157894735,
+          "recall5": 0.7850877192982457
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.08701509464165076,
+          "coverage": 0.17105263157894737,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.08552631578947369,
+          "recall5": 0.08552631578947369
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5214812878361522,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.273972602739726,
+          "recall5": 0.7762557077625571
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0547945205479452,
+          "coverage": 0.136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0547945205479452,
+          "recall5": 0.0547945205479452
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.706242024898529
+      },
+      "passesAllFinalGates": false,
+      "failedGates": [
+        "expanded overall regression above0.01"
+      ]
+    },
+    {
+      "report": "eval/navigation-training.json",
+      "checkpoint": "runs/navigation-align1p0-seed29",
+      "artifact": "packages/model/experiments/navigation-align1p0-seed29",
+      "alignmentWeight": 1.0,
+      "lexiconWeight": 0,
+      "shortQueryAugmentation": false,
+      "seed": 29,
+      "selectedEpoch": 3,
+      "payloadBytes": 32768,
+      "payloadSha256": "dc45b6da23d541254255a678007e83903388c9a4ab343d11019a236243ced893",
+      "expandedSemanticNdcg5": 0.44936907232705303,
+      "expandedOverallNdcg5": 0.45035234184075473,
+      "overallRegression": 0.014965958159245285,
+      "expandedCoverage": 0.4875,
+      "expandedNoMatchRate": 0.04261363636363636,
+      "calibratedCutoff": 0.7061091661453247,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5286285880256907,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.2565789473684211,
+          "recall5": 0.8114035087719299
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.08701509464165076,
+          "coverage": 0.19736842105263158,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.08552631578947369,
+          "recall5": 0.08552631578947369
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5113072299235307,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.2328767123287671,
+          "recall5": 0.8036529680365297
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0547945205479452,
+          "coverage": 0.1643835616438356,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0547945205479452,
+          "recall5": 0.0547945205479452
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7061091661453247
+      },
+      "passesAllFinalGates": false,
+      "failedGates": [
+        "expanded semantic nDCG below0.45",
+        "expanded overall regression above0.01"
+      ]
+    },
+    {
+      "report": "eval/navigation-training-lexiconpilot.json",
+      "checkpoint": "runs/navigation-align0p0-seed17-lexiconpilot",
+      "artifact": "packages/model/experiments/navigation-align0p0-seed17-lexiconpilot",
+      "alignmentWeight": 0.0,
+      "lexiconWeight": 0.1,
+      "shortQueryAugmentation": false,
+      "seed": 17,
+      "selectedEpoch": 11,
+      "payloadBytes": 32768,
+      "payloadSha256": "88a21fe71daec8963189c2136483b03bb7d1287b6a25525fe71116e7cf7770a4",
+      "expandedSemanticNdcg5": 0.46615069979319157,
+      "expandedOverallNdcg5": 0.4671040021149894,
+      "overallRegression": -0.001785702114989407,
+      "expandedCoverage": 0.5008928571428571,
+      "expandedNoMatchRate": 0.05113636363636364,
+      "calibratedCutoff": 0.7008920311927795,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.40283348832463134,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.16447368421052633,
+          "recall5": 0.6337719298245614
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.03438351569428235,
+          "coverage": 0.05263157894736842,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.03289473684210526,
+          "recall5": 0.03289473684210526
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.37939211402087386,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.136986301369863,
+          "recall5": 0.6187214611872147
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0,
+          "coverage": 0.0136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0,
+          "recall5": 0.0
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7008920311927795
+      },
+      "passesAllFinalGates": false,
+      "failedGates": [
+        "expanded no-match rate above5%"
+      ]
+    },
+    {
+      "report": "eval/navigation-training-lexiconpilot.json",
+      "checkpoint": "runs/navigation-align0p5-seed17-lexiconpilot",
+      "artifact": "packages/model/experiments/navigation-align0p5-seed17-lexiconpilot",
+      "alignmentWeight": 0.5,
+      "lexiconWeight": 0.1,
+      "shortQueryAugmentation": false,
+      "seed": 17,
+      "selectedEpoch": 2,
+      "payloadBytes": 32768,
+      "payloadSha256": "6ba22abfec59a436fd900147a99445d5fde4b81201d5e84cba7bb5c3df9ef45a",
+      "expandedSemanticNdcg5": 0.4607288694607722,
+      "expandedOverallNdcg5": 0.4616918536224494,
+      "overallRegression": 0.0036264463775506073,
+      "expandedCoverage": 0.49375,
+      "expandedNoMatchRate": 0.048295454545454544,
+      "calibratedCutoff": 0.7057008147239685,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.5266840686543388,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.3092105263157895,
+          "recall5": 0.7478070175438596
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.06069930516796656,
+          "coverage": 0.14473684210526316,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.05921052631578947,
+          "recall5": 0.05921052631578947
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.5072327290099964,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.2876712328767123,
+          "recall5": 0.7374429223744292
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0273972602739726,
+          "coverage": 0.1095890410958904,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0273972602739726,
+          "recall5": 0.0273972602739726
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7057008147239685
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training-shortquery.json",
+      "checkpoint": "runs/navigation-align0p5-seed17-shortquery",
+      "artifact": "packages/model/experiments/navigation-align0p5-seed17-shortquery",
+      "alignmentWeight": 0.5,
+      "lexiconWeight": 0.0,
+      "shortQueryAugmentation": true,
+      "seed": 17,
+      "selectedEpoch": 0,
+      "payloadBytes": 32768,
+      "payloadSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+      "expandedSemanticNdcg5": 0.4643617910275386,
+      "expandedOverallNdcg5": 0.46531828782927515,
+      "overallRegression": 1.217072487236237e-08,
+      "expandedCoverage": 0.49642857142857144,
+      "expandedNoMatchRate": 0.048295454545454544,
+      "calibratedCutoff": 0.7004017233848572,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.39162221908909844,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.19078947368421054,
+          "recall5": 0.6074561403508772
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.03438351569428235,
+          "coverage": 0.05263157894736842,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.03289473684210526,
+          "recall5": 0.03289473684210526
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.3666203924763217,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.1643835616438356,
+          "recall5": 0.591324200913242
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0,
+          "coverage": 0.0136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0,
+          "recall5": 0.0
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7004017233848572
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    },
+    {
+      "report": "eval/navigation-training-shortquery.json",
+      "checkpoint": "runs/navigation-align0p5-seed29-shortquery",
+      "artifact": "packages/model/experiments/navigation-align0p5-seed29-shortquery",
+      "alignmentWeight": 0.5,
+      "lexiconWeight": 0.0,
+      "shortQueryAugmentation": true,
+      "seed": 29,
+      "selectedEpoch": 0,
+      "payloadBytes": 32768,
+      "payloadSha256": "a58f45fc6c127729428a850eee8720fb9b6b2a64aeafc464411b6d3334987e9d",
+      "expandedSemanticNdcg5": 0.4643617910275386,
+      "expandedOverallNdcg5": 0.46531828782927515,
+      "overallRegression": 1.217072487236237e-08,
+      "expandedCoverage": 0.49642857142857144,
+      "expandedNoMatchRate": 0.048295454545454544,
+      "calibratedCutoff": 0.7004017233848572,
+      "navigation": {
+        "raw": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.39162221908909844,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.19078947368421054,
+          "recall5": 0.6074561403508772
+        },
+        "calibrated": {
+          "queryCount": 76,
+          "knownPositivePairs": 81,
+          "multiPositiveQueries": 4,
+          "ndcg5": 0.03438351569428235,
+          "coverage": 0.05263157894736842,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.03289473684210526,
+          "recall5": 0.03289473684210526
+        },
+        "semanticOnlyRaw": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.3666203924763217,
+          "coverage": 1.0,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.1643835616438356,
+          "recall5": 0.591324200913242
+        },
+        "semanticOnlyCalibrated": {
+          "queryCount": 73,
+          "knownPositivePairs": 77,
+          "multiPositiveQueries": 3,
+          "ndcg5": 0.0,
+          "coverage": 0.0136986301369863,
+          "judgmentWarning": "Only upstream-listed destinations have known relevance. All other candidates are unjudged, not established negatives; metrics are known-positive diagnostics.",
+          "recall1": 0.0,
+          "recall5": 0.0
+        },
+        "cutoffSource": "expanded calibration only",
+        "cutoff": 0.7004017233848572
+      },
+      "passesAllFinalGates": true,
+      "failedGates": []
+    }
+  ],
+  "warning": "XFCE has partial source-authored positives,29normalized queries overlap KDEtrain; no unknown labels were trained as negatives. Development selection is not heldout validation."
+}

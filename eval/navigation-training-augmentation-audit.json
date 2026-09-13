@@ -1,0 +1,18 @@
+{
+  "originalPositiveRows": 7165,
+  "eligibleDerivedRows": 1202,
+  "meanOriginalEligibleTokenCount": 8.876871880199667,
+  "meanDerivedTokenCount": 6.846921797004992,
+  "prefixes": [
+    "can you",
+    "could you",
+    "how do i",
+    "i want to",
+    "i would like to",
+    "please",
+    "show me",
+    "tell me"
+  ],
+  "sampling": "50:50 original full pool and eligible derived pool; 7165 examples per epoch; derived rows oversampled; no navigation rows or no-match rows shortened",
+  "derivedNavDevNormalizedQueryOverlap": []
+}

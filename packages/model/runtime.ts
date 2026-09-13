@@ -1,15 +1,29 @@
 import { features } from './features.js';
-import type { Candidate } from '../core/src/index.js';
+import { INPUT_LIMITS, SearchInputError, normalizeKey, type Candidate } from '../core/src/index.js';
+
+export type ModelScore = { id: string; label: string; score: number };
+export type PreparedModelIndex = {
+  readonly size: number;
+  /** Raw cosine ranking using cached candidate vectors; no relevance cutoff is implied. */
+  score(query: string): ModelScore[];
+  dispose(): void;
+};
 
 export type Model = {
   readonly id: string;
   readonly hash: string;
   encode(text: string): Float32Array;
   /** Raw cosine inspection: all nonzero candidate vectors, without a quality cutoff. */
-  score(query: string, candidates: readonly Candidate[]): { id: string; label: string; score: number }[];
+  score(query: string, candidates: readonly Candidate[]): ModelScore[];
+  /** Snapshot and encode a bounded candidate menu once, then reuse it across queries. */
+  prepare(candidates: readonly Candidate[]): PreparedModelIndex;
 };
 export class ModelAssetError extends Error {
   constructor(message: string) { super(message); this.name = 'ModelAssetError'; }
+}
+export class ModelIndexDisposedError extends Error {
+  readonly code = 'ERR_MODEL_INDEX_DISPOSED';
+  constructor() { super('Prepared model index has been disposed'); this.name = 'ModelIndexDisposedError'; }
 }
 const DIMENSION = 16, ELEMENTS = 1024 * DIMENSION;
 function requireAsset(condition: unknown, message: string): asserts condition {
@@ -27,6 +41,34 @@ function normalize(vector: Float32Array): Float32Array {
   return vector.map(value => Math.fround(value / norm));
 }
 function valid(vector: Float32Array): boolean { return vector.some(value => value !== 0); }
+function validateText(value: unknown, path: string, limit: number, nonempty = false): asserts value is string {
+  if (typeof value !== 'string') throw new SearchInputError('expected a string', path);
+  if (/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/u.test(value)) throw new SearchInputError('unpaired Unicode surrogate', path);
+  if (Array.from(value).length > limit) throw new SearchInputError(`exceeds ${limit} Unicode scalars`, path);
+  if (nonempty && !normalizeKey(value)) throw new SearchInputError('must not be empty', path);
+}
+
+function snapshot(candidates: readonly Candidate[]): Candidate[] {
+  if (!Array.isArray(candidates) || candidates.length > INPUT_LIMITS.candidates) throw new SearchInputError('expected a bounded candidate array', 'candidates');
+  const result: Candidate[] = [], ids = new Set<string>();
+  for (let i = 0; i < candidates.length; i++) {
+    const candidate = candidates[i], path = `candidates[${i}]`;
+    if (!candidate || typeof candidate !== 'object' || Array.isArray(candidate)) throw new SearchInputError('expected a candidate record', path);
+    const { id, label, aliases, context } = candidate;
+    validateText(id, `${path}.id`, Number.MAX_SAFE_INTEGER, true); validateText(label, `${path}.label`, INPUT_LIMITS.label, true);
+    if (ids.has(id)) throw new SearchInputError('duplicate ID', `${path}.id`);
+    ids.add(id);
+    let copiedAliases: string[] | undefined;
+    if (aliases !== undefined) {
+      if (!Array.isArray(aliases) || aliases.length > INPUT_LIMITS.aliases) throw new SearchInputError('expected at most 8 aliases', `${path}.aliases`);
+      copiedAliases = [];
+      for (let j = 0; j < aliases.length; j++) { const alias = aliases[j]; validateText(alias, `${path}.aliases[${j}]`, INPUT_LIMITS.alias, true); copiedAliases.push(alias); }
+    }
+    if (context !== undefined) validateText(context, `${path}.context`, INPUT_LIMITS.context);
+    result.push({ id, label, aliases: copiedAliases, context });
+  }
+  return result;
+}
 
 /** Loads the actual experimental trained pooled encoder. No model quality approval is implied. */
 export async function loadModel(input: unknown, payload: ArrayBuffer): Promise<Model> {
@@ -94,16 +136,35 @@ export async function loadModel(input: unknown, payload: ArrayBuffer): Promise<M
     }
     return normalize(composed);
   }
-  return Object.freeze({ id, hash, encode, score(query: string, candidates: readonly Candidate[]) {
-    const queryVector = encode(query);
-    if (!valid(queryVector)) return [];
-    return candidates.map((candidate, order) => {
+  function prepare(candidates: readonly Candidate[], checked: boolean): PreparedModelIndex {
+    const source = checked ? snapshot(candidates) : candidates;
+    const size = source.length;
+    let entries: { id: string; label: string; order: number }[] = [];
+    let vectors = new Float32Array(size * DIMENSION);
+    for (let order = 0; order < source.length; order++) {
+      const candidate = source[order]!;
       const vector = compose(candidate);
-      if (!valid(vector)) return null;
-      let score = 0;
-      for (let d = 0; d < DIMENSION; d++) score = Math.fround(score + Math.fround(queryVector[d]! * vector[d]!));
-      return { id: candidate.id, label: candidate.label, score: Math.max(-1, Math.min(1, score)), order };
-    }).filter(item => item !== null).sort((a, b) => b.score - a.score || a.order - b.order)
-      .map(({ id, label, score }) => ({ id, label, score }));
+      if (!valid(vector)) continue;
+      vectors.set(vector, order * DIMENSION);
+      entries.push({ id: candidate.id, label: candidate.label, order });
+    }
+    let disposed = false;
+    return Object.freeze({ size, score(query: string) {
+      if (disposed) throw new ModelIndexDisposedError();
+      if (checked) validateText(query, 'query', INPUT_LIMITS.query);
+      const queryVector = encode(query);
+      if (!valid(queryVector)) return [];
+      return entries.map(entry => {
+        let score = 0;
+        for (let d = 0; d < DIMENSION; d++) score = Math.fround(score + Math.fround(queryVector[d]! * vectors[entry.order * DIMENSION + d]!));
+        return { ...entry, score: Math.max(-1, Math.min(1, score)) };
+      }).sort((a, b) => b.score - a.score || a.order - b.order).map(({ id, label, score }) => ({ id, label, score }));
+    }, dispose() { disposed = true; entries = []; vectors = new Float32Array(0); } });
+  }
+  return Object.freeze({ id, hash, encode, prepare(candidates: readonly Candidate[]) { return prepare(candidates, true); }, score(query: string, candidates: readonly Candidate[]) {
+    // Preserve the original permissive raw-vector inspection API, including empty embeddings.
+    if (!valid(encode(query))) return [];
+    const temporary = prepare(candidates, false);
+    try { return temporary.score(query); } finally { temporary.dispose(); }
   } });
 }
