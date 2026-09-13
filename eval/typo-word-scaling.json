@@ -1,0 +1,371 @@
+{
+  "generatedAt": "2026-09-13T23:46:48.322695+00:00",
+  "modelId": "navigation-align0p5-seed29",
+  "modelSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+  "sourceHashes": {
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+    "data/typo/dev.jsonl": "0de2a6425097fe4e9181ef5c5f1553cab5836584c667df2ffdf9108e9e42b6f0",
+    "data/navigation-splits/dev.jsonl": "104350ac5c74ed92610a15c987ecadd612f369a01c7f25381d1b98d7892f3ecb"
+  },
+  "readPartitions": {
+    "calibration": "data/expanded/calibration.jsonl",
+    "expanded": "data/expanded/dev.jsonl",
+    "typo": "data/typo/dev.jsonl",
+    "navigation": "data/navigation-splits/dev.jsonl"
+  },
+  "frozenRatios": [
+    1,
+    0.75,
+    0.5,
+    0.25,
+    0
+  ],
+  "gates": {
+    "expandedSemanticNdcg5": 0.45,
+    "expandedCoverage": 0.48,
+    "expandedNoMatchMaximum": 0.05,
+    "expandedOverallNdcg5": 0.447708,
+    "navigationSemanticRawNdcg5": 0.5113
+  },
+  "rawWeightBytes": 32768,
+  "method": "Dequantized int8 word table multiplied globally by fixed ratio; char table unchanged. Existing exact pooled normalization and alias/context composition. Each ratio has its own expanded-calibration-only cutoff. No training or held-out/custom-query/diagnostic access. Ratios can be represented by tensor scale metadata with identical 32768-byte int8 payload; zero ratio requires zero word codes and positive scale. No artifacts exported.",
+  "limitations": [
+    "Development-selected ablation, not independent generalization evidence.",
+    "Typo labels are synthetic one-edit origins; other labels are not reviewed semantic negatives.",
+    "XFCE only documented positives; no no-match metric is available.",
+    "No change to lexical ranking, runtime or shipped assets."
+  ],
+  "results": [
+    {
+      "wordScale": 1,
+      "typoRaw": {
+        "queries": 1248,
+        "ndcg5": 0.7729398207512426,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.6826923076923077,
+        "success3": 0.8125,
+        "success5": 0.8501602564102564
+      },
+      "expanded": {
+        "cutoff": 0.7053964138031006,
+        "semanticNdcg5": 0.4567377131972293,
+        "semanticCoverage": 0.4865831842576029,
+        "overallNdcg5": 0.4577078244236628,
+        "noMatchSemanticRate": 0.03977272727272727,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4577078244236628,
+          "coverage": 0.4875,
+          "noMatchAnyRate": 0.03977272727272727,
+          "noMatchSemanticRate": 0.03977272727272727,
+          "recall1": 0.44910714285714287,
+          "recall3": 0.4625,
+          "recall5": 0.46339285714285716,
+          "mrr": 0.45572916666666663
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.4567377131972293,
+          "coverage": 0.4865831842576029,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4481216457960644,
+          "recall3": 0.46153846153846156,
+          "recall5": 0.462432915921288,
+          "mrr": 0.4547555158020274
+        }
+      },
+      "navigationSemanticRaw": {
+        "queries": 73,
+        "ndcg5": 0.5312548497750532,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.273972602739726,
+        "success3": 0.4931506849315068,
+        "success5": 0.8082191780821918
+      },
+      "gates": {
+        "expandedSemanticNdcg5": true,
+        "expandedCoverage": true,
+        "expandedNoMatchMaximum": true,
+        "expandedOverallNdcg5": true,
+        "navigationSemanticRawNdcg5": true
+      },
+      "allGatesPassed": true
+    },
+    {
+      "wordScale": 0.75,
+      "typoRaw": {
+        "queries": 1248,
+        "ndcg5": 0.8088560379140263,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.7275641025641025,
+        "success3": 0.8373397435897436,
+        "success5": 0.8790064102564102
+      },
+      "expanded": {
+        "cutoff": 0.7246686816215515,
+        "semanticNdcg5": 0.45322190232238724,
+        "semanticCoverage": 0.4785330948121646,
+        "overallNdcg5": 0.45419829178252585,
+        "noMatchSemanticRate": 0.045454545454545456,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.45419829178252585,
+          "coverage": 0.47946428571428573,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4455357142857143,
+          "recall3": 0.45982142857142855,
+          "recall5": 0.45982142857142855,
+          "mrr": 0.45223214285714286
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.45322190232238724,
+          "coverage": 0.4785330948121646,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4445438282647585,
+          "recall3": 0.4588550983899821,
+          "recall5": 0.4588550983899821,
+          "mrr": 0.45125223613595705
+        }
+      },
+      "navigationSemanticRaw": {
+        "queries": 73,
+        "ndcg5": 0.53273637417313,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2876712328767123,
+        "success3": 0.4794520547945205,
+        "success5": 0.8082191780821918
+      },
+      "gates": {
+        "expandedSemanticNdcg5": true,
+        "expandedCoverage": false,
+        "expandedNoMatchMaximum": true,
+        "expandedOverallNdcg5": true,
+        "navigationSemanticRawNdcg5": true
+      },
+      "allGatesPassed": false
+    },
+    {
+      "wordScale": 0.5,
+      "typoRaw": {
+        "queries": 1248,
+        "ndcg5": 0.8554533003062579,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.780448717948718,
+        "success3": 0.8806089743589743,
+        "success5": 0.9182692307692307
+      },
+      "expanded": {
+        "cutoff": 0.7486203908920288,
+        "semanticNdcg5": 0.41800806489266584,
+        "semanticCoverage": 0.44633273703041143,
+        "overallNdcg5": 0.4190473362053575,
+        "noMatchSemanticRate": 0.045454545454545456,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.4190473362053575,
+          "coverage": 0.4473214285714286,
+          "noMatchAnyRate": 0.045454545454545456,
+          "noMatchSemanticRate": 0.045454545454545456,
+          "recall1": 0.4107142857142857,
+          "recall3": 0.42410714285714285,
+          "recall5": 0.42410714285714285,
+          "mrr": 0.4172619047619047
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.41800806489266584,
+          "coverage": 0.44633273703041143,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.40966010733452596,
+          "recall3": 0.4230769230769231,
+          "recall5": 0.4230769230769231,
+          "mrr": 0.4162194394752534
+        }
+      },
+      "navigationSemanticRaw": {
+        "queries": 73,
+        "ndcg5": 0.5116483598462385,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2328767123287671,
+        "success3": 0.5342465753424658,
+        "success5": 0.7945205479452054
+      },
+      "gates": {
+        "expandedSemanticNdcg5": false,
+        "expandedCoverage": false,
+        "expandedNoMatchMaximum": true,
+        "expandedOverallNdcg5": false,
+        "navigationSemanticRawNdcg5": true
+      },
+      "allGatesPassed": false
+    },
+    {
+      "wordScale": 0.25,
+      "typoRaw": {
+        "queries": 1248,
+        "ndcg5": 0.9259281724641477,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.8790064102564102,
+        "success3": 0.9495192307692307,
+        "success5": 0.9639423076923077
+      },
+      "expanded": {
+        "cutoff": 0.8052092790603638,
+        "semanticNdcg5": 0.25362024868387445,
+        "semanticCoverage": 0.27906976744186046,
+        "overallNdcg5": 0.2549530696683675,
+        "noMatchSemanticRate": 0.03977272727272727,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.2549530696683675,
+          "coverage": 0.28035714285714286,
+          "noMatchAnyRate": 0.03977272727272727,
+          "noMatchSemanticRate": 0.03977272727272727,
+          "recall1": 0.25,
+          "recall3": 0.2580357142857143,
+          "recall5": 0.2580357142857143,
+          "mrr": 0.25386904761904766
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.25362024868387445,
+          "coverage": 0.27906976744186046,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.24865831842576028,
+          "recall3": 0.2567084078711986,
+          "recall5": 0.2567084078711986,
+          "mrr": 0.2525342874180083
+        }
+      },
+      "navigationSemanticRaw": {
+        "queries": 73,
+        "ndcg5": 0.5001863074417601,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1917808219178082,
+        "success3": 0.5616438356164384,
+        "success5": 0.8082191780821918
+      },
+      "gates": {
+        "expandedSemanticNdcg5": false,
+        "expandedCoverage": false,
+        "expandedNoMatchMaximum": true,
+        "expandedOverallNdcg5": false,
+        "navigationSemanticRawNdcg5": false
+      },
+      "allGatesPassed": false
+    },
+    {
+      "wordScale": 0,
+      "typoRaw": {
+        "queries": 1248,
+        "ndcg5": 0.9624296443650869,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.9318910256410257,
+        "success3": 0.9783653846153846,
+        "success5": 0.9855769230769231
+      },
+      "expanded": {
+        "cutoff": 0.847959578037262,
+        "semanticNdcg5": 0.10634417644071054,
+        "semanticCoverage": 0.1261180679785331,
+        "overallNdcg5": 0.10793999041135212,
+        "noMatchSemanticRate": 0.019886363636363636,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.10793999041135212,
+          "coverage": 0.12767857142857142,
+          "noMatchAnyRate": 0.019886363636363636,
+          "noMatchSemanticRate": 0.019886363636363636,
+          "recall1": 0.10625,
+          "recall3": 0.10892857142857143,
+          "recall5": 0.10892857142857143,
+          "mrr": 0.10758928571428572
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.10634417644071054,
+          "coverage": 0.1261180679785331,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.10465116279069768,
+          "recall3": 0.1073345259391771,
+          "recall5": 0.1073345259391771,
+          "mrr": 0.10599284436493739
+        }
+      },
+      "navigationSemanticRaw": {
+        "queries": 73,
+        "ndcg5": 0.4694415859737838,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.1780821917808219,
+        "success3": 0.5068493150684932,
+        "success5": 0.7671232876712328
+      },
+      "gates": {
+        "expandedSemanticNdcg5": false,
+        "expandedCoverage": false,
+        "expandedNoMatchMaximum": true,
+        "expandedOverallNdcg5": false,
+        "navigationSemanticRawNdcg5": false
+      },
+      "allGatesPassed": false
+    }
+  ]
+}

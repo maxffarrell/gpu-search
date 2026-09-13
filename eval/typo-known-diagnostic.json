@@ -1,0 +1,195 @@
+{
+  "scope": "Known consumed demo regressions checked after final selection; never training or independent evidence.",
+  "report": [
+    {
+      "artifact": "packages/model/experiments/navigation-align0p5-seed29",
+      "queries": [
+        {
+          "query": "profle",
+          "results": [
+            {
+              "id": "invoices",
+              "label": "Invoices",
+              "score": 0.7065011262893677
+            },
+            {
+              "id": "notifications",
+              "label": "Notifications",
+              "score": 0.37730544805526733
+            },
+            {
+              "id": "profiles",
+              "label": "Profiles",
+              "score": 0.3338041305541992
+            },
+            {
+              "id": "billing",
+              "label": "Billing",
+              "score": 0.33210277557373047
+            },
+            {
+              "id": "members",
+              "label": "Members",
+              "score": 0.3182832598686218
+            }
+          ]
+        },
+        {
+          "query": "coworkers",
+          "results": [
+            {
+              "id": "members",
+              "label": "Members",
+              "score": 0.6012478470802307
+            },
+            {
+              "id": "invoices",
+              "label": "Invoices",
+              "score": 0.4414193332195282
+            },
+            {
+              "id": "profiles",
+              "label": "Profiles",
+              "score": 0.39065074920654297
+            },
+            {
+              "id": "delete",
+              "label": "Delete Account",
+              "score": 0.28548702597618103
+            },
+            {
+              "id": "billing",
+              "label": "Billing",
+              "score": 0.22996218502521515
+            }
+          ]
+        },
+        {
+          "query": "my information",
+          "results": [
+            {
+              "id": "profile",
+              "label": "Profile",
+              "score": 0.4789857864379883
+            },
+            {
+              "id": "delete",
+              "label": "Delete Account",
+              "score": 0.2811584174633026
+            },
+            {
+              "id": "profiles",
+              "label": "Profiles",
+              "score": 0.22078678011894226
+            },
+            {
+              "id": "billing",
+              "label": "Billing",
+              "score": -0.0408744215965271
+            },
+            {
+              "id": "create",
+              "label": "Create Account",
+              "score": -0.10748500376939774
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "artifact": "packages/model/experiments/navigation-align0p5-seed29-word085",
+      "queries": [
+        {
+          "query": "profle",
+          "results": [
+            {
+              "id": "invoices",
+              "label": "Invoices",
+              "score": 0.7021426558494568
+            },
+            {
+              "id": "notifications",
+              "label": "Notifications",
+              "score": 0.37585538625717163
+            },
+            {
+              "id": "profiles",
+              "label": "Profiles",
+              "score": 0.35670703649520874
+            },
+            {
+              "id": "billing",
+              "label": "Billing",
+              "score": 0.32372772693634033
+            },
+            {
+              "id": "members",
+              "label": "Members",
+              "score": 0.31524521112442017
+            }
+          ]
+        },
+        {
+          "query": "coworkers",
+          "results": [
+            {
+              "id": "members",
+              "label": "Members",
+              "score": 0.5980998277664185
+            },
+            {
+              "id": "invoices",
+              "label": "Invoices",
+              "score": 0.4357289969921112
+            },
+            {
+              "id": "profiles",
+              "label": "Profiles",
+              "score": 0.39836761355400085
+            },
+            {
+              "id": "delete",
+              "label": "Delete Account",
+              "score": 0.2933456003665924
+            },
+            {
+              "id": "billing",
+              "label": "Billing",
+              "score": 0.2422691434621811
+            }
+          ]
+        },
+        {
+          "query": "my information",
+          "results": [
+            {
+              "id": "profile",
+              "label": "Profile",
+              "score": 0.5281165838241577
+            },
+            {
+              "id": "profiles",
+              "label": "Profiles",
+              "score": 0.250438928604126
+            },
+            {
+              "id": "delete",
+              "label": "Delete Account",
+              "score": 0.2316151112318039
+            },
+            {
+              "id": "billing",
+              "label": "Billing",
+              "score": -0.050325747579336166
+            },
+            {
+              "id": "members",
+              "label": "Members",
+              "score": -0.12426576018333435
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

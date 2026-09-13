@@ -23,7 +23,7 @@ async function loadModel(...args) {
     return { score: query => model.score(query, snapshot), dispose() {} };
   } };
 }`)
-          .replaceAll('packages/model/experiments/navigation-align0p5-seed29/', 'packages/model/candidate-v2/');
+          .replaceAll('packages/model/experiments/navigation-align0p5-seed29-word085/', 'packages/model/candidate-v2/');
       },
     }],
   });

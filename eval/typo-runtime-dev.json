@@ -1,0 +1,23 @@
+{
+  "scope": "Actual TypeScript runtime on synthetic development rows; no lexical matching or holdout access.",
+  "results": [
+    {
+      "artifact": "packages/model/experiments/navigation-align0p5-seed29",
+      "model": "navigation-align0p5-seed29",
+      "top1": 0.686698717948718,
+      "shortTop1": 0.36333333333333334,
+      "selectionScore": 0.5250160256410257,
+      "queries": 1248,
+      "shortCount": 300
+    },
+    {
+      "artifact": "packages/model/experiments/navigation-align0p5-seed29-word085",
+      "model": "navigation-align0p5-seed29-word085",
+      "top1": 0.7059294871794872,
+      "shortTop1": 0.4,
+      "selectionScore": 0.5529647435897436,
+      "queries": 1248,
+      "shortCount": 300
+    }
+  ]
+}

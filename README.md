@@ -53,7 +53,7 @@ The demo lets you change the query and candidate menu and choose Auto, Light, or
 
 **The learned search is experimental.** The library above provides deterministic text matching. The demo also runs a real, small trained model that tries to connect different wording with related destinations. It can make mistakes and show unrelated results; its scores are not confidence ratings. It runs on the CPU, and no WebGPU acceleration is claimed. This experiment is separate from the library's reliable matching rules.
 
-For implementation and research details, see the [API specification](docs/specification.md), [model card](docs/model-card.md), [latest model findings](docs/navigation-evaluation.md), and [reproduction evidence](docs/verification.md).
+For implementation and research details, see the [API specification](docs/specification.md), [model card](docs/model-card.md), [latest model findings](docs/typo-weight-experiments.md), and [reproduction evidence](docs/verification.md).
 
 ## Credits
 

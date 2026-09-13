@@ -1,0 +1,204 @@
+{
+  "artifact": "packages/model/experiments/navigation-align0p5-seed29",
+  "modelId": "navigation-align0p5-seed29",
+  "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+  "payloadBytes": 32768,
+  "scope": "Authorized profle/profile/invoices diagnostic and TRAIN feature collision inventory only; no test or typo development input inspected for this diagnosis",
+  "terms": {
+    "profle": {
+      "features": {
+        "wordIds": [
+          208
+        ],
+        "charIds": [
+          161,
+          154,
+          881,
+          803,
+          742,
+          185,
+          77,
+          17,
+          273,
+          469,
+          709,
+          231,
+          609,
+          364,
+          757,
+          339,
+          538,
+          127
+        ],
+        "wordCount": 1,
+        "charCount": 18,
+        "truncated": false
+      },
+      "wordNorm": 0.8284938931465149,
+      "charMeanNorm": 0.2645729184150696,
+      "wordToCharNormRatio": 3.131438732147217,
+      "pooledNorm": 0.4468275308609009
+    },
+    "profile": {
+      "features": {
+        "wordIds": [
+          17
+        ],
+        "charIds": [
+          161,
+          154,
+          881,
+          803,
+          435,
+          95,
+          185,
+          77,
+          17,
+          273,
+          469,
+          880,
+          501,
+          104,
+          609,
+          364,
+          757,
+          646,
+          252,
+          874,
+          734
+        ],
+        "wordCount": 1,
+        "charCount": 21,
+        "truncated": false
+      },
+      "wordNorm": 0.816300094127655,
+      "charMeanNorm": 0.33755216002464294,
+      "wordToCharNormRatio": 2.4182932376861572,
+      "pooledNorm": 0.49490246176719666
+    },
+    "invoices": {
+      "features": {
+        "wordIds": [
+          84
+        ],
+        "charIds": [
+          264,
+          573,
+          228,
+          965,
+          700,
+          608,
+          516,
+          660,
+          683,
+          342,
+          129,
+          947,
+          214,
+          7,
+          149,
+          303,
+          546,
+          852,
+          828,
+          160,
+          913,
+          352,
+          700,
+          471
+        ],
+        "wordCount": 1,
+        "charCount": 24,
+        "truncated": false
+      },
+      "wordNorm": 0.3699679374694824,
+      "charMeanNorm": 0.2645660638809204,
+      "wordToCharNormRatio": 1.398395299911499,
+      "pooledNorm": 0.23745247721672058
+    }
+  },
+  "comparisons": [
+    {
+      "query": "profle",
+      "candidate": "profile",
+      "cosine": 0.23895439505577087,
+      "wordOnlyCosine": 0.08929946273565292,
+      "charOnlyCosine": 0.8079572916030884,
+      "queryWordContributionToFullCosine": 0.044390786439180374,
+      "queryCharContributionToFullCosine": 0.1945635974407196,
+      "sharedCharacterBuckets": [
+        17,
+        77,
+        154,
+        161,
+        185,
+        273,
+        364,
+        469,
+        609,
+        757,
+        803,
+        881
+      ]
+    },
+    {
+      "query": "profle",
+      "candidate": "invoices",
+      "cosine": 0.7065010070800781,
+      "wordOnlyCosine": 0.4802478849887848,
+      "charOnlyCosine": -0.18757310509681702,
+      "queryWordContributionToFullCosine": 0.6641706228256226,
+      "queryCharContributionToFullCosine": 0.04233044013381004,
+      "sharedCharacterBuckets": []
+    },
+    {
+      "query": "profile",
+      "candidate": "invoices",
+      "cosine": -0.15306147933006287,
+      "wordOnlyCosine": -0.2480473816394806,
+      "charOnlyCosine": -0.012893090955913067,
+      "queryWordContributionToFullCosine": -0.16846095025539398,
+      "queryCharContributionToFullCosine": 0.015399477444589138,
+      "sharedCharacterBuckets": []
+    }
+  ],
+  "trainWordBucketTerms": {
+    "84": {
+      "accessibility": 19,
+      "tree": 14,
+      "children?": 3,
+      "error.": 2,
+      "detergent": 2,
+      "long.": 2,
+      "$1?": 2,
+      "sufficient": 1,
+      "norwegian": 1,
+      "installer": 1
+    },
+    "208": {
+      "trim": 8,
+      "350": 6,
+      "transferred.": 2,
+      "fully": 1,
+      "cover?": 1,
+      "robert": 1,
+      "shift": 1
+    },
+    "17": {
+      "profile": 5,
+      "dictation": 5,
+      "anywhere.": 2,
+      "password.": 1,
+      "restroom": 1,
+      "fields": 1,
+      "pharmacy": 1
+    }
+  },
+  "counting": "Token occurrences across unique query/label texts within each TRAIN source; not optimizer exposure counts. KDE labels included only if explicitly positive.",
+  "sourceHashes": {
+    "data/expanded/train.jsonl": "e874045719a1a623e5f92b21bc0c6f2b704e9ce4898c504ccbb34faf177d39a6",
+    "data/navigation-splits/train.jsonl": "f9ff863498f3009487c5d4dfde3ce1a1aa31a425bbdec2c53f16d54e96bc3881"
+  },
+  "conclusion": "Character features distinguish the typo correctly, but the single hashed word row has a larger norm and dominates the mixture. The misspelled word aliases unrelated training terms. Collisions alone do not prove which training record caused the error.",
+  "recommendedObjective": "Train-only clean/noisy embedding consistency, with frozen clean-teacher preservation and existing anchor/navigation losses. Preserve existing architecture and runtime; verify unseen-label corruption splits and retention gates."
+}

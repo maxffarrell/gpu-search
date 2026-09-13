@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-09-13T23:39:31.588Z",
+  "generatedAt": "2026-09-13T23:56:14.032Z",
   "browser": "153.0.8010.36",
-  "modelId": "navigation-align0p5-seed29",
+  "modelId": "navigation-align0p5-seed29-word085",
   "modelSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+  "manifestSha256": "019b113275824658b6ac18aa40afb7a28187ce5855620f5be393bdeda2e24388",
   "assets": [
     "http://127.0.0.1:4180/assets/weights-DzGJHMjn.bin",
-    "http://127.0.0.1:4180/assets/manifest-BZJbMuw1.json",
-    "http://127.0.0.1:4180/assets/manifest-BZJbMuw1.json",
+    "http://127.0.0.1:4180/assets/manifest-Chi-7Xgg.json",
+    "http://127.0.0.1:4180/assets/manifest-Chi-7Xgg.json",
     "http://127.0.0.1:4180/assets/weights-DzGJHMjn.bin"
   ],
   "checks": [
@@ -30,27 +31,27 @@
         {
           "id": "profile",
           "label": "Profile",
-          "score": 1
+          "score": 0.9999999403953552
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.2431342452764511
+          "score": 0.30986106395721436
         },
         {
           "id": "notifications",
           "label": "Notifications",
-          "score": -0.06166600063443184
+          "score": -0.04923157021403313
         },
         {
           "id": "members",
           "label": "Members",
-          "score": -0.0964088886976242
+          "score": -0.07975833863019943
         },
         {
-          "id": "create",
-          "label": "Create Account",
-          "score": -0.13454584777355194
+          "id": "billing",
+          "label": "Billing",
+          "score": -0.1374315768480301
         }
       ]
     },
@@ -60,27 +61,27 @@
         {
           "id": "invoices",
           "label": "Invoices",
-          "score": 0.7065011262893677
+          "score": 0.7021426558494568
         },
         {
           "id": "notifications",
           "label": "Notifications",
-          "score": 0.37730544805526733
+          "score": 0.37585538625717163
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.3338041305541992
+          "score": 0.35670703649520874
         },
         {
           "id": "billing",
           "label": "Billing",
-          "score": 0.33210277557373047
+          "score": 0.32372772693634033
         },
         {
           "id": "members",
           "label": "Members",
-          "score": 0.3182832598686218
+          "score": 0.31524521112442017
         }
       ]
     },
@@ -90,27 +91,27 @@
         {
           "id": "members",
           "label": "Members",
-          "score": 0.6012478470802307
+          "score": 0.5980998277664185
         },
         {
           "id": "invoices",
           "label": "Invoices",
-          "score": 0.4414193332195282
+          "score": 0.4357289969921112
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.39065074920654297
+          "score": 0.39836761355400085
         },
         {
           "id": "delete",
           "label": "Delete Account",
-          "score": 0.28548702597618103
+          "score": 0.2933456003665924
         },
         {
           "id": "billing",
           "label": "Billing",
-          "score": 0.22996218502521515
+          "score": 0.2422691434621811
         }
       ]
     },
@@ -120,27 +121,27 @@
         {
           "id": "profile",
           "label": "Profile",
-          "score": 0.4789857864379883
-        },
-        {
-          "id": "delete",
-          "label": "Delete Account",
-          "score": 0.2811584174633026
+          "score": 0.5281165838241577
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.22078678011894226
+          "score": 0.250438928604126
+        },
+        {
+          "id": "delete",
+          "label": "Delete Account",
+          "score": 0.2316151112318039
         },
         {
           "id": "billing",
           "label": "Billing",
-          "score": -0.0408744215965271
+          "score": -0.050325747579336166
         },
         {
-          "id": "create",
-          "label": "Create Account",
-          "score": -0.10748500376939774
+          "id": "members",
+          "label": "Members",
+          "score": -0.12426576018333435
         }
       ]
     },
@@ -150,27 +151,27 @@
         {
           "id": "notifications",
           "label": "Notifications",
-          "score": 0.15801042318344116
+          "score": 0.14277198910713196
         },
         {
           "id": "members",
           "label": "Members",
-          "score": 0.09049106389284134
+          "score": 0.06800969690084457
         },
         {
           "id": "plan",
           "label": "Plan",
-          "score": -0.018502209335565567
+          "score": -0.011508401483297348
         },
         {
           "id": "profile",
           "label": "Profile",
-          "score": -0.07037100195884705
+          "score": -0.05632472783327103
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": -0.08417893946170807
+          "score": -0.08793410658836365
         }
       ]
     },
@@ -180,27 +181,27 @@
         {
           "id": "plan",
           "label": "Plan",
-          "score": 0.4007212817668915
+          "score": 0.40770062804222107
         },
         {
           "id": "profiles",
           "label": "Profiles",
-          "score": 0.37006834149360657
+          "score": 0.3943781554698944
         },
         {
           "id": "notifications",
           "label": "Notifications",
-          "score": 0.24767084419727325
+          "score": 0.2662643492221832
         },
         {
           "id": "delete",
           "label": "Delete Account",
-          "score": 0.18141329288482666
+          "score": 0.19428583979606628
         },
         {
           "id": "members",
           "label": "Members",
-          "score": 0.1588371992111206
+          "score": 0.16852417588233948
         }
       ]
     }
@@ -209,12 +210,12 @@
     {
       "id": "new",
       "label": "A completely new destination",
-      "score": 0.7449478507041931
+      "score": 0.7616259455680847
     },
     {
       "id": "safe",
       "label": "<img src=x onerror=alert(1)>",
-      "score": 0.049454428255558014
+      "score": 0.09657737612724304
     }
   ],
   "requests": [],

@@ -5,8 +5,8 @@ import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { loadModel } from '../packages/model/runtime.js';
 
-const manifest = JSON.parse(readFileSync('packages/model/experiments/navigation-align0p5-seed29/manifest.json', 'utf8'));
-const bytes = readFileSync('packages/model/experiments/navigation-align0p5-seed29/weights.bin');
+const manifest = JSON.parse(readFileSync('packages/model/experiments/navigation-align0p5-seed29-word085/manifest.json', 'utf8'));
+const bytes = readFileSync('packages/model/experiments/navigation-align0p5-seed29-word085/weights.bin');
 const model = await loadModel(manifest, Uint8Array.from(bytes).buffer);
 const server = await preview({ root: 'apps/demo', preview: { host: '127.0.0.1', port: 4180, strictPort: true } });
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_CHANNEL ? { channel: process.env.CHROME_CHANNEL } : {}) });
@@ -22,6 +22,7 @@ try {
   assert.ok(assets.some(x => x.endsWith('.json')), 'actual manifest was fetched');
   page.on('request', r => requests.push(r.url()));
   const candidates = JSON.parse(await page.locator('#candidate-json').inputValue());
+  assert.ok((await page.locator('#model-details').textContent())?.includes(model.id), 'the demo identifies the selected model and its effective scales');
   assert.ok((await page.locator('#model-details').textContent())?.includes(model.hash), 'the demo identifies the selected artifact');
   // Seen-training sanity regressions, not held-out generalization evidence.
   assert.equal(model.score('coworkers', candidates)[0]?.id, 'members');
@@ -111,6 +112,6 @@ try {
   await zeroPage.close();
 
   mkdirSync('bench/reports', { recursive: true });
-  writeFileSync('bench/reports/demo.json', JSON.stringify({ generatedAt: new Date().toISOString(), browser: browser.version(), modelId: model.id, modelSha256: model.hash, assets, checks: ['typo/exact/prefix take precedence over real model scores', 'typo search works without model assets', 'model asset fetch', 'CPU scores equal exported-weight inference for six queries', 'arbitrary edited candidate inference', 'missing weights show no model results', 'zero weights eliminate model results', 'Auto/Light/Dark and persistence', 'invalid JSON', 'safe label text', '390px containment', 'zero query/edit requests'], samples, customExpected, requests, errors }, null, 2) + '\n');
+  writeFileSync('bench/reports/demo.json', JSON.stringify({ generatedAt: new Date().toISOString(), browser: browser.version(), modelId: model.id, modelSha256: model.hash, manifestSha256: createHash('sha256').update(readFileSync('packages/model/experiments/navigation-align0p5-seed29-word085/manifest.json')).digest('hex'), assets, checks: ['typo/exact/prefix take precedence over real model scores', 'typo search works without model assets', 'model asset fetch', 'CPU scores equal exported-weight inference for six queries', 'arbitrary edited candidate inference', 'missing weights show no model results', 'zero weights eliminate model results', 'Auto/Light/Dark and persistence', 'invalid JSON', 'safe label text', '390px containment', 'zero query/edit requests'], samples, customExpected, requests, errors }, null, 2) + '\n');
   console.log('Real model inference, theme, privacy and failure checks passed');
 } finally { await browser.close(); await new Promise<void>(resolve => server.httpServer.close(() => resolve())); }

@@ -24,7 +24,7 @@ try {
       const data = await page.evaluate(async () => {
         const { loadModel } = await import('/packages/model/runtime.ts' as string);
         const start = performance.now();
-        const [manifestResponse, weightsResponse] = await Promise.all([fetch('/packages/model/experiments/navigation-align0p5-seed29/manifest.json'), fetch('/packages/model/experiments/navigation-align0p5-seed29/weights.bin')]);
+        const [manifestResponse, weightsResponse] = await Promise.all([fetch('/packages/model/experiments/navigation-align0p5-seed29-word085/manifest.json'), fetch('/packages/model/experiments/navigation-align0p5-seed29-word085/weights.bin')]);
         if (!manifestResponse.ok || !weightsResponse.ok) throw new Error('Model assets failed to load');
         const [manifest, bytes] = await Promise.all([manifestResponse.json(), weightsResponse.arrayBuffer()]);
         const assetLoadMs = performance.now() - start;

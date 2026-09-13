@@ -1,6 +1,6 @@
 # Model card: expanded experimental model
 
-Latest decision: the experimental demo now runs `navigation-align0p5-seed29`, epoch 2, using the same 16-dimensional CPU encoder and **32,768 int8 weight bytes**. Its payload SHA-256 is `fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2`. [Navigation evaluation](navigation-evaluation.md) records the frozen provider test, existing regression gates, provenance, and remaining quality gap. No production semantic release is claimed.
+Latest decision: the experimental demo now uses `navigation-align0p5-seed29-word085`, a 15% reduction to the word-table dequantization scale of the selected navigation checkpoint. The int8 payload remains **32,768 bytes** with SHA-256 `fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2`; the manifest SHA-256 is `019b113275824658b6ac18aa40afb7a28187ce5855620f5be393bdeda2e24388`. [Typo-weight experiments](typo-weight-experiments.md) document the 3-point reserved synthetic spelling gain, rejected retraining, and still-failing raw `profle` case. No production semantic release is claimed.
 
 The previous demo artifact remains under `packages/model/candidate/`, the prior word-pair research artifact under `packages/model/candidate-v2/`, and the original pilot under `packages/model/experimental/`. Both the original synthetic test and new GNOME provider evaluation are now consumed; neither is fresh evidence for future selection. The sections below retain historical pilot and expanded-data evidence.
 

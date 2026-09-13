@@ -1,0 +1,26 @@
+{
+  "directory": "packages/model/experiments/navigation-align0p5-seed29-word085",
+  "modelId": "navigation-align0p5-seed29-word085",
+  "manifestSha256": "019b113275824658b6ac18aa40afb7a28187ce5855620f5be393bdeda2e24388",
+  "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+  "payloadBytes": 32768,
+  "featureVersion": "gpu-search-features-v1",
+  "dimension": 16,
+  "quantizationBits": [
+    8
+  ],
+  "selectionFrozen": true,
+  "selectionBasis": "Highest exact-export mean(short/all) typo DEV top1 among8scalevalues and11trainingruns subject expanded/XFCE gates; all7release regressiongates passed. Selection completed before reserved spelling evaluation.",
+  "selectionScore": 0.5508974358974359,
+  "runtimeDevSelectionScore": 0.5529647435897436,
+  "evaluationEvent": "One frozen synthetic spelling evaluation with NumPy and actual TypeScript runtime verification; neither is an independent replication of the other. Profile knownbug separately diagnostic only.",
+  "trainingReports": [
+    "eval/typo-training.json",
+    "eval/typo-training-lowlr.json"
+  ],
+  "scalingReports": [
+    "eval/typo-word-scaling.json",
+    "eval/typo-word-scaling-followup.json",
+    "eval/typo-word-scaling-export-verification.json"
+  ]
+}

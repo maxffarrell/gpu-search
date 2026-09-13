@@ -32,7 +32,7 @@ Tests compare prepared and reference outputs exactly across multiple queries, al
 
 `bench/model-browser.ts` measures real trained CPU inference in Chromium and WebKit on the named local hardware. It reports asset fetch and validation/decode separately from menu preparation and warm queries at 100, 1,000, and 5,000 candidates. Every size uses 30 warmups and 200 measured queries; the 1,000-candidate case also times the uncached reference in the same browser. Full result sorting/materialization is included. Lexical ranking and a relevance cutoff are not included, so this is not a complete hybrid-search benchmark. Timer resolution can round very short calls to zero, and power state is uncontrolled.
 
-On 2026-09-13, the unchanged `navigation-align0p5-seed29` model ran on an Apple M4 Max with macOS 27.0.0. Times below are milliseconds. The uncached arm follows the prepared arm in the same browser session; these are local measurements, not guarantees across devices.
+These timings precede the word-scale rebalance; the report retains the measured artifact identity. Inference code is unchanged, but timings were not remeasured for the new weights. On 2026-09-13, the `navigation-align0p5-seed29` model ran on an Apple M4 Max with macOS 27.0.0. Times below are milliseconds. The uncached arm follows the prepared arm in the same browser session; these are local measurements, not guarantees across devices.
 
 | Browser | Candidates | Preparation | Prepared p50 | Prepared p95 | Uncached p50 | Uncached p95 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -55,4 +55,4 @@ pnpm bench:size
 pnpm test:demo
 ```
 
-Optional `CHROME_CHANNEL`, `WEBKIT_EXECUTABLE`, and `MODEL_BENCH_URL` overrides allow installed browser binaries and an already running root Vite server. Reports record overrides explicitly. See `bench/reports/model-browser.json` for current timings and model hashes, and `bench/reports/size.json` for complete separately compressed demo resources. The current prepared demo build is 36,773 bytes Brotli, below the 50 KiB CPU budget, with unchanged 32,768-byte weights.
+Optional `CHROME_CHANNEL`, `WEBKIT_EXECUTABLE`, and `MODEL_BENCH_URL` overrides allow installed browser binaries and an already running root Vite server. Reports record overrides explicitly. See `bench/reports/model-browser.json` for current timings and model hashes, and `bench/reports/size.json` for complete separately compressed demo resources. The current rebalanced demo build is 36,843 bytes Brotli, below the 50 KiB CPU budget, with unchanged 32,768-byte weights.

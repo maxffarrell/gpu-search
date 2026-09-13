@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-09-13T23:48:54.268687+00:00",
+  "modelId": "navigation-align0p5-seed29-word085",
+  "modelSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+  "sourceHashes": {
+    "data/expanded/calibration.jsonl": "0d7c29d5d731e882009cb98521643f2d573a2f9900e2bce5c80329d059c047f1",
+    "data/expanded/dev.jsonl": "74fca8160e361e4a628c80d3d68389fb0eec7b7b9f5cb6a02ae6d8f255b6ce39",
+    "data/typo/dev.jsonl": "0de2a6425097fe4e9181ef5c5f1553cab5836584c667df2ffdf9108e9e42b6f0",
+    "data/navigation-splits/dev.jsonl": "104350ac5c74ed92610a15c987ecadd612f369a01c7f25381d1b98d7892f3ecb"
+  },
+  "readPartitions": {
+    "calibration": "data/expanded/calibration.jsonl",
+    "expanded": "data/expanded/dev.jsonl",
+    "typo": "data/typo/dev.jsonl",
+    "navigation": "data/navigation-splits/dev.jsonl"
+  },
+  "frozenRatios": [
+    1
+  ],
+  "stage": "Exact exported .85 word-scale artifact verification only; no new ratio selection.",
+  "gates": {
+    "expandedSemanticNdcg5": 0.45,
+    "expandedCoverage": 0.48,
+    "expandedNoMatchMaximum": 0.05,
+    "expandedOverallNdcg5": 0.447708,
+    "navigationSemanticRawNdcg5": 0.5113
+  },
+  "rawWeightBytes": 32768,
+  "method": "Int8 codes remain byte-identical; word dequantization scale multiplied by .85 and rounded to float32 in manifest. Reloaded exported manifest and bytes for all metrics. Expanded calibration alone fits cutoff; no holdout/diagnostic/custom-query reads.",
+  "limitations": [
+    "Development-selected ablation, not independent generalization evidence.",
+    "Typo labels are synthetic one-edit origins; other labels are not reviewed semantic negatives.",
+    "XFCE only documented positives; no no-match metric is available.",
+    "No change to lexical ranking, runtime or shipped assets."
+  ],
+  "results": [
+    {
+      "wordScale": 1,
+      "typoRaw": {
+        "queries": 1248,
+        "ndcg5": 0.7916171210205383,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.7051282051282052,
+        "success3": 0.8245192307692307,
+        "success5": 0.8653846153846154
+      },
+      "typoShortRaw": {
+        "queries": 300,
+        "ndcg5": 0.536163566692858,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.39666666666666667,
+        "success3": 0.58,
+        "success5": 0.66
+      },
+      "selectionScore": 0.5508974358974359,
+      "expanded": {
+        "cutoff": 0.7102150321006775,
+        "semanticNdcg5": 0.46541414718246904,
+        "semanticCoverage": 0.49463327370304117,
+        "overallNdcg5": 0.466368764776786,
+        "noMatchSemanticRate": 0.03977272727272727,
+        "overall": {
+          "count": 1472,
+          "positiveCount": 1120,
+          "relevantCount": 1120,
+          "noMatchCount": 352,
+          "ndcg5": 0.466368764776786,
+          "coverage": 0.4955357142857143,
+          "noMatchAnyRate": 0.03977272727272727,
+          "noMatchSemanticRate": 0.03977272727272727,
+          "recall1": 0.45714285714285713,
+          "recall3": 0.47232142857142856,
+          "recall5": 0.47232142857142856,
+          "mrr": 0.4642857142857143
+        },
+        "semanticOnly": {
+          "count": 1118,
+          "positiveCount": 1118,
+          "relevantCount": 1118,
+          "noMatchCount": 0,
+          "ndcg5": 0.46541414718246904,
+          "coverage": 0.49463327370304117,
+          "noMatchAnyRate": null,
+          "noMatchSemanticRate": null,
+          "recall1": 0.4561717352415027,
+          "recall3": 0.47137745974955275,
+          "recall5": 0.47137745974955275,
+          "mrr": 0.46332737030411447
+        }
+      },
+      "navigationSemanticRaw": {
+        "queries": 73,
+        "ndcg5": 0.5299629247083664,
+        "coverage": 1.0,
+        "noMatchRate": null,
+        "judgments": "Only documented positives; other destinations are unjudged.",
+        "success1": 0.2876712328767123,
+        "success3": 0.4657534246575342,
+        "success5": 0.7945205479452054
+      },
+      "gates": {
+        "expandedSemanticNdcg5": true,
+        "expandedCoverage": true,
+        "expandedNoMatchMaximum": true,
+        "expandedOverallNdcg5": true,
+        "navigationSemanticRawNdcg5": true
+      },
+      "allGatesPassed": true
+    }
+  ],
+  "manifestSha256": "019b113275824658b6ac18aa40afb7a28187ce5855620f5be393bdeda2e24388",
+  "parentArtifact": "packages/model/experiments/navigation-align0p5-seed29",
+  "exportedWordScaleRatio": 0.85
+}

@@ -33,3 +33,7 @@ Prepared candidate embeddings reuse menu vectors across queries with exact refer
 ## Typo-result precedence fix
 
 Main demo results now use exact/fuzzy lexical results whenever present and otherwise show explicitly labeled real model suggestions. They do not pad successful text matches with unrelated cosine neighbors. Raw scores remain separately inspectable. Real-weight regression tests protect `profle → Profile`, exact labels, prefixes and aliases, including a fixture where the model itself ranks the wrong destination first. Browser checks cover main-result precedence and typo search with unavailable or zeroed weights. No weights were retrained or changed by this fix.
+
+## Weight-level typo follow-up
+
+The demo uses a 0.85 word-table scale with unchanged int8 payload size. Eight scaling values and eleven bounded retraining runs were compared before freezing the selected manifest. On 600 reserved synthetic typo cases, top-one accuracy increased from 64.33% to 67.33%; the actual TypeScript runtime confirms the same aggregate result. All seven existing release regression gates pass. The raw `profle` failure remains, so this is a partial robustness improvement. See [the complete experiment](typo-weight-experiments.md) for frozen hashes, uncertainty, source boundaries and rejected runs. No original consumed semantic holdout was reopened.

@@ -1,6 +1,8 @@
 # Same-size navigation training
 
-The demo now uses the frozen `navigation-align0p5-seed29` experiment: **32,768 weight bytes**, exactly the previous model's size. It improves source-authored navigation retrieval and passes every existing release regression floor. It remains an experimental CPU model, not a production-approved semantic backend.
+This evaluation selected the frozen `navigation-align0p5-seed29` experiment: **32,768 weight bytes**, exactly the previous model's size. It improves source-authored navigation retrieval and passes every existing release regression floor. It remains an experimental CPU model, not a production-approved semantic backend.
+
+A subsequent [weight-rebalancing experiment](typo-weight-experiments.md) partially improved spelling and supplies the current demo artifact. The evidence below remains the original navigation evaluation.
 
 ## What changed
 

@@ -1,7 +1,7 @@
 import { createIndex } from '../../../packages/core/src/index';
 import { loadModel } from '../../../packages/model/runtime';
-import manifestUrl from '../../../packages/model/experiments/navigation-align0p5-seed29/manifest.json?url';
-import weightsUrl from '../../../packages/model/experiments/navigation-align0p5-seed29/weights.bin?url';
+import manifestUrl from '../../../packages/model/experiments/navigation-align0p5-seed29-word085/manifest.json?url';
+import weightsUrl from '../../../packages/model/experiments/navigation-align0p5-seed29-word085/weights.bin?url';
 import './style.css';
 import { searchResults } from './ranking';
 

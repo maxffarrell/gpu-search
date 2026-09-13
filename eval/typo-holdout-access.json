@@ -1,0 +1,17 @@
+{
+  "selection": "eval/typo-selection.json",
+  "selectionSha256": "c52db2365544eb4e175f47015cf7928a8437fa6a9081890488797a83b09fe86a",
+  "candidate": {
+    "directory": "packages/model/experiments/navigation-align0p5-seed29-word085",
+    "modelId": "navigation-align0p5-seed29-word085",
+    "manifestSha256": "019b113275824658b6ac18aa40afb7a28187ce5855620f5be393bdeda2e24388",
+    "payloadSha256": "fcb4be56a9a8ddb82e02de9ae31f0822e2e211b4dc65e61cc24dc285620dd6a2",
+    "payloadBytes": 32768,
+    "featureVersion": "gpu-search-features-v1",
+    "dimension": 16,
+    "quantizationBits": [
+      8
+    ]
+  },
+  "accessedAt": "2026-09-13T23:53:47.781566+00:00"
+}
