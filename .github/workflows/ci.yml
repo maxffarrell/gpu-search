@@ -8,13 +8,13 @@ jobs:
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: "26.12.1"
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm release:verify
       - run: pnpm bench:size:research
       - uses: astral-sh/setup-uv@v6
         with:
-          version: '0.12.10'
+          version: "0.12.10"
       - run: uv sync --frozen
       - run: uv run python -m unittest training.test_export training.test_data_sources training.test_quality training.test_calibration training.test_experiment_objectives training.test_release_candidate training.test_navigation training.test_navigation_augmentation training.test_evaluate_navigation training.test_typo

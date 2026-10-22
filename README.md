@@ -42,7 +42,7 @@ Rebuild the index when your menu changes. You do not need to assemble separate n
 
 ## Try it locally
 
-Use Node.js 22.12+ and pnpm 12.4.1 in this repository:
+Use Node.js 26.12.1+ on the 26.x line and pnpm 12.4.1. Vercel builds may use patched Node.js 24.22.1+ on the 24.x line until Node 26 is supported there. These minimums include the CVE-2026-111497 Brotli decoder fix; `.node-version` and CI select 26.12.1:
 
 ```sh
 pnpm install --frozen-lockfile
