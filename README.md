@@ -42,7 +42,7 @@ Rebuild the index when your menu changes. You do not need to assemble separate n
 
 ## Try it locally
 
-Use Node.js 22.12+ and pnpm 12.4.1 in this repository:
+Use Node.js 22.23.4+ (22.x), 24.22.1+ (24.x), or 26.12.1+ (26.x) and pnpm 12.4.1 in this repository. These minimums include the CVE-2026-111497 Brotli decoder fix; `.node-version` and CI select 22.23.4:
 
 ```sh
 pnpm install --frozen-lockfile
